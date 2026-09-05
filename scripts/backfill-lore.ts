@@ -13,4 +13,5 @@ const report = await synchronizeLore({
 });
 
 console.log(`Lore backfill complete: ${report.retrievedMessages} retrieved, ${report.newMessages} new, ${report.cachedMessages} cached, ${report.series} series, ${report.patches} patches.`);
+console.log(`Stable patch IDs computed: ${report.patchIdsComputed}.`);
 console.log(`Query: ${report.query}`);

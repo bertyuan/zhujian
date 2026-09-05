@@ -51,3 +51,24 @@ test("keeps existing public data when lore retrieval fails", async (context) => 
   const runState = JSON.parse(await readFile(path.join(root, "data", "internal", "sync-state.json"), "utf8"));
   assert.equal(runState.status, "error");
 });
+
+test("can update the lore cache without replacing public data before the full pipeline succeeds", async (context) => {
+  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-sync-staged-"));
+  context.after(() => rm(root, { recursive: true, force: true }));
+  const publicFile = path.join(root, "data", "patchsets.json");
+  await mkdir(path.dirname(publicFile), { recursive: true });
+  await writeFile(publicFile, "sentinel\n");
+  const source: LoreSource = { search: async () => [patch] };
+
+  await synchronizeLore({
+    root,
+    source,
+    initialSince: "2025-01-01",
+    writePublicData: false,
+  });
+
+  assert.equal(await readFile(publicFile, "utf8"), "sentinel\n");
+  const cache = JSON.parse(await readFile(path.join(root, "data", "internal", "lore-messages.json"), "utf8"));
+  assert.equal(cache.messages.length, 1);
+  assert.match(cache.messages[0].patchId, /^[0-9a-f]{40}$/);
+});

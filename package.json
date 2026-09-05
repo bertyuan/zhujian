@@ -12,8 +12,11 @@
     "ingest:fixtures": "node --experimental-strip-types scripts/ingest-fixtures.ts",
     "sync:lore": "node --experimental-strip-types scripts/sync-lore.ts",
     "sync:git": "node --experimental-strip-types scripts/sync-git.ts",
+    "reconcile": "node --experimental-strip-types scripts/reconcile.ts",
+    "generate": "node --experimental-strip-types scripts/generate.ts",
+    "sync": "node --experimental-strip-types scripts/sync.ts",
     "backfill:lore": "node --experimental-strip-types scripts/backfill-lore.ts",
-    "backfill": "pnpm backfill:lore",
+    "backfill": "node --experimental-strip-types scripts/backfill.ts",
     "validate:data": "node --experimental-strip-types scripts/validate-data.ts"
   },
   "dependencies": {

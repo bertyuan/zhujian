@@ -2,6 +2,8 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { writeGeneratedData, writeJsonAtomic } from "../data/generate.ts";
 import { validateSyncMetadata } from "../data/validation.ts";
+import { addStablePatchIds } from "../git/patch-id.ts";
+import type { CommandRunner } from "../git/runner.ts";
 import { deduplicateMessages } from "./parser.ts";
 import { buildLoreQuery, syncStart } from "./query.ts";
 import { buildPatchsets } from "./series.ts";
@@ -21,6 +23,8 @@ export interface LoreSyncOptions {
   initialSince: string;
   forceInitialSince?: boolean;
   now?: Date;
+  commandRunner?: CommandRunner;
+  writePublicData?: boolean;
 }
 
 export interface LoreSyncReport {
@@ -28,6 +32,7 @@ export interface LoreSyncReport {
   retrievedMessages: number;
   newMessages: number;
   cachedMessages: number;
+  patchIdsComputed: number;
   series: number;
   patches: number;
   staleFilesRemoved: number;
@@ -43,7 +48,7 @@ async function readOptionalJson<T>(file: string, fallback: T): Promise<T> {
   }
 }
 
-function validateCachedMessages(value: unknown): LoreMessage[] {
+export function validateLoreMessages(value: unknown): LoreMessage[] {
   if (!Array.isArray(value)) throw new Error("Lore message cache must contain a messages array");
   return value.map((raw, index) => {
     if (!raw || typeof raw !== "object") throw new Error(`Invalid cached lore message at index ${index}`);
@@ -59,6 +64,9 @@ function validateCachedMessages(value: unknown): LoreMessage[] {
       throw new Error(`Invalid cached lore references at index ${index}`);
     }
     if (Number.isNaN(Date.parse(message.date as string))) throw new Error(`Invalid cached lore date at index ${index}`);
+    if (message.patchId !== undefined && (typeof message.patchId !== "string" || !/^[0-9a-f]{40}$/i.test(message.patchId))) {
+      throw new Error(`Invalid cached stable patch-id at index ${index}`);
+    }
     return message as LoreMessage;
   });
 }
@@ -79,7 +87,7 @@ export async function synchronizeLore(options: LoreSyncOptions): Promise<LoreSyn
       generatedAt: synchronizedAt,
       sources: {},
     }));
-    const cachedMessages = validateCachedMessages(cache.messages);
+    const cachedMessages = validateLoreMessages(cache.messages);
     const start = syncStart(
       state.lastSuccessfulSync,
       options.initialSince,
@@ -88,19 +96,25 @@ export async function synchronizeLore(options: LoreSyncOptions): Promise<LoreSyn
     const query = buildLoreQuery(start);
     const retrieved = deduplicateMessages(await options.source.search(query));
     const knownIds = new Set(cachedMessages.map((message) => message.messageId));
-    const mergedMessages = deduplicateMessages([...cachedMessages, ...retrieved]);
+    const merged = deduplicateMessages([...cachedMessages, ...retrieved]);
+    const patchIds = await addStablePatchIds(merged, options.commandRunner);
+    const mergedMessages = patchIds.messages;
     const details = buildPatchsets({ messages: mergedMessages });
-    const result = await writeGeneratedData(options.root, details, {
+    const nextMetadata = {
       mode: "live",
       generatedAt: synchronizedAt,
       sources: {
         ...existingMetadata.sources,
         lore: { status: "ok", lastSuccessfulSync: synchronizedAt },
       },
-    });
+    } as const;
+    const result = options.writePublicData === false
+      ? { staleFilesRemoved: 0 }
+      : await writeGeneratedData(options.root, details, nextMetadata);
 
     await writeJsonAtomic(cacheFile, { messages: mergedMessages });
     await writeJsonAtomic(stateFile, { lastSuccessfulSync: synchronizedAt });
+    if (options.writePublicData === false) await writeJsonAtomic(metadataFile, nextMetadata);
     await writeJsonAtomic(runStateFile, {
       status: "ok",
       attemptedAt: synchronizedAt,
@@ -112,8 +126,9 @@ export async function synchronizeLore(options: LoreSyncOptions): Promise<LoreSyn
       retrievedMessages: retrieved.length,
       newMessages: retrieved.filter((message) => !knownIds.has(message.messageId)).length,
       cachedMessages: mergedMessages.length,
-      series: result.details.length,
-      patches: result.details.reduce((sum, detail) => sum + detail.patches.length, 0),
+      patchIdsComputed: patchIds.computed,
+      series: details.length,
+      patches: details.reduce((sum, detail) => sum + detail.patches.length, 0),
       staleFilesRemoved: result.staleFilesRemoved,
       synchronizedAt,
     };

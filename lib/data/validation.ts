@@ -120,6 +120,8 @@ function patchDetail(value: unknown, path: string): PatchDetail {
   const item = object(value, path);
   const messageId = string(item.messageId, `${path}.messageId`);
   if (!/^<[^<>\s]+>$/.test(messageId)) fail(`${path}.messageId`, "expected a bracketed Message-ID");
+  const patchId = optionalString(item.patchId, `${path}.patchId`);
+  if (patchId && !/^[0-9a-f]{40}$/i.test(patchId)) fail(`${path}.patchId`, "expected a stable patch-id");
   return {
     index: integer(item.index, `${path}.index`, 1),
     total: integer(item.total, `${path}.total`, 1),
@@ -127,7 +129,7 @@ function patchDetail(value: unknown, path: string): PatchDetail {
     messageId,
     loreUrl: string(item.loreUrl, `${path}.loreUrl`),
     changedFiles: stringArray(item.changedFiles, `${path}.changedFiles`),
-    patchId: optionalString(item.patchId, `${path}.patchId`),
+    ...(patchId ? { patchId } : {}),
     trees: trees(item.trees, `${path}.trees`),
   };
 }

@@ -58,21 +58,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Incrementally synchronize lore
-        if: ${{ inputs.since == '' }}
-        run: pnpm sync:lore
-
-      - name: Backfill lore from the requested date
-        if: ${{ inputs.since != '' }}
+      - name: Synchronize and generate tracking data
         env:
           SYNC_SINCE: ${{ inputs.since }}
-        run: pnpm backfill
-
-      - name: Synchronize Linux Git trees
-        env:
-          GIT_SYNC_SINCE: ${{ inputs.since }}
-          GIT_FORCE_RESCAN: ${{ inputs.since != '' }}
-        run: pnpm sync:git
+        run: pnpm sync
 
       - name: Validate generated data
         run: pnpm validate:data
