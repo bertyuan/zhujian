@@ -1,6 +1,6 @@
 [
   {
-    "id": "refresh-memory-barriers-translation-10973c8-v2",
+    "id": "refresh-memory-barriers-translation-8df843d74f85-v2",
     "subject": "[PATCH v2 0/2] docs/zh_CN: refresh memory barriers translation",
     "authorName": "Wu XiangCheng",
     "authorEmail": "bobwxc@example.com",
@@ -36,7 +36,7 @@
     }
   },
   {
-    "id": "fix-admin-guide-typo-1a1cb0a-v1",
+    "id": "fix-admin-guide-typo-c80da836c8b8-v1",
     "subject": "[PATCH] docs/zh_TW: fix admin-guide typo",
     "authorName": "Yung-Chuan Liao",
     "authorEmail": "liao@example.org",
@@ -71,7 +71,7 @@
     }
   },
   {
-    "id": "align-zh-cn-and-zh-tw-indexes-b38b439-v1",
+    "id": "align-zh-cn-and-zh-tw-indexes-1dd7efa951e2-v1",
     "subject": "[RFC PATCH 0/2] docs: align zh_CN and zh_TW indexes",
     "authorName": "Mei Lin",
     "authorEmail": "mei.lin@example.net",
@@ -105,7 +105,7 @@
     }
   },
   {
-    "id": "refresh-memory-barriers-translation-10973c8-v1",
+    "id": "refresh-memory-barriers-translation-a0b271c1cb3a-v1",
     "subject": "[PATCH v1 0/2] docs/zh_CN: refresh memory barriers translation",
     "authorName": "Wu XiangCheng",
     "authorEmail": "bobwxc@example.com",

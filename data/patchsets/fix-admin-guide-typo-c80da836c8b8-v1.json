@@ -1,5 +1,5 @@
 {
-  "id": "fix-admin-guide-typo-1a1cb0a-v1",
+  "id": "fix-admin-guide-typo-c80da836c8b8-v1",
   "subject": "[PATCH] docs/zh_TW: fix admin-guide typo",
   "authorName": "Yung-Chuan Liao",
   "authorEmail": "liao@example.org",
@@ -39,7 +39,7 @@
   "versions": [
     {
       "revision": 1,
-      "id": "fix-admin-guide-typo-1a1cb0a-v1",
+      "id": "fix-admin-guide-typo-c80da836c8b8-v1",
       "current": true
     }
   ],

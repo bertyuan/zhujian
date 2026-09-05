@@ -58,5 +58,31 @@ test("generates a route-safe ASCII id for a Chinese-only subject", () => {
   };
 
   const [series] = buildPatchsets({ messages: [message] });
-  assert.match(series.id, /^patch-series-[0-9a-f]{7}-v1$/);
+  assert.match(series.id, /^patch-series-[0-9a-f]{12}-v1$/);
+});
+
+test("keeps repeated deliveries of the same revision uniquely addressable", () => {
+  const original: LoreMessage = {
+    messageId: "<original-v2@example.com>",
+    subject: "[PATCH v2] docs/zh_CN: sync page_table_check.rst translation",
+    from: { name: "Translator", email: "translator@example.com" },
+    date: "2026-09-05T10:00:00Z",
+    references: [],
+    body: "diff --git a/Documentation/translations/zh_CN/mm/page_table_check.rst b/Documentation/translations/zh_CN/mm/page_table_check.rst\n+++ b/Documentation/translations/zh_CN/mm/page_table_check.rst",
+    loreUrl: "https://lore.kernel.org/linux-doc/original-v2%40example.com/",
+    rawUrl: "https://lore.kernel.org/linux-doc/original-v2%40example.com/raw",
+  };
+  const repost: LoreMessage = {
+    ...original,
+    messageId: "<repost-v2@example.com>",
+    date: "2026-09-05T11:00:00Z",
+    loreUrl: "https://lore.kernel.org/linux-doc/repost-v2%40example.com/",
+    rawUrl: "https://lore.kernel.org/linux-doc/repost-v2%40example.com/raw",
+  };
+
+  const series = buildPatchsets({ messages: [original, repost] });
+  assert.equal(series.length, 2);
+  assert.equal(new Set(series.map((item) => item.id)).size, 2);
+  assert.equal(series.filter((item) => item.latestRevision).length, 1);
+  assert.equal(series.find((item) => item.messageIds.includes(original.messageId))?.status, "superseded");
 });

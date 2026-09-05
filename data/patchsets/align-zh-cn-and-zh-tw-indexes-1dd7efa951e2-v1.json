@@ -1,5 +1,5 @@
 {
-  "id": "align-zh-cn-and-zh-tw-indexes-b38b439-v1",
+  "id": "align-zh-cn-and-zh-tw-indexes-1dd7efa951e2-v1",
   "subject": "[RFC PATCH 0/2] docs: align zh_CN and zh_TW indexes",
   "authorName": "Mei Lin",
   "authorEmail": "mei.lin@example.net",
@@ -38,7 +38,7 @@
   "versions": [
     {
       "revision": 1,
-      "id": "align-zh-cn-and-zh-tw-indexes-b38b439-v1",
+      "id": "align-zh-cn-and-zh-tw-indexes-1dd7efa951e2-v1",
       "current": true
     }
   ],

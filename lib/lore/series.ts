@@ -78,7 +78,10 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
     const anchor = cover ?? mailPatches[0];
     const revision = anchor.parsed.revision;
     const family = familyKey(anchor.message, anchor.parsed.baseSubject);
-    const digest = createHash("sha256").update(family).digest("hex").slice(0, 7);
+    const digest = createHash("sha256")
+      .update(`${family}\0${thread.rootMessageId}`)
+      .digest("hex")
+      .slice(0, 12);
     const id = `${slugify(anchor.parsed.baseSubject)}-${digest}-v${revision}`;
     const languages = relevantPatches.map(({ parsed, files }) => classifyLanguage(files, parsed.baseSubject) as Language);
     const patchCount = relevantPatches.length;
@@ -124,14 +127,18 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
   return drafts
     .map(({ family, ...draft }) => {
       const relatives = byFamily.get(family) ?? [];
-      const latestRevision = Math.max(...relatives.map((relative) => relative.revision));
-      const isLatest = draft.revision === latestRevision;
+      const latest = relatives.toSorted((a, b) =>
+        b.revision - a.revision
+        || Date.parse(b.postedAt) - Date.parse(a.postedAt)
+        || b.id.localeCompare(a.id)
+      )[0];
+      const isLatest = draft.id === latest.id;
       return {
         ...draft,
         latestRevision: isLatest,
         status: deriveStatus(draft.trees, isLatest),
         versions: relatives
-          .sort((a, b) => a.revision - b.revision)
+          .toSorted((a, b) => a.revision - b.revision || Date.parse(a.postedAt) - Date.parse(b.postedAt))
           .map((relative) => ({ revision: relative.revision, id: relative.id, current: relative.id === draft.id })),
       } satisfies PatchsetDetail;
     })

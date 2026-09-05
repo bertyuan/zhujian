@@ -1,5 +1,5 @@
 {
-  "id": "refresh-memory-barriers-translation-10973c8-v1",
+  "id": "refresh-memory-barriers-translation-a0b271c1cb3a-v1",
   "subject": "[PATCH v1 0/2] docs/zh_CN: refresh memory barriers translation",
   "authorName": "Wu XiangCheng",
   "authorEmail": "bobwxc@example.com",
@@ -38,12 +38,12 @@
   "versions": [
     {
       "revision": 1,
-      "id": "refresh-memory-barriers-translation-10973c8-v1",
+      "id": "refresh-memory-barriers-translation-a0b271c1cb3a-v1",
       "current": true
     },
     {
       "revision": 2,
-      "id": "refresh-memory-barriers-translation-10973c8-v2",
+      "id": "refresh-memory-barriers-translation-8df843d74f85-v2",
       "current": false
     }
   ],
