@@ -90,6 +90,18 @@
         "net/core/netdev-genl.c"
       ],
       "patchId": "69893b8c8a8ce2cc4ef74d114157102d041fe0da",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Harshitha Ramamurthy <hramamurthy@google.com>",
+          "messageId": "<20260507-tcp-dm-netkit-v3-1-52821445867c@meta.com>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Stanislav Fomichev <sdf@fomichev.me>",
+          "messageId": "<af35ekIjYDXIDWVR@devvm7509.cco0.facebook.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -125,6 +137,13 @@
         "include/linux/netdevice.h"
       ],
       "patchId": "b06b7a1103b4814a2010bed4ac904065158aff10",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Stanislav Fomichev <sdf@fomichev.me>",
+          "messageId": "<af35tYOAr5Xymm20@devvm7509.cco0.facebook.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

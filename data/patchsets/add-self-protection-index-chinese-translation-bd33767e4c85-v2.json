@@ -60,6 +60,18 @@
         "Documentation/translations/zh_CN/security/self-protection.rst"
       ],
       "patchId": "3a5bd5be1cb8f6a3e2e7a00ee91d6f5700522d4d",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<8238d6e4-6044-4924-99d4-51fdfd6ba1c8@linux.dev>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Yuxian Mao <maoyuxian@cqsoftware.com.cn>",
+          "messageId": "<16622619-fb80-40e5-96b2-68d999b4bd97@cqsoftware.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

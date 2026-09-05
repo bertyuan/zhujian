@@ -107,6 +107,18 @@
         "drivers/reset/reset-scmi.c"
       ],
       "patchId": "16a30a91d287c0c4af028fbf7a45e9c54cdb4313",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Mark Brown <broonie@kernel.org>",
+          "messageId": "<28cc462c-4c65-4de9-a9e2-965646eb4c83@sirena.org.uk>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Vincent Guittot <vincent.guittot@linaro.org>",
+          "messageId": "<CAKfTPtCQSjyGmqBOOV8BjqB5EEqjVjCQ8hihDFQ0umtaG1CWSg@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

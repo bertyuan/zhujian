@@ -63,6 +63,18 @@
         "Documentation/translations/zh_CN/rust/arch-support.rst"
       ],
       "patchId": "5101e872f2f184ea5768ffd771acf9725ac1cab4",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<0e367d0dc8d74287dee1605a48ea80159fa464cb.1775619061.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<DHNQN8UBPL47.MF7V44YM7M1O@garyguo.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -94,6 +106,18 @@
         "Documentation/translations/zh_CN/rust/coding-guidelines.rst"
       ],
       "patchId": "bf73ab7bd6648218848f17b71692371a55e0120a",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<83b72c91f7ba2a9ca2ae73ab42fd94fcc369220a.1775619061.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<DHNQNZ3L4B3Q.2MUD8JBT90ESN@garyguo.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -125,6 +149,18 @@
         "Documentation/translations/zh_CN/rust/quick-start.rst"
       ],
       "patchId": "c3b1351467714171ad6c01be32c87de72d3a6fbc",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<b5e1246269848fc95d118a722fb11eee88961053.1775619061.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Gary Guo <gary@garyguo.net> # Rust",
+          "messageId": "<DHOJEMI0WBYX.2Y6HFZ2PYD7HS@garyguo.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -156,6 +192,18 @@
         "Documentation/translations/zh_CN/rust/index.rst"
       ],
       "patchId": "2867d95baa09cc9801c2fd67c3a535d5d2be8b0e",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<0be03ec18f006837e45cf900eef4c653e2f0151f.1775619061.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<DHNQOVBO1FAA.3LY8890EQ1NK3@garyguo.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

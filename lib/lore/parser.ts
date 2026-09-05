@@ -1,8 +1,16 @@
-import type { Language } from "../data/schema";
+import type { Language, ReviewTrailer, ReviewTrailerType } from "../data/schema";
 import type { LoreMessage } from "./types";
 
 const CN_PREFIX = "Documentation/translations/zh_CN/";
 const TW_PREFIX = "Documentation/translations/zh_TW/";
+const REVIEW_TRAILER = /^(Reviewed-by|Acked-by|Tested-by|Suggested-by|Reported-by):\s*(.+)$/gim;
+const REVIEW_TRAILER_TYPES: Record<string, ReviewTrailerType> = {
+  "reviewed-by": "Reviewed-by",
+  "acked-by": "Acked-by",
+  "tested-by": "Tested-by",
+  "suggested-by": "Suggested-by",
+  "reported-by": "Reported-by",
+};
 
 export function normalizeMessageId(value: string): string {
   const result = value.trim();
@@ -37,6 +45,20 @@ export function classifyLanguage(paths: string[], subject = ""): Language | null
   if (subjectCn) return "zh_CN";
   if (subjectTw) return "zh_TW";
   return null;
+}
+
+export function extractReviewTrailers(messages: LoreMessage[]): ReviewTrailer[] {
+  const trailers = new Map<string, ReviewTrailer>();
+  for (const message of messages) {
+    for (const match of message.body.matchAll(REVIEW_TRAILER)) {
+      const type = REVIEW_TRAILER_TYPES[match[1].toLocaleLowerCase()];
+      const value = match[2].trim();
+      if (!value) continue;
+      const key = `${type.toLocaleLowerCase()}\0${value.toLocaleLowerCase()}`;
+      if (!trailers.has(key)) trailers.set(key, { type, value, messageId: message.messageId });
+    }
+  }
+  return [...trailers.values()];
 }
 
 export function deduplicateMessages(messages: LoreMessage[]): LoreMessage[] {

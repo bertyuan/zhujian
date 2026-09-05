@@ -14,6 +14,7 @@ export interface ReconciliationReport {
   candidates: number;
   previouslyPresent: number;
   missing: number;
+  manualOverrides: number;
 }
 
 function newest(commits: GitCommit[]): GitCommit | undefined {
@@ -111,16 +112,18 @@ export function reconcilePatchsets(
   const unknownOverride = overrides.matches.find((entry) => !knownMessages.has(entry.messageId));
   if (unknownOverride) throw new Error(`Override refers to unknown patch ${unknownOverride.messageId}`);
   const overrideMap = new Map(overrides.matches.map((entry) => [`${entry.messageId}\0${entry.tree}`, entry]));
-  const counts = { confirmed: 0, candidates: 0, previouslyPresent: 0, missing: 0 };
+  const counts = { confirmed: 0, candidates: 0, previouslyPresent: 0, missing: 0, manualOverrides: 0 };
 
   const details = filtered.details.map((detail) => {
     const patches = detail.patches.map((patch) => {
       const trees = Object.fromEntries(TRACKED_TREES.map((tree) => {
+        const override = overrideMap.get(`${patch.messageId}\0${tree.id}`);
+        if (override) counts.manualOverrides += 1;
         const result = reconcilePatch(
           patch,
           detail,
           indexes[tree.id],
-          overrideMap.get(`${patch.messageId}\0${tree.id}`),
+          override,
         );
         if (result.state === "confirmed") counts.confirmed += 1;
         else if (result.state === "candidate") counts.candidates += 1;

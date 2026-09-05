@@ -62,6 +62,13 @@
         "Documentation/translations/zh_CN/networking/index.rst"
       ],
       "patchId": "ff40c5205686c3af546ad038137488b13ba85dd0",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<20250630185630910BT_3WfN1DPPZ5M1L2duP0@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

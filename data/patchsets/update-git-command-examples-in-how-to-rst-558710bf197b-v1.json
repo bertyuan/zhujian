@@ -54,6 +54,13 @@
         "Documentation/translations/zh_CN/how-to.rst"
       ],
       "patchId": "4c5d6e56607855f1c2b2966bfce7323c1b860d5c",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<9aa4278e-0f43-420b-b6b5-78a32263d7ec@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

@@ -65,6 +65,18 @@
         "tools/docs/checktransupdate.py"
       ],
       "patchId": "59c631a4237b3b0c897792cf8eb3cfbadbb255b5",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Mauro Carvalho Chehab <mchehab+huawei@kernel.org>",
+          "messageId": "<20251028221017.5785-3-corbet@lwn.net>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Jani Nikula <jani.nikula@intel.com>",
+          "messageId": "<20251028221017.5785-3-corbet@lwn.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -98,6 +110,18 @@
         "tools/docs/find-unused-docs.sh"
       ],
       "patchId": "ca13656f0657d49c48c1050463f8d00ab916837c",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Mauro Carvalho Chehab <mchehab+huawei@kernel.org>",
+          "messageId": "<20251028221017.5785-7-corbet@lwn.net>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Jani Nikula <jani.nikula@intel.com>",
+          "messageId": "<20251028221017.5785-7-corbet@lwn.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

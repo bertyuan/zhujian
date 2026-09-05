@@ -57,6 +57,28 @@
         "drivers/platform/x86/intel/int0002_vgpio.c"
       ],
       "patchId": "b808c921794c2be02c7a7feefe96581e06730116",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "Stephen Rothwell <sfr@canb.auug.org.au>",
+          "messageId": "<20250516095306.3417798-1-andriy.shevchenko@linux.intel.com>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Ilpo Järvinen <ilpo.jarvinen@linux.intel.com>",
+          "messageId": "<02bdf242-cbfd-18e2-fabc-82f20823dcbb@linux.intel.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<e50896d2-f44a-42da-8bfc-446e80980e80@infradead.org>"
+        },
+        {
+          "type": "Tested-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<e50896d2-f44a-42da-8bfc-446e80980e80@infradead.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

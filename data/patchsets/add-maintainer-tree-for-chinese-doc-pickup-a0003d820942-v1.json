@@ -55,6 +55,13 @@
         "MAINTAINERS"
       ],
       "patchId": "3d9689d5014d77fa23d34dcf12e4eeb09b16b871",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<632baf9c-773f-4bb0-b01f-cd689e0ed1e2@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -83,6 +90,13 @@
         "Documentation/translations/zh_CN/index.rst"
       ],
       "patchId": "cf3aad4e9b2566ae0c4c0bab5fcd0a9acfdb6562",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<5d35c3f6-a52f-4e63-a972-50ee2898947e@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

@@ -6,6 +6,8 @@ import type {
   PatchsetDetail,
   PatchsetStatus,
   PatchsetSummary,
+  ReviewTrailer,
+  ReviewTrailerType,
   SyncMetadata,
   TreeId,
   TreeSummary,
@@ -17,6 +19,7 @@ const STATUSES = new Set<PatchsetStatus>([
   "on-lore", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "superseded", "previously-queued",
 ]);
 const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
+const REVIEW_TRAILER_TYPES = new Set<ReviewTrailerType>(["Reviewed-by", "Acked-by", "Tested-by", "Suggested-by", "Reported-by"]);
 
 function fail(path: string, message: string): never {
   throw new Error(`Invalid generated data at ${path}: ${message}`);
@@ -122,6 +125,7 @@ function patchDetail(value: unknown, path: string): PatchDetail {
   if (!/^<[^<>\s]+>$/.test(messageId)) fail(`${path}.messageId`, "expected a bracketed Message-ID");
   const patchId = optionalString(item.patchId, `${path}.patchId`);
   if (patchId && !/^[0-9a-f]{40}$/i.test(patchId)) fail(`${path}.patchId`, "expected a stable patch-id");
+  const trailers = item.trailers === undefined ? undefined : reviewTrailers(item.trailers, `${path}.trailers`);
   return {
     index: integer(item.index, `${path}.index`, 1),
     total: integer(item.total, `${path}.total`, 1),
@@ -130,8 +134,21 @@ function patchDetail(value: unknown, path: string): PatchDetail {
     loreUrl: string(item.loreUrl, `${path}.loreUrl`),
     changedFiles: stringArray(item.changedFiles, `${path}.changedFiles`),
     ...(patchId ? { patchId } : {}),
+    ...(trailers ? { trailers } : {}),
     trees: trees(item.trees, `${path}.trees`),
   };
+}
+
+function reviewTrailers(value: unknown, path: string): ReviewTrailer[] {
+  if (!Array.isArray(value)) fail(path, "expected an array");
+  return value.map((raw, index) => {
+    const entry = object(raw, `${path}[${index}]`);
+    const type = string(entry.type, `${path}[${index}].type`) as ReviewTrailerType;
+    if (!REVIEW_TRAILER_TYPES.has(type)) fail(`${path}[${index}].type`, `unknown review trailer ${type}`);
+    const messageId = string(entry.messageId, `${path}[${index}].messageId`);
+    if (!/^<[^<>\s]+>$/.test(messageId)) fail(`${path}[${index}].messageId`, "expected a bracketed Message-ID");
+    return { type, value: string(entry.value, `${path}[${index}].value`), messageId };
+  });
 }
 
 export function validatePatchsetDetail(value: unknown, path = "patchset"): PatchsetDetail {

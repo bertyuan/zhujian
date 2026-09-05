@@ -9,6 +9,13 @@ export type PatchsetStatus =
   | "previously-queued";
 export type LightState = "confirmed" | "partial" | "candidate" | "previously-present" | "missing";
 export type TreeId = "alex" | "corbet" | "linus";
+export type ReviewTrailerType = "Reviewed-by" | "Acked-by" | "Tested-by" | "Suggested-by" | "Reported-by";
+
+export interface ReviewTrailer {
+  type: ReviewTrailerType;
+  value: string;
+  messageId: string;
+}
 
 export interface TreeSummary {
   state: LightState;
@@ -40,6 +47,7 @@ export interface PatchDetail {
   loreUrl: string;
   changedFiles: string[];
   patchId?: string;
+  trailers?: ReviewTrailer[];
   trees: Record<TreeId, TreeSummary>;
 }
 

@@ -55,6 +55,23 @@
         "Documentation/translations/zh_CN/scheduler/sched-energy.rst"
       ],
       "patchId": "5e4fc082b439997481e0018a495bff14b0e5ce2c",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<e4a47268-33d6-4d64-9401-e13e2b13b375@gmail.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Lukasz Luba <lukasz.luba@arm.com>",
+          "messageId": "<a6339f25-41b5-4186-a9d1-d46b5b36c998@arm.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<ec8a1a82-c5b1-4e5b-a103-7e4b91348630@hust.edu.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

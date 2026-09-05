@@ -66,6 +66,13 @@
         "Documentation/translations/zh_CN/networking/skbuff.rst"
       ],
       "patchId": "9da3908192fd3c86dc6eb8c4692253f7232627e7",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "xu xin <xu.xin16@zte.com.cn>",
+          "messageId": "<20250917140010636SMB_b6UYttZyOP2L0K93O@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

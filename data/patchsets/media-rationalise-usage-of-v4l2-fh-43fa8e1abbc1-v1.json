@@ -315,6 +315,13 @@
         "include/media/v4l2-fh.h"
       ],
       "patchId": "4e540c10b5c03c9f0f85010bb3861f1df8fd365a",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Łukasz Stelmach <l.stelmach@samsung.com>",
+          "messageId": "<oypijd5xekra51.fsf%l.stelmach@samsung.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

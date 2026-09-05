@@ -54,6 +54,13 @@
         "Documentation/translations/zh_CN/scsi/scsi-parameters.rst"
       ],
       "patchId": "09ba998ddc9ac289c6fe77385106700be6550e2d",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "kernel test robot <lkp@intel.com>",
+          "messageId": "<20251116091656.1788887-1-kezijie@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

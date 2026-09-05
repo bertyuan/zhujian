@@ -52,6 +52,13 @@
         "Documentation/translations/zh_CN/security/keys/index.rst"
       ],
       "patchId": "caf4a54c050f9f8f28884438acf84b81f3862f5d",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<a5bafe85-5749-412a-b152-1480ecac353a@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

@@ -29,7 +29,7 @@ for (const tree of git.trees) {
 }
 
 const generated = await generateFromLoreCache(root);
-console.log(`Reconciliation: ${generated.confirmed} confirmed, ${generated.candidates} candidate, ${generated.previouslyPresent} previously present, ${generated.ignoredPatches} ignored.`);
+console.log(`Reconciliation: ${generated.confirmed} confirmed, ${generated.candidates} candidate, ${generated.previouslyPresent} previously present, ${generated.manualOverrides} manual overrides, ${generated.ignoredPatches} ignored.`);
 
 const validated = await validateGeneratedData(root);
 console.log(`Sync complete: ${validated.summaries} series, ${validated.indexedCommits} indexed commits, generated data valid.`);

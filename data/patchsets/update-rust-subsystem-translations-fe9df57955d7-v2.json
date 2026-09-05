@@ -63,6 +63,18 @@
         "Documentation/translations/zh_CN/rust/arch-support.rst"
       ],
       "patchId": "5101e872f2f184ea5768ffd771acf9725ac1cab4",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<bc2b5eb22841e2d2cbec5626d50afd412684f572.1775786987.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<bc2b5eb22841e2d2cbec5626d50afd412684f572.1775786987.git.ben.guo@openatom.club>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -94,6 +106,18 @@
         "Documentation/translations/zh_CN/rust/coding-guidelines.rst"
       ],
       "patchId": "bf73ab7bd6648218848f17b71692371a55e0120a",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<325c883beeb39f33e16398679bcb17d8c4ec7564.1775786987.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<325c883beeb39f33e16398679bcb17d8c4ec7564.1775786987.git.ben.guo@openatom.club>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -125,6 +149,18 @@
         "Documentation/translations/zh_CN/rust/quick-start.rst"
       ],
       "patchId": "c3b1351467714171ad6c01be32c87de72d3a6fbc",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<8fcf0af3e5cddaa754de98098360825c9b820fb7.1775786987.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<8fcf0af3e5cddaa754de98098360825c9b820fb7.1775786987.git.ben.guo@openatom.club>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -156,6 +192,18 @@
         "Documentation/translations/zh_CN/rust/index.rst"
       ],
       "patchId": "2867d95baa09cc9801c2fd67c3a535d5d2be8b0e",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<9b5c43b963d74ac39f3d8d1c0d4178c7afb5c48b.1775786987.git.ben.guo@openatom.club>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<9b5c43b963d74ac39f3d8d1c0d4178c7afb5c48b.1775786987.git.ben.guo@openatom.club>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

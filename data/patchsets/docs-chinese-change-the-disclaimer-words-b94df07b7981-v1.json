@@ -54,6 +54,18 @@
         "Documentation/translations/zh_CN/disclaimer-zh_CN.rst"
       ],
       "patchId": "53b471a1dded2ac87b3ba0f3a08d1c6e85156842",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Tang Yizhou <yizhou.tang@shopee.com>",
+          "messageId": "<CACuPKx=mKk8hd1o60Wv+x+AJHb8Bxu+OsNsW1zfF0J7Maw=1jA@mail.gmail.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<CAD-N9QVnMGSNZXMWNYoHwoe0ZN7cNnXysNtmBjMX4xpwCysckw@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

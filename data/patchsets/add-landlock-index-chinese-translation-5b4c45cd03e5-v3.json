@@ -65,6 +65,13 @@
         "Documentation/translations/zh_CN/security/landlock.rst"
       ],
       "patchId": "4be868a948613c336b82d9b9cee73dd53d18c956",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<20250108071142.3538-1-maoyuxian@cqsoftware.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

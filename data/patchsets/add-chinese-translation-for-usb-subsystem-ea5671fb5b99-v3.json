@@ -124,6 +124,13 @@
         "Documentation/translations/zh_CN/usb/acm.rst"
       ],
       "patchId": "ce37fb7dff247680c58fae7e2e266f62133ad3d8",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<0e3c9840-8c6f-4806-af03-ca889202ecd5@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

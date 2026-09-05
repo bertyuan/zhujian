@@ -77,6 +77,18 @@
         "mm/rmap.c"
       ],
       "patchId": "bcd109b1a398a7f738ae050b4487af3ee8f41cbf",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alistair Popple <apopple@nvidia.com>",
+          "messageId": "<b3stuhf2s6236zawaa6zt6x3fg6oamrtj3pwajlyoxlaxdmdtf@arqxcoemsjfg>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Simona Vetter <simona.vetter@ffwll.ch>",
+          "messageId": "<Z5uCw9nzN81B4N8Z@phenom.ffwll.local>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

@@ -78,6 +78,13 @@
         "Documentation/translations/zh_TW/process/7.AdvancedTopics.rst"
       ],
       "patchId": "675302f78d927f31fd422fde3c43d9b6134b2b7f",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<amolg7NpObNT8Gnb@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -107,6 +114,13 @@
         "Documentation/translations/zh_TW/process/1.Intro.rst"
       ],
       "patchId": "371ee4163148f84fdce9354bd5822759807605f3",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<20260728091038.171033-3-chenyou910331@gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -136,6 +150,13 @@
         "Documentation/translations/zh_TW/process/code-of-conduct-interpretation.rst"
       ],
       "patchId": "d37e7d87aff45032cde7c3aa9d66423a1d007e8b",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<amouJSTjAMh-pK6S@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -165,6 +186,13 @@
         "Documentation/translations/zh_TW/process/license-rules.rst"
       ],
       "patchId": "dee97ebb0eb656bf873b3d86a3bb1abe81a0cfa6",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<anC84BJefzxou6oT@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -194,6 +222,13 @@
         "Documentation/translations/zh_TW/process/email-clients.rst"
       ],
       "patchId": "d96bc293135065104eccc3ed0cb216c8360e22e2",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<anC9TtvEltKql5GX@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -223,6 +258,13 @@
         "Documentation/translations/zh_TW/process/programming-language.rst"
       ],
       "patchId": "2964a8d6db3a7f0030d3a48fe57e53a41d09f1b2",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<20260728091038.171033-7-chenyou910331@gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -252,6 +294,13 @@
         "Documentation/translations/zh_TW/process/coding-style.rst"
       ],
       "patchId": "7451eb22cb6eef2f5a6cabbca449f242b08d6a9d",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<20260728091038.171033-8-chenyou910331@gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -281,6 +330,13 @@
         "Documentation/translations/zh_TW/process/stable-kernel-rules.rst"
       ],
       "patchId": "61c29d2bc43d000c8b0db43e3949f0c9b77ef95d",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<anNiwt5jL-tYUeNs@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -310,6 +366,13 @@
         "Documentation/translations/zh_TW/process/5.Posting.rst"
       ],
       "patchId": "b706a57ca5917fa77ea68588566b599ddf037bbe",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<20260728091038.171033-10-chenyou910331@gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -368,6 +431,13 @@
         "Documentation/translations/zh_TW/process/howto.rst"
       ],
       "patchId": "0cb86f5ee9f2e0d268086e669070d4699bc60ed6",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<anLbjl7bGN1GBRkE@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -397,6 +467,13 @@
         "Documentation/translations/zh_TW/process/embargoed-hardware-issues.rst"
       ],
       "patchId": "297b1b5140b5563c63740f558dc4c202c9474a45",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<anLdFtHtcZMNpyIx@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -426,6 +503,13 @@
         "Documentation/translations/zh_TW/process/submitting-patches.rst"
       ],
       "patchId": "f3d8ccb891eb1e4fc30c7827d566f0b26b69d7de",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<anLhDcWtzAfuxyef@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -455,6 +539,18 @@
         "Documentation/translations/zh_TW/process/8.Conclusion.rst"
       ],
       "patchId": "d2d7f0e85ce52dafb6b94a55c2121436e4cd039f",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<20260728091038.171033-15-chenyou910331@gmail.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<20260728091038.171033-15-chenyou910331@gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -484,6 +580,13 @@
         "Documentation/translations/zh_TW/process/index.rst"
       ],
       "patchId": "51e474f76888570fd63704781a9ba7d6c485e485",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<20260728091038.171033-16-chenyou910331@gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -514,6 +617,13 @@
         "Documentation/translations/zh_TW/index.rst"
       ],
       "patchId": "63dfa29bb5d95fc8c7cb740c711722c5b49d5ab5",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<20260728091038.171033-17-chenyou910331@gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

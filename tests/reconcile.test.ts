@@ -85,6 +85,7 @@ test("manual overrides confirm edited patches and ignore known noise", () => {
   });
   assert.equal(overridden.details[0].patches[0].trees.alex.state, "confirmed");
   assert.equal(overridden.details[0].patches[0].trees.alex.commit, "abcdef1");
+  assert.equal(overridden.manualOverrides, 1);
 
   const ignored = reconcilePatchsets([source], indexes, {
     matches: [],

@@ -60,6 +60,13 @@
         "Documentation/translations/zh_CN/rust/testing.rst"
       ],
       "patchId": "bdcb2bceea9a33e4da00b2c3a46aca167be7a075",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cm>",
+          "messageId": "<4011ea47-ce74-4a0c-a45d-e8ded75f45a8@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

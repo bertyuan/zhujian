@@ -56,6 +56,23 @@
         "Documentation/translations/zh_CN/mm/active_mm.rst"
       ],
       "patchId": "c9a63c5a324aa43a171b7d2948ca5b4be7f2ec9a",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "SeongJae Park <sj@kernel.org>",
+          "messageId": "<20251101013019.68183-1-sj@kernel.org>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Lance Yang <lance.yang@linux.dev>",
+          "messageId": "<20251101034145.31515-1-ioworker0@gmail.com>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<7fd1c990-d96e-49ba-9bbb-ebddebf684aa@infradead.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

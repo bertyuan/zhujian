@@ -60,6 +60,13 @@
         "Documentation/translations/zh_CN/scsi/scsi_mid_low_api.rst"
       ],
       "patchId": "7b6a63e54c50d3b1c1b89756aa30acfc90836721",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "kernel test robot <lkp@intel.com>",
+          "messageId": "<20251116085102.1740613-1-kezijie@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -88,6 +95,13 @@
         "Documentation/translations/zh_CN/scsi/scsi-parameters.rst"
       ],
       "patchId": "09ba998ddc9ac289c6fe77385106700be6550e2d",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "kernel test robot <lkp@intel.com>",
+          "messageId": "<20251116085102.1740613-2-kezijie@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

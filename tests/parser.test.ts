@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { classifyLanguage, deduplicateMessages, extractChangedFiles } from "../lib/lore/parser.ts";
+import { classifyLanguage, deduplicateMessages, extractChangedFiles, extractReviewTrailers } from "../lib/lore/parser.ts";
 import type { LoreMessage } from "../lib/lore/types.ts";
 
 test("classifies only exact Chinese translation paths", () => {
@@ -30,4 +30,15 @@ test("deduplicates messages by Message-ID", () => {
     date: "2026-01-01T00:00:00Z", references: [], body: "", loreUrl: "https://example.com", rawUrl: "https://example.com/raw",
   };
   assert.equal(deduplicateMessages([message, { ...message }]).length, 1);
+});
+
+test("extracts supported review trailers without using them as Git evidence", () => {
+  const message: LoreMessage = {
+    messageId: "<review@example.com>", subject: "Re: [PATCH] docs/zh_CN: test", from: { name: "R", email: "r@example.com" },
+    date: "2026-01-01T00:00:00Z", references: [], body: "reviewed-by: Reviewer <r@example.com>\nAcked-by: Maintainer <m@example.com>\nSigned-off-by: Ignored <i@example.com>", loreUrl: "https://example.com", rawUrl: "https://example.com/raw",
+  };
+  assert.deepEqual(extractReviewTrailers([message]), [
+    { type: "Reviewed-by", value: "Reviewer <r@example.com>", messageId: "<review@example.com>" },
+    { type: "Acked-by", value: "Maintainer <m@example.com>", messageId: "<review@example.com>" },
+  ]);
 });

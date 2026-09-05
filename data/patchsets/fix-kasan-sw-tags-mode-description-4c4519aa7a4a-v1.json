@@ -54,6 +54,18 @@
         "Documentation/translations/zh_CN/dev-tools/kasan.rst"
       ],
       "patchId": "dfd9d01d283c1f141ebc1e2f872d97a8a358d7b7",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<b67b9d63-7cc7-460a-ada3-630c8686e1e1@hust.edu.cn>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Zenghui Yu <zenghui.yu@linux.dev>",
+          "messageId": "<05ee738e-37ea-4697-99de-4cec914066b4@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

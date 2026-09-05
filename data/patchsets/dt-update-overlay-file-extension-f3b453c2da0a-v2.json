@@ -55,6 +55,18 @@
         "Documentation/translations/zh_CN/devicetree/overlay-notes.rst"
       ],
       "patchId": "4ce264c2d7eb8e78e0eada7c7b1beb06833800bb",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Andrew Davis <afd@ti.com>",
+          "messageId": "<ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert+renesas@glider.be>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@loongson.cn>",
+          "messageId": "<ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert+renesas@glider.be>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

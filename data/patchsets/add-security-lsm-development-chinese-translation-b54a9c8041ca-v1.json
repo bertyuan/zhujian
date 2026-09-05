@@ -65,6 +65,13 @@
         "Documentation/translations/zh_CN/security/lsm-development.rst"
       ],
       "patchId": "0ffca9880e1a9809089b88ad9a5ab7e8775bd44c",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<98bf374e-7e29-4aa5-ab79-1927b6e20385@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

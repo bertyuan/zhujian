@@ -55,6 +55,23 @@
         "mm/ksm.c"
       ],
       "patchId": "00f89c9db5282a3e8ecdef49f741042c07115088",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "David Hildenbrand (Arm) <david@kernel.org>",
+          "messageId": "<720f8b30-73fb-4983-9bfd-96fc22ebee3b@kernel.org>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Xu Xin <xu.xin16@zte.com.cn>",
+          "messageId": "<20260805210045739XrZB2Gyax_ujkhlLwsFAN@zte.com.cn>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<328d031a-14ae-4cc3-a200-462094f0e2e1@hust.edu.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

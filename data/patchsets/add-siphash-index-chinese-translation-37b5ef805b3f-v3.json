@@ -65,6 +65,13 @@
         "Documentation/translations/zh_CN/security/siphash.rst"
       ],
       "patchId": "68bfc596f4d95d26f247cfb8aba50a81ea878b74",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<0af3d9b8be0e5166f74bd36fd6b040767f767fce.1736315479.git.zhangwei@cqsoftware.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

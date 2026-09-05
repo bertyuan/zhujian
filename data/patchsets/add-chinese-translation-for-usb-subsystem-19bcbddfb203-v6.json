@@ -93,6 +93,13 @@
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
       "patchId": "a04ad52ff433a3715cbf2235e984b7305a2a6d72",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<8446bc5a1dbebc5ef5fb94cba14e91e1a395cf6a.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -125,6 +132,13 @@
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
       "patchId": "5b851cbec17d542599725facaf2d9221ee7dbf72",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<0ab199e9eafc0f7e312008063059aec4af0c65bc.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -157,6 +171,13 @@
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
       "patchId": "caefc96db547a33082d70cdc826d71b1d6d05501",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<4a9617225f249a8eb996fabae5e2e447938a374d.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -189,6 +210,13 @@
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
       "patchId": "b31726d4fecbfe4e5af120a9c05c2937e47fc2cc",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<9f67e0e547f13859d3923fbcbb42a56787d0bc29.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -221,6 +249,13 @@
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
       "patchId": "696084bea16204cd0f861ad88dbb8adfd63ad6e5",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<3c577322de70e143a6e57d60be7199f3b50d8a78.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -253,6 +288,13 @@
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
       "patchId": "625964c4838d2526d435c59652fbf61a555ececb",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<39d6d446008a91352ef1b27b32f1b08cc9310271.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -285,6 +327,13 @@
         "Documentation/translations/zh_CN/usb/usbmon.rst"
       ],
       "patchId": "21d860337ffcaba0f1314c4a0841438d9be45089",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<183f7312435daba9d6cb4195c38a2257ba29308d.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -316,6 +365,13 @@
         "Documentation/translations/zh_CN/usb/CREDITS"
       ],
       "patchId": "2b9b5598001f89c70625e237e5b07da1fb6d3abb",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<c1f15d06708eaf8d7237024239844511c2391223.1778415392.git.baikefan@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

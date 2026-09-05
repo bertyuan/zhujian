@@ -71,6 +71,18 @@
         "Documentation/translations/zh_CN/doc-guide/parse-headers.rst"
       ],
       "patchId": "a264bdefe8ce7c807cf36e418dfff8e50108bec8",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<1f9025dc98dc58da3cc31f3343d5027f351be338.1762594622.git.mchehab+huawei@kernel.org>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<1f9025dc98dc58da3cc31f3343d5027f351be338.1762594622.git.mchehab+huawei@kernel.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

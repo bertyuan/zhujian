@@ -64,6 +64,18 @@
         "Documentation/translations/zh_CN/kbuild/kbuild.rst"
       ],
       "patchId": "32314d0574a27b91e7b5a309799a54483b294bff",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<b559d575-9c2b-4651-9f0c-2a26dcb48a3f@hust.edu.cn>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "WangYuli <wanyl5933@chinaunicom.cn>",
+          "messageId": "<460c0626-e558-495d-bd03-a7efb1776365@aosc.io>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

@@ -57,6 +57,18 @@
         "rust/kernel/task.rs"
       ],
       "patchId": "9aeadef26a8f8ac25ba39792a6bc767b607da8fd",
+      "trailers": [
+        {
+          "type": "Suggested-by",
+          "value": "Jann Horn <jannh@google.com>",
+          "messageId": "<20260227-remove-task-euid-v2-1-9a9c80a82eb6@google.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Gary Guo <gary@garyguo.net>",
+          "messageId": "<20260227-remove-task-euid-v2-1-9a9c80a82eb6@google.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

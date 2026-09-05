@@ -57,6 +57,18 @@
         "Documentation/translations/zh_TW/process/submit-checklist.rst"
       ],
       "patchId": "fd616725457a5114e77ee4610834669bb3968592",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<e030cfac-7f01-4b8e-9cb4-c76a24009315@infradead.org>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<e121f878-1c77-4c55-91bd-fbde5a29c0ce@hust.edu.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

@@ -17,6 +17,11 @@ test("groups revisions, single patches, replies, and mixed-language series", asy
   assert.equal(memory.find((item) => item.revision === 1)?.status, "superseded");
   assert.equal(memory.find((item) => item.revision === 2)?.versions.length, 2);
   assert.equal(memory.find((item) => item.revision === 2)?.replies, 1);
+  assert.deepEqual(memory.find((item) => item.revision === 1)?.patches[0].trailers, [{
+    type: "Reviewed-by",
+    value: "Reviewer <reviewer@example.org>",
+    messageId: "<reply-v1-memory@example.com>",
+  }]);
 
   const single = series.find((item) => item.subject.includes("admin-guide typo"));
   assert.equal(single?.patchCount, 1);

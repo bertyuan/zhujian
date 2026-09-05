@@ -56,6 +56,13 @@
         "Documentation/translations/zh_CN/scsi/scsi_mid_low_api.rst"
       ],
       "patchId": "61fe5b45479b3af0c46374c7560835a8d74b895f",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "kernel test robot <lkp@intel.com>",
+          "messageId": "<20251116091814.1791491-1-kezijie@leap-io-kernel.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

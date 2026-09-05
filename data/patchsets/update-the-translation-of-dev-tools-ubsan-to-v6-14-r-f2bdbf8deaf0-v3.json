@@ -59,6 +59,13 @@
         "Documentation/translations/zh_CN/dev-tools/ubsan.rst"
       ],
       "patchId": "9d0bf6bbcb0c562ec7a859c8157b764718d814f1",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<116da9a0-125c-4760-9a21-184db65eddfd@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

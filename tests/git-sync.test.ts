@@ -110,4 +110,7 @@ test("does not replace committed indexes when one remote fails", async (context)
     repositoryFactory,
   }), /remote unavailable/);
   assert.equal(await readFile(indexFile, "utf8"), "[]\n");
+  const runState = await json(path.join(root, "data", "internal", "sync-state.json")) as { status: string; source: string };
+  assert.equal(runState.status, "error");
+  assert.equal(runState.source, "git:corbet");
 });

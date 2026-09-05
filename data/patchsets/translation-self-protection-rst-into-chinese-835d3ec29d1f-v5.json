@@ -73,6 +73,18 @@
         "Documentation/translations/zh_CN/security/self-protection.rst"
       ],
       "patchId": "3a5bd5be1cb8f6a3e2e7a00ee91d6f5700522d4d",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<dd8c6da2e145aadac202e979bea0ff6b56431e0b.1738923258.git.zhangwei@cqsoftware.com.cn>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Yuxian Mao <maoyuxian@cqsoftware.com.cn>",
+          "messageId": "<dd8c6da2e145aadac202e979bea0ff6b56431e0b.1738923258.git.zhangwei@cqsoftware.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -104,6 +116,13 @@
         "Documentation/translations/zh_CN/security/keys/index.rst"
       ],
       "patchId": "9e39d3fa580f810b680103107db56edaaf2d5ec1",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<58695044-2e80-441f-8751-9039010f8819@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -135,6 +154,13 @@
         "Documentation/translations/zh_CN/security/secrets/index.rst"
       ],
       "patchId": "aeb9d2be51c11a6f0e02f6ecb7d97486b4b58ad3",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<6dd30cc8-a06d-44f4-b190-fb648fca5457@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

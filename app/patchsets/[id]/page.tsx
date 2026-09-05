@@ -41,7 +41,18 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
               {patchset.patches.map((patch) => (
                 <li className="patch-row" key={patch.messageId}>
                   <span className="patch-number">{patch.index}/{patch.total}</span>
-                  <a className="patch-subject text-link" href={patch.loreUrl} target="_blank" rel="noreferrer">{patch.subject}</a>
+                  <div>
+                    <a className="patch-subject text-link" href={patch.loreUrl} target="_blank" rel="noreferrer">{patch.subject}</a>
+                    {Boolean(patch.trailers?.length) && (
+                      <div className="trailer-list" aria-label="Review trailers">
+                        {patch.trailers?.map((trailer) => (
+                          <span className="trailer" key={`${trailer.type}-${trailer.value}`} title={`Observed in ${trailer.messageId}`}>
+                            <strong>{trailer.type}</strong> {trailer.value}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                   <UpstreamLights trees={patch.trees} compact />
                 </li>
               ))}
@@ -67,7 +78,7 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
             <div className="version-list">
               {patchset.versions.map((version) => (
                 <Link key={version.id} className={`version-chip ${version.current ? "version-current" : ""}`} href={`/patchsets/${version.id}`}>
-                  v{version.revision}{version.current ? " current" : ""}
+                  v{version.revision}{version.current ? " selected" : ""}
                 </Link>
               ))}
             </div>

@@ -62,6 +62,18 @@
         "Documentation/translations/zh_CN/networking/netmem.rst"
       ],
       "patchId": "d79355df6890baf6e4eb1774f12698b1947c4c00",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "xu xin <xu.xin16@zte.com.cn>",
+          "messageId": "<20250630193007665612yAcBZJB420SVhj5nqb@zte.com.cn>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<20250630193007665612yAcBZJB420SVhj5nqb@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

@@ -107,6 +107,13 @@
         "Documentation/userspace-api/media/rc/rc-protos.rst"
       ],
       "patchId": "5d03e25bf8998cf4bf939d80900899fb3125a9aa",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<1412ff8c-50ff-4e51-b1c5-a4a404aafb86@infradead.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

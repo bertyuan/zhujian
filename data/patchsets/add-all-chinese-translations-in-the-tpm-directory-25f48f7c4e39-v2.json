@@ -72,6 +72,13 @@
         "Documentation/translations/zh_CN/security/tpm/index.rst"
       ],
       "patchId": "8173755fc085ed133cb0aa52c3ee5c426960137d",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<CAJy-AmmkXKX70peEf-bK_V0FHm8q8dtqHL-kUPx+wngEfv_Dsw@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -104,6 +111,13 @@
         "Documentation/translations/zh_CN/security/tpm/tpm_event_log.rst"
       ],
       "patchId": "630e95303d915870af7f445673f472e33b4b1931",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<CAJy-AmknZopyMndMpruBYGdeEZNLyQ6kqwneKmoVS2wU-BVLaQ@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -168,6 +182,13 @@
         "Documentation/translations/zh_CN/security/tpm/tpm_tis.rst"
       ],
       "patchId": "2acdf83e36ffc334e7e75de567d55f4fbd625fca",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<CAJy-AmnOaU0_84pXuKtHskNM3AHO_QvWR7D1wcAXrvt3ueF3-w@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -232,6 +253,13 @@
         "Documentation/translations/zh_CN/security/tpm/xen-tpmfront.rst"
       ],
       "patchId": "2546c06a2a6c0cb6961c6f819e3de0d3cf6668ca",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<CAJy-Am=JKWyysq=6KEKaqBSQexQwXi5jvS6YViqkhZMueVWf9g@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -264,6 +292,13 @@
         "Documentation/translations/zh_CN/security/tpm/tpm_ftpm_tee.rst"
       ],
       "patchId": "16ac6db0e3aa6d9dc7cea92928190a444a52fceb",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<CAJy-Am=FTNX37C1e-wmEf83T0YfdtaT-ZQKCfV6oU5fU3Knbjg@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

@@ -58,6 +58,33 @@
         "lib/vsprintf.c"
       ],
       "patchId": "281fbafc05304c9a51ce03ce3570bec6749a676b",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Stephen Boyd <sboyd@kernel.org>",
+          "messageId": "<20250311-vsprintf-pcn-v2-2-0af40fc7dee4@bootlin.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Geert Uytterhoeven <geert+renesas@glider.be>",
+          "messageId": "<20250311-vsprintf-pcn-v2-2-0af40fc7dee4@bootlin.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<aa840586-cd70-417f-82c2-bb887f337720@linux.dev>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Petr Mladek <pmladek@suse.com>",
+          "messageId": "<Z9BKW_06nLAOzYfY@pathway.suse.cz>"
+        },
+        {
+          "type": "Tested-by",
+          "value": "Petr Mladek <pmladek@suse.com>",
+          "messageId": "<Z9BKW_06nLAOzYfY@pathway.suse.cz>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

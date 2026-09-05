@@ -68,6 +68,13 @@
         "tools/doc/checktransupdate.py"
       ],
       "patchId": "59bb672bdf048c0713fe608e66bd769f7076b5fb",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Mauro Carvalho Chehab <mchehab+huawei@kernel.org>",
+          "messageId": "<20250814015106.2d7d0bf7@foz.lan>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -179,6 +186,13 @@
         "tools/doc/kernel-doc"
       ],
       "patchId": "a3cf2c85108dde1d911fbecbfd9935b85b925736",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Mauro Carvalho Chehab <mchehab+huawei@kernel.org>",
+          "messageId": "<20250814013353.623b20c8@foz.lan>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -210,6 +224,13 @@
         "tools/doc/split-man.pl"
       ],
       "patchId": "2b2569775bffe5aefc10224dc667d7589306d237",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Mauro Carvalho Chehab <mchehab+huawei@kernel.org>",
+          "messageId": "<20250814015005.22f0fced@foz.lan>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -240,6 +261,13 @@
         "tools/doc/find-unused-docs.sh"
       ],
       "patchId": "4b8e42e5e0e8a97d9c34dd0385edf3877078bd7f",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Mauro Carvalho Chehab <mchehab+huawei@kernel.org>",
+          "messageId": "<20250814015040.09db5b0c@foz.lan>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

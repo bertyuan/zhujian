@@ -135,6 +135,7 @@ async function determineRange(
 export async function synchronizeGit(options: GitSyncOptions): Promise<GitSyncReport> {
   const synchronizedAt = (options.now ?? new Date()).toISOString();
   const stateFile = path.join(options.root, "data", "internal", "git-state.json");
+  const runStateFile = path.join(options.root, "data", "internal", "sync-state.json");
   const metadataFile = path.join(options.root, "data", "metadata.json");
   const state = validateState(await readOptionalJson<unknown>(stateFile, {}));
   const metadata = validateSyncMetadata(await readOptionalJson<unknown>(metadataFile, {
@@ -153,41 +154,55 @@ export async function synchronizeGit(options: GitSyncOptions): Promise<GitSyncRe
   const pendingIndexes = new Map<TreeId, GitCommit[]>();
   const reports: TreeSyncReport[] = [];
   const fetchSince = shallowStart(options.initialSince);
+  let activeTree: TreeId | undefined;
 
-  for (const tree of TRACKED_TREES) {
-    const indexFile = path.join(options.root, "data", "indexes", `${tree.id}.json`);
-    const existing = validateGitCommitIndex(await readOptionalJson<unknown>(indexFile, []), tree.id);
-    const repository = repositoryFactory(path.join(options.root, ".cache", "git", `${tree.id}.git`), tree);
-    const currentHead = await repository.fetch(fetchSince);
-    if (!validSha(currentHead)) throw new Error(`Invalid ${tree.id} head returned by Git: ${currentHead}`);
-    const previousHead = state[tree.id]?.lastHead;
-    const range = await determineRange(repository, previousHead, currentHead, options.initialSince, options.forceRescan);
-    const ids = range.mode === "unchanged"
-      ? []
-      : await repository.relevantCommitIds(range.revision, range.since);
-    const scanned = await repository.readCommits(ids);
-    const merged = validateGitCommitIndex(mergeIndex(existing, scanned, range.mode, synchronizedAt), tree.id);
+  try {
+    for (const tree of TRACKED_TREES) {
+      activeTree = tree.id;
+      const indexFile = path.join(options.root, "data", "indexes", `${tree.id}.json`);
+      const existing = validateGitCommitIndex(await readOptionalJson<unknown>(indexFile, []), tree.id);
+      const repository = repositoryFactory(path.join(options.root, ".cache", "git", `${tree.id}.git`), tree);
+      const currentHead = await repository.fetch(fetchSince);
+      if (!validSha(currentHead)) throw new Error(`Invalid ${tree.id} head returned by Git: ${currentHead}`);
+      const previousHead = state[tree.id]?.lastHead;
+      const range = await determineRange(repository, previousHead, currentHead, options.initialSince, options.forceRescan);
+      const ids = range.mode === "unchanged"
+        ? []
+        : await repository.relevantCommitIds(range.revision, range.since);
+      const scanned = await repository.readCommits(ids);
+      const merged = validateGitCommitIndex(mergeIndex(existing, scanned, range.mode, synchronizedAt), tree.id);
 
-    pendingIndexes.set(tree.id, merged);
-    nextState[tree.id] = { lastHead: currentHead, lastSuccessfulSync: synchronizedAt, lastMode: range.mode };
-    nextMetadata.sources[tree.id] = { status: "ok", head: currentHead, lastSuccessfulSync: synchronizedAt };
-    reports.push({
-      tree: tree.id,
-      mode: range.mode,
-      ...(previousHead ? { previousHead } : {}),
-      currentHead,
-      scannedCommits: scanned.length,
-      indexedCommits: merged.length,
+      pendingIndexes.set(tree.id, merged);
+      nextState[tree.id] = { lastHead: currentHead, lastSuccessfulSync: synchronizedAt, lastMode: range.mode };
+      nextMetadata.sources[tree.id] = { status: "ok", head: currentHead, lastSuccessfulSync: synchronizedAt };
+      reports.push({
+        tree: tree.id,
+        mode: range.mode,
+        ...(previousHead ? { previousHead } : {}),
+        currentHead,
+        scannedCommits: scanned.length,
+        indexedCommits: merged.length,
+      });
+    }
+
+    for (const tree of TRACKED_TREES) {
+      await writeJsonAtomic(
+        path.join(options.root, "data", "indexes", `${tree.id}.json`),
+        pendingIndexes.get(tree.id) ?? [],
+      );
+    }
+    await writeJsonAtomic(stateFile, nextState);
+    await writeJsonAtomic(metadataFile, validateSyncMetadata(nextMetadata));
+    return { synchronizedAt, trees: reports };
+  } catch (error) {
+    const previous = await readOptionalJson<Record<string, unknown>>(runStateFile, {});
+    await writeJsonAtomic(runStateFile, {
+      status: "error",
+      attemptedAt: synchronizedAt,
+      source: activeTree ? `git:${activeTree}` : "git",
+      ...(typeof previous.lastSuccessfulSync === "string" ? { lastSuccessfulSync: previous.lastSuccessfulSync } : {}),
+      error: error instanceof Error ? error.message : String(error),
     });
+    throw error;
   }
-
-  for (const tree of TRACKED_TREES) {
-    await writeJsonAtomic(
-      path.join(options.root, "data", "indexes", `${tree.id}.json`),
-      pendingIndexes.get(tree.id) ?? [],
-    );
-  }
-  await writeJsonAtomic(stateFile, nextState);
-  await writeJsonAtomic(metadataFile, validateSyncMetadata(nextMetadata));
-  return { synchronizedAt, trees: reports };
 }

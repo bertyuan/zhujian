@@ -55,6 +55,13 @@
         "Documentation/translations/zh_CN/rust/index.rst"
       ],
       "patchId": "4cd67d0275972eda4e7ac45ebf38c5d61f53ab94",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<82c7e76c-326f-45c9-bff7-1f27bf0c689c@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

@@ -59,6 +59,13 @@
         "Documentation/translations/zh_CN/security/self-protection.rst"
       ],
       "patchId": "3f781167f4ae7756d196d3e130e88b3eccd54762",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "WangYuli <wangyl5933@chinaunicom.cn>",
+          "messageId": "<5ecb345b-2151-4a74-86e7-5544e268503d@aosc.io>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

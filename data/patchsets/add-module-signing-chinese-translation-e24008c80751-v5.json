@@ -74,6 +74,13 @@
         "Documentation/translations/zh_CN/admin-guide/module-signing.rst"
       ],
       "patchId": "e2414f641613a49e11dbd928d34106f45fb6904f",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "kernel test robot <lkp@intel.com>",
+          "messageId": "<tencent_654B91A551D6E7DDF311CF580D42E6FB8F06@qq.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

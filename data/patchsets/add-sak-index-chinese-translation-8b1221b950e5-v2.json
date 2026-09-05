@@ -65,6 +65,18 @@
         "Documentation/translations/zh_CN/security/sak.rst"
       ],
       "patchId": "a3b54a074ac81ab25af8dea8ce43391f46cdd4af",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<60e603fb548d1e173a7e3915ff0186f32580f5ea.1736316790.git.zhangwei@cqsoftware.com.cn>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<60e603fb548d1e173a7e3915ff0186f32580f5ea.1736316790.git.zhangwei@cqsoftware.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

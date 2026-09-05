@@ -59,6 +59,13 @@
         "Documentation/translations/zh_CN/security/IMA-templates.rst"
       ],
       "patchId": "31d2ef7d80c4a332de2402b48ff9e059b294498f",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<20250108075740.19342-1-zhaoshuo@cqsoftware.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

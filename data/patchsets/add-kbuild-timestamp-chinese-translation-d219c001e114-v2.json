@@ -51,6 +51,13 @@
         "Documentation/translations/zh_CN/kbuild/kbuild.rst"
       ],
       "patchId": "e23f493dfb8d4e56b6c6aa8cff4bb996c8c6431a",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Alex Shi <alexs@kernel.org>",
+          "messageId": "<7e6096ab-18bd-4438-8fbb-3f530ee9e69f@hust.edu.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

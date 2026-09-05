@@ -55,6 +55,13 @@
         "Documentation/translations/zh_CN/infiniband/user_verbs.rst"
       ],
       "patchId": "e26441b3a9bec12a1aea9999d95e8d6ba6820635",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<bcf4351e-771d-4c60-8d0e-9ccd893b8a94@hust.edu.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

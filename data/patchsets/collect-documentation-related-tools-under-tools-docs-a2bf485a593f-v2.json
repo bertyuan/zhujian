@@ -73,6 +73,13 @@
         "tools/docs/checktransupdate.py"
       ],
       "patchId": "cb3a24bf45dbdda0f15ff7f3d6cb44835d23e412",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<CAD-N9QUyd0AbFpdOqxwGAvCoGwcCVVyE+2vcT4XopopcKoMU+A@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

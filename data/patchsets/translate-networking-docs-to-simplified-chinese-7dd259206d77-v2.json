@@ -69,6 +69,13 @@
         "Documentation/translations/zh_CN/networking/mptcp-sysctl.rst"
       ],
       "patchId": "7800335afbaa6809efc07954fe8f6db3b5847c69",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "xu xin <xu.xin16@zte.com.cn>",
+          "messageId": "<202508281121417419PzF2xb3v1UVXLG05_pdp@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -98,6 +105,13 @@
         "Documentation/translations/zh_CN/networking/skbuff.rst"
       ],
       "patchId": "d67831fde1de0fcc0d520bc84c318542f8057753",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "xu xin <xu.xin16@zte.com.cn>",
+          "messageId": "<20250828112356651HroBTX3mMeZ-LvKlHIbCJ@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",
@@ -130,6 +144,13 @@
         "Documentation/translations/zh_CN/networking/index.rst"
       ],
       "patchId": "11224ee61c9c3fc6d3d7696ccb28c5790f717e3b",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "xu xin <xu.xin16@zte.com.cn>",
+          "messageId": "<202508281125331895CzD27DDDHeU_lCdVEY1F@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -159,6 +180,13 @@
         "Documentation/translations/zh_CN/networking/timestamping.rst"
       ],
       "patchId": "85a86de8aacd4d1bc1ecf6d2cb884963235c04ca",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "xu xin <xu.xin16@zte.com.cn>",
+          "messageId": "<20250828112751947nPp0i9WwI02rU1BNa3FTt@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

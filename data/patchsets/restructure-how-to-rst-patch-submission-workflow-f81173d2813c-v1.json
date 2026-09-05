@@ -54,6 +54,13 @@
         "Documentation/translations/zh_CN/how-to.rst"
       ],
       "patchId": "5ebbf6afaa5aa4e0fd98f7805b7e2896afeb0b00",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<bec8b0d3-f38b-4463-81b0-0cc194f0496f@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

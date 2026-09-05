@@ -105,6 +105,13 @@
         "tools/testing/selftests/lkdtm/config"
       ],
       "patchId": "50feaa774ae2b4c449f39fb9aa7d449413631b2d",
+      "trailers": [
+        {
+          "type": "Suggested-by",
+          "value": "Ingo Molnar <mingo@kernel.org>",
+          "messageId": "<20250523043935.2009972-1-kees@kernel.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

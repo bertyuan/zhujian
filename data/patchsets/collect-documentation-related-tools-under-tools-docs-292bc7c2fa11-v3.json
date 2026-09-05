@@ -71,6 +71,13 @@
         "tools/docs/checktransupdate.py"
       ],
       "patchId": "59c631a4237b3b0c897792cf8eb3cfbadbb255b5",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Jani Nikula <jani.nikula@intel.com>",
+          "messageId": "<20251024200834.20644-3-corbet@lwn.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -117,6 +124,13 @@
         "tools/docs/kernel-doc"
       ],
       "patchId": "581b137d39bd0c18e506ac4cd9f7c6cf67e86008",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Jani Nikula <jani.nikula@intel.com>",
+          "messageId": "<20251024200834.20644-7-corbet@lwn.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -147,6 +161,13 @@
         "tools/docs/find-unused-docs.sh"
       ],
       "patchId": "ca13656f0657d49c48c1050463f8d00ab916837c",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Jani Nikula <jani.nikula@intel.com>",
+          "messageId": "<20251024200834.20644-8-corbet@lwn.net>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

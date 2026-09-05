@@ -72,6 +72,13 @@
         "Documentation/translations/zh_CN/doc-guide/sphinx.rst"
       ],
       "patchId": "7855311b30dd1d247b2a4e580e629377c5e941c1",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<an3khZbPdI0in3Sq@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
@@ -100,6 +107,13 @@
         "Documentation/translations/zh_CN/how-to.rst"
       ],
       "patchId": "71f05f86b2d4f2b7cf36ad44ade7037cc80fa29f",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<an3m2mN3Wq-OSGKv@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

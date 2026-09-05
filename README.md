@@ -4,6 +4,8 @@ A static tracker for Chinese Linux documentation patch series. It reconstructs
 `zh_CN` and `zh_TW` series from the public `linux-doc` archive and renders the
 generated JSON with Next.js.
 
+Production: <https://zhujian.vercel.app>
+
 Zhujian follows patches that touch
 `Documentation/translations/zh_CN/` or
 `Documentation/translations/zh_TW/`. Its three indicators represent Alex's
@@ -15,7 +17,9 @@ Zhujian follows patches that touch
 - Gray: the patch was not found. This is normal and does not mean rejection.
 
 Color is never the only signal; every indicator also has a state label, patch
-count, and accessible description.
+count, and accessible description. Patch detail pages also show supported
+review trailers (`Reviewed-by`, `Acked-by`, `Tested-by`, `Suggested-by`, and
+`Reported-by`) as mail metadata only; trailers never count as Git evidence.
 
 ## Architecture
 

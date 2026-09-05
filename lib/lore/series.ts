@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import type { Language, PatchsetDetail, PatchsetStatus, TreeId, TreeSummary } from "../data/schema";
-import { classifyLanguage, extractChangedFiles } from "./parser.ts";
+import { classifyLanguage, extractChangedFiles, extractReviewTrailers } from "./parser.ts";
 import { normalizeSeriesSubject, parsePatchSubject } from "./subject.ts";
 import { reconstructThreads } from "./thread.ts";
 import type { FixtureTreeMatch, LoreDataset, LoreMessage } from "./types";
@@ -63,6 +63,15 @@ function familyKey(message: LoreMessage, baseSubject: string): string {
   return `${message.from.email.toLocaleLowerCase()}\0${normalizeSeriesSubject(baseSubject)}`;
 }
 
+function reviewTrailersFor(message: LoreMessage, threadMessages: LoreMessage[]) {
+  const trailers = extractReviewTrailers(threadMessages.filter((candidate) => (
+    candidate.messageId === message.messageId
+    || candidate.inReplyTo === message.messageId
+    || candidate.references.includes(message.messageId)
+  )));
+  return trailers.length ? { trailers } : {};
+}
+
 export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
   const drafts = reconstructThreads(dataset.messages).flatMap((thread) => {
     const mailPatches = thread.messages
@@ -95,6 +104,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
         loreUrl: message.loreUrl,
         changedFiles: files,
         ...(message.patchId ? { patchId: message.patchId } : {}),
+        ...reviewTrailersFor(message, thread.messages),
         trees: Object.fromEntries(TREE_IDS.map((tree) => [tree, patchTree(dataset.matches?.[message.messageId]?.[tree])])) as Record<TreeId, TreeSummary>,
       }));
     const trees = Object.fromEntries(TREE_IDS.map((tree) => [tree, aggregateTree(patchDetails.map((patch) => patch.trees[tree]))])) as Record<TreeId, TreeSummary>;

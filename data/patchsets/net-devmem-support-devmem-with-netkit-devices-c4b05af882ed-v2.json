@@ -85,6 +85,13 @@
         "include/linux/netdevice.h"
       ],
       "patchId": "25927983df7074147c4b2c31f0481039d8f3d9da",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Harshitha Ramamurthy <hramamurthy@google.com>",
+          "messageId": "<CAEAWyHcLSE8YJXrjRx+fxjGPY=vL=C4fC44MiFwdUyRiDx1a3w@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

@@ -56,6 +56,13 @@
         "Documentation/translations/zh_CN/security/index.rst"
       ],
       "patchId": "1209970f0af54b15cbf62d2570a619741597278b",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<4fbf991a-f0ce-48e0-a408-f3d7ec2d561c@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

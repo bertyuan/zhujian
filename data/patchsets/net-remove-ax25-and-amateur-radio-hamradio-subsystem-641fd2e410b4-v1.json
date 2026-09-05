@@ -146,6 +146,38 @@
         "net/rose/sysctl_net_rose.c"
       ],
       "patchId": "ec38a888b1671bf6c62c363898b5b9a0b983e4c3",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Greg Kroah-Hartman <gregkh@linuxfoundation.org>",
+          "messageId": "<2026042158-upward-obsessive-0c8f@gregkh>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Stephen Hemminger <stephen@networkplumber.org>",
+          "messageId": "<20260421064501.4d71b943@phoenix.local>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Carlos Bilbao <carlos.bilbao@kernel.org>",
+          "messageId": "<3e6a83f8-0070-4dce-8b91-5e28204739f6@gmail.com>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Simon Horman <horms@kernel.org>",
+          "messageId": "<20260422104522.GK651125@horms.kernel.org>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Kuniyuki Iwashima <kuniyu@google.com>",
+          "messageId": "<CAAVpQUC8N5+V+ZSq_=TVf5N2f=L71vrRsyo65U96V17as8+0kQ@mail.gmail.com>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Toke Høiland-Jørgensen <toke@toke.dk>",
+          "messageId": "<87se8mytvv.fsf@toke.dk>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

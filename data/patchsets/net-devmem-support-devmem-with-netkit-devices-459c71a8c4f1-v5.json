@@ -90,6 +90,18 @@
         "net/core/netdev-genl.c"
       ],
       "patchId": "3855197064326b6630267be329952b28b211b3d6",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Harshitha Ramamurthy <hramamurthy@google.com>",
+          "messageId": "<20260514-tcp-dm-netkit-v5-1-408c59b91e66@meta.com>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Stanislav Fomichev <sdf@fomichev.me>",
+          "messageId": "<20260514-tcp-dm-netkit-v5-1-408c59b91e66@meta.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",
@@ -125,6 +137,13 @@
         "include/linux/netdevice.h"
       ],
       "patchId": "d44c9cd76d469f5e346166d4b0f08595ead10487",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Stanislav Fomichev <sdf@fomichev.me>",
+          "messageId": "<20260514-tcp-dm-netkit-v5-2-408c59b91e66@meta.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

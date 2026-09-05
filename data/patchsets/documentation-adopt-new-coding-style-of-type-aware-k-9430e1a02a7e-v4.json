@@ -88,6 +88,18 @@
         "Documentation/translations/zh_TW/process/coding-style.rst"
       ],
       "patchId": "e8336525f88a607c5712e35c237280bdfd3d8adc",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Vlastimil Babka (SUSE) <vbabka@kernel.org>",
+          "messageId": "<78978a11-8345-4b84-bef7-90d17f4c581c@suse.com>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "SeongJae Park <sj@kernel.org>",
+          "messageId": "<20260430005333.113698-1-sj@kernel.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

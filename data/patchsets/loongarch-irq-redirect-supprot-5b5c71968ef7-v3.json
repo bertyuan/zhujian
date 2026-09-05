@@ -74,6 +74,13 @@
         "Documentation/translations/zh_CN/arch/loongarch/irq-chip-model.rst"
       ],
       "patchId": "6a3e26443652efa74b069d33d5bf46baaf9c8214",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<2b8810d1-b312-4ee6-928c-e078b8c52000@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

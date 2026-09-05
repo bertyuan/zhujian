@@ -54,6 +54,13 @@
         "Documentation/translations/zh_CN/security/ipe.rst"
       ],
       "patchId": "56de7ca6fc0913417f01ba4d032735bf11a4e35f",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <siyanteng@cqsoftware.com.cn>",
+          "messageId": "<2155a731-9c52-4e45-b916-ff7d2bf40b69@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

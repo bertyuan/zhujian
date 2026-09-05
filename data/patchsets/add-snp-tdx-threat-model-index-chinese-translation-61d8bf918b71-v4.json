@@ -85,6 +85,13 @@
         "Documentation/translations/zh_CN/security/snp-tdx-threat-model.rst"
       ],
       "patchId": "7392389b827a719b000a1595c7c06a0d59879930",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Yanteng Si <si.yanteng@linux.dev>",
+          "messageId": "<fa03cf7f-0971-451b-a009-7e1a5a5f6f92@linux.dev>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

@@ -62,6 +62,13 @@
         "Documentation/translations/zh_CN/networking/index.rst"
       ],
       "patchId": "ff40c5205686c3af546ad038137488b13ba85dd0",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "xu xin <xu.xin16@zte.com.cn>",
+          "messageId": "<20250628121917249q9r3rXmnBmRqbgFtJuDHW@zte.com.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

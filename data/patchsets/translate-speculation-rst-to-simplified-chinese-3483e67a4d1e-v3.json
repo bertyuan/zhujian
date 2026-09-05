@@ -65,6 +65,13 @@
         "Documentation/translations/zh_CN/staging/speculation.rst"
       ],
       "patchId": "8256f7496cd730f07ba06e428862ba18acc9042f",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<CAD-N9QU_OKc24ANr02=3SetjNwvaxeHM=2NfH__7bE3ZwQkiFw@mail.gmail.com>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

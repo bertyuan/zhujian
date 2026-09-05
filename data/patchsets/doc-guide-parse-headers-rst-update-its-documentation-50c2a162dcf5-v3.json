@@ -71,6 +71,23 @@
         "Documentation/translations/zh_CN/doc-guide/parse-headers.rst"
       ],
       "patchId": "a264bdefe8ce7c807cf36e418dfff8e50108bec8",
+      "trailers": [
+        {
+          "type": "Reported-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<2ae06f370724bfd8210892ef3062cb349ed518f2.1762512037.git.mchehab+huawei@kernel.org>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<9d709020-03fe-467c-be7f-d5ee251bb79a@infradead.org>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<e987fda3-2c76-40a7-babd-887242b99cb1@hust.edu.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "candidate",

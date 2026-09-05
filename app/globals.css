@@ -171,6 +171,9 @@ h1 { font-size: clamp(30px, 4vw, 54px); letter-spacing: -.04em; line-height: 1.0
 .patch-row:last-child { border-bottom: 0; }
 .patch-number { color: var(--bamboo); font-family: var(--font-mono); font-size: 10px; font-weight: 600; }
 .patch-subject { font-family: var(--font-mono); font-size: 10px; line-height: 1.5; }
+.trailer-list { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+.trailer { background: var(--bamboo-pale); border: 1px solid #b9d2c0; color: var(--bamboo-dark); font-family: var(--font-mono); font-size: 8px; line-height: 1.35; padding: 3px 5px; }
+.trailer strong { font-weight: 700; }
 
 .meta-list { margin: 0; }
 .meta-row { border-bottom: 1px solid var(--line); display: grid; gap: 8px; grid-template-columns: 92px 1fr; padding: 11px 13px; }

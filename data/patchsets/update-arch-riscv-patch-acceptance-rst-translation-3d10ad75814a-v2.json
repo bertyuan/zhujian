@@ -56,6 +56,18 @@
         "Documentation/translations/zh_CN/arch/riscv/patch-acceptance.rst"
       ],
       "patchId": "ca0bce9f92d0332762e5019b5546e8893b0afaae",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<8490cbf8-0514-40a0-8456-d6a1085c29f0@hust.edu.cn>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Weijie Yuan <wy@wyuan.org>",
+          "messageId": "<apKG-g3vNMtgvV6y@wyuan.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

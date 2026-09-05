@@ -59,6 +59,18 @@
         "Documentation/translations/zh_CN/security/self-protection.rst"
       ],
       "patchId": "3f781167f4ae7756d196d3e130e88b3eccd54762",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Zenghui Yu <zenghui.yu@linux.dev>",
+          "messageId": "<f80eae9d-cf80-4a03-8007-195f50bfdafd@linux.dev>"
+        },
+        {
+          "type": "Reviewed-by",
+          "value": "Dongliang Mu <dzm91@hust.edu.cn>",
+          "messageId": "<0e696373-b521-4b2a-b73e-3dcab08b2315@hust.edu.cn>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "confirmed",

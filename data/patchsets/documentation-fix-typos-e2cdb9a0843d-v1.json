@@ -76,6 +76,13 @@
         "Documentation/userspace-api/media/rc/rc-protos.rst"
       ],
       "patchId": "3a4a99b5b7a6687a4720791a9b6f5a9fe9884d22",
+      "trailers": [
+        {
+          "type": "Reviewed-by",
+          "value": "Randy Dunlap <rdunlap@infradead.org>",
+          "messageId": "<20250813200526.290420-10-helgaas@kernel.org>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",

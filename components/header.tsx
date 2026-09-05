@@ -20,6 +20,9 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          <a className="nav-link github-link" href="https://github.com/bertyuan/zhujian" target="_blank" rel="noreferrer">
+            GitHub ↗
+          </a>
         </nav>
       </div>
     </header>

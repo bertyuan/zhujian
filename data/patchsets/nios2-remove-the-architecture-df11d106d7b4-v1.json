@@ -231,6 +231,28 @@
         "usr/include/Makefile"
       ],
       "patchId": "48d52cdb99465db3168d016cfd744c5be6e9721c",
+      "trailers": [
+        {
+          "type": "Acked-by",
+          "value": "Wolfram Sang <wsa+renesas@sang-engineering.com> # for I2C",
+          "messageId": "<agqgrTBkVGBt_f28@ninjato>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Uwe Kleine-König <ukleinek@kernel.org> # for pwm",
+          "messageId": "<agq3nMVq5x4SyBAV@monoceros>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Krzysztof Kozlowski <krzysztof.kozlowski@oss.qualcomm.com>",
+          "messageId": "<20260518-vagabond-amigurumi-orangutan-6b1620@quoll>"
+        },
+        {
+          "type": "Acked-by",
+          "value": "Jonathan Cameron <jic23@kernel.org>",
+          "messageId": "<20260518162921.73e7c3aa@jic23-huawei>"
+        }
+      ],
       "trees": {
         "alex": {
           "state": "missing",
