@@ -1,0 +1,141 @@
+[
+  {
+    "id": "refresh-memory-barriers-translation-10973c8-v2",
+    "subject": "[PATCH v2 0/2] docs/zh_CN: refresh memory barriers translation",
+    "authorName": "Wu XiangCheng",
+    "authorEmail": "bobwxc@example.com",
+    "revision": 2,
+    "postedAt": "2026-09-05T08:00:00Z",
+    "language": "zh_CN",
+    "patchCount": 2,
+    "status": "queued-alex",
+    "latestRevision": true,
+    "messageIds": [
+      "<cover-v2-memory@example.com>",
+      "<patch-v2-memory-1@example.com>",
+      "<patch-v2-memory-2@example.com>"
+    ],
+    "trees": {
+      "alex": {
+        "state": "confirmed",
+        "matched": 2,
+        "total": 2,
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "corbet": {
+        "state": "partial",
+        "matched": 1,
+        "total": 2,
+        "commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      "linus": {
+        "state": "missing",
+        "matched": 0,
+        "total": 2
+      }
+    }
+  },
+  {
+    "id": "fix-admin-guide-typo-1a1cb0a-v1",
+    "subject": "[PATCH] docs/zh_TW: fix admin-guide typo",
+    "authorName": "Yung-Chuan Liao",
+    "authorEmail": "liao@example.org",
+    "revision": 1,
+    "postedAt": "2026-09-04T13:18:00Z",
+    "language": "zh_TW",
+    "patchCount": 1,
+    "status": "mainline",
+    "latestRevision": true,
+    "messageIds": [
+      "<single-zh-tw@example.com>"
+    ],
+    "trees": {
+      "alex": {
+        "state": "confirmed",
+        "matched": 1,
+        "total": 1,
+        "commit": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      },
+      "corbet": {
+        "state": "confirmed",
+        "matched": 1,
+        "total": 1,
+        "commit": "ffffffffffffffffffffffffffffffffffffffff"
+      },
+      "linus": {
+        "state": "confirmed",
+        "matched": 1,
+        "total": 1,
+        "commit": "0123456789abcdef0123456789abcdef01234567"
+      }
+    }
+  },
+  {
+    "id": "align-zh-cn-and-zh-tw-indexes-b38b439-v1",
+    "subject": "[RFC PATCH 0/2] docs: align zh_CN and zh_TW indexes",
+    "authorName": "Mei Lin",
+    "authorEmail": "mei.lin@example.net",
+    "revision": 1,
+    "postedAt": "2026-09-02T15:07:00Z",
+    "language": "mixed",
+    "patchCount": 2,
+    "status": "on-lore",
+    "latestRevision": true,
+    "messageIds": [
+      "<cover-mixed@example.com>",
+      "<patch-mixed-cn@example.com>",
+      "<patch-mixed-tw@example.com>"
+    ],
+    "trees": {
+      "alex": {
+        "state": "missing",
+        "matched": 0,
+        "total": 2
+      },
+      "corbet": {
+        "state": "missing",
+        "matched": 0,
+        "total": 2
+      },
+      "linus": {
+        "state": "missing",
+        "matched": 0,
+        "total": 2
+      }
+    }
+  },
+  {
+    "id": "refresh-memory-barriers-translation-10973c8-v1",
+    "subject": "[PATCH v1 0/2] docs/zh_CN: refresh memory barriers translation",
+    "authorName": "Wu XiangCheng",
+    "authorEmail": "bobwxc@example.com",
+    "revision": 1,
+    "postedAt": "2026-08-25T08:00:00Z",
+    "language": "zh_CN",
+    "patchCount": 2,
+    "status": "superseded",
+    "latestRevision": false,
+    "messageIds": [
+      "<cover-v1-memory@example.com>",
+      "<patch-v1-memory-1@example.com>",
+      "<patch-v1-memory-2@example.com>"
+    ],
+    "trees": {
+      "alex": {
+        "state": "missing",
+        "matched": 0,
+        "total": 2
+      },
+      "corbet": {
+        "state": "missing",
+        "matched": 0,
+        "total": 2
+      },
+      "linus": {
+        "state": "missing",
+        "matched": 0,
+        "total": 2
+      }
+    }
+  }
+]

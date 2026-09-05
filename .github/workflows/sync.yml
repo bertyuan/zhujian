@@ -1,0 +1,75 @@
+name: Sync lore data
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Optional backfill start date, for example 2025-01-01"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zhujian-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out the default branch
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.24.0
+          run_install: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install lei
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes public-inbox lei
+          lei q --help >/dev/null
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Incrementally synchronize lore
+        if: ${{ inputs.since == '' }}
+        run: pnpm sync:lore
+
+      - name: Backfill lore from the requested date
+        if: ${{ inputs.since != '' }}
+        env:
+          SYNC_SINCE: ${{ inputs.since }}
+        run: pnpm backfill
+
+      - name: Validate generated data
+        run: pnpm validate:data
+
+      - name: Run tests
+        run: pnpm test
+
+      - name: Commit generated data
+        run: |
+          if git diff --quiet -- data; then
+            echo "Generated data is unchanged."
+            exit 0
+          fi
+          git config user.name "zhujian data bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git commit -m "data: update patch tracking status [skip ci]"
+          git push

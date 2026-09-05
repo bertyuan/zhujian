@@ -1,0 +1,24 @@
+import patchsetsData from "@/data/patchsets.json";
+import metadataData from "@/data/metadata.json";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
+import type { PatchsetDetail, PatchsetSummary, SyncMetadata } from "./schema";
+import { validatePatchsetDetail, validatePatchsetSummaries, validateSyncMetadata } from "./validation";
+
+export function getPatchsets(): PatchsetSummary[] {
+  return validatePatchsetSummaries(patchsetsData);
+}
+
+export function getMetadata(): SyncMetadata {
+  return validateSyncMetadata(metadataData);
+}
+
+export async function getPatchset(id: string): Promise<PatchsetDetail | null> {
+  if (!/^[a-z0-9-]+$/.test(id)) return null;
+  try {
+    const file = await readFile(path.join(process.cwd(), "data", "patchsets", `${id}.json`), "utf8");
+    return validatePatchsetDetail(JSON.parse(file), `data/patchsets/${id}.json`);
+  } catch {
+    return null;
+  }
+}

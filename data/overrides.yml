@@ -1,0 +1,3 @@
+# Manual, reviewable exceptions for patches edited while being applied.
+matches: []
+ignore: []
