@@ -1,0 +1,74 @@
+{
+  "id": "ksm-update-comments-and-docs-to-reference-folio-mapp-e6c78c2b167a-v1",
+  "subject": "[PATCH] ksm: update comments and docs to reference folio->mapping",
+  "authorName": "Hongfu Li",
+  "authorEmail": "hongfu.li@linux.dev",
+  "revision": 1,
+  "postedAt": "2026-08-05T10:59:07.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20260805105927.41987-1-hongfu.li@linux.dev>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li%40linux.dev/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li%40linux.dev/raw",
+  "replies": 3,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "ksm-update-comments-and-docs-to-reference-folio-mapp-e6c78c2b167a-v1",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "ksm: update comments and docs to reference folio->mapping",
+      "messageId": "<20260805105927.41987-1-hongfu.li@linux.dev>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li%40linux.dev/",
+      "changedFiles": [
+        "Documentation/mm/ksm.rst",
+        "Documentation/translations/zh_CN/mm/ksm.rst",
+        "mm/ksm.c"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

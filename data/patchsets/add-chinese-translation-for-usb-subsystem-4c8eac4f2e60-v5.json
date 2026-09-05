@@ -1,0 +1,306 @@
+{
+  "id": "add-chinese-translation-for-usb-subsystem-4c8eac4f2e60-v5",
+  "subject": "[PATCH v5 0/8] Add Chinese translation for USB subsystem",
+  "authorName": "Kefan Bai",
+  "authorEmail": "baikefan@leap-io-kernel.com",
+  "revision": 5,
+  "postedAt": "2025-12-08T09:25:30.000Z",
+  "language": "zh_CN",
+  "patchCount": 8,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<cover.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<874e4d8b28638ff36d0cd9fb76962c23b41cff96.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<480664198291119848c33b6e03db5f584d9c1ba2.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<3e5f7b678ed54a432e2bf3340b4636928276ead0.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<e15ed90077959a844679aaffb95dab58a62c7055.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<2db4262245b49fcc25e50f2f82ad7a617c04a32f.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<75e41bc6f059a071d01eedce5dd0f653ceb3fc9f.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<b7cd3f81e121ea24840bbde37ba75ccb3b35f93a.1765180570.git.baikefan@leap-io-kernel.com>",
+    "<8b77d86d6896aa23887a6a7bfc5603c54b549344.1765180570.git.baikefan@leap-io-kernel.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 8
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 8
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 8
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1765180570.git.baikefan%40leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1765180570.git.baikefan%40leap-io-kernel.com/raw",
+  "replies": 7,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-chinese-translation-for-usb-subsystem-99074d198921-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "add-chinese-translation-for-usb-subsystem-2acf283d1135-v2",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "add-chinese-translation-for-usb-subsystem-ea5671fb5b99-v3",
+      "current": false
+    },
+    {
+      "revision": 4,
+      "id": "add-chinese-translation-for-usb-subsystem-a7c94c7cef20-v4",
+      "current": false
+    },
+    {
+      "revision": 5,
+      "id": "add-chinese-translation-for-usb-subsystem-4c8eac4f2e60-v5",
+      "current": true
+    },
+    {
+      "revision": 6,
+      "id": "add-chinese-translation-for-usb-subsystem-19bcbddfb203-v6",
+      "current": false
+    },
+    {
+      "revision": 7,
+      "id": "add-chinese-translation-for-usb-subsystem-bb2f8661860d-v7",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 8,
+      "subject": "docs/zh_CN: Add index.rst translation",
+      "messageId": "<874e4d8b28638ff36d0cd9fb76962c23b41cff96.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/874e4d8b28638ff36d0cd9fb76962c23b41cff96.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/subsystem-apis.rst",
+        "Documentation/translations/zh_CN/usb/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 8,
+      "subject": "docs/zh_CN: Add acm.rst translation",
+      "messageId": "<480664198291119848c33b6e03db5f584d9c1ba2.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/480664198291119848c33b6e03db5f584d9c1ba2.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/usb/acm.rst",
+        "Documentation/translations/zh_CN/usb/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 8,
+      "subject": "docs/zh_CN: Add authorization.rst translation",
+      "messageId": "<3e5f7b678ed54a432e2bf3340b4636928276ead0.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/3e5f7b678ed54a432e2bf3340b4636928276ead0.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/usb/authorization.rst",
+        "Documentation/translations/zh_CN/usb/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 4,
+      "total": 8,
+      "subject": "docs/zh_CN: Add chipidea.rst translation",
+      "messageId": "<e15ed90077959a844679aaffb95dab58a62c7055.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/e15ed90077959a844679aaffb95dab58a62c7055.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/usb/chipidea.rst",
+        "Documentation/translations/zh_CN/usb/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 5,
+      "total": 8,
+      "subject": "docs/zh_CN: Add dwc3.rst translation",
+      "messageId": "<2db4262245b49fcc25e50f2f82ad7a617c04a32f.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2db4262245b49fcc25e50f2f82ad7a617c04a32f.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/usb/dwc3.rst",
+        "Documentation/translations/zh_CN/usb/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 6,
+      "total": 8,
+      "subject": "docs/zh_CN: Add ehci.rst translation",
+      "messageId": "<75e41bc6f059a071d01eedce5dd0f653ceb3fc9f.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/75e41bc6f059a071d01eedce5dd0f653ceb3fc9f.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/usb/ehci.rst",
+        "Documentation/translations/zh_CN/usb/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 7,
+      "total": 8,
+      "subject": "docs/zh_CN: Add usbmon.rst translation",
+      "messageId": "<b7cd3f81e121ea24840bbde37ba75ccb3b35f93a.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/b7cd3f81e121ea24840bbde37ba75ccb3b35f93a.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/usb/index.rst",
+        "Documentation/translations/zh_CN/usb/usbmon.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 8,
+      "total": 8,
+      "subject": "docs/zh_CN: Add CREDITS translation",
+      "messageId": "<8b77d86d6896aa23887a6a7bfc5603c54b549344.1765180570.git.baikefan@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/8b77d86d6896aa23887a6a7bfc5603c54b549344.1765180570.git.baikefan%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/usb/CREDITS"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

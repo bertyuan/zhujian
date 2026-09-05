@@ -1,0 +1,144 @@
+{
+  "id": "irqdomain-cleanups-and-documentation-5a2b335617b1-v2",
+  "subject": "[PATCH v2 00/57] irqdomain: Cleanups and Documentation",
+  "authorName": "Jiri Slaby (SUSE)",
+  "authorEmail": "jirislaby@kernel.org",
+  "revision": 2,
+  "postedAt": "2025-03-19T09:28:53.000Z",
+  "language": "zh_CN",
+  "patchCount": 3,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250319092951.37667-1-jirislaby@kernel.org>",
+    "<20250319092951.37667-40-jirislaby@kernel.org>",
+    "<20250319092951.37667-41-jirislaby@kernel.org>",
+    "<20250319092951.37667-50-jirislaby@kernel.org>",
+    "<20250319092951.37667-53-jirislaby@kernel.org>",
+    "<20250319092951.37667-54-jirislaby@kernel.org>",
+    "<20250319092951.37667-55-jirislaby@kernel.org>",
+    "<20250319092951.37667-56-jirislaby@kernel.org>",
+    "<20250319092951.37667-57-jirislaby@kernel.org>",
+    "<20250319092951.37667-58-jirislaby@kernel.org>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 3
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 3
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 3
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250319092951.37667-1-jirislaby%40kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250319092951.37667-1-jirislaby%40kernel.org/raw",
+  "replies": 10,
+  "versions": [
+    {
+      "revision": 2,
+      "id": "irqdomain-cleanups-and-documentation-5a2b335617b1-v2",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 39,
+      "total": 57,
+      "subject": "irqdomain: ppc: Switch irq_domain_add_nomap() to use fwnode",
+      "messageId": "<20250319092951.37667-40-jirislaby@kernel.org>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250319092951.37667-40-jirislaby%40kernel.org/",
+      "changedFiles": [
+        "Documentation/core-api/irq/irq-domain.rst",
+        "Documentation/translations/zh_CN/core-api/irq/irq-domain.rst",
+        "arch/powerpc/platforms/powermac/smp.c",
+        "arch/powerpc/platforms/ps3/interrupt.c",
+        "include/linux/irqdomain.h"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 40,
+      "total": 57,
+      "subject": "irqdomain: Drop irq_domain_add_*() functions",
+      "messageId": "<20250319092951.37667-41-jirislaby@kernel.org>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250319092951.37667-41-jirislaby%40kernel.org/",
+      "changedFiles": [
+        "Documentation/core-api/irq/irq-domain.rst",
+        "Documentation/translations/zh_CN/core-api/irq/irq-domain.rst",
+        "include/linux/irqdomain.h",
+        "kernel/irq/irqdomain.c"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 49,
+      "total": 57,
+      "subject": "irqdomain: Drop irq_linear_revmap()",
+      "messageId": "<20250319092951.37667-50-jirislaby@kernel.org>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250319092951.37667-50-jirislaby%40kernel.org/",
+      "changedFiles": [
+        "Documentation/core-api/irq/irq-domain.rst",
+        "Documentation/translations/zh_CN/core-api/irq/irq-domain.rst",
+        "include/linux/irqdomain.h"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

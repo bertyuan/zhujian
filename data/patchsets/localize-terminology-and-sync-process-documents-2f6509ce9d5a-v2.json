@@ -1,0 +1,504 @@
+{
+  "id": "localize-terminology-and-sync-process-documents-2f6509ce9d5a-v2",
+  "subject": "[PATCH v2 00/16] docs/zh_TW: localize terminology and sync process/ documents",
+  "authorName": "Chen-Yu Yeh",
+  "authorEmail": "chenyou910331@gmail.com",
+  "revision": 2,
+  "postedAt": "2026-07-28T09:10:22.000Z",
+  "language": "zh_TW",
+  "patchCount": 16,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<20260728091038.171033-1-chenyou910331@gmail.com>",
+    "<20260728091038.171033-2-chenyou910331@gmail.com>",
+    "<20260728091038.171033-3-chenyou910331@gmail.com>",
+    "<20260728091038.171033-4-chenyou910331@gmail.com>",
+    "<20260728091038.171033-5-chenyou910331@gmail.com>",
+    "<20260728091038.171033-6-chenyou910331@gmail.com>",
+    "<20260728091038.171033-7-chenyou910331@gmail.com>",
+    "<20260728091038.171033-8-chenyou910331@gmail.com>",
+    "<20260728091038.171033-9-chenyou910331@gmail.com>",
+    "<20260728091038.171033-10-chenyou910331@gmail.com>",
+    "<20260728091038.171033-11-chenyou910331@gmail.com>",
+    "<20260728091038.171033-12-chenyou910331@gmail.com>",
+    "<20260728091038.171033-13-chenyou910331@gmail.com>",
+    "<20260728091038.171033-14-chenyou910331@gmail.com>",
+    "<20260728091038.171033-15-chenyou910331@gmail.com>",
+    "<20260728091038.171033-16-chenyou910331@gmail.com>",
+    "<20260728091038.171033-17-chenyou910331@gmail.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 16
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 16
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 16
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-1-chenyou910331%40gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-1-chenyou910331%40gmail.com/raw",
+  "replies": 20,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "localize-terminology-and-sync-process-documents-1a771c4396b0-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "localize-terminology-and-sync-process-documents-2f6509ce9d5a-v2",
+      "current": true
+    },
+    {
+      "revision": 3,
+      "id": "localize-terminology-and-sync-process-documents-bee6a83e3f8a-v3",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in 7.AdvancedTopics.rst",
+      "messageId": "<20260728091038.171033-2-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-2-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/7.AdvancedTopics.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in 1.Intro.rst",
+      "messageId": "<20260728091038.171033-3-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-3-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/1.Intro.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in code-of-conduct-interpretation.rst",
+      "messageId": "<20260728091038.171033-4-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-4-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/code-of-conduct-interpretation.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 4,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in license-rules.rst",
+      "messageId": "<20260728091038.171033-5-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-5-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/license-rules.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 5,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in email-clients.rst",
+      "messageId": "<20260728091038.171033-6-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-6-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/email-clients.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 6,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in programming-language.rst",
+      "messageId": "<20260728091038.171033-7-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-7-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/programming-language.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 7,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in coding-style.rst",
+      "messageId": "<20260728091038.171033-8-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-8-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/coding-style.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 8,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in stable-kernel-rules.rst",
+      "messageId": "<20260728091038.171033-9-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-9-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/stable-kernel-rules.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 9,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in 5.Posting.rst",
+      "messageId": "<20260728091038.171033-10-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-10-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/5.Posting.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 10,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in 2.Process.rst",
+      "messageId": "<20260728091038.171033-11-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-11-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/2.Process.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 11,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in howto.rst",
+      "messageId": "<20260728091038.171033-12-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-12-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/howto.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 12,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in embargoed-hardware-issues.rst",
+      "messageId": "<20260728091038.171033-13-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-13-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/embargoed-hardware-issues.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 13,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in submitting-patches.rst",
+      "messageId": "<20260728091038.171033-14-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-14-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/submitting-patches.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 14,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in 8.Conclusion.rst",
+      "messageId": "<20260728091038.171033-15-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-15-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/8.Conclusion.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 15,
+      "total": 16,
+      "subject": "docs/zh_TW: process: localize terminology in index.rst",
+      "messageId": "<20260728091038.171033-16-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-16-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/process/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 16,
+      "total": 16,
+      "subject": "docs/zh_TW: Add a glossary for Traditional Chinese translations",
+      "messageId": "<20260728091038.171033-17-chenyou910331@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260728091038.171033-17-chenyou910331%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_TW/glossary.rst",
+        "Documentation/translations/zh_TW/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

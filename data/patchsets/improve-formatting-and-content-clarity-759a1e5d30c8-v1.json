@@ -1,0 +1,72 @@
+{
+  "id": "improve-formatting-and-content-clarity-759a1e5d30c8-v1",
+  "subject": "[PATCH] docs/zh_CN: improve formatting and content clarity",
+  "authorName": "Dongliang Mu",
+  "authorEmail": "dzm91@hust.edu.cn",
+  "revision": 1,
+  "postedAt": "2025-06-11T04:36:13.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250611043616.264245-1-dzm91@hust.edu.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91%40hust.edu.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91%40hust.edu.cn/raw",
+  "replies": 2,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "improve-formatting-and-content-clarity-759a1e5d30c8-v1",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "docs/zh_CN: improve formatting and content clarity",
+      "messageId": "<20250611043616.264245-1-dzm91@hust.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91%40hust.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/how-to.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

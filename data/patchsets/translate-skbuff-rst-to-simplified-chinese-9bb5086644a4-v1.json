@@ -1,0 +1,78 @@
+{
+  "id": "translate-skbuff-rst-to-simplified-chinese-9bb5086644a4-v1",
+  "subject": "[PATCH 2/4 linux-next] Docs/zh_CN: Translate skbuff.rst to Simplified  Chinese",
+  "authorName": "wang.yaxin@zte.com.cn",
+  "authorEmail": "wang.yaxin@zte.com.cn",
+  "revision": 1,
+  "postedAt": "2025-07-22T09:17:15.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<20250722171715143m_elFTGAEIz05jNa7LFwy@zte.com.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250722171715143m_elFTGAEIz05jNa7LFwy%40zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250722171715143m_elFTGAEIz05jNa7LFwy%40zte.com.cn/raw",
+  "replies": 0,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "translate-skbuff-rst-to-simplified-chinese-9bb5086644a4-v1",
+      "current": true
+    },
+    {
+      "revision": 1,
+      "id": "translate-skbuff-rst-to-simplified-chinese-f9e2b48a584b-v1",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 2,
+      "total": 4,
+      "subject": "Docs/zh_CN: Translate skbuff.rst to Simplified Chinese",
+      "messageId": "<20250722171715143m_elFTGAEIz05jNa7LFwy@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250722171715143m_elFTGAEIz05jNa7LFwy%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/skbuff.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "add-translation-of-rust-testing-rst-b33a4641e124-v1",
+  "subject": "[PATCH] docs/zh_CN: Add translation of rust/testing.rst",
+  "authorName": "Ben Guo",
+  "authorEmail": "benx.guo@gmail.com",
+  "revision": 1,
+  "postedAt": "2025-09-29T16:35:15.000Z",
+  "language": "zh_CN",
+  "patchCount": 2,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<20250929163531.376092-1-benx.guo@gmail.com>",
+    "<20251003074939.465517-1-benx.guo@gmail.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo%40gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo%40gmail.com/raw",
+  "replies": 5,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-translation-of-rust-testing-rst-b33a4641e124-v1",
+      "current": true
+    },
+    {
+      "revision": 3,
+      "id": "add-translation-of-rust-testing-rst-e6a79ceb742d-v3",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 2,
+      "subject": "docs/zh_CN: Add translation of rust/testing.rst",
+      "messageId": "<20250929163531.376092-1-benx.guo@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/rust/index.rst",
+        "Documentation/translations/zh_CN/rust/testing.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "subject": "docs/zh_CN: Add translation of rust/testing.rst",
+      "messageId": "<20251003074939.465517-1-benx.guo@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251003074939.465517-1-benx.guo%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/rust/index.rst",
+        "Documentation/translations/zh_CN/rust/testing.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

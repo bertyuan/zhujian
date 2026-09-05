@@ -1,0 +1,171 @@
+{
+  "id": "translate-networking-docs-to-simplified-chinese-7dd259206d77-v2",
+  "subject": "[PATCH 0/4 linux next v2] Docs/zh_CN: Translate networking docs to Simplified Chinese",
+  "authorName": "wang.yaxin@zte.com.cn",
+  "authorEmail": "wang.yaxin@zte.com.cn",
+  "revision": 2,
+  "postedAt": "2025-08-14T12:11:29.000Z",
+  "language": "zh_CN",
+  "patchCount": 4,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<20250814201129510XielEwRpr4QXPx_XBtkhv@zte.com.cn>",
+    "<20250814201312381TGvjbLkruWW4KHzCZuHCV@zte.com.cn>",
+    "<202508142028407445nvZxgf2l-bOvTMm2v-zs@zte.com.cn>",
+    "<20250814202950722BAA5h4UtC6XyB2C5YA2pe@zte.com.cn>",
+    "<20250814203052841vWATRXU4pnku526u5TwPn@zte.com.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 4
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 4
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 4
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250814201129510XielEwRpr4QXPx_XBtkhv%40zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250814201129510XielEwRpr4QXPx_XBtkhv%40zte.com.cn/raw",
+  "replies": 2,
+  "versions": [
+    {
+      "revision": 2,
+      "id": "translate-networking-docs-to-simplified-chinese-7dd259206d77-v2",
+      "current": true
+    },
+    {
+      "revision": 3,
+      "id": "translate-networking-docs-to-simplified-chinese-45f57e68f112-v3",
+      "current": false
+    },
+    {
+      "revision": 4,
+      "id": "translate-networking-docs-to-simplified-chinese-ec773280980d-v4",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 4,
+      "subject": "Docs/zh_CN: Translate mptcp-sysctl.rst to Simplified Chinese",
+      "messageId": "<20250814201312381TGvjbLkruWW4KHzCZuHCV@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250814201312381TGvjbLkruWW4KHzCZuHCV%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/mptcp-sysctl.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 4,
+      "subject": "Docs/zh_CN: Translate skbuff.rst to Simplified Chinese",
+      "messageId": "<202508142028407445nvZxgf2l-bOvTMm2v-zs@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/202508142028407445nvZxgf2l-bOvTMm2v-zs%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/skbuff.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 4,
+      "subject": "Docs/zh_CN: Translate generic-hdlc.rst to Simplified Chinese",
+      "messageId": "<20250814202950722BAA5h4UtC6XyB2C5YA2pe@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250814202950722BAA5h4UtC6XyB2C5YA2pe%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/generic-hdlc.rst",
+        "Documentation/translations/zh_CN/networking/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 4,
+      "total": 4,
+      "subject": "Docs/zh_CN: Translate timestamping.rst to Simplified Chinese",
+      "messageId": "<20250814203052841vWATRXU4pnku526u5TwPn@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250814203052841vWATRXU4pnku526u5TwPn%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/timestamping.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

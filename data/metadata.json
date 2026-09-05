@@ -1,10 +1,10 @@
 {
-  "mode": "fixture",
-  "generatedAt": "2026-09-05T11:00:00.000Z",
+  "mode": "live",
+  "generatedAt": "2026-09-05T13:12:35.593Z",
   "sources": {
     "lore": {
       "status": "ok",
-      "lastSuccessfulSync": "2026-09-05T11:00:00.000Z"
+      "lastSuccessfulSync": "2026-09-05T13:12:35.593Z"
     }
   }
 }

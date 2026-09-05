@@ -1,0 +1,82 @@
+{
+  "id": "mm-zswap-remove-z3fold-and-zbud-2d3bdfedc0c2-v2",
+  "subject": "[PATCH v2 0/2] mm: zswap: remove z3fold and zbud",
+  "authorName": "Yosry Ahmed",
+  "authorEmail": "yosry.ahmed@linux.dev",
+  "revision": 2,
+  "postedAt": "2025-01-29T18:06:30.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250129180633.3501650-1-yosry.ahmed@linux.dev>",
+    "<20250129180633.3501650-2-yosry.ahmed@linux.dev>",
+    "<20250129180633.3501650-3-yosry.ahmed@linux.dev>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-1-yosry.ahmed%40linux.dev/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-1-yosry.ahmed%40linux.dev/raw",
+  "replies": 3,
+  "versions": [
+    {
+      "revision": 2,
+      "id": "mm-zswap-remove-z3fold-and-zbud-2d3bdfedc0c2-v2",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 2,
+      "subject": "mm: z3fold: remove z3fold",
+      "messageId": "<20250129180633.3501650-2-yosry.ahmed@linux.dev>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-2-yosry.ahmed%40linux.dev/",
+      "changedFiles": [
+        "CREDITS",
+        "Documentation/mm/index.rst",
+        "Documentation/mm/z3fold.rst",
+        "Documentation/translations/zh_CN/mm/index.rst",
+        "Documentation/translations/zh_CN/mm/z3fold.rst",
+        "MAINTAINERS",
+        "mm/Kconfig",
+        "mm/Makefile",
+        "mm/z3fold.c"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

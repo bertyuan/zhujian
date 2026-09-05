@@ -1,0 +1,83 @@
+{
+  "id": "add-sak-index-chinese-translation-29bde5a8362f-v3",
+  "subject": "[PATCH v3] docs/zh_CN: Add sak index Chinese translation",
+  "authorName": "zhangwei",
+  "authorEmail": "zhangwei@cqsoftware.com.cn",
+  "revision": 3,
+  "postedAt": "2025-01-10T10:04:04.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250110100405.2225-1-zhangwei@cqsoftware.com.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250110100405.2225-1-zhangwei%40cqsoftware.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250110100405.2225-1-zhangwei%40cqsoftware.com.cn/raw",
+  "replies": 1,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-sak-index-chinese-translation-200422fccfee-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "add-sak-index-chinese-translation-8b1221b950e5-v2",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "add-sak-index-chinese-translation-29bde5a8362f-v3",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "docs/zh_CN: Add sak index Chinese translation",
+      "messageId": "<20250110100405.2225-1-zhangwei@cqsoftware.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250110100405.2225-1-zhangwei%40cqsoftware.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/security/index.rst",
+        "Documentation/translations/zh_CN/security/sak.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

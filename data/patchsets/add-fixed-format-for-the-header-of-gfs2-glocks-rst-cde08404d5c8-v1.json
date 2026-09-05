@@ -1,0 +1,77 @@
+{
+  "id": "add-fixed-format-for-the-header-of-gfs2-glocks-rst-cde08404d5c8-v1",
+  "subject": "[PATCH] Docs/zh_CN: add fixed format for the header of gfs2-glocks.rst",
+  "authorName": "shao.mingyin@zte.com.cn",
+  "authorEmail": "shao.mingyin@zte.com.cn",
+  "revision": 1,
+  "postedAt": "2025-09-18T06:43:05.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<20250918144305326x9mQuLPvqgyLm4WTJvZ9I@zte.com.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250918144305326x9mQuLPvqgyLm4WTJvZ9I%40zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250918144305326x9mQuLPvqgyLm4WTJvZ9I%40zte.com.cn/raw",
+  "replies": 2,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-fixed-format-for-the-header-of-gfs2-glocks-rst-cde08404d5c8-v1",
+      "current": true
+    },
+    {
+      "revision": 2,
+      "id": "add-fixed-format-for-the-header-of-gfs2-glocks-rst-974335290f8e-v2",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "Docs/zh_CN: add fixed format for the header of gfs2-glocks.rst",
+      "messageId": "<20250918144305326x9mQuLPvqgyLm4WTJvZ9I@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250918144305326x9mQuLPvqgyLm4WTJvZ9I%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/filesystems/gfs2-glocks.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "docs-submit-checklist-use-documentation-admin-guide--c8dcfe2d201b-v1",
+  "subject": "[PATCH] docs/.../submit-checklist: Use Documentation/admin-guide/abi.rst for cross-ref of README",
+  "authorName": "Akira Yokosawa",
+  "authorEmail": "akiyks@gmail.com",
+  "revision": 1,
+  "postedAt": "2025-03-04T07:57:34.000Z",
+  "language": "mixed",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250304075734.56660-1-akiyks@gmail.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250304075734.56660-1-akiyks%40gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250304075734.56660-1-akiyks%40gmail.com/raw",
+  "replies": 1,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "docs-submit-checklist-use-documentation-admin-guide--c8dcfe2d201b-v1",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "docs/.../submit-checklist: Use Documentation/admin-guide/abi.rst for cross-ref of README",
+      "messageId": "<20250304075734.56660-1-akiyks@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250304075734.56660-1-akiyks%40gmail.com/",
+      "changedFiles": [
+        "Documentation/process/submit-checklist.rst",
+        "Documentation/translations/it_IT/process/submit-checklist.rst",
+        "Documentation/translations/ja_JP/process/submit-checklist.rst",
+        "Documentation/translations/sp_SP/process/submit-checklist.rst",
+        "Documentation/translations/zh_CN/process/submit-checklist.rst",
+        "Documentation/translations/zh_TW/process/submit-checklist.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

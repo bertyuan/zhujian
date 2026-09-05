@@ -1,0 +1,210 @@
+{
+  "id": "add-chinese-translations-for-five-networking-documen-af49b30012d7-v4",
+  "subject": "[PATCH v4 0/5] docs/zh_CN: Add Chinese translations for five networking documents",
+  "authorName": "Siwei Chen",
+  "authorEmail": "anka@stu.cdut.edu.cn",
+  "revision": 4,
+  "postedAt": "2026-08-17T02:13:34.000Z",
+  "language": "zh_CN",
+  "patchCount": 5,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<20260817021340.17318-1-anka@stu.cdut.edu.cn>",
+    "<20260817021340.17318-2-anka@stu.cdut.edu.cn>",
+    "<20260817021340.17318-3-anka@stu.cdut.edu.cn>",
+    "<20260817021340.17318-4-anka@stu.cdut.edu.cn>",
+    "<20260817021340.17318-5-anka@stu.cdut.edu.cn>",
+    "<20260817021340.17318-6-anka@stu.cdut.edu.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-1-anka%40stu.cdut.edu.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-1-anka%40stu.cdut.edu.cn/raw",
+  "replies": 16,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-chinese-translations-for-five-networking-documen-64bfb0aad774-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "add-chinese-translations-for-five-networking-documen-18fdb4f2593e-v2",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "add-chinese-translations-for-five-networking-documen-5b9569e52791-v3",
+      "current": false
+    },
+    {
+      "revision": 4,
+      "id": "add-chinese-translations-for-five-networking-documen-af49b30012d7-v4",
+      "current": true
+    },
+    {
+      "revision": 5,
+      "id": "add-chinese-translations-for-five-networking-documen-6531728727c8-v5",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 5,
+      "subject": "docs/zh_CN: Add networking team documentation Chinese translation",
+      "messageId": "<20260817021340.17318-2-anka@stu.cdut.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-2-anka%40stu.cdut.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/team.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 5,
+      "subject": "docs/zh_CN: Add NIC SR-IOV APIs Chinese translation",
+      "messageId": "<20260817021340.17318-3-anka@stu.cdut.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-3-anka%40stu.cdut.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/sriov.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 5,
+      "subject": "docs/zh_CN: Add Softnet Driver Issues Chinese translation",
+      "messageId": "<20260817021340.17318-4-anka@stu.cdut.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-4-anka%40stu.cdut.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/driver.rst",
+        "Documentation/translations/zh_CN/networking/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 4,
+      "total": 5,
+      "subject": "docs/zh_CN: Add ipv6 Chinese translation",
+      "messageId": "<20260817021340.17318-5-anka@stu.cdut.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-5-anka%40stu.cdut.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/ipv6.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 5,
+      "total": 5,
+      "subject": "docs/zh_CN: Add LSM/SeLinux secid Chinese translation",
+      "messageId": "<20260817021340.17318-6-anka@stu.cdut.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-6-anka%40stu.cdut.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/secid.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

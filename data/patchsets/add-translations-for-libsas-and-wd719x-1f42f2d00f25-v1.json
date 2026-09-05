@@ -1,0 +1,113 @@
+{
+  "id": "add-translations-for-libsas-and-wd719x-1f42f2d00f25-v1",
+  "subject": "[PATCH 0/2] docs/zh_CN: Add translations for libsas and wd719x",
+  "authorName": "Yujie Zhang",
+  "authorEmail": "yjzhang@leap-io-kernel.com",
+  "revision": 1,
+  "postedAt": "2025-11-16T02:40:03.000Z",
+  "language": "zh_CN",
+  "patchCount": 2,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<cover.1763112421.git.yjzhang@leap-io-kernel.com>",
+    "<a19c9825d019ed84d95ed8f0ce2235e917a86eae.1763112421.git.yjzhang@leap-io-kernel.com>",
+    "<f9720c918de47890c536124e7866859c866c67f4.1763112421.git.yjzhang@leap-io-kernel.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763112421.git.yjzhang%40leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763112421.git.yjzhang%40leap-io-kernel.com/raw",
+  "replies": 4,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-translations-for-libsas-and-wd719x-1f42f2d00f25-v1",
+      "current": true
+    },
+    {
+      "revision": 2,
+      "id": "add-translations-for-libsas-and-wd719x-863f449f70c7-v2",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "add-translations-for-libsas-and-wd719x-48171db27754-v3",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 2,
+      "subject": "docs/zh_CN: Add libsas.rst translation",
+      "messageId": "<a19c9825d019ed84d95ed8f0ce2235e917a86eae.1763112421.git.yjzhang@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/a19c9825d019ed84d95ed8f0ce2235e917a86eae.1763112421.git.yjzhang%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/scsi/index.rst",
+        "Documentation/translations/zh_CN/scsi/libsas.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 2,
+      "subject": "docs/zh_CN: Add wd719x.rst translation",
+      "messageId": "<f9720c918de47890c536124e7866859c866c67f4.1763112421.git.yjzhang@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/f9720c918de47890c536124e7866859c866c67f4.1763112421.git.yjzhang%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/scsi/index.rst",
+        "Documentation/translations/zh_CN/scsi/wd719x.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

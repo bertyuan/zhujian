@@ -1,0 +1,75 @@
+{
+  "id": "gpiolib-acpi-update-file-references-in-the-documenta-c6abf6516c5f-v1",
+  "subject": "[PATCH v1 1/1] gpiolib-acpi: Update file references in the Documentation and MAINTAINERS",
+  "authorName": "Andy Shevchenko",
+  "authorEmail": "andriy.shevchenko@linux.intel.com",
+  "revision": 1,
+  "postedAt": "2025-05-16T09:52:34.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250516095306.3417798-1-andriy.shevchenko@linux.intel.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko%40linux.intel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko%40linux.intel.com/raw",
+  "replies": 3,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "gpiolib-acpi-update-file-references-in-the-documenta-c6abf6516c5f-v1",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "gpiolib-acpi: Update file references in the Documentation and MAINTAINERS",
+      "messageId": "<20250516095306.3417798-1-andriy.shevchenko@linux.intel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko%40linux.intel.com/",
+      "changedFiles": [
+        "Documentation/driver-api/gpio/index.rst",
+        "Documentation/translations/zh_CN/driver-api/gpio/index.rst",
+        "MAINTAINERS",
+        "drivers/platform/x86/intel/int0002_vgpio.c"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

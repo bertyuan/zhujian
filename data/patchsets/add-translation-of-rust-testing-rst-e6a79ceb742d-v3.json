@@ -1,0 +1,78 @@
+{
+  "id": "add-translation-of-rust-testing-rst-e6a79ceb742d-v3",
+  "subject": "[PATCH v3] docs/zh_CN: Add translation of rust/testing.rst",
+  "authorName": "Ben Guo",
+  "authorEmail": "benx.guo@gmail.com",
+  "revision": 3,
+  "postedAt": "2025-10-13T23:44:01.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20251013234416.6172-1-benx.guo@gmail.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251013234416.6172-1-benx.guo%40gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251013234416.6172-1-benx.guo%40gmail.com/raw",
+  "replies": 2,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-translation-of-rust-testing-rst-b33a4641e124-v1",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "add-translation-of-rust-testing-rst-e6a79ceb742d-v3",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "docs/zh_CN: Add translation of rust/testing.rst",
+      "messageId": "<20251013234416.6172-1-benx.guo@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251013234416.6172-1-benx.guo%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/rust/index.rst",
+        "Documentation/translations/zh_CN/rust/testing.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

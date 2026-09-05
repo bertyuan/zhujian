@@ -1,0 +1,112 @@
+{
+  "id": "collect-most-documentation-related-tools-under-tools-bcfcfede2529-v4",
+  "subject": "[PATCH v4 0/7] Collect (most) documentation-related tools under /tools/docs",
+  "authorName": "Jonathan Corbet",
+  "authorEmail": "corbet@lwn.net",
+  "revision": 4,
+  "postedAt": "2025-10-28T22:10:08.000Z",
+  "language": "zh_CN",
+  "patchCount": 2,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20251028221017.5785-1-corbet@lwn.net>",
+    "<20251028221017.5785-2-corbet@lwn.net>",
+    "<20251028221017.5785-3-corbet@lwn.net>",
+    "<20251028221017.5785-4-corbet@lwn.net>",
+    "<20251028221017.5785-5-corbet@lwn.net>",
+    "<20251028221017.5785-6-corbet@lwn.net>",
+    "<20251028221017.5785-7-corbet@lwn.net>",
+    "<20251028221017.5785-8-corbet@lwn.net>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 2
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251028221017.5785-1-corbet%40lwn.net/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251028221017.5785-1-corbet%40lwn.net/raw",
+  "replies": 0,
+  "versions": [
+    {
+      "revision": 4,
+      "id": "collect-most-documentation-related-tools-under-tools-bcfcfede2529-v4",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 2,
+      "total": 7,
+      "subject": "docs: move checktransupdate.py to tools/docs",
+      "messageId": "<20251028221017.5785-3-corbet@lwn.net>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251028221017.5785-3-corbet%40lwn.net/",
+      "changedFiles": [
+        "Documentation/doc-guide/checktransupdate.rst",
+        "Documentation/translations/zh_CN/doc-guide/checktransupdate.rst",
+        "Documentation/translations/zh_CN/how-to.rst",
+        "MAINTAINERS",
+        "tools/docs/checktransupdate.py"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 6,
+      "total": 7,
+      "subject": "docs: move find-unused-docs.sh to tools/docs",
+      "messageId": "<20251028221017.5785-7-corbet@lwn.net>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251028221017.5785-7-corbet%40lwn.net/",
+      "changedFiles": [
+        "Documentation/doc-guide/contributing.rst",
+        "Documentation/translations/zh_CN/doc-guide/contributing.rst",
+        "tools/docs/find-unused-docs.sh"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

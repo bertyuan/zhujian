@@ -1,0 +1,84 @@
+{
+  "id": "translate-networking-docs-to-simplified-chinese-ec773280980d-v4",
+  "subject": "[PATCH v4 linux next 0/4] Docs/zh_CN: Translate networking docs to Simplified Chinese",
+  "authorName": "wang.yaxin@zte.com.cn",
+  "authorEmail": "wang.yaxin@zte.com.cn",
+  "revision": 4,
+  "postedAt": "2025-09-17T05:54:06.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250917135406432vKZ2pELx-bRkvOdfP10Zb@zte.com.cn>",
+    "<20250917140010636SMB_b6UYttZyOP2L0K93O@zte.com.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250917135406432vKZ2pELx-bRkvOdfP10Zb%40zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250917135406432vKZ2pELx-bRkvOdfP10Zb%40zte.com.cn/raw",
+  "replies": 1,
+  "versions": [
+    {
+      "revision": 2,
+      "id": "translate-networking-docs-to-simplified-chinese-7dd259206d77-v2",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "translate-networking-docs-to-simplified-chinese-45f57e68f112-v3",
+      "current": false
+    },
+    {
+      "revision": 4,
+      "id": "translate-networking-docs-to-simplified-chinese-ec773280980d-v4",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 2,
+      "total": 4,
+      "subject": "Docs/zh_CN: Translate skbuff.rst to Simplified Chinese",
+      "messageId": "<20250917140010636SMB_b6UYttZyOP2L0K93O@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250917140010636SMB_b6UYttZyOP2L0K93O%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/networking/index.rst",
+        "Documentation/translations/zh_CN/networking/skbuff.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

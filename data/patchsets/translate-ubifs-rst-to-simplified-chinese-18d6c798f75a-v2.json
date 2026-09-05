@@ -1,0 +1,205 @@
+{
+  "id": "translate-ubifs-rst-to-simplified-chinese-18d6c798f75a-v2",
+  "subject": "[PATCH v2 0/5]  Docs/zh_CN: Translate ubifs.rst to Simplified Chinese",
+  "authorName": "shao.mingyin@zte.com.cn",
+  "authorEmail": "shao.mingyin@zte.com.cn",
+  "revision": 2,
+  "postedAt": "2025-07-28T02:56:11.000Z",
+  "language": "zh_CN",
+  "patchCount": 5,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250728105611902ENzYOxJcTdsXoAd-8dSZi@zte.com.cn>",
+    "<20250728110049857ybykx9BfYo6k-aFoinz4T@zte.com.cn>",
+    "<20250728110324717kJNoSOE9laMPJ2oM811rZ@zte.com.cn>",
+    "<20250728110455218YMoNSSMWFXr2UW0plwvDE@zte.com.cn>",
+    "<20250728110614602vfyewOz6OrRSPEuUoL9TT@zte.com.cn>",
+    "<202507281108025189k6KUxy8_lgK_0qyooFF8@zte.com.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250728105611902ENzYOxJcTdsXoAd-8dSZi%40zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250728105611902ENzYOxJcTdsXoAd-8dSZi%40zte.com.cn/raw",
+  "replies": 0,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "translate-ubifs-rst-to-simplified-chinese-6235359d54bd-v1",
+      "current": false
+    },
+    {
+      "revision": 1,
+      "id": "translate-ubifs-rst-to-simplified-chinese-ab38cfb0c6d6-v1",
+      "current": false
+    },
+    {
+      "revision": 1,
+      "id": "translate-ubifs-rst-to-simplified-chinese-acdb85edb5d4-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "translate-ubifs-rst-to-simplified-chinese-18d6c798f75a-v2",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 5,
+      "subject": "Docs/zh_CN: Translate ubifs.rst to Simplified Chinese",
+      "messageId": "<20250728110049857ybykx9BfYo6k-aFoinz4T@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250728110049857ybykx9BfYo6k-aFoinz4T%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/filesystems/index.rst",
+        "Documentation/translations/zh_CN/filesystems/ubifs.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 5,
+      "subject": "Docs/zh_CN: Translate ubifs-authentication.rst to Simplified Chinese",
+      "messageId": "<20250728110324717kJNoSOE9laMPJ2oM811rZ@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250728110324717kJNoSOE9laMPJ2oM811rZ%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/filesystems/index.rst",
+        "Documentation/translations/zh_CN/filesystems/ubifs-authentication.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 5,
+      "subject": "Docs/zh_CN: Translate gfs2.rst to Simplified Chinese",
+      "messageId": "<20250728110455218YMoNSSMWFXr2UW0plwvDE@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250728110455218YMoNSSMWFXr2UW0plwvDE%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/filesystems/gfs2.rst",
+        "Documentation/translations/zh_CN/filesystems/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 4,
+      "total": 5,
+      "subject": "Docs/zh_CN: Translate gfs2-uevents.rst to Simplified Chinese",
+      "messageId": "<20250728110614602vfyewOz6OrRSPEuUoL9TT@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250728110614602vfyewOz6OrRSPEuUoL9TT%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/filesystems/gfs2-uevents.rst",
+        "Documentation/translations/zh_CN/filesystems/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 5,
+      "total": 5,
+      "subject": "Docs/zh_CN: Translate gfs2-glocks.rst to Simplified Chinese",
+      "messageId": "<202507281108025189k6KUxy8_lgK_0qyooFF8@zte.com.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/202507281108025189k6KUxy8_lgK_0qyooFF8%40zte.com.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/filesystems/gfs2-glocks.rst",
+        "Documentation/translations/zh_CN/filesystems/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

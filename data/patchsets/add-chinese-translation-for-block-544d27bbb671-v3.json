@@ -1,0 +1,157 @@
+{
+  "id": "add-chinese-translation-for-block-544d27bbb671-v3",
+  "subject": "[PATCH v3 0/3] Add chinese translation for block",
+  "authorName": "ke zijie",
+  "authorEmail": "kezijie@leap-io-kernel.com",
+  "revision": 3,
+  "postedAt": "2025-11-17T08:27:33.000Z",
+  "language": "zh_CN",
+  "patchCount": 3,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<cover.1763366835.git.kezijie@leap-io-kernel.com>",
+    "<dceb4c59bc0d9a02246386cfed31a543d6a943b8.1763366835.git.kezijie@leap-io-kernel.com>",
+    "<c7a80affd45be8c11a236472977cdffab16e895a.1763366835.git.kezijie@leap-io-kernel.com>",
+    "<a30e43d25be989cad6a24dfcb847e9642b9582ef.1763366835.git.kezijie@leap-io-kernel.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 3
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 3
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 3
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763366835.git.kezijie%40leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763366835.git.kezijie%40leap-io-kernel.com/raw",
+  "replies": 6,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-chinese-translation-for-block-2b5ed67ffc45-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "add-chinese-translation-for-block-99dd34a4e18d-v2",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "add-chinese-translation-for-block-544d27bbb671-v3",
+      "current": true
+    },
+    {
+      "revision": 4,
+      "id": "add-chinese-translation-for-block-37b692a25813-v4",
+      "current": false
+    },
+    {
+      "revision": 5,
+      "id": "add-chinese-translation-for-block-cc1fc067b477-v5",
+      "current": false
+    },
+    {
+      "revision": 6,
+      "id": "add-chinese-translation-for-block-7ceff11f515c-v6",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 3,
+      "subject": "docs/zh_CN: Add block/index.rst translation",
+      "messageId": "<dceb4c59bc0d9a02246386cfed31a543d6a943b8.1763366835.git.kezijie@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/dceb4c59bc0d9a02246386cfed31a543d6a943b8.1763366835.git.kezijie%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/block/index.rst",
+        "Documentation/translations/zh_CN/subsystem-apis.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 3,
+      "subject": "docs/zh_CN: Add blk-mq.rst translation",
+      "messageId": "<c7a80affd45be8c11a236472977cdffab16e895a.1763366835.git.kezijie@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/c7a80affd45be8c11a236472977cdffab16e895a.1763366835.git.kezijie%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/block/blk-mq.rst",
+        "Documentation/translations/zh_CN/block/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 3,
+      "subject": "docs/zh_CN: Add data-integrity.rst translation",
+      "messageId": "<a30e43d25be989cad6a24dfcb847e9642b9582ef.1763366835.git.kezijie@leap-io-kernel.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/a30e43d25be989cad6a24dfcb847e9642b9582ef.1763366835.git.kezijie%40leap-io-kernel.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/block/data-integrity.rst",
+        "Documentation/translations/zh_CN/block/index.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

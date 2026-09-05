@@ -1,0 +1,76 @@
+{
+  "id": "mm-damon-remove-damon-debugfs-interface-b5bd954e2ab7-v2",
+  "subject": "[PATCH v2 0/8] mm/damon: remove DAMON debugfs interface",
+  "authorName": "SeongJae Park",
+  "authorEmail": "sj@kernel.org",
+  "revision": 2,
+  "postedAt": "2025-01-06T19:19:33.000Z",
+  "language": "mixed",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250106191941.107070-1-sj@kernel.org>",
+    "<20250106191941.107070-2-sj@kernel.org>",
+    "<20250106191941.107070-3-sj@kernel.org>",
+    "<20250106191941.107070-4-sj@kernel.org>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-1-sj%40kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-1-sj%40kernel.org/raw",
+  "replies": 0,
+  "versions": [
+    {
+      "revision": 2,
+      "id": "mm-damon-remove-damon-debugfs-interface-b5bd954e2ab7-v2",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 8,
+      "subject": "Docs/translations/*/admin-guide/mm/damon/usage: remove DAMON debugfs interface documentation",
+      "messageId": "<20250106191941.107070-2-sj@kernel.org>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-2-sj%40kernel.org/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst",
+        "Documentation/translations/zh_TW/admin-guide/mm/damon/usage.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

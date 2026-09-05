@@ -1,0 +1,77 @@
+{
+  "id": "update-arch-riscv-patch-acceptance-rst-translation-3d10ad75814a-v2",
+  "subject": "[PATCH v2] docs/zh_CN: Update arch/riscv/patch-acceptance.rst translation",
+  "authorName": "Yukai Wu",
+  "authorEmail": "xiaoyewuz.ruster@gmail.com",
+  "revision": 2,
+  "postedAt": "2026-08-29T02:23:27.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20260829022344.192491-1-xiaoyewuz.Ruster@gmail.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260829022344.192491-1-xiaoyewuz.Ruster%40gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260829022344.192491-1-xiaoyewuz.Ruster%40gmail.com/raw",
+  "replies": 3,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "update-arch-riscv-patch-acceptance-rst-translation-858b54c73240-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "update-arch-riscv-patch-acceptance-rst-translation-3d10ad75814a-v2",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "docs/zh_CN: Update arch/riscv/patch-acceptance.rst translation",
+      "messageId": "<20260829022344.192491-1-xiaoyewuz.Ruster@gmail.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260829022344.192491-1-xiaoyewuz.Ruster%40gmail.com/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/arch/riscv/patch-acceptance.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

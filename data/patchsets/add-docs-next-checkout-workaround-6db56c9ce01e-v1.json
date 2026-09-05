@@ -1,0 +1,72 @@
+{
+  "id": "add-docs-next-checkout-workaround-6db56c9ce01e-v1",
+  "subject": "[PATCH] docs/zh_CN: add docs-next checkout workaround",
+  "authorName": "Weijie Yuan",
+  "authorEmail": "wy@wyuan.org",
+  "revision": 1,
+  "postedAt": "2026-07-09T15:25:29.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy@wyuan.org>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy%40wyuan.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy%40wyuan.org/raw",
+  "replies": 10,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "add-docs-next-checkout-workaround-6db56c9ce01e-v1",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 1,
+      "subject": "docs/zh_CN: add docs-next checkout workaround",
+      "messageId": "<4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy@wyuan.org>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy%40wyuan.org/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/how-to.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

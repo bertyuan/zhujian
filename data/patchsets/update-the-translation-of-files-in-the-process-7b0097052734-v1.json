@@ -1,0 +1,185 @@
+{
+  "id": "update-the-translation-of-files-in-the-process-7b0097052734-v1",
+  "subject": "[PATCH 0/5] update the translation of files in the process",
+  "authorName": "Dongliang Mu",
+  "authorEmail": "dzm91@hust.edu.cn",
+  "revision": 1,
+  "postedAt": "2025-06-10T12:30:25.000Z",
+  "language": "zh_CN",
+  "patchCount": 5,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<cover.1749557444.git.dzm91@hust.edu.cn>",
+    "<a9a9c7f57db10713c477fcb0398a43687f92213e.1749557444.git.dzm91@hust.edu.cn>",
+    "<1c3590dfdbf0177c1735ff662270352b512531b4.1749557444.git.dzm91@hust.edu.cn>",
+    "<6cc2550da7ebfe597181d95b744abe22379f6fdb.1749557444.git.dzm91@hust.edu.cn>",
+    "<5e43fda6c7e3597e9e11192f959df65e9de57e7a.1749557444.git.dzm91@hust.edu.cn>",
+    "<ce5603d746e1d64847f572660ea7bc38fcbf74ef.1749557444.git.dzm91@hust.edu.cn>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 5
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1749557444.git.dzm91%40hust.edu.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1749557444.git.dzm91%40hust.edu.cn/raw",
+  "replies": 2,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "update-the-translation-of-files-in-the-process-7b0097052734-v1",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 5,
+      "subject": "docs/zh_CN: update the translation of process/1.Intro.rst",
+      "messageId": "<a9a9c7f57db10713c477fcb0398a43687f92213e.1749557444.git.dzm91@hust.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/a9a9c7f57db10713c477fcb0398a43687f92213e.1749557444.git.dzm91%40hust.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/process/1.Intro.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 5,
+      "subject": "docs/zh_CN: update the translation of process/6.Followthrough.rst",
+      "messageId": "<1c3590dfdbf0177c1735ff662270352b512531b4.1749557444.git.dzm91@hust.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/1c3590dfdbf0177c1735ff662270352b512531b4.1749557444.git.dzm91%40hust.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/process/6.Followthrough.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 5,
+      "subject": "docs/zh_CN: update the translation of process/7.AdvancedTopics.rst",
+      "messageId": "<6cc2550da7ebfe597181d95b744abe22379f6fdb.1749557444.git.dzm91@hust.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/6cc2550da7ebfe597181d95b744abe22379f6fdb.1749557444.git.dzm91%40hust.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/process/7.AdvancedTopics.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 4,
+      "total": 5,
+      "subject": "docs/zh_CN: update the translation of process/2.Process.rst",
+      "messageId": "<5e43fda6c7e3597e9e11192f959df65e9de57e7a.1749557444.git.dzm91@hust.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/5e43fda6c7e3597e9e11192f959df65e9de57e7a.1749557444.git.dzm91%40hust.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/process/2.Process.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 5,
+      "total": 5,
+      "subject": "docs/zh_CN: update the translation of process/5.Posting.rst",
+      "messageId": "<ce5603d746e1d64847f572660ea7bc38fcbf74ef.1749557444.git.dzm91@hust.edu.cn>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/ce5603d746e1d64847f572660ea7bc38fcbf74ef.1749557444.git.dzm91%40hust.edu.cn/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/process/5.Posting.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

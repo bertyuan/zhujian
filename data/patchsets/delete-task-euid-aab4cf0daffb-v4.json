@@ -1,0 +1,88 @@
+{
+  "id": "delete-task-euid-aab4cf0daffb-v4",
+  "subject": "[PATCH v4 0/2] Delete task_euid()",
+  "authorName": "Alice Ryhl",
+  "authorEmail": "aliceryhl@google.com",
+  "revision": 4,
+  "postedAt": "2026-05-29T09:33:00.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "superseded",
+  "latestRevision": false,
+  "messageIds": [
+    "<20260529-remove-task-euid-v4-0-07cbdf3af980@google.com>",
+    "<20260529-remove-task-euid-v4-1-07cbdf3af980@google.com>",
+    "<20260529-remove-task-euid-v4-2-07cbdf3af980@google.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-0-07cbdf3af980%40google.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-0-07cbdf3af980%40google.com/raw",
+  "replies": 7,
+  "versions": [
+    {
+      "revision": 3,
+      "id": "delete-task-euid-8f5676bd0c80-v3",
+      "current": false
+    },
+    {
+      "revision": 4,
+      "id": "delete-task-euid-aab4cf0daffb-v4",
+      "current": true
+    },
+    {
+      "revision": 5,
+      "id": "delete-task-euid-6ddb959b4fec-v5",
+      "current": false
+    }
+  ],
+  "patches": [
+    {
+      "index": 2,
+      "total": 2,
+      "subject": "cred: delete task_euid()",
+      "messageId": "<20260529-remove-task-euid-v4-2-07cbdf3af980@google.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-2-07cbdf3af980%40google.com/",
+      "changedFiles": [
+        "Documentation/security/credentials.rst",
+        "Documentation/translations/zh_CN/security/credentials.rst",
+        "include/linux/cred.h",
+        "rust/helpers/task.c",
+        "rust/kernel/task.rs"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

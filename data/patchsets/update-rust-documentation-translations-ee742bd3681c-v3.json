@@ -1,0 +1,167 @@
+{
+  "id": "update-rust-documentation-translations-ee742bd3681c-v3",
+  "subject": "[PATCH v3 0/4] docs/zh_CN: update rust documentation translations",
+  "authorName": "Ben Guo",
+  "authorEmail": "ben.guo@openatom.club",
+  "revision": 3,
+  "postedAt": "2026-07-14T07:00:07.000Z",
+  "language": "zh_CN",
+  "patchCount": 4,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<cover.1784000217.git.ben.guo@openatom.club>",
+    "<2d8c0a3eb510a4eb39c41cb946cebfd0f7dfa5fe.1784000217.git.ben.guo@openatom.club>",
+    "<2cd77353aae6a85b63ab25d44c2379224c271366.1784000217.git.ben.guo@openatom.club>",
+    "<2684fbb81c5ca3321e927af7b2e61c2c6016df36.1784000217.git.ben.guo@openatom.club>",
+    "<1279f929325818db1dbce83f931dca25f4d51ae7.1784000217.git.ben.guo@openatom.club>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 4
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 4
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 4
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1784000217.git.ben.guo%40openatom.club/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1784000217.git.ben.guo%40openatom.club/raw",
+  "replies": 1,
+  "versions": [
+    {
+      "revision": 1,
+      "id": "update-rust-documentation-translations-765d53916d9b-v1",
+      "current": false
+    },
+    {
+      "revision": 2,
+      "id": "update-rust-documentation-translations-657d3e3cf353-v2",
+      "current": false
+    },
+    {
+      "revision": 3,
+      "id": "update-rust-documentation-translations-ee742bd3681c-v3",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 1,
+      "total": 4,
+      "subject": "docs/zh_CN: Update rust/quick-start.rst translation",
+      "messageId": "<2d8c0a3eb510a4eb39c41cb946cebfd0f7dfa5fe.1784000217.git.ben.guo@openatom.club>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2d8c0a3eb510a4eb39c41cb946cebfd0f7dfa5fe.1784000217.git.ben.guo%40openatom.club/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/rust/quick-start.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 2,
+      "total": 4,
+      "subject": "docs/zh_CN: Update rust/general-information.rst translation",
+      "messageId": "<2cd77353aae6a85b63ab25d44c2379224c271366.1784000217.git.ben.guo@openatom.club>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2cd77353aae6a85b63ab25d44c2379224c271366.1784000217.git.ben.guo%40openatom.club/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/rust/general-information.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 3,
+      "total": 4,
+      "subject": "docs/zh_CN: Update rust/arch-support.rst translation",
+      "messageId": "<2684fbb81c5ca3321e927af7b2e61c2c6016df36.1784000217.git.ben.guo@openatom.club>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2684fbb81c5ca3321e927af7b2e61c2c6016df36.1784000217.git.ben.guo%40openatom.club/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/rust/arch-support.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    },
+    {
+      "index": 4,
+      "total": 4,
+      "subject": "docs/zh_CN: Update rust/testing.rst translation",
+      "messageId": "<1279f929325818db1dbce83f931dca25f4d51ae7.1784000217.git.ben.guo@openatom.club>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/1279f929325818db1dbce83f931dca25f4d51ae7.1784000217.git.ben.guo%40openatom.club/",
+      "changedFiles": [
+        "Documentation/translations/zh_CN/rust/testing.rst"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}

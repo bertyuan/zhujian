@@ -1,0 +1,76 @@
+{
+  "id": "vsprintf-remove-redundant-pcn-format-specifier-65aa257a5e0c-v2",
+  "subject": "[PATCH v2 0/2] vsprintf: remove redundant %pCn format specifier",
+  "authorName": "Luca Ceresoli",
+  "authorEmail": "luca.ceresoli@bootlin.com",
+  "revision": 2,
+  "postedAt": "2025-03-11T09:21:21.000Z",
+  "language": "zh_CN",
+  "patchCount": 1,
+  "status": "on-lore",
+  "latestRevision": true,
+  "messageIds": [
+    "<20250311-vsprintf-pcn-v2-0-0af40fc7dee4@bootlin.com>",
+    "<20250311-vsprintf-pcn-v2-1-0af40fc7dee4@bootlin.com>",
+    "<20250311-vsprintf-pcn-v2-2-0af40fc7dee4@bootlin.com>"
+  ],
+  "trees": {
+    "alex": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "corbet": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    },
+    "linus": {
+      "state": "missing",
+      "matched": 0,
+      "total": 1
+    }
+  },
+  "rfc": false,
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-0-0af40fc7dee4%40bootlin.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-0-0af40fc7dee4%40bootlin.com/raw",
+  "replies": 6,
+  "versions": [
+    {
+      "revision": 2,
+      "id": "vsprintf-remove-redundant-pcn-format-specifier-65aa257a5e0c-v2",
+      "current": true
+    }
+  ],
+  "patches": [
+    {
+      "index": 2,
+      "total": 2,
+      "subject": "vsprintf: remove redundant and unused %pCn format specifier",
+      "messageId": "<20250311-vsprintf-pcn-v2-2-0af40fc7dee4@bootlin.com>",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-2-0af40fc7dee4%40bootlin.com/",
+      "changedFiles": [
+        "Documentation/core-api/printk-formats.rst",
+        "Documentation/translations/zh_CN/core-api/printk-formats.rst",
+        "lib/vsprintf.c"
+      ],
+      "trees": {
+        "alex": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "corbet": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        },
+        "linus": {
+          "state": "missing",
+          "matched": 0,
+          "total": 1
+        }
+      }
+    }
+  ]
+}
