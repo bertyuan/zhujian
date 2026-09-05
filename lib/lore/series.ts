@@ -9,9 +9,11 @@ const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
 
 function slugify(value: string): string {
   return value
+    .normalize("NFKD")
     .toLocaleLowerCase()
     .replace(/^docs(?:\/zh_(?:cn|tw))?\s*:\s*/i, "")
-    .replace(/[^\p{L}\p{N}]+/gu, "-")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")
     .slice(0, 52) || "patch-series";
 }

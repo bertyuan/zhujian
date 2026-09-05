@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import path from "node:path";
 import { FixtureLoreSource } from "../lib/lore/fixture-source.ts";
-import { aggregateTree, buildFixturePatchsets, deriveStatus } from "../lib/lore/series.ts";
+import { aggregateTree, buildFixturePatchsets, buildPatchsets, deriveStatus } from "../lib/lore/series.ts";
+import type { LoreMessage } from "../lib/lore/types.ts";
 
 test("groups revisions, single patches, replies, and mixed-language series", async () => {
   const source = new FixtureLoreSource(path.join(process.cwd(), "fixtures", "lore"));
@@ -42,4 +43,20 @@ test("keeps the three stages independent when deriving status", () => {
   };
   assert.equal(deriveStatus(trees, true), "mainline");
   assert.equal(trees.alex.state, "missing");
+});
+
+test("generates a route-safe ASCII id for a Chinese-only subject", () => {
+  const message: LoreMessage = {
+    messageId: "<chinese-subject@example.com>",
+    subject: "[PATCH] 文档：修复错字",
+    from: { name: "作者", email: "author@example.com" },
+    date: "2026-09-05T10:00:00Z",
+    references: [],
+    body: "diff --git a/Documentation/translations/zh_CN/a.rst b/Documentation/translations/zh_CN/a.rst\n+++ b/Documentation/translations/zh_CN/a.rst",
+    loreUrl: "https://lore.kernel.org/linux-doc/chinese-subject%40example.com/",
+    rawUrl: "https://lore.kernel.org/linux-doc/chinese-subject%40example.com/raw",
+  };
+
+  const [series] = buildPatchsets({ messages: [message] });
+  assert.match(series.id, /^patch-series-[0-9a-f]{7}-v1$/);
 });
