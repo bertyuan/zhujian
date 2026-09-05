@@ -7,26 +7,29 @@
   "postedAt": "2025-05-16T09:52:34.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250516095306.3417798-1-andriy.shevchenko@linux.intel.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "ec0c0aab15243bbc6140a7cedd01e2dd9ad19878"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "ec0c0aab15243bbc6140a7cedd01e2dd9ad19878"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "ec0c0aab15243bbc6140a7cedd01e2dd9ad19878"
     }
   },
   "rfc": false,
@@ -53,21 +56,25 @@
         "MAINTAINERS",
         "drivers/platform/x86/intel/int0002_vgpio.c"
       ],
+      "patchId": "b808c921794c2be02c7a7feefe96581e06730116",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "ec0c0aab15243bbc6140a7cedd01e2dd9ad19878"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "ec0c0aab15243bbc6140a7cedd01e2dd9ad19878"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "ec0c0aab15243bbc6140a7cedd01e2dd9ad19878"
         }
       }
     }

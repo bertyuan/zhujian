@@ -22,19 +22,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 2
+      "total": 2,
+      "commit": "7d3ab852dcd853692197a830d20052127754a087"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 2
+      "total": 2,
+      "commit": "7d3ab852dcd853692197a830d20052127754a087"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 2
+      "total": 2,
+      "commit": "7d3ab852dcd853692197a830d20052127754a087"
     }
   },
   "rfc": false,
@@ -86,21 +89,25 @@
         "net/core/dev.c",
         "net/core/netdev-genl.c"
       ],
+      "patchId": "69893b8c8a8ce2cc4ef74d114157102d041fe0da",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "7d3ab852dcd853692197a830d20052127754a087"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "7d3ab852dcd853692197a830d20052127754a087"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "7d3ab852dcd853692197a830d20052127754a087"
         }
       }
     },
@@ -117,21 +124,25 @@
         "drivers/net/netkit.c",
         "include/linux/netdevice.h"
       ],
+      "patchId": "b06b7a1103b4814a2010bed4ac904065158aff10",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "6ce2bb048055ee599c0f35f1a90ff5db29ba5d65"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "6ce2bb048055ee599c0f35f1a90ff5db29ba5d65"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "6ce2bb048055ee599c0f35f1a90ff5db29ba5d65"
         }
       }
     }

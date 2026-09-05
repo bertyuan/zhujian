@@ -7,26 +7,29 @@
   "postedAt": "2026-04-16T04:26:46.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260416042647.3646595-1-ben.guo@openatom.club>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "596b66b4f52db25169ab138a001b2b22952ff260"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "596b66b4f52db25169ab138a001b2b22952ff260"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "596b66b4f52db25169ab138a001b2b22952ff260"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],
+      "patchId": "7031d020f6b421d07d01027845b629679dc33dc2",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "596b66b4f52db25169ab138a001b2b22952ff260"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "596b66b4f52db25169ab138a001b2b22952ff260"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "596b66b4f52db25169ab138a001b2b22952ff260"
         }
       }
     }

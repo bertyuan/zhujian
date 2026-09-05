@@ -22,19 +22,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 8
+      "total": 8,
+      "commit": "cb8b9537901be8c17e8d5b2f09da0e7f8bb4393f"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 8
+      "total": 8,
+      "commit": "cb8b9537901be8c17e8d5b2f09da0e7f8bb4393f"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 8
+      "total": 8,
+      "commit": "cb8b9537901be8c17e8d5b2f09da0e7f8bb4393f"
     }
   },
   "rfc": false,
@@ -89,21 +92,25 @@
         "Documentation/translations/zh_CN/subsystem-apis.rst",
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
+      "patchId": "a04ad52ff433a3715cbf2235e984b7305a2a6d72",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "cb8b9537901be8c17e8d5b2f09da0e7f8bb4393f"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "cb8b9537901be8c17e8d5b2f09da0e7f8bb4393f"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "cb8b9537901be8c17e8d5b2f09da0e7f8bb4393f"
         }
       }
     },
@@ -116,6 +123,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/acm.rst"
       ],
+      "patchId": "ce37fb7dff247680c58fae7e2e266f62133ad3d8",
       "trees": {
         "alex": {
           "state": "missing",
@@ -143,6 +151,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/authorization.rst"
       ],
+      "patchId": "2be01c126f75093bd3d1f3ff3358aaf7fa05ea40",
       "trees": {
         "alex": {
           "state": "missing",
@@ -170,6 +179,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/chipidea.rst"
       ],
+      "patchId": "f77a7f10aab41bc4647a1c144ec84fc37398e41c",
       "trees": {
         "alex": {
           "state": "missing",
@@ -197,6 +207,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/dwc3.rst"
       ],
+      "patchId": "1d4c48ad82758c46051dde2593726db07843b25d",
       "trees": {
         "alex": {
           "state": "missing",
@@ -224,6 +235,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/ehci.rst"
       ],
+      "patchId": "9ddf844220440d57fc9aaed74ebb3b50e48bddb7",
       "trees": {
         "alex": {
           "state": "missing",
@@ -251,6 +263,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/usbmon.rst"
       ],
+      "patchId": "b4778e72a075dcbde873087305580bd51ebd826a",
       "trees": {
         "alex": {
           "state": "missing",
@@ -278,21 +291,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/CREDITS"
       ],
+      "patchId": "f74c09587e55a3a344e0561755f4c98984058e90",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "84d2b46ec18ac897cf39ea4b51d085df5e2f4bf4"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "84d2b46ec18ac897cf39ea4b51d085df5e2f4bf4"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "84d2b46ec18ac897cf39ea4b51d085df5e2f4bf4"
         }
       }
     }

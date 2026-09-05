@@ -7,7 +7,7 @@
   "postedAt": "2025-11-24T06:28:38.000Z",
   "language": "zh_CN",
   "patchCount": 2,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1763964599.git.yjzhang@leap-io-kernel.com>",
@@ -16,19 +16,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
     }
   },
   "rfc": false,
@@ -63,21 +66,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/libsas.rst"
       ],
+      "patchId": "49fc321b27f862e9c0cb19b31e736c3860ea5b21",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
         }
       }
     },
@@ -91,21 +98,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/wd719x.rst"
       ],
+      "patchId": "ae060200e42a04a27b983ab696df12242927c990",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f12ae9ba4d234732dc091cb0565d52b286de7572"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f12ae9ba4d234732dc091cb0565d52b286de7572"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f12ae9ba4d234732dc091cb0565d52b286de7572"
         }
       }
     }

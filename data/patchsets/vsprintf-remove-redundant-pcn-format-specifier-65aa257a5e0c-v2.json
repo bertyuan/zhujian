@@ -7,7 +7,7 @@
   "postedAt": "2025-03-11T09:21:21.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250311-vsprintf-pcn-v2-0-0af40fc7dee4@bootlin.com>",
@@ -16,19 +16,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "592ebd77e65d91de0dbc5f08c05159ba91d2d709"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "592ebd77e65d91de0dbc5f08c05159ba91d2d709"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "592ebd77e65d91de0dbc5f08c05159ba91d2d709"
     }
   },
   "rfc": false,
@@ -54,21 +57,25 @@
         "Documentation/translations/zh_CN/core-api/printk-formats.rst",
         "lib/vsprintf.c"
       ],
+      "patchId": "281fbafc05304c9a51ce03ce3570bec6749a676b",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "592ebd77e65d91de0dbc5f08c05159ba91d2d709"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "592ebd77e65d91de0dbc5f08c05159ba91d2d709"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "592ebd77e65d91de0dbc5f08c05159ba91d2d709"
         }
       }
     }

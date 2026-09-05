@@ -7,26 +7,29 @@
   "postedAt": "2026-03-05T20:10:58.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260305201100.10119-1-tttturtleruss@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "29442165759cd557194815cdba391a4bf37db05e"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "29442165759cd557194815cdba391a4bf37db05e"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "29442165759cd557194815cdba391a4bf37db05e"
     }
   },
   "rfc": false,
@@ -55,21 +58,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/dev-tools/testing-overview.rst"
       ],
+      "patchId": "b6158e40fcbde1863d3977424481421075d0f7b3",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "29442165759cd557194815cdba391a4bf37db05e"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "29442165759cd557194815cdba391a4bf37db05e"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "29442165759cd557194815cdba391a4bf37db05e"
         }
       }
     }

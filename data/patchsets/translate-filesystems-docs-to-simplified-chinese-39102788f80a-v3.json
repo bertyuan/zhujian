@@ -21,19 +21,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 7
+      "total": 7,
+      "commit": "0e6d01c464560b56139902dbf9bc4f075469fc51"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 7
+      "total": 7,
+      "commit": "0e6d01c464560b56139902dbf9bc4f075469fc51"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 7
+      "total": 7,
+      "commit": "0e6d01c464560b56139902dbf9bc4f075469fc51"
     }
   },
   "rfc": false,
@@ -68,21 +71,25 @@
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/ubifs.rst"
       ],
+      "patchId": "7738024e7e500d3ff9c60232d32731384387a355",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "0e6d01c464560b56139902dbf9bc4f075469fc51"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "0e6d01c464560b56139902dbf9bc4f075469fc51"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "0e6d01c464560b56139902dbf9bc4f075469fc51"
         }
       }
     },
@@ -96,21 +103,25 @@
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/ubifs-authentication.rst"
       ],
+      "patchId": "cda729e90e7f07c12daf42a4136b75dff9982313",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a46d47ae302304d41f4b7f52d183968659897573"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a46d47ae302304d41f4b7f52d183968659897573"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a46d47ae302304d41f4b7f52d183968659897573"
         }
       }
     },
@@ -124,21 +135,25 @@
         "Documentation/translations/zh_CN/filesystems/gfs2.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
       ],
+      "patchId": "45f6a7d5a74e93a9ad36ed6937d060de30b79c50",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
         }
       }
     },
@@ -152,21 +167,25 @@
         "Documentation/translations/zh_CN/filesystems/gfs2-uevents.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
       ],
+      "patchId": "c2204d5e867e4a6693c721abe9833d1bfd919897",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a1cce3f46786f733b75dfe4875020c793d51c89f"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a1cce3f46786f733b75dfe4875020c793d51c89f"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a1cce3f46786f733b75dfe4875020c793d51c89f"
         }
       }
     },
@@ -180,21 +199,25 @@
         "Documentation/translations/zh_CN/filesystems/gfs2-glocks.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
       ],
+      "patchId": "b8b303f84a5f6e8b3b69aaf64bab84f1ffb544a2",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
         }
       }
     },
@@ -208,6 +231,7 @@
         "Documentation/translations/zh_CN/filesystems/dnotify.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
       ],
+      "patchId": "3e9906e75e6b09810bd7e5935c930683db06117f",
       "trees": {
         "alex": {
           "state": "missing",
@@ -236,6 +260,7 @@
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/inotify.rst"
       ],
+      "patchId": "1dbe4450310acc785ac2c050b0ca2dd6babe4e0d",
       "trees": {
         "alex": {
           "state": "missing",

@@ -51,6 +51,7 @@
         "Documentation/translations/zh_CN/arch/loongarch/introduction.rst",
         "Documentation/translations/zh_TW/arch/loongarch/introduction.rst"
       ],
+      "patchId": "ab7aeab020fa38befe6456f4f800ba55751deed7",
       "trees": {
         "alex": {
           "state": "missing",

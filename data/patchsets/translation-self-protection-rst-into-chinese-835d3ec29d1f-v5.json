@@ -7,7 +7,7 @@
   "postedAt": "2025-02-07T10:18:54.000Z",
   "language": "zh_CN",
   "patchCount": 3,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1738923258.git.zhangwei@cqsoftware.com.cn>",
@@ -17,19 +17,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 3
+      "state": "confirmed",
+      "matched": 3,
+      "total": 3,
+      "commit": "24b330444886957ee8b4960b5f4c8e49909f15b1"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 3
+      "state": "confirmed",
+      "matched": 3,
+      "total": 3,
+      "commit": "24b330444886957ee8b4960b5f4c8e49909f15b1"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 3
+      "state": "confirmed",
+      "matched": 3,
+      "total": 3,
+      "commit": "24b330444886957ee8b4960b5f4c8e49909f15b1"
     }
   },
   "rfc": false,
@@ -69,21 +72,25 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/self-protection.rst"
       ],
+      "patchId": "3a5bd5be1cb8f6a3e2e7a00ee91d6f5700522d4d",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "24b330444886957ee8b4960b5f4c8e49909f15b1"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "24b330444886957ee8b4960b5f4c8e49909f15b1"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "24b330444886957ee8b4960b5f4c8e49909f15b1"
         }
       }
     },
@@ -96,21 +103,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/security/keys/index.rst"
       ],
+      "patchId": "9e39d3fa580f810b680103107db56edaaf2d5ec1",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f460cd3080134b46b11cb42a7cd268239adc2643"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f460cd3080134b46b11cb42a7cd268239adc2643"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f460cd3080134b46b11cb42a7cd268239adc2643"
         }
       }
     },
@@ -123,21 +134,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/security/secrets/index.rst"
       ],
+      "patchId": "aeb9d2be51c11a6f0e02f6ecb7d97486b4b58ad3",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "2b087edf588c66d149a7ba29bd37f2ad6edbdc9f"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "2b087edf588c66d149a7ba29bd37f2ad6edbdc9f"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "2b087edf588c66d149a7ba29bd37f2ad6edbdc9f"
         }
       }
     }

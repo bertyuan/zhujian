@@ -50,6 +50,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/maintainer/configure-git.rst"
       ],
+      "patchId": "94d05f6319a2e0ab5de3372015411e78b262c304",
       "trees": {
         "alex": {
           "state": "missing",

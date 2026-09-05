@@ -7,7 +7,7 @@
   "postedAt": "2025-01-29T18:06:30.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250129180633.3501650-1-yosry.ahmed@linux.dev>",
@@ -16,19 +16,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "58ba73e521b3d3a7a7612fc200beba1544a5100c"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "58ba73e521b3d3a7a7612fc200beba1544a5100c"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "58ba73e521b3d3a7a7612fc200beba1544a5100c"
     }
   },
   "rfc": false,
@@ -60,21 +63,25 @@
         "mm/Makefile",
         "mm/z3fold.c"
       ],
+      "patchId": "322e5e9041d5451b0380464aabb61006c4525f89",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "58ba73e521b3d3a7a7612fc200beba1544a5100c"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "58ba73e521b3d3a7a7612fc200beba1544a5100c"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "58ba73e521b3d3a7a7612fc200beba1544a5100c"
         }
       }
     }

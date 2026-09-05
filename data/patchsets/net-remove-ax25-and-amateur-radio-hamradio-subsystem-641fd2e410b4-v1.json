@@ -7,26 +7,29 @@
   "postedAt": "2026-04-21T02:18:23.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20260421021824.1293976-1-kuba@kernel.org>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "dd8d4bc28ad7252610d8e79c1313a2d1e3499a51"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "dd8d4bc28ad7252610d8e79c1313a2d1e3499a51"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "dd8d4bc28ad7252610d8e79c1313a2d1e3499a51"
     }
   },
   "rfc": false,
@@ -142,21 +145,25 @@
         "net/rose/rose_timer.c",
         "net/rose/sysctl_net_rose.c"
       ],
+      "patchId": "ec38a888b1671bf6c62c363898b5b9a0b983e4c3",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "dd8d4bc28ad7252610d8e79c1313a2d1e3499a51"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "dd8d4bc28ad7252610d8e79c1313a2d1e3499a51"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "dd8d4bc28ad7252610d8e79c1313a2d1e3499a51"
         }
       }
     }

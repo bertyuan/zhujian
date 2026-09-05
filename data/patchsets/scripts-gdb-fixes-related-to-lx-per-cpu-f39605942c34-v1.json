@@ -7,7 +7,7 @@
   "postedAt": "2025-05-03T12:32:30.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250503123234.2407184-1-illia@yshyn.com>",
@@ -16,19 +16,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "09e1d93a421fa5f6699a9dbdbfc09c1008de4b9a"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "09e1d93a421fa5f6699a9dbdbfc09c1008de4b9a"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "09e1d93a421fa5f6699a9dbdbfc09c1008de4b9a"
     }
   },
   "rfc": false,
@@ -55,21 +58,25 @@
         "Documentation/translations/zh_TW/dev-tools/gdb-kernel-debugging.rst",
         "scripts/gdb/linux/cpus.py"
       ],
+      "patchId": "4a538c68570a2b21b98c8d005bec4571287596a7",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "09e1d93a421fa5f6699a9dbdbfc09c1008de4b9a"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "09e1d93a421fa5f6699a9dbdbfc09c1008de4b9a"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "09e1d93a421fa5f6699a9dbdbfc09c1008de4b9a"
         }
       }
     }

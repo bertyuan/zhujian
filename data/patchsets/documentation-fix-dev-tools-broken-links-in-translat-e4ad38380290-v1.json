@@ -57,6 +57,7 @@
         "Documentation/translations/zh_CN/dev-tools/gdb-kernel-debugging.rst",
         "Documentation/translations/zh_TW/dev-tools/gdb-kernel-debugging.rst"
       ],
+      "patchId": "97afac75c88904117398b06b333b9b30e945c2c3",
       "trees": {
         "alex": {
           "state": "missing",

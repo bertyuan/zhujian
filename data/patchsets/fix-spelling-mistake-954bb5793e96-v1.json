@@ -7,26 +7,29 @@
   "postedAt": "2025-03-17T02:08:11.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250317100811126QvOaWRPxSgm2ttU5faitl@zte.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "82ac75237379041db3a63e5d354a58966a69ec84"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "82ac75237379041db3a63e5d354a58966a69ec84"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "82ac75237379041db3a63e5d354a58966a69ec84"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/mm/balance.rst"
       ],
+      "patchId": "0106b79a3bb6024428a62471c1425270a808630f",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "82ac75237379041db3a63e5d354a58966a69ec84"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "82ac75237379041db3a63e5d354a58966a69ec84"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "82ac75237379041db3a63e5d354a58966a69ec84"
         }
       }
     }

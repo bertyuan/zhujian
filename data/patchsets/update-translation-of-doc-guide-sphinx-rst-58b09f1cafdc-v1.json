@@ -58,6 +58,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/kbuild/llvm.rst"
       ],
+      "patchId": "ab12a59426da3b9d13acd33f5db9289c566cc135",
       "trees": {
         "alex": {
           "state": "missing",
@@ -85,6 +86,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/changes.rst"
       ],
+      "patchId": "bd7e945aae42870dc47bafa1fa0d6e0f350d39a0",
       "trees": {
         "alex": {
           "state": "missing",
@@ -112,6 +114,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/doc-guide/sphinx.rst"
       ],
+      "patchId": "c12479552fe50065aa3178c7faae95b1c27a1545",
       "trees": {
         "alex": {
           "state": "missing",

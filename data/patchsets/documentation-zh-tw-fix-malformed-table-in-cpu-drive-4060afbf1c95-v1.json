@@ -7,26 +7,29 @@
   "postedAt": "2025-10-06T12:01:50.000Z",
   "language": "zh_TW",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20251006120154.18348-2-swarajgaikwad1925@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_TW/cpu-freq/cpu-drivers.rst"
       ],
+      "patchId": "5a11f3b2c6967ad8b294fcf40671ee17f41b69db",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         }
       }
     }

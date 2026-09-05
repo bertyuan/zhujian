@@ -52,6 +52,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/maintainer/configure-git.rst"
       ],
+      "patchId": "d15074cdb1c64f4a8126efb2843f0e194115fe19",
       "trees": {
         "alex": {
           "state": "missing",
@@ -79,6 +80,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/maintainer/pull-requests.rst"
       ],
+      "patchId": "5b6c1e511737bb6f7abbc9a223e20bc9e330ddf4",
       "trees": {
         "alex": {
           "state": "missing",

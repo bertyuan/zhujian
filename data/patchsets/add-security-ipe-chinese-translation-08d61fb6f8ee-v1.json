@@ -7,26 +7,29 @@
   "postedAt": "2025-09-02T03:19:16.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250902031918.591908-1-zhaoshuo@cqsoftware.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "943b764cb6a3302b15e5183c1bdc780355305db1"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "943b764cb6a3302b15e5183c1bdc780355305db1"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "943b764cb6a3302b15e5183c1bdc780355305db1"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/security/ipe.rst"
       ],
+      "patchId": "56de7ca6fc0913417f01ba4d032735bf11a4e35f",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "943b764cb6a3302b15e5183c1bdc780355305db1"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "943b764cb6a3302b15e5183c1bdc780355305db1"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "943b764cb6a3302b15e5183c1bdc780355305db1"
         }
       }
     }

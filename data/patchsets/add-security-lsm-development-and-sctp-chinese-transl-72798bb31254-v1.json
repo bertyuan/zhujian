@@ -7,7 +7,7 @@
   "postedAt": "2025-03-21T07:49:31.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1742542887.git.zhaoshuo@cqsoftware.com.cn>",
@@ -15,19 +15,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "23713aa5b4ec101787477f80c91d7460a65eeb0c"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "23713aa5b4ec101787477f80c91d7460a65eeb0c"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "23713aa5b4ec101787477f80c91d7460a65eeb0c"
     }
   },
   "rfc": false,
@@ -52,21 +55,25 @@
         "Documentation/translations/zh_CN/security/SCTP.rst",
         "Documentation/translations/zh_CN/security/index.rst"
       ],
+      "patchId": "1209970f0af54b15cbf62d2570a619741597278b",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "23713aa5b4ec101787477f80c91d7460a65eeb0c"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "23713aa5b4ec101787477f80c91d7460a65eeb0c"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "23713aa5b4ec101787477f80c91d7460a65eeb0c"
         }
       }
     }

@@ -51,6 +51,7 @@
         "Documentation/translations/zh_CN/usb/index.rst",
         "Documentation/translations/zh_CN/usb/ohci.rst"
       ],
+      "patchId": "3cce7cb1f57f2214cc559534168f4fe77b7df436",
       "trees": {
         "alex": {
           "state": "missing",

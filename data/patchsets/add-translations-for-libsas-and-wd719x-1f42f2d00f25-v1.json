@@ -16,19 +16,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 2
+      "total": 2,
+      "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 2
+      "total": 2,
+      "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 2
+      "total": 2,
+      "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
     }
   },
   "rfc": false,
@@ -63,21 +66,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/libsas.rst"
       ],
+      "patchId": "fa09dafa5a68eac61d1504211b1a72ef8d0e9fe7",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "56a248e7bc21a2f51fcc706121e1f8fa89fda413"
         }
       }
     },
@@ -91,21 +98,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/wd719x.rst"
       ],
+      "patchId": "3990ebd6e42a7aafeef4392ea16572abb23ef003",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "f12ae9ba4d234732dc091cb0565d52b286de7572"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "f12ae9ba4d234732dc091cb0565d52b286de7572"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "f12ae9ba4d234732dc091cb0565d52b286de7572"
         }
       }
     }

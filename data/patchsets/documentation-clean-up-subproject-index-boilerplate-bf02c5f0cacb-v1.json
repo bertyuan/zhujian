@@ -118,6 +118,7 @@
         "Documentation/userspace-api/gpio/index.rst",
         "Documentation/wmi/devices/index.rst"
       ],
+      "patchId": "99922a9672241208f543f97fa03a0d2c60ae1d8e",
       "trees": {
         "alex": {
           "state": "missing",
@@ -170,6 +171,7 @@
         "Documentation/translations/zh_TW/admin-guide/index.rst",
         "Documentation/translations/zh_TW/process/index.rst"
       ],
+      "patchId": "f81aa986477aed3d9805e360e88d7b2645b15829",
       "trees": {
         "alex": {
           "state": "missing",

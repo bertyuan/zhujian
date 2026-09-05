@@ -24,19 +24,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "partial",
+      "matched": 1,
+      "total": 4,
+      "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "partial",
+      "matched": 1,
+      "total": 4,
+      "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "partial",
+      "matched": 1,
+      "total": 4,
+      "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
     }
   },
   "rfc": false,
@@ -69,6 +72,7 @@
         "MAINTAINERS",
         "tools/docs/checktransupdate.py"
       ],
+      "patchId": "cb3a24bf45dbdda0f15ff7f3d6cb44835d23e412",
       "trees": {
         "alex": {
           "state": "missing",
@@ -111,6 +115,7 @@
         "scripts/kernel-doc",
         "tools/docs/kernel-doc"
       ],
+      "patchId": "3010a9d181732531faed6166daf93ba9925c2e03",
       "trees": {
         "alex": {
           "state": "missing",
@@ -141,6 +146,7 @@
         "Documentation/translations/zh_CN/doc-guide/kernel-doc.rst",
         "tools/docs/split-man.pl"
       ],
+      "patchId": "1c3b82eea5a43de1b533e4f29e862b3201d0a49e",
       "trees": {
         "alex": {
           "state": "missing",
@@ -170,21 +176,25 @@
         "Documentation/translations/zh_CN/doc-guide/contributing.rst",
         "tools/docs/find-unused-docs.sh"
       ],
+      "patchId": "ca13656f0657d49c48c1050463f8d00ab916837c",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
         }
       }
     }

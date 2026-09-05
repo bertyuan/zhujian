@@ -76,6 +76,7 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/team.rst"
       ],
+      "patchId": "dfed1ffcf23638f643de1bde589ea3d45b4b87d2",
       "trees": {
         "alex": {
           "state": "missing",
@@ -104,6 +105,7 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/sriov.rst"
       ],
+      "patchId": "557d7c27b1b76afe72d74d77d5981287e817a3ba",
       "trees": {
         "alex": {
           "state": "missing",
@@ -132,6 +134,7 @@
         "Documentation/translations/zh_CN/networking/driver.rst",
         "Documentation/translations/zh_CN/networking/index.rst"
       ],
+      "patchId": "bdd0cb7150900d3e982233b8df903b7766f1d5cc",
       "trees": {
         "alex": {
           "state": "missing",
@@ -160,6 +163,7 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/ipv6.rst"
       ],
+      "patchId": "06bdaf60d7d61bd1871b6ed6e8ea0c2a5622552f",
       "trees": {
         "alex": {
           "state": "missing",
@@ -188,6 +192,7 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/secid.rst"
       ],
+      "patchId": "a458a07a7aec5a7f95ce41025c87c4958418da81",
       "trees": {
         "alex": {
           "state": "missing",

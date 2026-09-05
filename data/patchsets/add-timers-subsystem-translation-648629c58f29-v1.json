@@ -68,6 +68,7 @@
         "Documentation/translations/zh_CN/subsystem-apis.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
       ],
+      "patchId": "89b9da6a58184aa81628b6f104d6f158b2588379",
       "trees": {
         "alex": {
           "state": "missing",
@@ -96,6 +97,7 @@
         "Documentation/translations/zh_CN/timers/index.rst",
         "Documentation/translations/zh_CN/timers/timekeeping.rst"
       ],
+      "patchId": "5d3c616da487bfeee382b70cd3d12834678fca65",
       "trees": {
         "alex": {
           "state": "missing",
@@ -124,6 +126,7 @@
         "Documentation/translations/zh_CN/timers/hpet.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
       ],
+      "patchId": "b0383dfd6dd6689529300338456d59b6a7b8bd30",
       "trees": {
         "alex": {
           "state": "missing",
@@ -152,6 +155,7 @@
         "Documentation/translations/zh_CN/timers/hrtimers.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
       ],
+      "patchId": "a15cfc50ae3f789bc8f2a732fbf9e421f4a544f3",
       "trees": {
         "alex": {
           "state": "missing",
@@ -180,6 +184,7 @@
         "Documentation/translations/zh_CN/timers/highres.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
       ],
+      "patchId": "591dcf4621928a33a2dd793a610b714237eb22d4",
       "trees": {
         "alex": {
           "state": "missing",
@@ -208,6 +213,7 @@
         "Documentation/translations/zh_CN/timers/index.rst",
         "Documentation/translations/zh_CN/timers/no_hz.rst"
       ],
+      "patchId": "ce4b605466bb17864e98a5f00c014ffe96e50757",
       "trees": {
         "alex": {
           "state": "missing",
@@ -236,6 +242,7 @@
         "Documentation/translations/zh_CN/timers/delay_sleep_functions.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
       ],
+      "patchId": "6f2ad6f6f075d153c9dc8f5889bed5b044c815e4",
       "trees": {
         "alex": {
           "state": "missing",

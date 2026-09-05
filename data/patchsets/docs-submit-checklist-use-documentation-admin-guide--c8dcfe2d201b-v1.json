@@ -7,26 +7,29 @@
   "postedAt": "2025-03-04T07:57:34.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250304075734.56660-1-akiyks@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "5a63f0369bda46a7953cc6c41d3bf8f81ba4f17b"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "5a63f0369bda46a7953cc6c41d3bf8f81ba4f17b"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "5a63f0369bda46a7953cc6c41d3bf8f81ba4f17b"
     }
   },
   "rfc": false,
@@ -55,21 +58,25 @@
         "Documentation/translations/zh_CN/process/submit-checklist.rst",
         "Documentation/translations/zh_TW/process/submit-checklist.rst"
       ],
+      "patchId": "db3aa36f76a58f0b93ebebb8a286fcce3d928558",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "5a63f0369bda46a7953cc6c41d3bf8f81ba4f17b"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "5a63f0369bda46a7953cc6c41d3bf8f81ba4f17b"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "5a63f0369bda46a7953cc6c41d3bf8f81ba4f17b"
         }
       }
     }

@@ -14,19 +14,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "24ed44aa06eaafd1323cbe9190b306bef142707d"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "24ed44aa06eaafd1323cbe9190b306bef142707d"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "24ed44aa06eaafd1323cbe9190b306bef142707d"
     }
   },
   "rfc": false,
@@ -61,21 +64,25 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/landlock.rst"
       ],
+      "patchId": "4be868a948613c336b82d9b9cee73dd53d18c956",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "24ed44aa06eaafd1323cbe9190b306bef142707d"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "24ed44aa06eaafd1323cbe9190b306bef142707d"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "24ed44aa06eaafd1323cbe9190b306bef142707d"
         }
       }
     }

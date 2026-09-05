@@ -57,6 +57,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/mm/damon/design.rst"
       ],
+      "patchId": "23218a25b31198d551a1d17f04154ae4817f2eb5",
       "trees": {
         "alex": {
           "state": "missing",
@@ -84,6 +85,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/stat.rst"
       ],
+      "patchId": "9cc531ceb5a07e7d02049c419c0b1639adee281a",
       "trees": {
         "alex": {
           "state": "missing",
@@ -111,6 +113,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/index.rst"
       ],
+      "patchId": "0588a85c9dc43392b93f2c82dee11e557f8cbb87",
       "trees": {
         "alex": {
           "state": "missing",
@@ -138,6 +141,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/start.rst"
       ],
+      "patchId": "ca9eada723271dd61bf4be9e0bd2aa988d1bf8fb",
       "trees": {
         "alex": {
           "state": "missing",
@@ -165,6 +169,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst"
       ],
+      "patchId": "ea524e9208375ad2232efb135e37b562c2922ede",
       "trees": {
         "alex": {
           "state": "missing",
@@ -192,6 +197,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/reclaim.rst"
       ],
+      "patchId": "30b4026798bd1f3aa26278d2a7daab170b734509",
       "trees": {
         "alex": {
           "state": "missing",
@@ -219,6 +225,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/lru_sort.rst"
       ],
+      "patchId": "e5d1320c8df9b15b0d478003d6acfb69285ae65b",
       "trees": {
         "alex": {
           "state": "missing",

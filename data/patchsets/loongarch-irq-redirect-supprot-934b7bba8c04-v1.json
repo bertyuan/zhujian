@@ -73,6 +73,7 @@
         "Documentation/arch/loongarch/irq-chip-model.rst",
         "Documentation/translations/zh_CN/arch/loongarch/irq-chip-model.rst"
       ],
+      "patchId": "91a04cb6112198693c34c0642b16fa52d5902a07",
       "trees": {
         "alex": {
           "state": "missing",

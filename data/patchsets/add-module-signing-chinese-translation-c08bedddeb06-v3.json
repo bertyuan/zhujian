@@ -14,19 +14,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "2cbd7a3de5d40fd22bc27f9356461e144d0bdf2d"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "2cbd7a3de5d40fd22bc27f9356461e144d0bdf2d"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "2cbd7a3de5d40fd22bc27f9356461e144d0bdf2d"
     }
   },
   "rfc": false,
@@ -70,21 +73,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/module-signing.rst"
       ],
+      "patchId": "6174ef9b7a26dc72c73a3e0f8e0b90924a2c68e1",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "2cbd7a3de5d40fd22bc27f9356461e144d0bdf2d"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "2cbd7a3de5d40fd22bc27f9356461e144d0bdf2d"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "2cbd7a3de5d40fd22bc27f9356461e144d0bdf2d"
         }
       }
     }

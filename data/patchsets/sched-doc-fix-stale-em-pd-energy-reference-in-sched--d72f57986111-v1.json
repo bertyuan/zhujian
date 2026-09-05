@@ -7,26 +7,29 @@
   "postedAt": "2026-07-07T08:53:35.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260707085335.2942128-1-luoliang@kylinos.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "75f7551b073cc164f2837490490d13beac663ee0"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "75f7551b073cc164f2837490490d13beac663ee0"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "75f7551b073cc164f2837490490d13beac663ee0"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
         "Documentation/scheduler/sched-energy.rst",
         "Documentation/translations/zh_CN/scheduler/sched-energy.rst"
       ],
+      "patchId": "5e4fc082b439997481e0018a495bff14b0e5ce2c",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "75f7551b073cc164f2837490490d13beac663ee0"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "75f7551b073cc164f2837490490d13beac663ee0"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "75f7551b073cc164f2837490490d13beac663ee0"
         }
       }
     }

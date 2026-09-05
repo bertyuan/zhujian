@@ -7,26 +7,29 @@
   "postedAt": "2026-05-29T15:37:12.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<tencent_FCA3F4312E849777081742CBAF2CD6BBA007@qq.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "96bb72c9503066ed38567682ec94585c9c838fd6"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "96bb72c9503066ed38567682ec94585c9c838fd6"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "96bb72c9503066ed38567682ec94585c9c838fd6"
     }
   },
   "rfc": false,
@@ -55,21 +58,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/index.rst"
       ],
+      "patchId": "3db71e02f2fbfebc85d93902af3b0667f7256256",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "96bb72c9503066ed38567682ec94585c9c838fd6"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "96bb72c9503066ed38567682ec94585c9c838fd6"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "96bb72c9503066ed38567682ec94585c9c838fd6"
         }
       }
     }

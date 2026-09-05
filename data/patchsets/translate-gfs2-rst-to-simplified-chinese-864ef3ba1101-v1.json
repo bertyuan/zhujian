@@ -7,26 +7,29 @@
   "postedAt": "2025-07-18T08:54:48.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250718165448516aBqB6ZJ9DWn8e3Msmsjcg@zte.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
         "Documentation/translations/zh_CN/filesystems/gfs2.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
       ],
+      "patchId": "4f46d9ccdba42c0e0e738c0a3fac7deb089e3ce1",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8c6c6e9564cc12391e3d92af83e0b029067abb1a"
         }
       }
     }

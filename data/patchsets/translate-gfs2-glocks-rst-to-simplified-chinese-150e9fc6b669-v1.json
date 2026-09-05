@@ -7,26 +7,29 @@
   "postedAt": "2025-07-18T08:57:46.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250718165746013rPfwDG8PRZ2LMvX4a0Z8U@zte.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
         "Documentation/translations/zh_CN/filesystems/gfs2-glocks.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
       ],
+      "patchId": "89d8799fc75d5ec43376dc6defa28045be7e1a88",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "1c8e1941137edd6bc8763ab00b37c80cd37ea73e"
         }
       }
     }

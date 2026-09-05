@@ -14,19 +14,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
     }
   },
   "rfc": false,
@@ -61,21 +64,25 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/siphash.rst"
       ],
+      "patchId": "4f3eb73696fd2d54ad97cb14dbed419ae2459f4d",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
         }
       }
     }

@@ -7,7 +7,7 @@
   "postedAt": "2025-08-10T01:29:42.000Z",
   "language": "zh_CN",
   "patchCount": 4,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250810013100.29776-1-laurent.pinchart+renesas@ideasonboard.com>",
@@ -18,19 +18,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "partial",
+      "matched": 2,
+      "total": 4,
+      "commit": "618882c92681de18e9bd99d2a88bb21c897283f3"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "partial",
+      "matched": 2,
+      "total": 4,
+      "commit": "618882c92681de18e9bd99d2a88bb21c897283f3"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "partial",
+      "matched": 2,
+      "total": 4,
+      "commit": "618882c92681de18e9bd99d2a88bb21c897283f3"
     }
   },
   "rfc": false,
@@ -72,21 +75,25 @@
         "drivers/media/v4l2-core/v4l2-subdev.c",
         "include/media/v4l2-fh.h"
       ],
+      "patchId": "4327a1e6906372b58cc62ac991c999f59b434b02",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "618882c92681de18e9bd99d2a88bb21c897283f3"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "618882c92681de18e9bd99d2a88bb21c897283f3"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "618882c92681de18e9bd99d2a88bb21c897283f3"
         }
       }
     },
@@ -159,21 +166,25 @@
         "drivers/usb/gadget/function/uvc_v4l2.c",
         "include/media/v4l2-fh.h"
       ],
+      "patchId": "801249bbc5fe822ee53cf650f376b03d075410b3",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "47f4b1acb4d505b1e7e81d8e0ebce774422b8c2e"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "47f4b1acb4d505b1e7e81d8e0ebce774422b8c2e"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "47f4b1acb4d505b1e7e81d8e0ebce774422b8c2e"
         }
       }
     },
@@ -242,21 +253,25 @@
         "drivers/usb/gadget/function/uvc_v4l2.c",
         "include/media/v4l2-fh.h"
       ],
+      "patchId": "4e540c10b5c03c9f0f85010bb3861f1df8fd365a",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "277966749f46bc6292c4052b4e66a554f193a78a"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "277966749f46bc6292c4052b4e66a554f193a78a"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "277966749f46bc6292c4052b4e66a554f193a78a"
         }
       }
     },
@@ -278,21 +293,25 @@
         "include/media/v4l2-dev.h",
         "include/media/v4l2-fh.h"
       ],
+      "patchId": "d1e3a9428cee2d3c1f58fe0d22b41487ba57a5e7",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "bb4d6be205dae94aa2d3c3a1ad814dad90d4fd62"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "bb4d6be205dae94aa2d3c3a1ad814dad90d4fd62"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "bb4d6be205dae94aa2d3c3a1ad814dad90d4fd62"
         }
       }
     }

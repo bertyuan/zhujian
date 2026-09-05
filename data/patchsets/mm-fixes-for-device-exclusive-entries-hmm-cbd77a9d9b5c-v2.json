@@ -7,7 +7,7 @@
   "postedAt": "2025-02-10T19:37:42.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250210193801.781278-1-david@redhat.com>",
@@ -31,19 +31,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
     }
   },
   "rfc": false,
@@ -78,21 +81,25 @@
         "lib/test_hmm.c",
         "mm/rmap.c"
       ],
+      "patchId": "d840d5eac0b5edd6a5ba7919e95504d309827f10",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
         }
       }
     }

@@ -14,19 +14,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
     }
   },
   "rfc": false,
@@ -55,21 +58,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/dev-tools/ubsan.rst"
       ],
+      "patchId": "f681164e61353f96bbbd9a816f5751b890ded0c5",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
         }
       }
     }

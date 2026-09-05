@@ -7,26 +7,29 @@
   "postedAt": "2025-11-16T09:16:56.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20251116091656.1788887-1-kezijie@leap-io-kernel.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "bd4b5902e7b647f0dbea1b9426d664ae00186159"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "bd4b5902e7b647f0dbea1b9426d664ae00186159"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "bd4b5902e7b647f0dbea1b9426d664ae00186159"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/scsi-parameters.rst"
       ],
+      "patchId": "09ba998ddc9ac289c6fe77385106700be6550e2d",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "bd4b5902e7b647f0dbea1b9426d664ae00186159"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "bd4b5902e7b647f0dbea1b9426d664ae00186159"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "bd4b5902e7b647f0dbea1b9426d664ae00186159"
         }
       }
     }

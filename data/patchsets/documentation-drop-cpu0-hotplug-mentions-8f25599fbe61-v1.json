@@ -51,6 +51,7 @@
         "Documentation/core-api/cpu_hotplug.rst",
         "Documentation/translations/zh_CN/core-api/cpu_hotplug.rst"
       ],
+      "patchId": "2456284047ff0ca4a9e3a179e3ab8b0f8bf283b9",
       "trees": {
         "alex": {
           "state": "missing",

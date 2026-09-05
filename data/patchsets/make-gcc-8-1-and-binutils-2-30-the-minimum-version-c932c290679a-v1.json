@@ -7,7 +7,7 @@
   "postedAt": "2025-04-07T09:41:12.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250407094116.1339199-1-arnd@kernel.org>",
@@ -18,19 +18,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "118c40b7b50340bf7ff7e0adee8e3bab6e552c82"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "118c40b7b50340bf7ff7e0adee8e3bab6e552c82"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "118c40b7b50340bf7ff7e0adee8e3bab6e552c82"
     }
   },
   "rfc": false,
@@ -65,21 +68,25 @@
         "scripts/gcc-plugins/gcc-common.h",
         "scripts/min-tool-version.sh"
       ],
+      "patchId": "899ab0bb674bbceae1bf03361e7cf0bbe31e1811",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "118c40b7b50340bf7ff7e0adee8e3bab6e552c82"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "118c40b7b50340bf7ff7e0adee8e3bab6e552c82"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "118c40b7b50340bf7ff7e0adee8e3bab6e552c82"
         }
       }
     }

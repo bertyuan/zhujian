@@ -26,19 +26,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
     }
   },
   "rfc": false,
@@ -73,21 +76,25 @@
         "lib/test_hmm.c",
         "mm/rmap.c"
       ],
+      "patchId": "bcd109b1a398a7f738ae050b4487af3ee8f41cbf",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "599b684a7854e51a51358fe59bbdfea281f0b461"
         }
       }
     }

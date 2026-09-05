@@ -7,26 +7,29 @@
   "postedAt": "2025-01-10T08:41:01.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<2025011005-resistant-uncork-9814@gregkh>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "f80aaf40e2c96285e9d8f0f81053a515675ade27"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "f80aaf40e2c96285e9d8f0f81053a515675ade27"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "f80aaf40e2c96285e9d8f0f81053a515675ade27"
     }
   },
   "rfc": false,
@@ -52,21 +55,25 @@
         "Documentation/translations/zh_CN/admin-guide/bug-hunting.rst",
         "Documentation/translations/zh_TW/admin-guide/bug-hunting.rst"
       ],
+      "patchId": "fc16d52a04a0a80cc54b9934d253f810a0dccece",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f80aaf40e2c96285e9d8f0f81053a515675ade27"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f80aaf40e2c96285e9d8f0f81053a515675ade27"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f80aaf40e2c96285e9d8f0f81053a515675ade27"
         }
       }
     }

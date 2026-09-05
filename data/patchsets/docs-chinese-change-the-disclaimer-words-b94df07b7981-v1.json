@@ -7,26 +7,29 @@
   "postedAt": "2025-03-05T02:50:58.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250305025101.27717-1-alexs@kernel.org>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "44baeb8613ca98f0967684ae05643788c88b1768"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "44baeb8613ca98f0967684ae05643788c88b1768"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "44baeb8613ca98f0967684ae05643788c88b1768"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/disclaimer-zh_CN.rst"
       ],
+      "patchId": "53b471a1dded2ac87b3ba0f3a08d1c6e85156842",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "44baeb8613ca98f0967684ae05643788c88b1768"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "44baeb8613ca98f0967684ae05643788c88b1768"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "44baeb8613ca98f0967684ae05643788c88b1768"
         }
       }
     }

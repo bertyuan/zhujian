@@ -7,26 +7,29 @@
   "postedAt": "2026-03-10T12:14:31.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260310121431.362091-1-Julia.Lawall@inria.fr>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "117376394061780680dd4bfd92ea30bf9deafedf"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "117376394061780680dd4bfd92ea30bf9deafedf"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "117376394061780680dd4bfd92ea30bf9deafedf"
     }
   },
   "rfc": false,
@@ -59,21 +62,25 @@
         "Documentation/translations/zh_CN/process/4.Coding.rst",
         "Documentation/translations/zh_TW/process/4.Coding.rst"
       ],
+      "patchId": "0df3fda3ae67193bbc3b356bcda1a1e4336a6539",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "117376394061780680dd4bfd92ea30bf9deafedf"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "117376394061780680dd4bfd92ea30bf9deafedf"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "117376394061780680dd4bfd92ea30bf9deafedf"
         }
       }
     }

@@ -7,26 +7,29 @@
   "postedAt": "2025-09-18T07:56:50.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<202509181556503857h2V0skOmjONfEzUrZ-ok@zte.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "679e5d29b5b0b23ce2c7b7b5dc340901c05d5e44"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "679e5d29b5b0b23ce2c7b7b5dc340901c05d5e44"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "679e5d29b5b0b23ce2c7b7b5dc340901c05d5e44"
     }
   },
   "rfc": false,
@@ -53,21 +56,25 @@
         "Documentation/translations/zh_CN/filesystems/ubifs-authentication.rst",
         "Documentation/translations/zh_CN/filesystems/ubifs.rst"
       ],
+      "patchId": "3954bb54fc6c8c68b538a3200d1b65fee8648705",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "679e5d29b5b0b23ce2c7b7b5dc340901c05d5e44"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "679e5d29b5b0b23ce2c7b7b5dc340901c05d5e44"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "679e5d29b5b0b23ce2c7b7b5dc340901c05d5e44"
         }
       }
     }

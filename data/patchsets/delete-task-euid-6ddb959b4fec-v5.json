@@ -7,7 +7,7 @@
   "postedAt": "2026-07-03T06:57:00.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260703-remove-task-euid-v5-0-c90c7e2ddf54@google.com>",
@@ -21,14 +21,16 @@
       "total": 1
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "15c1f17979712407a4a71f2129f89ecd625ccbe8"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "15c1f17979712407a4a71f2129f89ecd625ccbe8"
     }
   },
   "rfc": false,
@@ -66,6 +68,7 @@
         "rust/helpers/task.c",
         "rust/kernel/task.rs"
       ],
+      "patchId": "9aeadef26a8f8ac25ba39792a6bc767b607da8fd",
       "trees": {
         "alex": {
           "state": "missing",
@@ -73,14 +76,16 @@
           "total": 1
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "15c1f17979712407a4a71f2129f89ecd625ccbe8"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "15c1f17979712407a4a71f2129f89ecd625ccbe8"
         }
       }
     }

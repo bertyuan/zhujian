@@ -50,6 +50,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/arch/riscv/vm-layout.rst"
       ],
+      "patchId": "bc2ff8be8e618b88d438e295aea51a26d8d3d653",
       "trees": {
         "alex": {
           "state": "missing",

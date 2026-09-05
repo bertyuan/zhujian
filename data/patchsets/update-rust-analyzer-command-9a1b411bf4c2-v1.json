@@ -51,6 +51,7 @@
         "Documentation/rust/quick-start.rst",
         "Documentation/translations/zh_CN/rust/quick-start.rst"
       ],
+      "patchId": "096d021846e0ca4e22dc927bc9c9990000e78ede",
       "trees": {
         "alex": {
           "state": "missing",

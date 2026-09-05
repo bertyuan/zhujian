@@ -7,26 +7,29 @@
   "postedAt": "2025-01-08T08:01:35.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250108080136.19398-1-zhaoshuo@cqsoftware.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "d996d56d1254ad95642c4b0740e5ceaf56b65bb3"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "d996d56d1254ad95642c4b0740e5ceaf56b65bb3"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "d996d56d1254ad95642c4b0740e5ceaf56b65bb3"
     }
   },
   "rfc": false,
@@ -61,21 +64,25 @@
         "Documentation/translations/zh_CN/security/digsig.rst",
         "Documentation/translations/zh_CN/security/index.rst"
       ],
+      "patchId": "b1c1f3339a137cc17359cf1079ffdb9b0d6fb848",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d996d56d1254ad95642c4b0740e5ceaf56b65bb3"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d996d56d1254ad95642c4b0740e5ceaf56b65bb3"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d996d56d1254ad95642c4b0740e5ceaf56b65bb3"
         }
       }
     }

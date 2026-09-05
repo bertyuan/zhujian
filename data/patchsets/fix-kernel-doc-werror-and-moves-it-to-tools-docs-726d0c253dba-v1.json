@@ -7,7 +7,7 @@
   "postedAt": "2026-01-19T12:04:55.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1768823489.git.mchehab+huawei@kernel.org>",
@@ -23,19 +23,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eba6ffd126cd52358181ed5a179644a161f9c65f"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eba6ffd126cd52358181ed5a179644a161f9c65f"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eba6ffd126cd52358181ed5a179644a161f9c65f"
     }
   },
   "rfc": false,
@@ -75,21 +78,25 @@
         "tools/docs/kernel-doc",
         "tools/docs/sphinx-build-wrapper"
       ],
+      "patchId": "d0a90df3c3a2755b7e6d24d23fdba712302f855b",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eba6ffd126cd52358181ed5a179644a161f9c65f"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eba6ffd126cd52358181ed5a179644a161f9c65f"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eba6ffd126cd52358181ed5a179644a161f9c65f"
         }
       }
     }

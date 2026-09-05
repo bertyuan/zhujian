@@ -7,7 +7,7 @@
   "postedAt": "2025-02-11T06:22:54.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1739254867.git.mchehab+huawei@kernel.org>",
@@ -23,19 +23,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eb0c714120ba13557f820e8b3ccea99c1cc86be2"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eb0c714120ba13557f820e8b3ccea99c1cc86be2"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eb0c714120ba13557f820e8b3ccea99c1cc86be2"
     }
   },
   "rfc": false,
@@ -62,21 +65,25 @@
         "Documentation/translations/zh_CN/process/submit-checklist.rst",
         "Documentation/translations/zh_TW/process/submit-checklist.rst"
       ],
+      "patchId": "3ebfb60d0d4c5c33690833b4831a8e5bc234a223",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eb0c714120ba13557f820e8b3ccea99c1cc86be2"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eb0c714120ba13557f820e8b3ccea99c1cc86be2"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eb0c714120ba13557f820e8b3ccea99c1cc86be2"
         }
       }
     }

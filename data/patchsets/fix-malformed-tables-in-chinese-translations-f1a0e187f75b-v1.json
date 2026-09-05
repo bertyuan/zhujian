@@ -7,7 +7,7 @@
   "postedAt": "2025-10-03T16:26:09.000Z",
   "language": "mixed",
   "patchCount": 4,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20251003162626.6737-1-krishnagopi487@gmail.com>",
@@ -19,19 +19,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "confirmed",
+      "matched": 4,
+      "total": 4,
+      "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "confirmed",
+      "matched": 4,
+      "total": 4,
+      "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "confirmed",
+      "matched": 4,
+      "total": 4,
+      "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
     }
   },
   "rfc": false,
@@ -55,21 +58,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/cpu-freq/cpu-drivers.rst"
       ],
+      "patchId": "520c463f03863508446a60c43de13857055dce27",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
         }
       }
     },
@@ -82,21 +89,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/cpu-freq/cpu-drivers.rst"
       ],
+      "patchId": "520c463f03863508446a60c43de13857055dce27",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7e8f305a081e22ce81aab7f7b9ce01437cbd38b3"
         }
       }
     },
@@ -109,21 +120,25 @@
       "changedFiles": [
         "Documentation/translations/zh_TW/cpu-freq/cpu-drivers.rst"
       ],
+      "patchId": "5a11f3b2c6967ad8b294fcf40671ee17f41b69db",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         }
       }
     },
@@ -136,21 +151,25 @@
       "changedFiles": [
         "Documentation/translations/zh_TW/cpu-freq/cpu-drivers.rst"
       ],
+      "patchId": "5a11f3b2c6967ad8b294fcf40671ee17f41b69db",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "989ed3cad2fdb7921bf0f9f0f730e1bb065946c2"
         }
       }
     }

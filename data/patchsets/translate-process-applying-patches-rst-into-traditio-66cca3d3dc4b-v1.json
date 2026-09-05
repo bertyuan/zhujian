@@ -53,6 +53,7 @@
         "Documentation/translations/zh_TW/process/applying-patches.rst",
         "Documentation/translations/zh_TW/process/index.rst"
       ],
+      "patchId": "d36176507e7da63a2f3a2f67899dedb188e79748",
       "trees": {
         "alex": {
           "state": "missing",
@@ -81,6 +82,7 @@
         "Documentation/translations/zh_TW/admin-guide/README.rst",
         "Documentation/translations/zh_TW/process/howto.rst"
       ],
+      "patchId": "85437ce5322542e1c8a7059446f1c2bd1c35f847",
       "trees": {
         "alex": {
           "state": "missing",

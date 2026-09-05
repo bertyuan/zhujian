@@ -115,6 +115,7 @@
         "Documentation/power/swsusp-dmcrypt.rst",
         "Documentation/translations/zh_CN/power/index.rst"
       ],
+      "patchId": "ba0be0fce338c1f184de1d48047e0a759a27d542",
       "trees": {
         "alex": {
           "state": "missing",

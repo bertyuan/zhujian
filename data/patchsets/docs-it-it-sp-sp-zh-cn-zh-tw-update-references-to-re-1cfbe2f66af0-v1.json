@@ -7,26 +7,29 @@
   "postedAt": "2026-06-11T01:00:04.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260611010014.412841-1-enelsonmoore@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eb406b55d891113be04e80533f504c7100165d09"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eb406b55d891113be04e80533f504c7100165d09"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "eb406b55d891113be04e80533f504c7100165d09"
     }
   },
   "rfc": false,
@@ -53,21 +56,25 @@
         "Documentation/translations/zh_CN/process/submit-checklist.rst",
         "Documentation/translations/zh_TW/process/submit-checklist.rst"
       ],
+      "patchId": "fd616725457a5114e77ee4610834669bb3968592",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eb406b55d891113be04e80533f504c7100165d09"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eb406b55d891113be04e80533f504c7100165d09"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "eb406b55d891113be04e80533f504c7100165d09"
         }
       }
     }

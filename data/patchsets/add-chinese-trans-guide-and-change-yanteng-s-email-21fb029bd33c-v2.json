@@ -16,19 +16,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     }
   },
   "rfc": false,
@@ -58,21 +61,25 @@
         "Documentation/translations/zh_CN/how-to.rst",
         "Documentation/translations/zh_CN/index.rst"
       ],
+      "patchId": "9b6c6b9b47a78dd052cc9582429d3c69c47e5636",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         }
       }
     }

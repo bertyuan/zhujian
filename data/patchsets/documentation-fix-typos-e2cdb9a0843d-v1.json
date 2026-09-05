@@ -75,6 +75,7 @@
         "Documentation/translations/zh_TW/process/5.Posting.rst",
         "Documentation/userspace-api/media/rc/rc-protos.rst"
       ],
+      "patchId": "3a4a99b5b7a6687a4720791a9b6f5a9fe9884d22",
       "trees": {
         "alex": {
           "state": "missing",

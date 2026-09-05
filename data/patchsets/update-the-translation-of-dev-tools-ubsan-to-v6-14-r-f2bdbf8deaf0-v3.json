@@ -7,26 +7,29 @@
   "postedAt": "2025-02-07T08:48:20.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<2B33A00C9F5BECC7+20250207084821.251531-1-wangyuli@uniontech.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
     }
   },
   "rfc": false,
@@ -55,21 +58,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/dev-tools/ubsan.rst"
       ],
+      "patchId": "9d0bf6bbcb0c562ec7a859c8157b764718d814f1",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8bc237a1320c8d35a936562cdd3551dd0c41f3d2"
         }
       }
     }

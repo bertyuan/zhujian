@@ -86,6 +86,7 @@
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",
         "Documentation/translations/zh_TW/process/coding-style.rst"
       ],
+      "patchId": "d9bd4cbf4fc459c8cffe7c695d2b7cea1b5880ec",
       "trees": {
         "alex": {
           "state": "missing",

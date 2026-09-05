@@ -7,26 +7,29 @@
   "postedAt": "2025-11-17T09:30:41.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20251117093041.458075-1-zhaochenguang@kylinos.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "6132026df02a6bb95dc3d909946234910f099b8a"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "6132026df02a6bb95dc3d909946234910f099b8a"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "6132026df02a6bb95dc3d909946234910f099b8a"
     }
   },
   "rfc": false,
@@ -60,21 +63,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/kbuild/kbuild.rst"
       ],
+      "patchId": "32314d0574a27b91e7b5a309799a54483b294bff",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "6132026df02a6bb95dc3d909946234910f099b8a"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "6132026df02a6bb95dc3d909946234910f099b8a"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "6132026df02a6bb95dc3d909946234910f099b8a"
         }
       }
     }

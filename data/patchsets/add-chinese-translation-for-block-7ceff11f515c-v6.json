@@ -7,7 +7,7 @@
   "postedAt": "2025-11-20T02:27:25.000Z",
   "language": "zh_CN",
   "patchCount": 3,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<cover.1763605033.git.kezijie@leap-io-kernel.com>",
@@ -17,19 +17,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 3
+      "total": 3,
+      "commit": "a41b1f1521d5d1cfdd983d38a5e02a2bf9b06182"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 3
+      "total": 3,
+      "commit": "a41b1f1521d5d1cfdd983d38a5e02a2bf9b06182"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 3
+      "total": 3,
+      "commit": "a41b1f1521d5d1cfdd983d38a5e02a2bf9b06182"
     }
   },
   "rfc": false,
@@ -79,21 +82,25 @@
         "Documentation/translations/zh_CN/block/index.rst",
         "Documentation/translations/zh_CN/subsystem-apis.rst"
       ],
+      "patchId": "58bd3204812a1b17e0b4538f0967f8645ccb912c",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a41b1f1521d5d1cfdd983d38a5e02a2bf9b06182"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a41b1f1521d5d1cfdd983d38a5e02a2bf9b06182"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "a41b1f1521d5d1cfdd983d38a5e02a2bf9b06182"
         }
       }
     },
@@ -107,21 +114,25 @@
         "Documentation/translations/zh_CN/block/blk-mq.rst",
         "Documentation/translations/zh_CN/block/index.rst"
       ],
+      "patchId": "f235078b152f76b9cccd0fb65bba48fc3ed14e02",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "dcb7fefe5296f6673da1d9101169a45d1fdc31da"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "dcb7fefe5296f6673da1d9101169a45d1fdc31da"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "dcb7fefe5296f6673da1d9101169a45d1fdc31da"
         }
       }
     },
@@ -135,21 +146,25 @@
         "Documentation/translations/zh_CN/block/data-integrity.rst",
         "Documentation/translations/zh_CN/block/index.rst"
       ],
+      "patchId": "82942dcf39edda6d08b56f20158e1c6604ec092e",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "862f670205f718bf54a8f3b54b5ca28de33ff33e"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "862f670205f718bf54a8f3b54b5ca28de33ff33e"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "862f670205f718bf54a8f3b54b5ca28de33ff33e"
         }
       }
     }

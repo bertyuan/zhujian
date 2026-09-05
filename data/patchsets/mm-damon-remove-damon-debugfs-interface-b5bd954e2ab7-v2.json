@@ -7,7 +7,7 @@
   "postedAt": "2025-01-06T19:19:33.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250106191941.107070-1-sj@kernel.org>",
@@ -17,19 +17,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "2a91cb2d2b33fa5b4e9bb8d9c5e27b475ea1142d"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "2a91cb2d2b33fa5b4e9bb8d9c5e27b475ea1142d"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "2a91cb2d2b33fa5b4e9bb8d9c5e27b475ea1142d"
     }
   },
   "rfc": false,
@@ -54,21 +57,25 @@
         "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst",
         "Documentation/translations/zh_TW/admin-guide/mm/damon/usage.rst"
       ],
+      "patchId": "163092948d18a3937fd35f8c60755b834ec32b8b",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "2a91cb2d2b33fa5b4e9bb8d9c5e27b475ea1142d"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "2a91cb2d2b33fa5b4e9bb8d9c5e27b475ea1142d"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "2a91cb2d2b33fa5b4e9bb8d9c5e27b475ea1142d"
         }
       }
     }

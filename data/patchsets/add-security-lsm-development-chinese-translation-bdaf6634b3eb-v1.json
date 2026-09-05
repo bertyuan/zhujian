@@ -7,26 +7,29 @@
   "postedAt": "2025-09-17T07:30:09.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250917073010.88607-1-zhaoshuo@cqsoftware.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "7404c6b78a7c145529414f7d7aa51c8760c7cb1d"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "7404c6b78a7c145529414f7d7aa51c8760c7cb1d"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "7404c6b78a7c145529414f7d7aa51c8760c7cb1d"
     }
   },
   "rfc": false,
@@ -61,21 +64,25 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/lsm-development.rst"
       ],
+      "patchId": "0ffca9880e1a9809089b88ad9a5ab7e8775bd44c",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7404c6b78a7c145529414f7d7aa51c8760c7cb1d"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7404c6b78a7c145529414f7d7aa51c8760c7cb1d"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7404c6b78a7c145529414f7d7aa51c8760c7cb1d"
         }
       }
     }

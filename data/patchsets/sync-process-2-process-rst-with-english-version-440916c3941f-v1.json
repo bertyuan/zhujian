@@ -7,7 +7,7 @@
   "postedAt": "2026-02-25T15:09:57.000Z",
   "language": "zh_CN",
   "patchCount": 2,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260225151013.200635-1-szpcq123@gmail.com>",
@@ -15,19 +15,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/2.Process.rst"
       ],
+      "patchId": "d449117a9edddcb3451089ef32b2f7fa01d4aecb",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
         }
       }
     },
@@ -78,21 +85,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/2.Process.rst"
       ],
+      "patchId": "d449117a9edddcb3451089ef32b2f7fa01d4aecb",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8c199fb49871cad666e408af41ca3c145679b8a4"
         }
       }
     }

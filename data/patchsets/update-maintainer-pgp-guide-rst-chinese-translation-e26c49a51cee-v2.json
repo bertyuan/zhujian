@@ -60,6 +60,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
+      "patchId": "ac7d807a7f72ddc707de41f8888be650ddf79ce1",
       "trees": {
         "alex": {
           "state": "missing",
@@ -87,6 +88,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
+      "patchId": "85f5fd3f3dc1f062772fb28472b14998e780ae0b",
       "trees": {
         "alex": {
           "state": "missing",
@@ -114,6 +116,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
+      "patchId": "9eae3b9774b26f840b0701ca6fdbac37f9005e48",
       "trees": {
         "alex": {
           "state": "missing",
@@ -141,6 +144,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
+      "patchId": "cdc81a169fab8bd813c6a312580a8bb69fa57e3e",
       "trees": {
         "alex": {
           "state": "missing",
@@ -168,6 +172,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
+      "patchId": "c10c65f35f847c4af60b00c33b110ed2cc8d8665",
       "trees": {
         "alex": {
           "state": "missing",

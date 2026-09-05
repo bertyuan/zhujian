@@ -61,6 +61,7 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/lsm-development.rst"
       ],
+      "patchId": "79b6d2b373c7aef63e960e71355abe398677ba32",
       "trees": {
         "alex": {
           "state": "missing",

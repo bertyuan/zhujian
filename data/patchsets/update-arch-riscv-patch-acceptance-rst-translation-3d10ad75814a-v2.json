@@ -55,6 +55,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/arch/riscv/patch-acceptance.rst"
       ],
+      "patchId": "ca0bce9f92d0332762e5019b5546e8893b0afaae",
       "trees": {
         "alex": {
           "state": "missing",

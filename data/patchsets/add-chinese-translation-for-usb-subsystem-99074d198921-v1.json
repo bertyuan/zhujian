@@ -105,6 +105,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/index.rst"
       ],
+      "patchId": "4bb6874397a67fb01632b2f156c0584e4210c684",
       "trees": {
         "alex": {
           "state": "missing",
@@ -132,6 +133,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/acm.rst"
       ],
+      "patchId": "a9db2b65f55b87c9dc54cffc4cba6311b8d21af2",
       "trees": {
         "alex": {
           "state": "missing",
@@ -159,6 +161,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/authorization.rst"
       ],
+      "patchId": "d849a03844dabe259a85f330891979a2e41e248a",
       "trees": {
         "alex": {
           "state": "missing",
@@ -186,6 +189,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/chipidea.rst"
       ],
+      "patchId": "d49e3427a696c60f5d343ab4c93ebb357605e604",
       "trees": {
         "alex": {
           "state": "missing",
@@ -213,6 +217,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/dwc3.rst"
       ],
+      "patchId": "7dae3f205bcd6c13affecbd53a15ca3bf959b2ad",
       "trees": {
         "alex": {
           "state": "missing",
@@ -240,6 +245,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/ehci.rst"
       ],
+      "patchId": "b497bb57690a1d0194d4ac7ad6cf712f11a3bdb0",
       "trees": {
         "alex": {
           "state": "missing",
@@ -267,6 +273,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/functionfs.rst"
       ],
+      "patchId": "0f43954c9854c5eee15ce47534e5f000681f61ab",
       "trees": {
         "alex": {
           "state": "missing",
@@ -294,6 +301,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/functionfs-desc.rst"
       ],
+      "patchId": "a1e860e55b33c06ef071a0aee773b3b8064565d8",
       "trees": {
         "alex": {
           "state": "missing",
@@ -321,6 +329,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/gadget_configfs.rst"
       ],
+      "patchId": "7a2b8b36acd76e36f3c9a66d28a9edd4788ae089",
       "trees": {
         "alex": {
           "state": "missing",
@@ -348,6 +357,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/gadget_hid.rst"
       ],
+      "patchId": "80f03758cae4aca899c313a7b407497cba86fce1",
       "trees": {
         "alex": {
           "state": "missing",
@@ -375,6 +385,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/gadget_multi.rst"
       ],
+      "patchId": "ee9022ae2978c6633e381dacd8fbba468d5386ad",
       "trees": {
         "alex": {
           "state": "missing",
@@ -402,6 +413,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/gadget_printer.rst"
       ],
+      "patchId": "fa506117db25a32e1602ac716e480059bc1a730a",
       "trees": {
         "alex": {
           "state": "missing",
@@ -429,6 +441,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/gadget_serial.rst"
       ],
+      "patchId": "503f2ca072373a624c97b6579bf3534c3eec5efa",
       "trees": {
         "alex": {
           "state": "missing",
@@ -456,6 +469,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/gadget_uvc.rst"
       ],
+      "patchId": "ae42939bece93be5d91edc6717dc56cbb0bb1f69",
       "trees": {
         "alex": {
           "state": "missing",
@@ -483,6 +497,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/gadget-testing.rst"
       ],
+      "patchId": "6bd8c299e1c6a9004aecfadf4e6a7b2fbfb2b6d8",
       "trees": {
         "alex": {
           "state": "missing",
@@ -510,6 +525,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/iuu_phoenix.rst"
       ],
+      "patchId": "ea8ccc99e2fc1b2b47934fc0deefa77d896743e3",
       "trees": {
         "alex": {
           "state": "missing",
@@ -537,6 +553,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/mass-storage.rst"
       ],
+      "patchId": "46451f11380740596845dcce3e55753cf21ee7b6",
       "trees": {
         "alex": {
           "state": "missing",
@@ -564,6 +581,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/misc_usbsevseg.rst"
       ],
+      "patchId": "c3a7e25b268e0972c49ce17cb4c32635711a264c",
       "trees": {
         "alex": {
           "state": "missing",
@@ -591,6 +609,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/mtouchusb.rst"
       ],
+      "patchId": "43694c4087646c6e2b902fe29e2ae6fd70e85fd8",
       "trees": {
         "alex": {
           "state": "missing",
@@ -618,6 +637,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/ohci.rst"
       ],
+      "patchId": "5f66eb052d94e50b7042ad3c6faf4694db004aa4",
       "trees": {
         "alex": {
           "state": "missing",
@@ -645,6 +665,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/raw-gadget.rst"
       ],
+      "patchId": "36b9b3641ba9b96610ec975e0206227e8f14fbd5",
       "trees": {
         "alex": {
           "state": "missing",
@@ -672,6 +693,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/usbmon.rst"
       ],
+      "patchId": "5264a389353b4a0391bcf2ffc194dc65e4cfbc29",
       "trees": {
         "alex": {
           "state": "missing",
@@ -699,6 +721,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/usb-serial.rst"
       ],
+      "patchId": "64d466e75387da9fd49fca433836aa9d3221a634",
       "trees": {
         "alex": {
           "state": "missing",
@@ -726,6 +749,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/usb-help.rst"
       ],
+      "patchId": "ad2411601460cb63e3f0927bc4696956338288b1",
       "trees": {
         "alex": {
           "state": "missing",
@@ -753,6 +777,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/CREDITS"
       ],
+      "patchId": "6d381088060af62bc7770e7e93030b704dea1a9d",
       "trees": {
         "alex": {
           "state": "missing",

@@ -7,26 +7,29 @@
   "postedAt": "2026-02-23T11:12:03.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260223111207.54640-1-m.heidelberg@cab.de>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "be4b91d9aae51cfbc1d80f899c0f8aad081fc711"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "be4b91d9aae51cfbc1d80f899c0f8aad081fc711"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "be4b91d9aae51cfbc1d80f899c0f8aad081fc711"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
         "Documentation/devicetree/of_unittest.rst",
         "Documentation/translations/zh_CN/devicetree/of_unittest.rst"
       ],
+      "patchId": "d8472e7fa147e0a38834c36f089a3c049d648110",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "be4b91d9aae51cfbc1d80f899c0f8aad081fc711"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "be4b91d9aae51cfbc1d80f899c0f8aad081fc711"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "be4b91d9aae51cfbc1d80f899c0f8aad081fc711"
         }
       }
     }

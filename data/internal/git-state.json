@@ -1,1 +1,17 @@
-{}
+{
+  "alex": {
+    "lastHead": "ba839bfe38d0ac2d8cbdc1272e2408dc35dafa6a",
+    "lastSuccessfulSync": "2026-09-05T17:49:05.631Z",
+    "lastMode": "initial"
+  },
+  "corbet": {
+    "lastHead": "ab2704c2a884028fd12d455cf27a9585aefe2961",
+    "lastSuccessfulSync": "2026-09-05T17:49:05.631Z",
+    "lastMode": "initial"
+  },
+  "linus": {
+    "lastHead": "0d9ff90a5422cc7509258aaaba1e7481df4d332a",
+    "lastSuccessfulSync": "2026-09-05T17:49:05.631Z",
+    "lastMode": "initial"
+  }
+}

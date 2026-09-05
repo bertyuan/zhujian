@@ -7,7 +7,7 @@
   "postedAt": "2026-07-14T07:00:07.000Z",
   "language": "zh_CN",
   "patchCount": 4,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1784000217.git.ben.guo@openatom.club>",
@@ -18,19 +18,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "confirmed",
+      "matched": 4,
+      "total": 4,
+      "commit": "19ecf803b2766dba7eaa0ff9e95641f70278729a"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "confirmed",
+      "matched": 4,
+      "total": 4,
+      "commit": "19ecf803b2766dba7eaa0ff9e95641f70278729a"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 4
+      "state": "confirmed",
+      "matched": 4,
+      "total": 4,
+      "commit": "19ecf803b2766dba7eaa0ff9e95641f70278729a"
     }
   },
   "rfc": false,
@@ -64,21 +67,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/quick-start.rst"
       ],
+      "patchId": "b08c7da36c452477ed8a1c038454260694b3a2fa",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "19ecf803b2766dba7eaa0ff9e95641f70278729a"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "19ecf803b2766dba7eaa0ff9e95641f70278729a"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "19ecf803b2766dba7eaa0ff9e95641f70278729a"
         }
       }
     },
@@ -91,21 +98,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/general-information.rst"
       ],
+      "patchId": "12e2fa4192f97b2d404e89ed9c53dcc9c94da440",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "e3ffaaa0dfdf04fd41351d0fe149444024d3f171"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "e3ffaaa0dfdf04fd41351d0fe149444024d3f171"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "e3ffaaa0dfdf04fd41351d0fe149444024d3f171"
         }
       }
     },
@@ -118,21 +129,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/arch-support.rst"
       ],
+      "patchId": "7db46e2b4b8d5a297ba2b75d2a6c7a942cab248b",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "9bdd2d4ef03270b58d7b28edeba87ea6cc7a2ca1"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "9bdd2d4ef03270b58d7b28edeba87ea6cc7a2ca1"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "9bdd2d4ef03270b58d7b28edeba87ea6cc7a2ca1"
         }
       }
     },
@@ -145,21 +160,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/testing.rst"
       ],
+      "patchId": "44f60c6b8f6faae8cf82789e20c0c50faa56cab3",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8492d4e6bb7b9b1e78f2d17c4dda5272f25ec118"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8492d4e6bb7b9b1e78f2d17c4dda5272f25ec118"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "8492d4e6bb7b9b1e78f2d17c4dda5272f25ec118"
         }
       }
     }

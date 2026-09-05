@@ -83,6 +83,7 @@
         "Documentation/translations/zh_TW/process/submitting-patches.rst",
         "Documentation/translations/zh_TW/process/volatile-considered-harmful.rst"
       ],
+      "patchId": "0c87727fb14250996e31592bbaa57ac349e3c407",
       "trees": {
         "alex": {
           "state": "missing",
@@ -132,6 +133,7 @@
         "Documentation/translations/zh_TW/admin-guide/tainted-kernels.rst",
         "Documentation/translations/zh_TW/admin-guide/unicode.rst"
       ],
+      "patchId": "5c4b72a3eff7b812abfdf120bd4fb73af1218330",
       "trees": {
         "alex": {
           "state": "missing",
@@ -185,6 +187,7 @@
         "Documentation/translations/zh_TW/arch/parisc/index.rst",
         "Documentation/translations/zh_TW/arch/parisc/registers.rst"
       ],
+      "patchId": "0181f1a76499bfd12ac79178d7666de42748339a",
       "trees": {
         "alex": {
           "state": "missing",
@@ -217,6 +220,7 @@
         "Documentation/translations/zh_TW/dev-tools/sparse.rst",
         "Documentation/translations/zh_TW/dev-tools/testing-overview.rst"
       ],
+      "patchId": "5dd9aba1831a030fba99019c7a2553405d2696f5",
       "trees": {
         "alex": {
           "state": "missing",
@@ -247,6 +251,7 @@
         "Documentation/translations/zh_TW/filesystems/sysfs.txt",
         "Documentation/translations/zh_TW/filesystems/virtiofs.rst"
       ],
+      "patchId": "7c223b8fcf4e5c850ba82093cfd920e744bd38c0",
       "trees": {
         "alex": {
           "state": "missing",
@@ -277,6 +282,7 @@
         "Documentation/translations/zh_TW/cpu-freq/cpufreq-stats.rst",
         "Documentation/translations/zh_TW/cpu-freq/index.rst"
       ],
+      "patchId": "b18fadd70005d5682940242b313af72af35c41ed",
       "trees": {
         "alex": {
           "state": "missing",
@@ -307,6 +313,7 @@
         "Documentation/translations/zh_TW/index.rst",
         "Documentation/translations/zh_TW/io_ordering.txt"
       ],
+      "patchId": "82b418b9f1359b2d9d7942683c9459b9fd9fcde3",
       "trees": {
         "alex": {
           "state": "missing",

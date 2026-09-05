@@ -7,26 +7,29 @@
   "postedAt": "2026-06-13T21:12:56.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260613211300.86016-1-enelsonmoore@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "20c37ed33ac622a66008a0f54855ba4fc5946561"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "20c37ed33ac622a66008a0f54855ba4fc5946561"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "20c37ed33ac622a66008a0f54855ba4fc5946561"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/accounting/psi.rst"
       ],
+      "patchId": "bde00de0a58c19fe9ffd0dcb68c3c474ca5cfbe9",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "20c37ed33ac622a66008a0f54855ba4fc5946561"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "20c37ed33ac622a66008a0f54855ba4fc5946561"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "20c37ed33ac622a66008a0f54855ba4fc5946561"
         }
       }
     }

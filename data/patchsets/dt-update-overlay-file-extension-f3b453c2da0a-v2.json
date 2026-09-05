@@ -7,26 +7,29 @@
   "postedAt": "2025-02-05T10:46:37.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert+renesas@glider.be>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "10fc30eaf381cc8a6351129d7a48c4bf979f6002"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "10fc30eaf381cc8a6351129d7a48c4bf979f6002"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "10fc30eaf381cc8a6351129d7a48c4bf979f6002"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
         "Documentation/devicetree/overlay-notes.rst",
         "Documentation/translations/zh_CN/devicetree/overlay-notes.rst"
       ],
+      "patchId": "4ce264c2d7eb8e78e0eada7c7b1beb06833800bb",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "10fc30eaf381cc8a6351129d7a48c4bf979f6002"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "10fc30eaf381cc8a6351129d7a48c4bf979f6002"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "10fc30eaf381cc8a6351129d7a48c4bf979f6002"
         }
       }
     }

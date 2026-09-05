@@ -18,19 +18,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 4
+      "total": 4,
+      "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 4
+      "total": 4,
+      "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 4
+      "total": 4,
+      "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
     }
   },
   "rfc": false,
@@ -65,6 +68,7 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/mptcp-sysctl.rst"
       ],
+      "patchId": "7800335afbaa6809efc07954fe8f6db3b5847c69",
       "trees": {
         "alex": {
           "state": "missing",
@@ -93,21 +97,25 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/skbuff.rst"
       ],
+      "patchId": "d67831fde1de0fcc0d520bc84c318542f8057753",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
         }
       }
     },
@@ -121,6 +129,7 @@
         "Documentation/translations/zh_CN/networking/generic-hdlc.rst",
         "Documentation/translations/zh_CN/networking/index.rst"
       ],
+      "patchId": "11224ee61c9c3fc6d3d7696ccb28c5790f717e3b",
       "trees": {
         "alex": {
           "state": "missing",
@@ -149,21 +158,25 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/timestamping.rst"
       ],
+      "patchId": "85a86de8aacd4d1bc1ecf6d2cb884963235c04ca",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "33d80c67d34da8bcbde55b40abf9216d7c162dc1"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "33d80c67d34da8bcbde55b40abf9216d7c162dc1"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "33d80c67d34da8bcbde55b40abf9216d7c162dc1"
         }
       }
     }

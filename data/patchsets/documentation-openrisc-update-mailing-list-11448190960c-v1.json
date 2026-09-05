@@ -7,26 +7,29 @@
   "postedAt": "2025-04-17T08:02:31.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250417080236.4021257-2-shorne@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "20a43732736ac270c35601f7f22a0bcd2db4cba4"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "20a43732736ac270c35601f7f22a0bcd2db4cba4"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "20a43732736ac270c35601f7f22a0bcd2db4cba4"
     }
   },
   "rfc": false,
@@ -52,21 +55,25 @@
         "Documentation/translations/zh_CN/arch/openrisc/openrisc_port.rst",
         "Documentation/translations/zh_TW/arch/openrisc/openrisc_port.rst"
       ],
+      "patchId": "c73ad40f501c5b189ec84b08fb44ad2dbc371310",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "20a43732736ac270c35601f7f22a0bcd2db4cba4"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "20a43732736ac270c35601f7f22a0bcd2db4cba4"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "20a43732736ac270c35601f7f22a0bcd2db4cba4"
         }
       }
     }

@@ -51,6 +51,7 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/link_power_management_policy.rst"
       ],
+      "patchId": "470a5232fa6b62cbc70a9741db908ba9fbc9c1be",
       "trees": {
         "alex": {
           "state": "missing",

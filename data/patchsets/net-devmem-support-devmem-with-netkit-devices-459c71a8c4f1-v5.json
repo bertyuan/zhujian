@@ -7,7 +7,7 @@
   "postedAt": "2026-05-14T17:22:27.000Z",
   "language": "zh_CN",
   "patchCount": 2,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260514-tcp-dm-netkit-v5-0-408c59b91e66@meta.com>",
@@ -22,19 +22,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "7d3ab852dcd853692197a830d20052127754a087"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "7d3ab852dcd853692197a830d20052127754a087"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "7d3ab852dcd853692197a830d20052127754a087"
     }
   },
   "rfc": false,
@@ -86,21 +89,25 @@
         "net/core/dev.c",
         "net/core/netdev-genl.c"
       ],
+      "patchId": "3855197064326b6630267be329952b28b211b3d6",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7d3ab852dcd853692197a830d20052127754a087"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7d3ab852dcd853692197a830d20052127754a087"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7d3ab852dcd853692197a830d20052127754a087"
         }
       }
     },
@@ -117,21 +124,25 @@
         "drivers/net/netkit.c",
         "include/linux/netdevice.h"
       ],
+      "patchId": "d44c9cd76d469f5e346166d4b0f08595ead10487",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "6ce2bb048055ee599c0f35f1a90ff5db29ba5d65"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "6ce2bb048055ee599c0f35f1a90ff5db29ba5d65"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "6ce2bb048055ee599c0f35f1a90ff5db29ba5d65"
         }
       }
     }

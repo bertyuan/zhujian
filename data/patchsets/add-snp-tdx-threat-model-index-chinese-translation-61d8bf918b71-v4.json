@@ -14,19 +14,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8d57fd6f096a48e62c546da94d4332e1ab161be2"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8d57fd6f096a48e62c546da94d4332e1ab161be2"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "8d57fd6f096a48e62c546da94d4332e1ab161be2"
     }
   },
   "rfc": false,
@@ -81,21 +84,25 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/snp-tdx-threat-model.rst"
       ],
+      "patchId": "7392389b827a719b000a1595c7c06a0d59879930",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8d57fd6f096a48e62c546da94d4332e1ab161be2"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8d57fd6f096a48e62c546da94d4332e1ab161be2"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "8d57fd6f096a48e62c546da94d4332e1ab161be2"
         }
       }
     }

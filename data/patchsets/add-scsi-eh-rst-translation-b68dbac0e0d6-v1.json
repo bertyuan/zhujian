@@ -51,6 +51,7 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi_eh.rst"
       ],
+      "patchId": "2a3e1603dcaa34f1ec1cd1325a6fac153afdc490",
       "trees": {
         "alex": {
           "state": "missing",

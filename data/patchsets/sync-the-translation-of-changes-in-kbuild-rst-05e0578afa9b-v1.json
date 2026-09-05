@@ -50,6 +50,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/kbuild/kbuild.rst"
       ],
+      "patchId": "34b439c50cfbc6ed6888d8c29b0c03a7c71cb2b4",
       "trees": {
         "alex": {
           "state": "missing",

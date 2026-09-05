@@ -15,19 +15,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
     }
   },
   "rfc": false,
@@ -57,21 +60,25 @@
         "Documentation/translations/zh_CN/rust/index.rst",
         "Documentation/translations/zh_CN/rust/testing.rst"
       ],
+      "patchId": "c4b3b641305771a62bd208947faec2e6edc1a50e",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
         }
       }
     },
@@ -85,21 +92,25 @@
         "Documentation/translations/zh_CN/rust/index.rst",
         "Documentation/translations/zh_CN/rust/testing.rst"
       ],
+      "patchId": "bdcb2bceea9a33e4da00b2c3a46aca167be7a075",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "9b31970e1a422d88106fdfdc7791c4dcfa34e112"
         }
       }
     }

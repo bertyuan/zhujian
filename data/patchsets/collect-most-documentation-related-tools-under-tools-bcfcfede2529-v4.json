@@ -7,7 +7,7 @@
   "postedAt": "2025-10-28T22:10:08.000Z",
   "language": "zh_CN",
   "patchCount": 2,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20251028221017.5785-1-corbet@lwn.net>",
@@ -21,19 +21,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "d37366cac4ccfb71c77e9620f63e3a6fcdf3816c"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "d37366cac4ccfb71c77e9620f63e3a6fcdf3816c"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "confirmed",
+      "matched": 2,
+      "total": 2,
+      "commit": "d37366cac4ccfb71c77e9620f63e3a6fcdf3816c"
     }
   },
   "rfc": false,
@@ -61,21 +64,25 @@
         "MAINTAINERS",
         "tools/docs/checktransupdate.py"
       ],
+      "patchId": "59c631a4237b3b0c897792cf8eb3cfbadbb255b5",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d37366cac4ccfb71c77e9620f63e3a6fcdf3816c"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d37366cac4ccfb71c77e9620f63e3a6fcdf3816c"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d37366cac4ccfb71c77e9620f63e3a6fcdf3816c"
         }
       }
     },
@@ -90,21 +97,25 @@
         "Documentation/translations/zh_CN/doc-guide/contributing.rst",
         "tools/docs/find-unused-docs.sh"
       ],
+      "patchId": "ca13656f0657d49c48c1050463f8d00ab916837c",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "184414c6a6cac78ad6c46037a8afad5c9f04fba5"
         }
       }
     }

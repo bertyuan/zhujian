@@ -7,26 +7,29 @@
   "postedAt": "2026-04-03T05:58:06.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260403055806.358921-1-user@fqr-pc>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "1cc973b7c94a77bd3419bca847bbf19b5cfdfa4c"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "1cc973b7c94a77bd3419bca847bbf19b5cfdfa4c"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "1cc973b7c94a77bd3419bca847bbf19b5cfdfa4c"
     }
   },
   "rfc": false,
@@ -52,21 +55,25 @@
         "Documentation/translations/sp_SP/scheduler/sched-design-CFS.rst",
         "Documentation/translations/zh_CN/scheduler/sched-design-CFS.rst"
       ],
+      "patchId": "f50297733904f905b3d8a7619a3ddb5176398b16",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "1cc973b7c94a77bd3419bca847bbf19b5cfdfa4c"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "1cc973b7c94a77bd3419bca847bbf19b5cfdfa4c"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "1cc973b7c94a77bd3419bca847bbf19b5cfdfa4c"
         }
       }
     }

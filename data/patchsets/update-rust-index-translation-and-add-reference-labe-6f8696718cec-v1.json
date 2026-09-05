@@ -7,26 +7,29 @@
   "postedAt": "2025-09-24T23:51:12.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250924235114.209967-1-benx.guo@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "11441336dc0256adc14a5e160b558aacee75b2f9"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "11441336dc0256adc14a5e160b558aacee75b2f9"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "11441336dc0256adc14a5e160b558aacee75b2f9"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
         "Documentation/translations/zh_CN/rust/general-information.rst",
         "Documentation/translations/zh_CN/rust/index.rst"
       ],
+      "patchId": "4cd67d0275972eda4e7ac45ebf38c5d61f53ab94",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "11441336dc0256adc14a5e160b558aacee75b2f9"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "11441336dc0256adc14a5e160b558aacee75b2f9"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "11441336dc0256adc14a5e160b558aacee75b2f9"
         }
       }
     }

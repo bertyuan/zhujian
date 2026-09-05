@@ -70,6 +70,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/doc-guide/sphinx.rst"
       ],
+      "patchId": "7855311b30dd1d247b2a4e580e629377c5e941c1",
       "trees": {
         "alex": {
           "state": "missing",
@@ -97,6 +98,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],
+      "patchId": "71f05f86b2d4f2b7cf36ad44ade7037cc80fa29f",
       "trees": {
         "alex": {
           "state": "missing",

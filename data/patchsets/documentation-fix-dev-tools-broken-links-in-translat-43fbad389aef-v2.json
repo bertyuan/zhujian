@@ -7,26 +7,29 @@
   "postedAt": "2025-10-20T10:46:30.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20251020-aheev-fix-docs-dev-tools-broken-links-v2-1-7db64bf0405a@gmail.com>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "d0ef999061213a45188bb03d2b185158bfa22909"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "d0ef999061213a45188bb03d2b185158bfa22909"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "d0ef999061213a45188bb03d2b185158bfa22909"
     }
   },
   "rfc": false,
@@ -58,21 +61,25 @@
         "Documentation/translations/zh_TW/admin-guide/README.rst",
         "Documentation/translations/zh_TW/dev-tools/gdb-kernel-debugging.rst"
       ],
+      "patchId": "0eb9d60f81910d988d5d50d60a6233040f60dd36",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d0ef999061213a45188bb03d2b185158bfa22909"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d0ef999061213a45188bb03d2b185158bfa22909"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "d0ef999061213a45188bb03d2b185158bfa22909"
         }
       }
     }

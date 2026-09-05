@@ -52,6 +52,7 @@
         "Documentation/translations/zh_CN/staging/crc32.rst",
         "Documentation/translations/zh_CN/staging/index.rst"
       ],
+      "patchId": "b8ea95fdc9e73ccb294f32c7e0722d3548f2fef8",
       "trees": {
         "alex": {
           "state": "missing",
@@ -80,6 +81,7 @@
         "Documentation/translations/zh_CN/staging/crc32.rst",
         "Documentation/translations/zh_CN/staging/index.rst"
       ],
+      "patchId": "18820491d14c4e26724780a6010c03bb575159d5",
       "trees": {
         "alex": {
           "state": "missing",

@@ -43,19 +43,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "4267739cabb82da75780c4699fe8208821929944"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "4267739cabb82da75780c4699fe8208821929944"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "4267739cabb82da75780c4699fe8208821929944"
     }
   },
   "rfc": false,
@@ -109,21 +112,25 @@
         "mm/internal.h",
         "mm/mm_init.c"
       ],
+      "patchId": "3f5ab4384700eda7f3258d9eacfa113719dbff74",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4267739cabb82da75780c4699fe8208821929944"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4267739cabb82da75780c4699fe8208821929944"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4267739cabb82da75780c4699fe8208821929944"
         }
       }
     }

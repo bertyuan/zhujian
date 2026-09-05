@@ -7,7 +7,7 @@
   "postedAt": "2025-09-14T02:52:01.000Z",
   "language": "zh_CN",
   "patchCount": 7,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1757686158.git.doubled@leap-io-kernel.com>",
@@ -21,19 +21,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 7
+      "state": "confirmed",
+      "matched": 7,
+      "total": 7,
+      "commit": "791ca5860b12c297a0cec0640fb1ffb4f433756a"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 7
+      "state": "confirmed",
+      "matched": 7,
+      "total": 7,
+      "commit": "791ca5860b12c297a0cec0640fb1ffb4f433756a"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 7
+      "state": "confirmed",
+      "matched": 7,
+      "total": 7,
+      "commit": "791ca5860b12c297a0cec0640fb1ffb4f433756a"
     }
   },
   "rfc": false,
@@ -58,21 +61,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/subsystem-apis.rst"
       ],
+      "patchId": "737013bfffceb1e807a712f2b2c3c07325fc02f6",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "791ca5860b12c297a0cec0640fb1ffb4f433756a"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "791ca5860b12c297a0cec0640fb1ffb4f433756a"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "791ca5860b12c297a0cec0640fb1ffb4f433756a"
         }
       }
     },
@@ -86,21 +93,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi.rst"
       ],
+      "patchId": "83bec9991c41cb641cb258d884f67b823b97b83e",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "301e7b86d69af98bf06238f22c2ba3efe57c634c"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "301e7b86d69af98bf06238f22c2ba3efe57c634c"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "301e7b86d69af98bf06238f22c2ba3efe57c634c"
         }
       }
     },
@@ -114,21 +125,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi_mid_low_api.rst"
       ],
+      "patchId": "1669874a2f58c3c1224ee0a1b8203aa34acc38bb",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4e841f7e418d8d0187951ae017672d27aa5a17fe"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4e841f7e418d8d0187951ae017672d27aa5a17fe"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4e841f7e418d8d0187951ae017672d27aa5a17fe"
         }
       }
     },
@@ -142,21 +157,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi_eh.rst"
       ],
+      "patchId": "c26f8c9b3cf054f2b931952f4627ec7379d5adb4",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "fdca4c262abeb565cb8d2d2e79ec0611f9e32c7d"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "fdca4c262abeb565cb8d2d2e79ec0611f9e32c7d"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "fdca4c262abeb565cb8d2d2e79ec0611f9e32c7d"
         }
       }
     },
@@ -170,21 +189,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi-parameters.rst"
       ],
+      "patchId": "daf7a6b3f4fe6aee1c50166374d51ca2a8ba2aa6",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f7c2e7108e0cf87d04d2f28078b5fefe1af47383"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f7c2e7108e0cf87d04d2f28078b5fefe1af47383"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f7c2e7108e0cf87d04d2f28078b5fefe1af47383"
         }
       }
     },
@@ -198,21 +221,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/link_power_management_policy.rst"
       ],
+      "patchId": "bb335c95a9504307e63b89a0be1c910b067401bc",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "dca85d5916f002504850c947db3a92ffabc52b3f"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "dca85d5916f002504850c947db3a92ffabc52b3f"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "dca85d5916f002504850c947db3a92ffabc52b3f"
         }
       }
     },
@@ -226,21 +253,25 @@
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/sd-parameters.rst"
       ],
+      "patchId": "9944caaca8d8a25c8dd2eec158cc73a97e71d404",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "89ac14006fdebc8d83ac420e7d1a9fa785cfdab7"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "89ac14006fdebc8d83ac420e7d1a9fa785cfdab7"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "89ac14006fdebc8d83ac420e7d1a9fa785cfdab7"
         }
       }
     }

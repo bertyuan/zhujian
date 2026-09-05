@@ -7,7 +7,7 @@
   "postedAt": "2026-02-20T16:01:25.000Z",
   "language": "mixed",
   "patchCount": 2,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20260220160201.41149-1-srcres258@furdevs.cn>",
@@ -15,19 +15,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "32437123ee1c5a091adbf9531e3992c0ca0a97a1"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "32437123ee1c5a091adbf9531e3992c0ca0a97a1"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "32437123ee1c5a091adbf9531e3992c0ca0a97a1"
     }
   },
   "rfc": false,
@@ -110,6 +113,7 @@
         "Documentation/translations/zh_TW/process/volatile-considered-harmful.rst",
         "MAINTAINERS"
       ],
+      "patchId": "075d81eb53531c908aec9e1aad4185e5a3d2ce09",
       "trees": {
         "alex": {
           "state": "missing",
@@ -137,21 +141,25 @@
       "changedFiles": [
         "Documentation/translations/zh_TW/admin-guide/README.rst"
       ],
+      "patchId": "38c49a40e4f20e0c99f8e53cd84e9e3c1a50c3c6",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "32437123ee1c5a091adbf9531e3992c0ca0a97a1"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "32437123ee1c5a091adbf9531e3992c0ca0a97a1"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "32437123ee1c5a091adbf9531e3992c0ca0a97a1"
         }
       }
     }

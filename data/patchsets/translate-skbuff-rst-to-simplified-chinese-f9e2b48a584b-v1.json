@@ -7,26 +7,29 @@
   "postedAt": "2025-07-28T12:21:50.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20250728202150319CN6cvgdqW79pqp7YJsos6@zte.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
     }
   },
   "rfc": false,
@@ -56,21 +59,25 @@
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/skbuff.rst"
       ],
+      "patchId": "229f61411476cc607efb331a84554666cb79e181",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "478bb02b074079e6e96ebd61d475feaf81b09455"
         }
       }
     }

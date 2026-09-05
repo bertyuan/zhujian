@@ -55,6 +55,7 @@
         "Documentation/staging/rpmsg.rst",
         "Documentation/translations/zh_CN/PCI/pci.rst"
       ],
+      "patchId": "a89e63882281ccf2c60218203c35f3ae2488e6d8",
       "trees": {
         "alex": {
           "state": "missing",

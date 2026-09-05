@@ -7,7 +7,7 @@
   "postedAt": "2025-01-23T05:17:38.000Z",
   "language": "zh_CN",
   "patchCount": 7,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<cover.1737603330.git.zhaoshuo@cqsoftware.com.cn>",
@@ -21,19 +21,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 7
+      "state": "confirmed",
+      "matched": 7,
+      "total": 7,
+      "commit": "512ca748e8f5509766159a7005f46617ba6b37ed"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 7
+      "state": "confirmed",
+      "matched": 7,
+      "total": 7,
+      "commit": "512ca748e8f5509766159a7005f46617ba6b37ed"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 7
+      "state": "confirmed",
+      "matched": 7,
+      "total": 7,
+      "commit": "512ca748e8f5509766159a7005f46617ba6b37ed"
     }
   },
   "rfc": false,
@@ -68,21 +71,25 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/tpm/index.rst"
       ],
+      "patchId": "21e33132bc1fe36c940bbe3c49a7da1c0d14e262",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "512ca748e8f5509766159a7005f46617ba6b37ed"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "512ca748e8f5509766159a7005f46617ba6b37ed"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "512ca748e8f5509766159a7005f46617ba6b37ed"
         }
       }
     },
@@ -96,21 +103,25 @@
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_event_log.rst"
       ],
+      "patchId": "8fa74d70e608bace3b1c865c3295c686a36ab1a4",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4ad1ba0358b1b342a8233e6d70dd4f7bc5e1f152"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4ad1ba0358b1b342a8233e6d70dd4f7bc5e1f152"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "4ad1ba0358b1b342a8233e6d70dd4f7bc5e1f152"
         }
       }
     },
@@ -124,21 +135,25 @@
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm-security.rst"
       ],
+      "patchId": "a445798a8c07012310b21d48877fafdc19d49bec",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "ece0788d589117c34cfd22fc07467c155aa78a89"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "ece0788d589117c34cfd22fc07467c155aa78a89"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "ece0788d589117c34cfd22fc07467c155aa78a89"
         }
       }
     },
@@ -152,21 +167,25 @@
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_tis.rst"
       ],
+      "patchId": "2acdf83e36ffc334e7e75de567d55f4fbd625fca",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "98526e6969336cd42086963b0d2037b3d5dc0279"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "98526e6969336cd42086963b0d2037b3d5dc0279"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "98526e6969336cd42086963b0d2037b3d5dc0279"
         }
       }
     },
@@ -180,21 +199,25 @@
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_vtpm_proxy.rst"
       ],
+      "patchId": "79d52b7ce071403bad67a8d84b0df1973c6cd852",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f7824b6917072306621aea8d3b51478de87c4e67"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f7824b6917072306621aea8d3b51478de87c4e67"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "f7824b6917072306621aea8d3b51478de87c4e67"
         }
       }
     },
@@ -208,21 +231,25 @@
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/xen-tpmfront.rst"
       ],
+      "patchId": "076ef5217863ac0063ec2af23f783017af0359a7",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "22ab45a82136bd8d5abd2a66951f58043351f461"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "22ab45a82136bd8d5abd2a66951f58043351f461"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "22ab45a82136bd8d5abd2a66951f58043351f461"
         }
       }
     },
@@ -236,21 +263,25 @@
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_ftpm_tee.rst"
       ],
+      "patchId": "16ac6db0e3aa6d9dc7cea92928190a444a52fceb",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "03069bf12823a950b9fe7b4903fc68eb0555c73d"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "03069bf12823a950b9fe7b4903fc68eb0555c73d"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "03069bf12823a950b9fe7b4903fc68eb0555c73d"
         }
       }
     }

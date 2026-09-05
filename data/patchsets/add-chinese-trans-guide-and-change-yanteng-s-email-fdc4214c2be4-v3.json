@@ -7,7 +7,7 @@
   "postedAt": "2025-03-28T10:06:42.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<cover.1743156287.git.si.yanteng@linux.dev>",
@@ -16,19 +16,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     }
   },
   "rfc": false,
@@ -58,21 +61,25 @@
         "Documentation/translations/zh_CN/how-to.rst",
         "Documentation/translations/zh_CN/index.rst"
       ],
+      "patchId": "7cab3b350ff36ac89aabf0d9812c04e211c82730",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         }
       }
     }

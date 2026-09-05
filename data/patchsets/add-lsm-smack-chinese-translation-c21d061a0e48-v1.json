@@ -50,6 +50,7 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/Smack.rst"
       ],
+      "patchId": "53864fa274e82cae0131ba2ccc972c000779effe",
       "trees": {
         "alex": {
           "state": "missing",

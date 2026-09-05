@@ -106,6 +106,7 @@
         "drivers/reset/Kconfig",
         "drivers/reset/reset-scmi.c"
       ],
+      "patchId": "16a30a91d287c0c4af028fbf7a45e9c54cdb4313",
       "trees": {
         "alex": {
           "state": "missing",

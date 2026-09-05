@@ -7,7 +7,7 @@
   "postedAt": "2026-05-13T01:28:31.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260513012839.2856463-1-zhangtianyang@loongson.cn>",
@@ -18,19 +18,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "89bb21e9b57defa9a33ff01020d44f3fd6802026"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "89bb21e9b57defa9a33ff01020d44f3fd6802026"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "89bb21e9b57defa9a33ff01020d44f3fd6802026"
     }
   },
   "rfc": false,
@@ -100,21 +103,25 @@
         "Documentation/arch/loongarch/irq-chip-model.rst",
         "Documentation/translations/zh_CN/arch/loongarch/irq-chip-model.rst"
       ],
+      "patchId": "62f4ee619fb6a50b00c2702009245db5f5e05102",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "89bb21e9b57defa9a33ff01020d44f3fd6802026"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "89bb21e9b57defa9a33ff01020d44f3fd6802026"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "89bb21e9b57defa9a33ff01020d44f3fd6802026"
         }
       }
     }

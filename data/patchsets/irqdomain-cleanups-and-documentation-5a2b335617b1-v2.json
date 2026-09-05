@@ -7,7 +7,7 @@
   "postedAt": "2025-03-19T09:28:53.000Z",
   "language": "zh_CN",
   "patchCount": 3,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250319092951.37667-1-jirislaby@kernel.org>",
@@ -23,19 +23,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 3
+      "state": "partial",
+      "matched": 2,
+      "total": 3,
+      "commit": "813da4f379e789c428d2e0a44730f852e090d47d"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 3
+      "state": "partial",
+      "matched": 2,
+      "total": 3,
+      "commit": "813da4f379e789c428d2e0a44730f852e090d47d"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 3
+      "state": "partial",
+      "matched": 2,
+      "total": 3,
+      "commit": "813da4f379e789c428d2e0a44730f852e090d47d"
     }
   },
   "rfc": false,
@@ -63,21 +66,25 @@
         "arch/powerpc/platforms/ps3/interrupt.c",
         "include/linux/irqdomain.h"
       ],
+      "patchId": "4d8baab25bd599ce768d259d0d20a1e42e896ff0",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "813da4f379e789c428d2e0a44730f852e090d47d"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "813da4f379e789c428d2e0a44730f852e090d47d"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "813da4f379e789c428d2e0a44730f852e090d47d"
         }
       }
     },
@@ -93,21 +100,25 @@
         "include/linux/irqdomain.h",
         "kernel/irq/irqdomain.c"
       ],
+      "patchId": "76859192fc3412b9afd08551ca2cfe5787e51da0",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "42b8b16fe56c206fde7fbae0116769d0addef4b7"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "42b8b16fe56c206fde7fbae0116769d0addef4b7"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "42b8b16fe56c206fde7fbae0116769d0addef4b7"
         }
       }
     },
@@ -122,21 +133,25 @@
         "Documentation/translations/zh_CN/core-api/irq/irq-domain.rst",
         "include/linux/irqdomain.h"
       ],
+      "patchId": "d28c31187118df7e701af7b9f57f331c3379b9fb",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "14ebb11ba895c9223d9a453a17df2fd81410c96c"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "14ebb11ba895c9223d9a453a17df2fd81410c96c"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "14ebb11ba895c9223d9a453a17df2fd81410c96c"
         }
       }
     }

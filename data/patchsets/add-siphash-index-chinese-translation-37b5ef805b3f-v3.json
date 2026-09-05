@@ -7,26 +7,29 @@
   "postedAt": "2025-01-08T06:04:47.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<0af3d9b8be0e5166f74bd36fd6b040767f767fce.1736315479.git.zhangwei@cqsoftware.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
     }
   },
   "rfc": false,
@@ -61,21 +64,25 @@
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/siphash.rst"
       ],
+      "patchId": "68bfc596f4d95d26f247cfb8aba50a81ea878b74",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "908c1257e5dfb4280bb41f290e15205c3baddaf7"
         }
       }
     }

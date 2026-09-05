@@ -84,6 +84,7 @@
         "Documentation/translations/zh_CN/networking/netmem.rst",
         "include/linux/netdevice.h"
       ],
+      "patchId": "e4e708027a88aff343159731a93b47e4852972d9",
       "trees": {
         "alex": {
           "state": "missing",

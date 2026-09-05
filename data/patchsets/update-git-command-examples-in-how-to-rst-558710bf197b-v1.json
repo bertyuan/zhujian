@@ -7,26 +7,29 @@
   "postedAt": "2025-06-16T13:40:01.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250616134003.3981866-1-dzm91@hust.edu.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "31df8330ee3f161e589896aeca0cbf5a5edcd5db"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "31df8330ee3f161e589896aeca0cbf5a5edcd5db"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "31df8330ee3f161e589896aeca0cbf5a5edcd5db"
     }
   },
   "rfc": false,
@@ -50,21 +53,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],
+      "patchId": "4c5d6e56607855f1c2b2966bfce7323c1b860d5c",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "31df8330ee3f161e589896aeca0cbf5a5edcd5db"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "31df8330ee3f161e589896aeca0cbf5a5edcd5db"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "31df8330ee3f161e589896aeca0cbf5a5edcd5db"
         }
       }
     }

@@ -7,26 +7,29 @@
   "postedAt": "2025-03-14T10:28:32.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250314102833.70037-1-siyanteng@cqsoftware.com.cn>"
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     },
     "corbet": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
     }
   },
   "rfc": false,
@@ -51,21 +54,25 @@
         "Documentation/translations/zh_CN/how-to.rst",
         "Documentation/translations/zh_CN/index.rst"
       ],
+      "patchId": "b2abce7b287b8632218ca5d3d5bff0ce71838011",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         },
         "corbet": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "4f0145e9ea41cc5d0f80b79a60ce39757d3b47d6"
         }
       }
     }

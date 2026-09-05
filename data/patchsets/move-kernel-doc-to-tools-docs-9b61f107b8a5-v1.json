@@ -68,6 +68,7 @@
         "tools/docs/kernel-doc",
         "tools/docs/sphinx-build-wrapper"
       ],
+      "patchId": "3b1e3588ac044946ac81d72130d946361df2888a",
       "trees": {
         "alex": {
           "state": "missing",

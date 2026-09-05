@@ -7,7 +7,7 @@
   "postedAt": "2025-02-13T05:42:14.000Z",
   "language": "zh_CN",
   "patchCount": 2,
-  "status": "on-lore",
+  "status": "partially-applied",
   "latestRevision": true,
   "messageIds": [
     "<20250213054222.21776-1-alexs@kernel.org>",
@@ -15,19 +15,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "83b029482d97676233c57582c347b516e96b6786"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "83b029482d97676233c57582c347b516e96b6786"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 2
+      "state": "partial",
+      "matched": 1,
+      "total": 2,
+      "commit": "83b029482d97676233c57582c347b516e96b6786"
     }
   },
   "rfc": false,
@@ -51,6 +54,7 @@
       "changedFiles": [
         "MAINTAINERS"
       ],
+      "patchId": "3d9689d5014d77fa23d34dcf12e4eeb09b16b871",
       "trees": {
         "alex": {
           "state": "missing",
@@ -78,21 +82,25 @@
       "changedFiles": [
         "Documentation/translations/zh_CN/index.rst"
       ],
+      "patchId": "cf3aad4e9b2566ae0c4c0bab5fcd0a9acfdb6562",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "83b029482d97676233c57582c347b516e96b6786"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "83b029482d97676233c57582c347b516e96b6786"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "83b029482d97676233c57582c347b516e96b6786"
         }
       }
     }

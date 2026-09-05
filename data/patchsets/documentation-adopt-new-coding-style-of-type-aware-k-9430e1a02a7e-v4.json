@@ -7,7 +7,7 @@
   "postedAt": "2026-04-29T07:08:01.000Z",
   "language": "mixed",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "mainline",
   "latestRevision": true,
   "messageIds": [
     "<20260429070759.309110-3-manuelebner@mailbox.org>",
@@ -17,19 +17,22 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "7c6d969d5349c40348276d5c301b2d200afa623d"
     },
     "corbet": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "7c6d969d5349c40348276d5c301b2d200afa623d"
     },
     "linus": {
-      "state": "missing",
-      "matched": 0,
-      "total": 1
+      "state": "confirmed",
+      "matched": 1,
+      "total": 1,
+      "commit": "7c6d969d5349c40348276d5c301b2d200afa623d"
     }
   },
   "rfc": false,
@@ -84,21 +87,25 @@
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",
         "Documentation/translations/zh_TW/process/coding-style.rst"
       ],
+      "patchId": "e8336525f88a607c5712e35c237280bdfd3d8adc",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7c6d969d5349c40348276d5c301b2d200afa623d"
         },
         "corbet": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7c6d969d5349c40348276d5c301b2d200afa623d"
         },
         "linus": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "7c6d969d5349c40348276d5c301b2d200afa623d"
         }
       }
     }
