@@ -1,5 +1,6 @@
 import type {
   Language,
+  GitCommit,
   LightState,
   PatchDetail,
   PatchsetDetail,
@@ -173,4 +174,41 @@ export function validateSyncMetadata(value: unknown): SyncMetadata {
     }];
   }));
   return { mode, generatedAt: isoDate(item.generatedAt, "metadata.generatedAt"), sources: validatedSources };
+}
+
+export function validateGitCommit(value: unknown, path = "commit"): GitCommit {
+  const item = object(value, path);
+  const tree = string(item.tree, `${path}.tree`) as TreeId;
+  if (!TREE_IDS.includes(tree)) fail(`${path}.tree`, `unknown tree ${tree}`);
+  const commit = string(item.commit, `${path}.commit`);
+  if (!/^[0-9a-f]{40}$/i.test(commit)) fail(`${path}.commit`, "expected a full Git SHA-1");
+  const patchId = optionalString(item.patchId, `${path}.patchId`);
+  if (patchId && !/^[0-9a-f]{40}$/i.test(patchId)) fail(`${path}.patchId`, "expected a stable patch-id");
+  return {
+    tree,
+    branch: string(item.branch, `${path}.branch`),
+    commit,
+    subject: string(item.subject, `${path}.subject`),
+    authorName: string(item.authorName, `${path}.authorName`),
+    authorEmail: string(item.authorEmail, `${path}.authorEmail`),
+    authorDate: isoDate(item.authorDate, `${path}.authorDate`),
+    committerDate: isoDate(item.committerDate, `${path}.committerDate`),
+    ...(patchId ? { patchId } : {}),
+    changedFiles: stringArray(item.changedFiles, `${path}.changedFiles`),
+    firstSeenAt: isoDate(item.firstSeenAt, `${path}.firstSeenAt`),
+    lastSeenAt: isoDate(item.lastSeenAt, `${path}.lastSeenAt`),
+    currentlyPresent: boolean(item.currentlyPresent, `${path}.currentlyPresent`),
+  };
+}
+
+export function validateGitCommitIndex(value: unknown, tree?: TreeId): GitCommit[] {
+  if (!Array.isArray(value)) fail("commit index", "expected an array");
+  const commits = value.map((item, index) => validateGitCommit(item, `commit index[${index}]`));
+  const ids = new Set<string>();
+  for (const commit of commits) {
+    if (tree && commit.tree !== tree) fail("commit index", `expected only ${tree} commits`);
+    if (ids.has(commit.commit)) fail("commit index", `duplicate commit ${commit.commit}`);
+    ids.add(commit.commit);
+  }
+  return commits;
 }

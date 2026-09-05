@@ -11,6 +11,7 @@
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "ingest:fixtures": "node --experimental-strip-types scripts/ingest-fixtures.ts",
     "sync:lore": "node --experimental-strip-types scripts/sync-lore.ts",
+    "sync:git": "node --experimental-strip-types scripts/sync-git.ts",
     "backfill:lore": "node --experimental-strip-types scripts/backfill-lore.ts",
     "backfill": "pnpm backfill:lore",
     "validate:data": "node --experimental-strip-types scripts/validate-data.ts"

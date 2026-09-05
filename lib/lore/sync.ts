@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { writeGeneratedData, writeJsonAtomic } from "../data/generate.ts";
+import { validateSyncMetadata } from "../data/validation.ts";
 import { deduplicateMessages } from "./parser.ts";
 import { buildLoreQuery, syncStart } from "./query.ts";
 import { buildPatchsets } from "./series.ts";
@@ -67,11 +68,17 @@ export async function synchronizeLore(options: LoreSyncOptions): Promise<LoreSyn
   const stateFile = path.join(internalDirectory, "lore-state.json");
   const cacheFile = path.join(internalDirectory, "lore-messages.json");
   const runStateFile = path.join(internalDirectory, "sync-state.json");
+  const metadataFile = path.join(options.root, "data", "metadata.json");
   const synchronizedAt = (options.now ?? new Date()).toISOString();
 
   try {
     const state = await readOptionalJson<LoreSyncState>(stateFile, {});
     const cache = await readOptionalJson<LoreMessageCache>(cacheFile, { messages: [] });
+    const existingMetadata = validateSyncMetadata(await readOptionalJson<unknown>(metadataFile, {
+      mode: "live",
+      generatedAt: synchronizedAt,
+      sources: {},
+    }));
     const cachedMessages = validateCachedMessages(cache.messages);
     const start = syncStart(
       state.lastSuccessfulSync,
@@ -86,7 +93,10 @@ export async function synchronizeLore(options: LoreSyncOptions): Promise<LoreSyn
     const result = await writeGeneratedData(options.root, details, {
       mode: "live",
       generatedAt: synchronizedAt,
-      sources: { lore: { status: "ok", lastSuccessfulSync: synchronizedAt } },
+      sources: {
+        ...existingMetadata.sources,
+        lore: { status: "ok", lastSuccessfulSync: synchronizedAt },
+      },
     });
 
     await writeJsonAtomic(cacheFile, { messages: mergedMessages });

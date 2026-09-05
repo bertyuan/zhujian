@@ -1,4 +1,4 @@
-name: Sync lore data
+name: Sync lore and Git data
 
 on:
   schedule:
@@ -20,7 +20,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-24.04
-    timeout-minutes: 45
+    timeout-minutes: 90
     steps:
       - name: Check out the default branch
         uses: actions/checkout@v7
@@ -36,6 +36,18 @@ jobs:
         with:
           node-version: 24
           cache: pnpm
+
+      - name: Select the daily Git cache
+        id: git-cache-date
+        run: echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Restore cached Linux repositories
+        uses: actions/cache@v6
+        with:
+          path: .cache/git
+          key: linux-git-v1-${{ runner.os }}-${{ steps.git-cache-date.outputs.date }}
+          restore-keys: |
+            linux-git-v1-${{ runner.os }}-
 
       - name: Install lei
         run: |
@@ -55,6 +67,12 @@ jobs:
         env:
           SYNC_SINCE: ${{ inputs.since }}
         run: pnpm backfill
+
+      - name: Synchronize Linux Git trees
+        env:
+          GIT_SYNC_SINCE: ${{ inputs.since }}
+          GIT_FORCE_RESCAN: ${{ inputs.since != '' }}
+        run: pnpm sync:git
 
       - name: Validate generated data
         run: pnpm validate:data

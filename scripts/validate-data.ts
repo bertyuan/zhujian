@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
-import { validatePatchsetDetail, validatePatchsetSummaries, validateSyncMetadata } from "../lib/data/validation.ts";
+import { TRACKED_TREES } from "../lib/git/config.ts";
+import { validateGitCommitIndex, validatePatchsetDetail, validatePatchsetSummaries, validateSyncMetadata } from "../lib/data/validation.ts";
 
 const root = process.cwd();
 const readJson = async (file: string) => JSON.parse(await readFile(file, "utf8")) as unknown;
@@ -16,4 +17,9 @@ for (const summary of summaries) {
 for (const detail of details) {
   if (!summaryIds.has(detail.id)) throw new Error(`Orphan detail file for ${detail.id}`);
 }
-console.log(`Data validation passed: ${summaries.length} summaries and ${details.length} detail files.`);
+let indexedCommits = 0;
+for (const tree of TRACKED_TREES) {
+  const commits = validateGitCommitIndex(await readJson(path.join(root, "data", "indexes", `${tree.id}.json`)), tree.id);
+  indexedCommits += commits.length;
+}
+console.log(`Data validation passed: ${summaries.length} summaries, ${details.length} detail files, and ${indexedCommits} indexed Git commits.`);
