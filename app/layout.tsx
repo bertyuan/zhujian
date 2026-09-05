@@ -34,8 +34,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main>{children}</main>
         <footer className="site-footer">
           <div className="shell footer-inner">
-            <span>竹简 / Zhujian</span>
-            <span>Git history is the source of truth.</span>
+            <span><strong>Zhujian</strong> · Linux Chinese documentation patch tracker</span>
+            <span>Git history is the source of truth</span>
           </div>
         </footer>
       </body>

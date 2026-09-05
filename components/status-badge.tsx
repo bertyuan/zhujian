@@ -21,7 +21,7 @@ const statusClasses: Record<PatchsetStatus, string> = {
 };
 
 export function StatusBadge({ status }: { status: PatchsetStatus }) {
-  return <span className={`badge ${statusClasses[status]}`}>{statusLabels[status]}</span>;
+  return <span className={`status-badge ${statusClasses[status]}`}>{statusLabels[status]}</span>;
 }
 
 export function statusLabel(status: PatchsetStatus) {

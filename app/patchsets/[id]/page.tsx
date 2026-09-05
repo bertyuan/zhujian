@@ -18,73 +18,62 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
   const postedAt = new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeStyle: "short" }).format(new Date(patchset.postedAt));
 
   return (
-    <>
-      <header className="detail-header">
-        <div className="shell">
-          <div className="breadcrumb"><Link href="/">Patchsets</Link> / {patchset.id}</div>
-          <div style={{ display: "flex", gap: 8, marginBottom: 13 }}>
-            <StatusBadge status={patchset.status} />
-            <LanguageBadge language={patchset.language} />
-          </div>
-          <h1 className="detail-title">{patchset.subject}</h1>
-        </div>
-      </header>
-      <div className="shell detail-layout">
-        <div>
-          <section className="panel">
-            <h2 className="panel-title"><span>Upstream progress</span><span>{patchset.patchCount} patches</span></h2>
-            <Pipeline trees={patchset.trees} />
-          </section>
-          <section className="panel">
-            <h2 className="panel-title"><span>Series patches</span><span>{patchset.replies} replies</span></h2>
-            <ol className="patch-list">
-              {patchset.patches.map((patch) => (
-                <li className="patch-row" key={patch.messageId}>
-                  <span className="patch-number">{patch.index}/{patch.total}</span>
-                  <div>
-                    <a className="patch-subject text-link" href={patch.loreUrl} target="_blank" rel="noreferrer">{patch.subject}</a>
-                    {Boolean(patch.trailers?.length) && (
-                      <div className="trailer-list" aria-label="Review trailers">
-                        {patch.trailers?.map((trailer) => (
-                          <span className="trailer" key={`${trailer.type}-${trailer.value}`} title={`Observed in ${trailer.messageId}`}>
-                            <strong>{trailer.type}</strong> {trailer.value}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                  <UpstreamLights trees={patch.trees} compact />
-                </li>
-              ))}
-            </ol>
-          </section>
-        </div>
-        <aside>
-          <section className="panel">
-            <h2 className="panel-title">Series metadata</h2>
-            <dl className="meta-list">
-              <div className="meta-row"><dt>Author</dt><dd>{patchset.authorName}</dd></div>
-              <div className="meta-row"><dt>Email</dt><dd>{patchset.authorEmail}</dd></div>
-              <div className="meta-row"><dt>Posted</dt><dd>{postedAt}</dd></div>
-              <div className="meta-row"><dt>Version</dt><dd>v{patchset.revision}{patchset.latestRevision ? " · latest" : " · superseded"}</dd></div>
-              <div className="meta-row"><dt>RFC</dt><dd>{patchset.rfc ? "Yes" : "No"}</dd></div>
-              <div className="meta-row"><dt>Message-ID</dt><dd>{patchset.messageIds[0]}</dd></div>
-              <div className="meta-row"><dt>Thread</dt><dd><a className="text-link" href={patchset.loreUrl} target="_blank" rel="noreferrer">View on lore ↗</a></dd></div>
-              <div className="meta-row"><dt>Raw mail</dt><dd><a className="text-link" href={patchset.rawUrl} target="_blank" rel="noreferrer">Download ↗</a></dd></div>
-            </dl>
-          </section>
-          <section className="panel">
-            <h2 className="panel-title">Versions</h2>
-            <div className="version-list">
-              {patchset.versions.map((version) => (
-                <Link key={version.id} className={`version-chip ${version.current ? "version-current" : ""}`} href={`/patchsets/${version.id}`}>
-                  v{version.revision}{version.current ? " selected" : ""}
-                </Link>
-              ))}
-            </div>
-          </section>
-        </aside>
+    <section className="shell content-section detail-page">
+      <div className="back-nav"><Link href="/">← Back to patchsets</Link></div>
+      <div className="detail-heading">
+        <h1>{patchset.subject}</h1>
+        <StatusBadge status={patchset.status} />
       </div>
-    </>
+
+      <div className="detail-kv section">
+        <div className="kv-row"><span className="kv-label">Author:</span><span>{patchset.authorName} &lt;{patchset.authorEmail}&gt;</span></div>
+        <div className="kv-row"><span className="kv-label">Date:</span><span>{postedAt}</span></div>
+        <div className="kv-row"><span className="kv-label">Language:</span><span><LanguageBadge language={patchset.language} /></span></div>
+        <div className="kv-row"><span className="kv-label">Version:</span><span>v{patchset.revision}{patchset.latestRevision ? " · latest" : " · superseded"}</span></div>
+        <div className="kv-row"><span className="kv-label">Patches:</span><span>{patchset.patchCount} · {patchset.replies} replies</span></div>
+        <div className="kv-row"><span className="kv-label">Message-ID:</span><span className="break-anywhere">{patchset.messageIds[0]}</span></div>
+        <div className="kv-row"><span className="kv-label">Links:</span><span><a className="text-link" href={patchset.loreUrl} target="_blank" rel="noreferrer">lore thread ↗</a> · <a className="text-link" href={patchset.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span></div>
+      </div>
+
+      <section className="section">
+        <h2>Upstream progress</h2>
+        <Pipeline trees={patchset.trees} />
+      </section>
+
+      <section className="section">
+        <h2>Series patches <span className="heading-meta">{patchset.patchCount} total</span></h2>
+        <ol className="patch-list">
+          {patchset.patches.map((patch) => (
+            <li className="patch-row" key={patch.messageId}>
+              <span className="patch-number">{patch.index}/{patch.total}</span>
+              <div>
+                <a className="patch-subject text-link" href={patch.loreUrl} target="_blank" rel="noreferrer">{patch.subject}</a>
+                {Boolean(patch.trailers?.length) && (
+                  <div className="trailer-list" aria-label="Review trailers">
+                    {patch.trailers?.map((trailer) => (
+                      <span className="trailer" key={`${trailer.type}-${trailer.value}`} title={`Observed in ${trailer.messageId}`}>
+                        <strong>{trailer.type}</strong> {trailer.value}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <UpstreamLights trees={patch.trees} compact />
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="section versions-section">
+        <h2>Versions</h2>
+        <div className="version-list">
+          {patchset.versions.map((version) => (
+            <Link key={version.id} className={`version-chip ${version.current ? "version-current" : ""}`} href={`/patchsets/${version.id}`}>
+              v{version.revision}{version.current ? " selected" : ""}
+            </Link>
+          ))}
+        </div>
+      </section>
+    </section>
   );
 }

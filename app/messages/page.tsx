@@ -23,14 +23,11 @@ export default async function MessagesPage() {
 
   return (
     <>
-      <section className="page-intro">
-        <div className="shell">
-          <p className="eyebrow">Mail archive index</p>
-          <h1 className="page-title">Messages</h1>
-          <p className="page-description">Search individual translation patches by subject, Message-ID, stable patch-id, author, or changed file.</p>
-        </div>
-      </section>
       <section className="shell content-section">
+        <div className="page-heading">
+          <div><h1>Messages</h1><p>Search individual translation patches by subject, Message-ID, stable patch-id, author, or changed file.</p></div>
+          <span className="heading-count">{messages.length} indexed messages</span>
+        </div>
         <MessageBrowser messages={messages} />
       </section>
     </>
