@@ -9,6 +9,11 @@ export default function HomePage() {
     timeStyle: "short",
     timeZone: "Asia/Shanghai",
   }).format(new Date(metadata.generatedAt));
+  const sources = [
+    { id: "alex", label: "Alex", branch: "docs-next" },
+    { id: "corbet", label: "Corbet", branch: "docs-mw" },
+    { id: "linus", label: "Linus", branch: "master" },
+  ];
 
   return (
     <>
@@ -28,10 +33,23 @@ export default function HomePage() {
             <span className="sync-note">
               {metadata.mode === "live" ? "Live data from linux-doc lore" : "Fixture preview"}
             </span>
+            <div className="sync-sources" aria-label="Tracked Git source revisions">
+              {sources.map((source) => (
+                <span className="sync-source" key={source.id}>
+                  <span>{source.label} / {source.branch}</span>
+                  <code>{metadata.sources[source.id]?.head?.slice(0, 8) ?? "fixture"}</code>
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
       <section className="shell content-section">
+        <div className="status-guide" aria-label="Upstream status legend">
+          <span className="guide-item"><span className="light-dot light-confirmed" aria-hidden="true" />Confirmed by exact Git evidence</span>
+          <span className="guide-item"><span className="light-dot light-candidate" aria-hidden="true" />Candidate, partial, or previously present</span>
+          <span className="guide-item"><span className="light-dot light-missing" aria-hidden="true" />Not found in this tree</span>
+        </div>
         <PatchsetTable patchsets={patchsets} />
       </section>
     </>

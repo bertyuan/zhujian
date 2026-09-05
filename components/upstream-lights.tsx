@@ -23,6 +23,7 @@ export function UpstreamLights({ trees, compact = false }: { trees: Record<TreeI
         return (
           <span className="light-item" key={id} title={description} aria-label={description}>
             <span className={`light-dot light-${tree.state}`} aria-hidden="true" />
+            <span className="sr-only">{stateLabels[tree.state]}</span>
             {!compact && <span className="light-label">{treeLabels[id].short}</span>}
             {!compact && <span className="light-count">{tree.matched}/{tree.total}</span>}
           </span>

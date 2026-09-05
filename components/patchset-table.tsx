@@ -9,7 +9,7 @@ import { StatusBadge } from "./status-badge";
 import { UpstreamLights } from "./upstream-lights";
 
 const formatDate = (value: string) =>
-  new Intl.DateTimeFormat("en", { month: "short", day: "2-digit", year: "2-digit" }).format(new Date(value));
+  new Intl.DateTimeFormat("en", { month: "short", day: "2-digit", year: "2-digit", timeZone: "UTC" }).format(new Date(value));
 
 type StatusFilter = "all" | "lore" | "alex" | "corbet" | "linus" | "partial" | "superseded";
 
@@ -83,7 +83,7 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
 
       <div className="section-heading">
         <h2>Patch series</h2>
-        <span className="result-count">{visible.length} of {patchsets.length} series</span>
+        <span className="result-count" aria-live="polite">{visible.length} of {patchsets.length} series</span>
       </div>
 
       {visible.length ? (

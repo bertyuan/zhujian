@@ -5,7 +5,7 @@ import { StatusBadge } from "./status-badge";
 import { UpstreamLights } from "./upstream-lights";
 
 const formatDate = (value: string) =>
-  new Intl.DateTimeFormat("en", { month: "short", day: "2-digit", year: "numeric" }).format(new Date(value));
+  new Intl.DateTimeFormat("en", { month: "short", day: "2-digit", year: "numeric", timeZone: "UTC" }).format(new Date(value));
 
 export function PatchsetCard({ patchset }: { patchset: PatchsetSummary }) {
   return (

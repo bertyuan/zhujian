@@ -4,6 +4,37 @@ A static tracker for Chinese Linux documentation patch series. It reconstructs
 `zh_CN` and `zh_TW` series from the public `linux-doc` archive and renders the
 generated JSON with Next.js.
 
+Zhujian follows patches that touch
+`Documentation/translations/zh_CN/` or
+`Documentation/translations/zh_TW/`. Its three indicators represent Alex's
+`docs-next`, Corbet's `docs-mw`, and Linus's `master`, in that order:
+
+- Green: every relevant patch has exact Git evidence in that tree.
+- Amber: a partial series, conservative candidate, or commit seen before a
+  branch rewrite.
+- Gray: the patch was not found. This is normal and does not mean rejection.
+
+Color is never the only signal; every indicator also has a state label, patch
+count, and accessible description.
+
+## Architecture
+
+```text
+linux-doc lore --lei--> cached messages --stable patch-id--+
+                                                        |
+Alex/docs-next  ----> relevant commit index ------------+---> reconcile
+Corbet/docs-mw  ----> relevant commit index ------------+       |
+Linus/master    ----> relevant commit index ------------+       v
+                                                   generated JSON
+                                                         |
+                                                    Next.js/Vercel
+```
+
+GitHub Actions performs synchronization every 30 minutes and commits the
+validated result. Git is the persistence layer: there is no database, queue,
+always-running worker, or writable Vercel filesystem. The frontend reads the
+compact `data/patchsets.json` index and per-series files in `data/patchsets/`.
+
 ## Local preview
 
 ```sh
@@ -95,6 +126,25 @@ JSON, tests the project, and commits only files under `data/` when they changed.
 The workflow needs GitHub Actions to have write permission for repository
 contents. Branch protection must also allow the workflow to update the default
 branch, or the generated-data push will be rejected.
+
+## Deploy to Vercel
+
+Import the GitHub repository into Vercel and keep the detected Next.js defaults.
+No environment variables, database, `lei`, persistent disk, or scheduled Vercel
+function is required. Vercel only builds the JSON already committed by GitHub
+Actions. Each generated-data commit naturally triggers a fresh static build.
+
+## Maintaining tracked sources
+
+Tracked repositories, branches, and display names are centralized in
+`lib/git/config.ts`. Change that file when adding or replacing a tree, then
+update the `TreeId` schema and UI labels if the set of three stages changes.
+
+The Git synchronizer checks whether the old branch head is an ancestor of the
+new one. Fast-forwards scan only the new range. A reset or rebase triggers a
+bounded rescan while retaining disappeared commits with
+`currentlyPresent: false`; these appear as amber “previously present” evidence
+instead of being erased.
 
 ## Checks
 

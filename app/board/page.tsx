@@ -2,13 +2,13 @@ import Link from "next/link";
 import { LanguageBadge } from "@/components/language-badge";
 import { UpstreamLights } from "@/components/upstream-lights";
 import { getPatchsets } from "@/lib/data/loader";
-import type { PatchsetSummary } from "@/lib/data/schema";
+import { furthestConfirmedStage, type UpstreamStage } from "@/lib/data/stage";
 
-const columns: Array<{ title: string; branch: string; statuses: PatchsetSummary["status"][] }> = [
-  { title: "On lore", branch: "Awaiting Git evidence", statuses: ["on-lore", "superseded", "previously-queued"] },
-  { title: "Alex", branch: "docs-next", statuses: ["queued-alex"] },
-  { title: "Corbet", branch: "docs-mw", statuses: ["in-docs-mw", "partially-applied"] },
-  { title: "Linus", branch: "master", statuses: ["mainline"] },
+const columns: Array<{ id: UpstreamStage; title: string; branch: string }> = [
+  { id: "lore", title: "On lore", branch: "Awaiting confirmed Git evidence" },
+  { id: "alex", title: "Alex", branch: "docs-next" },
+  { id: "corbet", title: "Corbet", branch: "docs-mw" },
+  { id: "linus", title: "Linus", branch: "master" },
 ];
 
 export default function BoardPage() {
@@ -25,7 +25,7 @@ export default function BoardPage() {
       <section className="shell content-section">
         <div className="board-grid">
           {columns.map((column) => {
-            const items = patchsets.filter((item) => column.statuses.includes(item.status));
+            const items = patchsets.filter((item) => furthestConfirmedStage(item) === column.id);
             return (
               <section className="board-column" key={column.title}>
                 <header className="board-head">

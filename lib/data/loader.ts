@@ -22,3 +22,11 @@ export async function getPatchset(id: string): Promise<PatchsetDetail | null> {
     return null;
   }
 }
+
+export async function getPatchsetDetails(): Promise<PatchsetDetail[]> {
+  return Promise.all(getPatchsets().map(async (summary) => {
+    const detail = await getPatchset(summary.id);
+    if (!detail) throw new Error(`Missing generated detail for ${summary.id}`);
+    return detail;
+  }));
+}
