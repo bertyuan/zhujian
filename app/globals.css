@@ -269,6 +269,7 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .back-nav { margin-bottom: 10px; }
 .detail-heading { align-items: flex-start; border-bottom: 1px solid var(--border); display: flex; gap: 20px; justify-content: space-between; margin-bottom: 16px; padding-bottom: 12px; }
 .detail-heading h1 { max-width: 970px; }
+.detail-heading .status-badge { font-size: 1.5em; line-height: 1.35; margin-top: 5px; }
 .section { margin-bottom: 16px; }
 .section h2 { border-bottom: 1px solid var(--border-light); font-size: 1.1em; margin: 0 0 8px; padding-bottom: 4px; }
 .heading-meta { color: var(--text-dim); float: right; font-size: .8em; font-weight: 400; }
@@ -370,6 +371,7 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
   .mobile-list { display: grid; }
   .stats span { display: none; }
   .detail-heading { flex-direction: column; gap: 7px; }
+  .detail-heading .status-badge { margin-top: 0; }
   .message-detail-nav { align-items: flex-start; flex-direction: column; gap: 5px; }
   .message-detail-nav-links { justify-content: space-between; width: 100%; }
   .message-id-value { align-items: flex-start; flex-direction: column; }
