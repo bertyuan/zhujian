@@ -1,4 +1,5 @@
 import { PatchsetTable } from "@/components/patchset-table";
+import { GeneratedStatus } from "@/components/generated-status";
 import { SyncHealth } from "@/components/sync-health";
 import { getMetadata, getPatchsets, getSyncRunState } from "@/lib/data/loader";
 
@@ -15,7 +16,7 @@ export default function HomePage() {
             <h1>Patchsets</h1>
             <p>Tracking Linux Chinese documentation patches from lore to mainline.</p>
           </div>
-          <span className="heading-count">{metadata.mode === "live" ? "live data" : "fixture data"}</span>
+          <GeneratedStatus className="heading-count" generatedAt={metadata.generatedAt} status={syncRunState.status} />
         </div>
         <SyncHealth metadata={metadata} runState={syncRunState} />
         <div className="status-guide" aria-label="Upstream status legend">

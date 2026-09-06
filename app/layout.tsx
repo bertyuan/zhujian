@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/header";
+import { GeneratedStatus } from "@/components/generated-status";
+import { getMetadata } from "@/lib/data/loader";
 import "./globals.css";
 
 const title = "竹简 / Zhujian — Linux Chinese Documentation Patch Tracker";
@@ -27,6 +29,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const metadata = getMetadata();
+
   return (
     <html lang="en">
       <body>
@@ -35,7 +39,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <footer className="site-footer">
           <div className="shell footer-inner">
             <span><strong>Zhujian</strong> · Linux Chinese documentation patch tracker</span>
-            <span>Git history is the source of truth</span>
+            <GeneratedStatus generatedAt={metadata.generatedAt} label="Updated" />
           </div>
         </footer>
       </body>

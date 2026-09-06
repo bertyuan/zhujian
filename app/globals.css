@@ -136,10 +136,10 @@ main { min-height: calc(100vh - 118px); }
 .page-heading p { color: var(--text-muted); margin: 4px 0 0; }
 .heading-count { color: var(--text-muted); font-size: .9em; white-space: nowrap; }
 
-.sync-summary { align-items: baseline; color: var(--text-muted); display: flex; font-size: .85em; gap: 7px; white-space: nowrap; }
-.sync-summary time { color: var(--text); }
-.sync-summary strong { color: var(--status-reviewed); }
-.sync-summary .sync-error-text { color: var(--status-failed); }
+.generated-status { align-items: baseline; color: var(--text-muted); display: inline-flex; gap: 7px; white-space: nowrap; }
+.generated-status time { color: var(--text); }
+.generated-status strong { color: var(--status-reviewed); }
+.generated-status .sync-error-text { color: var(--status-failed); }
 .sync-alert { background: color-mix(in srgb, var(--status-failed) 9%, var(--bg)); border: 1px solid var(--status-failed); border-radius: 3px; color: var(--text-muted); display: grid; font-size: .85em; gap: 2px; margin: 0 0 10px; padding: 7px 9px; }
 .sync-alert strong { color: var(--status-failed); }
 .source-revisions { color: var(--text-muted); display: flex; flex-wrap: wrap; font-size: .8em; gap: 6px 18px; margin: 6px 0 9px; }
@@ -338,7 +338,6 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
   .brand { font-size: 1.55em; }
   .main-nav { margin-left: 0; overflow-x: auto; width: 100%; }
   .page-heading { align-items: flex-start; gap: 8px; }
-  .sync-summary { align-items: flex-end; flex-direction: column; gap: 1px; }
   .control-spacer { display: none; }
   .pipeline { grid-template-columns: 1fr; }
   .pipeline-stage { border-bottom: 1px solid var(--border-light); border-right: 0; }
@@ -351,7 +350,7 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
   .github-link { display: none; }
   .page-heading { flex-direction: column; }
   .page-heading h1, .detail-heading h1 { font-size: 1.55em; }
-  .heading-count, .sync-summary { align-items: flex-start; }
+  .heading-count { align-items: flex-start; }
   .controls { align-items: stretch; display: grid; grid-template-columns: 1fr 1fr; }
   .search-wrap { grid-column: 1 / -1; grid-row: 1; max-width: none; min-width: 0; }
   .filter, .control-button { min-width: 0; }
