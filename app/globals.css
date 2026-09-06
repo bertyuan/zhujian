@@ -177,7 +177,7 @@ main { min-height: calc(100vh - 118px); }
 
 .table-shell { overflow-x: auto; }
 .patch-table { border-collapse: collapse; width: 100%; }
-.patchset-table { min-width: 1000px; table-layout: fixed; }
+.patchset-table, .message-table { min-width: 1000px; table-layout: fixed; }
 .patchset-author-column { width: 25ch; }
 .patchset-date-column { width: 12ch; }
 .patchset-version-column { width: 10ch; }
@@ -284,10 +284,11 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .version-current { background: var(--selected); font-weight: 700; }
 
 .message-more { display: flex; justify-content: center; padding: 12px; }
-.message-tags { align-items: center; display: flex; flex-wrap: wrap; gap: 7px; }
-.message-part, .message-id { color: var(--text-muted); font-size: .8em; }
-.message-title { color: var(--link); display: block; font-weight: 500; line-height: 1.4; margin: 7px 0 3px; }
-.message-id { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.message-table tbody tr { cursor: default; }
+.message-reference { align-items: baseline; display: flex; gap: 6px; max-width: none; }
+.message-reference-id { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.message-reference-details { flex: 0 0 auto; }
+.message-id { color: var(--text-muted); font-size: .8em; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; }
 .empty-state, .message-placeholder { color: var(--text-muted); padding: 20px; text-align: center; }
 .message-placeholder { display: grid; gap: 8px; }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Language, PatchsetStatus, TreeId, TreeSummary } from "@/lib/data/schema";
+import { TRACKED_TREES } from "@/lib/git/config";
 import { LanguageBadge } from "./language-badge";
 import { StatusBadge } from "./status-badge";
 import { UpstreamLights } from "./upstream-lights";
@@ -26,16 +27,25 @@ export interface MessageSummary {
   trees: Record<TreeId, TreeSummary>;
 }
 
-const formatDate = (value: string) => new Intl.DateTimeFormat("en", {
-  month: "short",
-  day: "2-digit",
-  year: "numeric",
-  timeZone: "UTC",
-}).format(new Date(value));
+const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
+
+type StatusFilter = "all" | "waiting" | "review" | "updated" | "alex" | "corbet" | "linus" | "partial";
+
+const statusMatches = (status: PatchsetStatus, filter: StatusFilter) => {
+  if (filter === "all") return true;
+  if (filter === "waiting") return status === "waiting-for-review";
+  if (filter === "review") return status === "in-review";
+  if (filter === "updated") return status === "updated";
+  if (filter === "alex") return status === "queued-alex" || status === "previously-queued";
+  if (filter === "corbet") return status === "in-docs-mw";
+  if (filter === "linus") return status === "mainline";
+  return status === "partially-applied";
+};
 
 export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
   const [query, setQuery] = useState("");
   const [language, setLanguage] = useState<"all" | Language>("all");
+  const [status, setStatus] = useState<StatusFilter>("all");
   const [versions, setVersions] = useState<"latest" | "all">("latest");
   const [limit, setLimit] = useState(100);
 
@@ -52,9 +62,10 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
       ].join(" ").toLocaleLowerCase();
       return (!needle || haystack.includes(needle))
         && (language === "all" || message.language === language)
+        && statusMatches(message.status, status)
         && (versions === "all" || message.latestRevision);
     });
-  }, [language, messages, query, versions]);
+  }, [language, messages, query, status, versions]);
   const displayed = visible.slice(0, limit);
 
   return (
@@ -77,8 +88,21 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
           />
         </label>
         <button className="control-button" type="button" disabled={!query} onClick={() => setQuery("")}>Clear</button>
+        <select className="filter" aria-label="Filter messages by status" value={status} onChange={(event) => {
+          const nextStatus = event.target.value as StatusFilter;
+          setStatus(nextStatus);
+          if (nextStatus === "updated") setVersions("all");
+          setLimit(100);
+        }}>
+          <option value="all">All statuses</option>
+          <option value="waiting">Waiting for review</option>
+          <option value="review">In review</option>
+          <option value="updated">Updated</option>
+          {TRACKED_TREES.map((tree) => <option value={tree.id} key={tree.id}>{tree.name}</option>)}
+          <option value="partial">Partial</option>
+        </select>
         <select className="filter" aria-label="Filter messages by series version" value={versions} onChange={(event) => setVersions(event.target.value as typeof versions)}>
-          <option value="latest">Latest series only</option>
+          <option value="latest">Latest only</option>
           <option value="all">All revisions</option>
         </select>
         <span className="control-spacer" />
@@ -90,24 +114,35 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
         <>
           <div className="table-shell message-table-shell">
             <table className="patch-table message-table">
-              <thead><tr><th>Subject</th><th>Author</th><th>Date</th><th>Part</th><th>Lang</th><th>Status</th><th>Upstream</th></tr></thead>
+              <colgroup>
+                <col className="message-subject-column" />
+                <col className="patchset-author-column" />
+                <col className="patchset-date-column" />
+                <col className="patchset-version-column" />
+                <col className="patchset-language-column" />
+                <col className="patchset-status-column" />
+                <col className="patchset-upstream-column" />
+              </colgroup>
+              <thead><tr><th>Subject</th><th>Author</th><th>Date</th><th className="version-heading">Version</th><th>Lang</th><th>Status</th><th>Upstream</th></tr></thead>
               <tbody>
                 {displayed.map((message) => (
                   <tr key={message.messageId}>
                     <td>
                       <a className="subject-link" href={message.loreUrl} target="_blank" rel="noreferrer">{message.subject} ↗</a>
-                      <span className="subline">{message.messageId}</span>
-                      <span className="subline">
-                        {message.patchId ? `patch-id ${message.patchId.slice(0, 10)} · ` : ""}
-                        <Link className="text-link" href={`/patchsets/${message.seriesId}`}>series</Link>
+                      <span className="subline message-reference">
+                        <span className="message-reference-id" title={message.messageId}>{message.messageId}</span>
+                        <span className="message-reference-details">
+                          {message.patchId ? `patch-id ${message.patchId.slice(0, 10)} · ` : ""}
+                          <Link className="text-link" href={`/patchsets/${message.seriesId}`}>series</Link>
+                        </span>
                       </span>
                     </td>
-                    <td><span className="nowrap">{message.authorName}</span><span className="subline">{message.authorEmail}</span></td>
-                    <td className="nowrap">{formatDate(message.postedAt)}</td>
-                    <td className="nowrap">v{message.revision} · {message.index}/{message.total}</td>
+                    <td className="author-cell"><span className="author-name">{message.authorName}</span><span className="author-email">{message.authorEmail}</span></td>
+                    <td className="nowrap mono date-cell">{formatDate(message.postedAt)}</td>
+                    <td className="nowrap mono version-cell">v{message.revision} · {message.index}/{message.total}</td>
                     <td><LanguageBadge language={message.language} /></td>
-                    <td><StatusBadge status={message.status} /></td>
-                    <td><UpstreamLights trees={message.trees} compact /></td>
+                    <td className="status-cell"><StatusBadge status={message.status} /></td>
+                    <td><UpstreamLights trees={message.trees} /></td>
                   </tr>
                 ))}
               </tbody>
@@ -116,14 +151,18 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
           <div className="mobile-list message-mobile-list">
             {displayed.map((message) => (
               <article className="message-card" key={message.messageId}>
-                <div className="message-tags">
+                <div className="patch-card-head">
+                  <a className="patch-card-title" href={message.loreUrl} target="_blank" rel="noreferrer">{message.subject} ↗</a>
                   <LanguageBadge language={message.language} />
-                  <StatusBadge status={message.status} />
-                  <span className="message-part">v{message.revision} · {message.index}/{message.total}</span>
                 </div>
-                <a className="message-title" href={message.loreUrl} target="_blank" rel="noreferrer">{message.subject} ↗</a>
-                <div className="message-id">{message.messageId}</div>
-                <div className="message-meta"><span>{message.authorName}</span><span>{formatDate(message.postedAt)}</span><Link className="text-link" href={`/patchsets/${message.seriesId}`}>series</Link></div>
+                <div className="message-id" title={message.messageId}>{message.messageId}</div>
+                <div className="patch-card-meta">
+                  <span className="patch-card-author"><span className="author-name">{message.authorName}</span><span className="author-email">{message.authorEmail}</span></span>
+                  <span>{formatDate(message.postedAt)}</span>
+                  <span>v{message.revision} · {message.index}/{message.total}</span>
+                  <Link className="text-link" href={`/patchsets/${message.seriesId}`}>series</Link>
+                </div>
+                <div className="patch-card-foot"><StatusBadge status={message.status} /><UpstreamLights trees={message.trees} compact /></div>
               </article>
             ))}
           </div>
