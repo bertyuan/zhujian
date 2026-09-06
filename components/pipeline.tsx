@@ -9,9 +9,9 @@ const stateLabels: Record<TreeSummary["state"], string> = {
   missing: "Not found",
 };
 
-export function Pipeline({ trees }: { trees: Record<TreeId, TreeSummary> }) {
+export function Pipeline({ trees, compact = false }: { trees: Record<TreeId, TreeSummary>; compact?: boolean }) {
   return (
-    <div className="pipeline">
+    <div className={`pipeline ${compact ? "pipeline-compact" : ""}`}>
       {TRACKED_TREES.map((stage) => {
         const tree = trees[stage.id];
         const label = `${stage.name} ${stage.branch}: ${tree.state}, ${tree.matched} of ${tree.total} patches`;

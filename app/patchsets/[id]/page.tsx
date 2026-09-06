@@ -27,23 +27,24 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
         <StatusBadge status={patchset.status} />
       </div>
 
-      <div className="detail-kv section">
-        <div className="kv-row"><span className="kv-label">Author:</span><span>{patchset.authorName} &lt;{patchset.authorEmail}&gt;</span></div>
-        <div className="kv-row"><span className="kv-label">Date:</span><span>{postedAt}</span></div>
-        <div className="kv-row"><span className="kv-label">Language:</span><span><LanguageBadge language={patchset.language} /></span></div>
-        <div className="kv-row"><span className="kv-label">Version:</span><span>v{patchset.revision}{patchset.latestRevision ? " · latest" : " · newer revision available"}</span></div>
-        <div className="kv-row"><span className="kv-label">RFC:</span><span>{patchset.rfc ? "Yes" : "No"}</span></div>
-        <div className="kv-row"><span className="kv-label">Patches:</span><span>{patchset.patchCount} · {patchset.replies} replies</span></div>
-        <div className="kv-row"><span className="kv-label">Review:</span><span>{patchset.reviewState === "waiting" ? "No external replies" : `${patchset.reviewReplies} external ${patchset.reviewReplies === 1 ? "reply" : "replies"}`}</span></div>
-        <div className="kv-row"><span className="kv-label">Lifecycle:</span><span>{patchset.lifecycle}</span></div>
-        <div className="kv-row"><span className="kv-label">Message-ID:</span><span className="break-anywhere">{patchset.messageIds[0]}</span></div>
-        <div className="kv-row"><span className="kv-label">Links:</span><span><a className="text-link" href={patchset.loreUrl} target="_blank" rel="noreferrer">lore thread ↗</a> · <a className="text-link" href={patchset.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span></div>
+      <div className="detail-overview section">
+        <div className="detail-kv">
+          <div className="kv-row"><span className="kv-label">Author:</span><span>{patchset.authorName} &lt;{patchset.authorEmail}&gt;</span></div>
+          <div className="kv-row"><span className="kv-label">Date:</span><span>{postedAt}</span></div>
+          <div className="kv-row"><span className="kv-label">Language:</span><span><LanguageBadge language={patchset.language} /></span></div>
+          <div className="kv-row"><span className="kv-label">Version:</span><span>v{patchset.revision}{patchset.latestRevision ? " · latest" : " · newer revision available"}</span></div>
+          <div className="kv-row"><span className="kv-label">RFC:</span><span>{patchset.rfc ? "Yes" : "No"}</span></div>
+          <div className="kv-row"><span className="kv-label">Patches:</span><span>{patchset.patchCount} · {patchset.replies} replies</span></div>
+          <div className="kv-row"><span className="kv-label">Review:</span><span>{patchset.reviewState === "waiting" ? "No external replies" : `${patchset.reviewReplies} external ${patchset.reviewReplies === 1 ? "reply" : "replies"}`}</span></div>
+          <div className="kv-row"><span className="kv-label">Lifecycle:</span><span>{patchset.lifecycle}</span></div>
+          <div className="kv-row"><span className="kv-label">Message-ID:</span><span className="break-anywhere">{patchset.messageIds[0]}</span></div>
+          <div className="kv-row"><span className="kv-label">Links:</span><span><a className="text-link" href={patchset.loreUrl} target="_blank" rel="noreferrer">lore thread ↗</a> · <a className="text-link" href={patchset.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span></div>
+        </div>
+        <aside className="detail-upstream" aria-label="Upstream progress">
+          <h2>Upstream progress</h2>
+          <Pipeline trees={patchset.trees} compact />
+        </aside>
       </div>
-
-      <section className="section">
-        <h2>Upstream progress</h2>
-        <Pipeline trees={patchset.trees} />
-      </section>
 
       <section className="section lifecycle-section">
         <h2>Patch status</h2>

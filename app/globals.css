@@ -275,6 +275,9 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .detail-kv { display: grid; gap: 4px; }
 .kv-row { display: grid; gap: 8px; grid-template-columns: 100px minmax(0, 1fr); }
 .kv-label { color: var(--text-muted); font-weight: 600; }
+.detail-overview { align-items: start; display: grid; gap: 24px; grid-template-columns: minmax(0, 1fr) minmax(310px, 390px); }
+.detail-overview > * { min-width: 0; }
+.detail-upstream h2 { border-bottom: 1px solid var(--border-light); font-size: 1em; margin: 0; padding: 0 0 5px; }
 
 .pipeline { border: 1px solid var(--border-light); display: grid; grid-template-columns: repeat(3, 1fr); }
 .pipeline-stage { border-right: 1px solid var(--border-light); min-width: 0; padding: 10px; }
@@ -287,6 +290,14 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .pipeline-state-partial, .pipeline-state-candidate { color: var(--status-inreview); }
 .pipeline-state-previously-present { color: var(--status-previous); }
 .pipeline-state-missing { color: var(--text-muted); }
+.pipeline-compact { grid-template-columns: 1fr; }
+.pipeline-compact .pipeline-stage { align-items: baseline; border-bottom: 1px solid var(--border-light); border-right: 0; display: grid; gap: 1px 7px; grid-template-columns: auto minmax(0, 1fr) auto; padding: 8px 9px; }
+.pipeline-compact .pipeline-stage:last-child { border-bottom: 0; }
+.pipeline-compact .pipeline-dot { align-self: center; grid-column: 1; grid-row: 1 / span 2; margin: 0; }
+.pipeline-compact .pipeline-name { grid-column: 2; grid-row: 1; }
+.pipeline-compact .pipeline-branch { grid-column: 2; grid-row: 2; margin: 0; }
+.pipeline-compact .pipeline-count { grid-column: 3; grid-row: 1; margin: 0; text-align: right; }
+.pipeline-compact .pipeline-state, .pipeline-compact .pipeline-sha { grid-column: 3; margin: 0; text-align: right; }
 
 .patch-list { border: 1px solid var(--border-light); list-style: none; margin: 0; padding: 0; }
 .patch-row { align-items: start; border-bottom: 1px solid var(--border-light); display: grid; gap: 10px; grid-template-columns: 46px minmax(0, 1fr) auto; padding: 7px 8px; }
@@ -339,6 +350,7 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
   .main-nav { margin-left: 0; overflow-x: auto; width: 100%; }
   .page-heading { align-items: flex-start; gap: 8px; }
   .control-spacer { display: none; }
+  .detail-overview { grid-template-columns: 1fr; }
   .pipeline { grid-template-columns: 1fr; }
   .pipeline-stage { border-bottom: 1px solid var(--border-light); border-right: 0; }
   .pipeline-stage:last-child { border-bottom: 0; }

@@ -48,31 +48,32 @@ export default async function MessagePage({ params }: { params: Promise<{ id: st
         <StatusBadge status={patchset.status} />
       </div>
 
-      <div className="detail-kv section message-detail-meta">
-        <div className="kv-row"><span className="kv-label">From:</span><span className="break-anywhere">{message.from.name} &lt;{message.from.email}&gt;</span></div>
-        <div className="kv-row"><span className="kv-label">Date:</span><time dateTime={message.date}>{formatDate(message.date)}</time></div>
-        <div className="kv-row">
-          <span className="kv-label">Message-ID:</span>
-          <span className="message-id-value"><span className="break-anywhere">{message.messageId}</span><CopyButton value={message.messageId} /></span>
+      <div className="detail-overview section">
+        <div className="detail-kv message-detail-meta">
+          <div className="kv-row"><span className="kv-label">From:</span><span className="break-anywhere">{message.from.name} &lt;{message.from.email}&gt;</span></div>
+          <div className="kv-row"><span className="kv-label">Date:</span><time dateTime={message.date}>{formatDate(message.date)}</time></div>
+          <div className="kv-row">
+            <span className="kv-label">Message-ID:</span>
+            <span className="message-id-value"><span className="break-anywhere">{message.messageId}</span><CopyButton value={message.messageId} /></span>
+          </div>
+          <div className="kv-row"><span className="kv-label">Series:</span><span><Link className="text-link" href={`/patchsets/${patchset.id}`}>{patchset.subject}</Link></span></div>
+          <div className="kv-row"><span className="kv-label">Patch:</span><span>v{patchset.revision} · {patch.index}/{patch.total}</span></div>
+          <div className="kv-row"><span className="kv-label">Language:</span><span><LanguageBadge language={patchset.language} /></span></div>
+          {patch.patchId && <div className="kv-row"><span className="kv-label">Patch-ID:</span><span className="break-anywhere">{patch.patchId}</span></div>}
+          <div className="kv-row">
+            <span className="kv-label">Files:</span>
+            <span className="changed-files-list">{patch.changedFiles.map((file) => <code key={file}>{file}</code>)}</span>
+          </div>
+          <div className="kv-row">
+            <span className="kv-label">Links:</span>
+            <span><a className="text-link" href={message.loreUrl} target="_blank" rel="noreferrer">lore message ↗</a> · <a className="text-link" href={message.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span>
+          </div>
         </div>
-        <div className="kv-row"><span className="kv-label">Series:</span><span><Link className="text-link" href={`/patchsets/${patchset.id}`}>{patchset.subject}</Link></span></div>
-        <div className="kv-row"><span className="kv-label">Patch:</span><span>v{patchset.revision} · {patch.index}/{patch.total}</span></div>
-        <div className="kv-row"><span className="kv-label">Language:</span><span><LanguageBadge language={patchset.language} /></span></div>
-        {patch.patchId && <div className="kv-row"><span className="kv-label">Patch-ID:</span><span className="break-anywhere">{patch.patchId}</span></div>}
-        <div className="kv-row">
-          <span className="kv-label">Files:</span>
-          <span className="changed-files-list">{patch.changedFiles.map((file) => <code key={file}>{file}</code>)}</span>
-        </div>
-        <div className="kv-row">
-          <span className="kv-label">Links:</span>
-          <span><a className="text-link" href={message.loreUrl} target="_blank" rel="noreferrer">lore message ↗</a> · <a className="text-link" href={message.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span>
-        </div>
+        <aside className="detail-upstream" aria-label="Upstream progress">
+          <h2>Upstream progress</h2>
+          <Pipeline trees={patch.trees} compact />
+        </aside>
       </div>
-
-      <section className="section">
-        <h2>Upstream progress</h2>
-        <Pipeline trees={patch.trees} />
-      </section>
 
       <section className="section">
         <h2>Patch content <span className="heading-meta">{patch.changedFiles.length} changed {patch.changedFiles.length === 1 ? "file" : "files"}</span></h2>
