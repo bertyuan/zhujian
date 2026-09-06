@@ -10,8 +10,7 @@ import { PatchsetCard } from "./patchset-card";
 import { StatusBadge } from "./status-badge";
 import { UpstreamLights } from "./upstream-lights";
 
-const formatDate = (value: string) =>
-  new Intl.DateTimeFormat("en", { month: "short", day: "2-digit", year: "2-digit", timeZone: "UTC" }).format(new Date(value));
+const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
 
 type StatusFilter = "all" | "lore" | "review" | "alex" | "corbet" | "linus" | "partial" | "superseded";
 
@@ -116,10 +115,19 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
       {visible.length ? (
         <>
           <div className="table-shell">
-            <table className="patch-table">
+            <table className="patch-table patchset-table">
+              <colgroup>
+                <col className="patchset-subject-column" />
+                <col className="patchset-author-column" />
+                <col className="patchset-date-column" />
+                <col className="patchset-version-column" />
+                <col className="patchset-language-column" />
+                <col className="patchset-status-column" />
+                <col className="patchset-upstream-column" />
+              </colgroup>
               <thead>
                 <tr>
-                  <th>Subject</th><th>Author</th><th>Date</th><th>Parts</th><th>Lang</th><th>Status</th><th>Upstream</th>
+                  <th>Subject</th><th>Author</th><th>Date</th><th>Version</th><th>Lang</th><th>Status</th><th>Upstream</th>
                 </tr>
               </thead>
               <tbody>
@@ -127,13 +135,15 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
                   <tr className={selectedIndex === index ? "selected" : ""} key={patchset.id} onMouseEnter={() => setSelectedIndex(index)}>
                     <td>
                       <Link className="subject-link" href={`/patchsets/${patchset.id}`}>{patchset.subject}</Link>
-                      <span className="subline mono">v{patchset.revision} · {patchset.authorEmail}</span>
                     </td>
-                    <td className="nowrap">{patchset.authorName}</td>
-                    <td className="nowrap mono">{formatDate(patchset.postedAt)}</td>
-                    <td className="mono">{patchset.patchCount}</td>
+                    <td className="author-cell">
+                      <span className="author-name">{patchset.authorName}</span>
+                      <span className="subline author-email">{patchset.authorEmail}</span>
+                    </td>
+                    <td className="nowrap mono date-cell">{formatDate(patchset.postedAt)}</td>
+                    <td className="mono version-cell">{patchset.revision}</td>
                     <td><LanguageBadge language={patchset.language} /></td>
-                    <td><StatusBadge status={patchset.status} /></td>
+                    <td className="status-cell"><StatusBadge status={patchset.status} /></td>
                     <td><UpstreamLights trees={patchset.trees} /></td>
                   </tr>
                 ))}

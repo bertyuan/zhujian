@@ -4,8 +4,7 @@ import { LanguageBadge } from "./language-badge";
 import { StatusBadge } from "./status-badge";
 import { UpstreamLights } from "./upstream-lights";
 
-const formatDate = (value: string) =>
-  new Intl.DateTimeFormat("en", { month: "short", day: "2-digit", year: "numeric", timeZone: "UTC" }).format(new Date(value));
+const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
 
 export function PatchsetCard({ patchset }: { patchset: PatchsetSummary }) {
   return (
@@ -17,9 +16,12 @@ export function PatchsetCard({ patchset }: { patchset: PatchsetSummary }) {
         <LanguageBadge language={patchset.language} />
       </div>
       <div className="patch-card-meta">
-        <span>{patchset.authorName}</span>
+        <span className="patch-card-author">
+          <span className="author-name">{patchset.authorName}</span>
+          <span className="author-email">{patchset.authorEmail}</span>
+        </span>
         <span>{formatDate(patchset.postedAt)}</span>
-        <span>{patchset.patchCount} {patchset.patchCount === 1 ? "patch" : "patches"}</span>
+        <span>Version {patchset.revision}</span>
       </div>
       <div className="patch-card-foot">
         <StatusBadge status={patchset.status} />

@@ -177,6 +177,13 @@ main { min-height: calc(100vh - 118px); }
 
 .table-shell { overflow-x: auto; }
 .patch-table { border-collapse: collapse; width: 100%; }
+.patchset-table { min-width: 1000px; table-layout: fixed; }
+.patchset-author-column { width: 25ch; }
+.patchset-date-column { width: 12ch; }
+.patchset-version-column { width: 10ch; }
+.patchset-language-column { width: 7ch; }
+.patchset-status-column { width: 11ch; }
+.patchset-upstream-column { width: 32ch; }
 .patch-table th, .patch-table td { border-bottom: 1px solid var(--border-light); padding: 6px 8px; text-align: left; vertical-align: top; }
 .patch-table th { background: var(--th-bg); font-weight: 600; white-space: nowrap; }
 .patch-table tbody tr { cursor: pointer; }
@@ -184,6 +191,12 @@ main { min-height: calc(100vh - 118px); }
 .patch-table tbody tr.selected { background: var(--selected); outline: 1px solid var(--border); }
 .subject-link { color: var(--link); display: block; font-weight: 500; line-height: 1.4; max-width: 570px; }
 .subline { color: var(--text-muted); display: block; font-size: .85em; margin-top: 1px; max-width: 570px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.author-cell { min-width: 0; }
+.author-name { display: block; overflow-wrap: anywhere; }
+.author-email { color: var(--text-muted); display: block; font-size: .85em; overflow-wrap: anywhere; white-space: normal; }
+.date-cell, .version-cell { font-variant-numeric: tabular-nums; }
+.status-cell .status-badge { display: inline-block; line-height: 1.25; max-width: 9ch; white-space: normal; }
+.status-cell .status-badge::before { content: "# "; }
 
 .status-badge { align-items: center; background: transparent; border: 0; display: inline-flex; font-size: .85em; font-weight: 700; gap: 5px; white-space: nowrap; }
 .status-badge::before { content: "#"; }
@@ -219,6 +232,7 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .patch-card-head { align-items: start; display: flex; gap: 10px; justify-content: space-between; }
 .patch-card-title { color: var(--link); font-weight: 500; line-height: 1.4; }
 .patch-card-meta, .message-meta { color: var(--text-muted); display: flex; flex-wrap: wrap; font-size: .85em; gap: 4px 14px; margin: 8px 0; }
+.patch-card-author { min-width: 0; overflow-wrap: anywhere; }
 .patch-card-foot { align-items: center; display: flex; justify-content: space-between; }
 
 .board-grid { display: grid; gap: 10px; grid-template-columns: repeat(4, minmax(235px, 1fr)); overflow-x: auto; padding-bottom: 12px; }
