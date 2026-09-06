@@ -23,6 +23,13 @@ review trailers (`Reviewed-by`, `Acked-by`, `Tested-by`, `Suggested-by`, and
 Series with discussion but no Git evidence are labeled `In review`; this is a
 mail activity signal and never turns an upstream indicator green.
 
+After every relevant patch in the latest revision is confirmed in
+Linus's `master`, that series family remains on the public dashboard for three
+calendar months. The retention clock starts at the latest matched Linus
+commit's `firstSeenAt` timestamp. Expired families and all of their revisions
+are removed from public patchset JSON, while the internal lore cache and Git
+commit indexes remain available as historical evidence.
+
 ## Architecture
 
 ```text

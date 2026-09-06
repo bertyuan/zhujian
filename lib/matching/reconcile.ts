@@ -10,12 +10,19 @@ export type CommitIndexes = Record<TreeId, GitCommit[]>;
 export interface ReconciliationReport {
   details: PatchsetDetail[];
   ignoredPatches: number;
+  expiredMainlineFamilies: number;
   confirmed: number;
   candidates: number;
   previouslyPresent: number;
   missing: number;
   manualOverrides: number;
 }
+
+export interface ReconciliationOptions {
+  now?: Date;
+}
+
+const MAINLINE_RETENTION_MONTHS = 3;
 
 function newest(commits: GitCommit[]): GitCommit | undefined {
   return commits.toSorted((a, b) => Date.parse(b.committerDate) - Date.parse(a.committerDate))[0];
@@ -101,10 +108,59 @@ function removeIgnored(details: PatchsetDetail[], ignored: Set<string>): { detai
   };
 }
 
+function addUtcMonths(value: string, months: number): Date {
+  const source = new Date(value);
+  const result = new Date(source);
+  const day = source.getUTCDate();
+  result.setUTCDate(1);
+  result.setUTCMonth(result.getUTCMonth() + months);
+  const lastDay = new Date(Date.UTC(
+    result.getUTCFullYear(),
+    result.getUTCMonth() + 1,
+    0,
+  )).getUTCDate();
+  result.setUTCDate(Math.min(day, lastDay));
+  return result;
+}
+
+function removeExpiredMainlineFamilies(
+  details: PatchsetDetail[],
+  linusCommits: GitCommit[],
+  now: Date,
+): { details: PatchsetDetail[]; count: number } {
+  if (Number.isNaN(now.getTime())) throw new Error("Reconciliation time must be a valid date");
+  const commitsBySha = new Map(linusCommits.map((commit) => [commit.commit, commit]));
+  const expiredIds = new Set<string>();
+  let count = 0;
+
+  for (const detail of details) {
+    if (!detail.latestRevision || detail.trees.linus.state !== "confirmed") continue;
+    const firstSeenTimes = detail.patches.map((patch) => {
+      const match = patch.trees.linus;
+      if (match.state !== "confirmed" || !match.commit) return undefined;
+      return commitsBySha.get(match.commit)?.firstSeenAt;
+    });
+    if (firstSeenTimes.some((value) => !value)) continue;
+    const enteredMainlineAt = firstSeenTimes
+      .map((value) => value as string)
+      .toSorted((left, right) => Date.parse(right) - Date.parse(left))[0];
+    if (now < addUtcMonths(enteredMainlineAt, MAINLINE_RETENTION_MONTHS)) continue;
+
+    count += 1;
+    for (const version of detail.versions) expiredIds.add(version.id);
+  }
+
+  return {
+    details: details.filter((detail) => !expiredIds.has(detail.id)),
+    count,
+  };
+}
+
 export function reconcilePatchsets(
   sourceDetails: PatchsetDetail[],
   indexes: CommitIndexes,
   overrides: ReconciliationOverrides,
+  options: ReconciliationOptions = {},
 ): ReconciliationReport {
   const ignored = new Set(overrides.ignore.map((entry) => entry.messageId));
   const filtered = removeIgnored(sourceDetails, ignored);
@@ -140,5 +196,11 @@ export function reconcilePatchsets(
     return { ...detail, patches, trees, status: deriveStatus(trees, detail.latestRevision, detail.replies) };
   });
 
-  return { details, ignoredPatches: filtered.count, ...counts };
+  const retained = removeExpiredMainlineFamilies(details, indexes.linus, options.now ?? new Date());
+  return {
+    details: retained.details,
+    ignoredPatches: filtered.count,
+    expiredMainlineFamilies: retained.count,
+    ...counts,
+  };
 }

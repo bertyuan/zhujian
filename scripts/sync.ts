@@ -50,7 +50,7 @@ try {
 
   stage = "reconciliation";
   const generated = await generateFromLoreCache(root);
-  console.log(`Reconciliation: ${generated.confirmed} confirmed, ${generated.candidates} candidate, ${generated.previouslyPresent} previously present, ${generated.manualOverrides} manual overrides, ${generated.ignoredPatches} ignored.`);
+  console.log(`Reconciliation: ${generated.confirmed} confirmed, ${generated.candidates} candidate, ${generated.previouslyPresent} previously present, ${generated.manualOverrides} manual overrides, ${generated.ignoredPatches} ignored, ${generated.expiredMainlineFamilies} expired mainline families removed.`);
 
   stage = "validation";
   const validated = await validateGeneratedData(root);

@@ -110,3 +110,43 @@ test("candidate matching requires strong metadata agreement", () => {
   const result = reconcilePatchsets([detail()], indexes, { matches: [], ignore: [] });
   assert.equal(result.details[0].patches[0].trees.alex.state, "missing");
 });
+
+test("removes an entire series family three calendar months after it reaches Linus", () => {
+  const versions = [
+    { revision: 1, id: "translation-fix-deadbeef0000-v1", current: false },
+    { revision: 2, id: "translation-fix-deadbeef0000-v2", current: true },
+  ];
+  const v1 = detail("<patch-v1@example.com>");
+  v1.latestRevision = false;
+  v1.versions = versions;
+  const v2 = detail("<patch-v2@example.com>");
+  v2.id = "translation-fix-deadbeef0000-v2";
+  v2.revision = 2;
+  v2.versions = versions;
+  const indexes: CommitIndexes = {
+    alex: [],
+    corbet: [],
+    linus: [commit("linus", {
+      firstSeenAt: "2026-01-31T12:00:00Z",
+      lastSeenAt: "2026-04-30T12:00:00Z",
+    })],
+  };
+
+  const retained = reconcilePatchsets(
+    [v1, v2],
+    indexes,
+    { matches: [], ignore: [] },
+    { now: new Date("2026-04-30T11:59:59Z") },
+  );
+  assert.equal(retained.details.length, 2);
+  assert.equal(retained.expiredMainlineFamilies, 0);
+
+  const expired = reconcilePatchsets(
+    [v1, v2],
+    indexes,
+    { matches: [], ignore: [] },
+    { now: new Date("2026-04-30T12:00:00Z") },
+  );
+  assert.equal(expired.details.length, 0);
+  assert.equal(expired.expiredMainlineFamilies, 1);
+});
