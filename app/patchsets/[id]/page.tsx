@@ -5,6 +5,7 @@ import { Pipeline } from "@/components/pipeline";
 import { StatusBadge } from "@/components/status-badge";
 import { UpstreamLights } from "@/components/upstream-lights";
 import { getPatchset, getPatchsets } from "@/lib/data/loader";
+import { messagePath } from "@/lib/messages/routing";
 
 export function generateStaticParams() {
   return getPatchsets().map((patchset) => ({ id: patchset.id }));
@@ -48,7 +49,7 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
             <li className="patch-row" key={patch.messageId}>
               <span className="patch-number">{patch.index}/{patch.total}</span>
               <div>
-                <a className="patch-subject text-link" href={patch.loreUrl} target="_blank" rel="noreferrer">{patch.subject}</a>
+                <Link className="patch-subject text-link" href={messagePath(patch.messageId)}>{patch.subject}</Link>
                 {Boolean(patch.trailers?.length) && (
                   <div className="trailer-list" aria-label="Review trailers">
                     {patch.trailers?.map((trailer) => (

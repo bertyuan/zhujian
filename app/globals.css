@@ -24,6 +24,9 @@
   --status-previous: #6f42c1;
   --tag-bg: #e0f7fa;
   --tag-text: #006064;
+  --diff-add-bg: #e6ffec;
+  --diff-remove-bg: #ffebe9;
+  --diff-header: #005cc5;
   --brand: #17643b;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
 }
@@ -52,6 +55,9 @@
     --status-previous: #d2a8ff;
     --tag-bg: #032f62;
     --tag-text: #79c0ff;
+    --diff-add-bg: rgba(46, 160, 67, .15);
+    --diff-remove-bg: rgba(248, 81, 73, .15);
+    --diff-header: #79c0ff;
     --brand: #3fb950;
   }
 }
@@ -289,6 +295,21 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .message-reference-id { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
 .message-reference-details { flex: 0 0 auto; }
 .message-id { color: var(--text-muted); font-size: .8em; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.message-detail-nav { align-items: center; display: flex; justify-content: space-between; }
+.message-detail-nav-links { display: inline-flex; gap: 14px; }
+.disabled-link { color: var(--text-dim); }
+.message-id-value { align-items: center; display: inline-flex; gap: 6px; min-width: 0; }
+.copy-button { background: var(--button-bg); border: 1px solid var(--border); border-radius: 3px; color: var(--text); cursor: pointer; flex: 0 0 auto; font: inherit; font-size: 11px; padding: 1px 5px; }
+.copy-button:hover { background: var(--hover); }
+.changed-files-list { display: grid; gap: 2px; min-width: 0; }
+.changed-files-list code { overflow-wrap: anywhere; }
+.patch-content { background: var(--code-bg); border: 1px solid var(--code-border); border-radius: 4px; color: var(--text); font: 12px/1.4 var(--font-mono); margin: 0; max-height: min(72vh, 1000px); overflow: auto; padding: 8px 0; white-space: pre-wrap; word-break: break-word; }
+.patch-content-line { display: block; min-height: 1.4em; padding: 0 10px; }
+.patch-content-added { background: var(--diff-add-bg); }
+.patch-content-removed { background: var(--diff-remove-bg); }
+.patch-content-header { color: var(--diff-header); font-weight: 700; }
+.message-detail-footer-nav { align-items: center; border-top: 1px solid var(--border); display: grid; gap: 12px; grid-template-columns: 1fr auto 1fr; margin-top: 20px; padding-top: 10px; }
+.message-detail-footer-nav > :last-child { text-align: right; }
 .panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: 4px; }
 .empty-state, .message-placeholder { color: var(--text-muted); padding: 20px; text-align: center; }
 .message-placeholder { display: grid; gap: 8px; }
@@ -323,6 +344,9 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
   .mobile-list { display: grid; }
   .stats span { display: none; }
   .detail-heading { flex-direction: column; gap: 7px; }
+  .message-detail-nav { align-items: flex-start; flex-direction: column; gap: 5px; }
+  .message-detail-nav-links { justify-content: space-between; width: 100%; }
+  .message-id-value { align-items: flex-start; flex-direction: column; }
   .kv-row { grid-template-columns: 82px minmax(0, 1fr); }
   .patch-row { grid-template-columns: 36px minmax(0, 1fr); }
   .patch-row > .lights { grid-column: 2; }

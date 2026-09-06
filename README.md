@@ -20,6 +20,10 @@ Color is never the only signal; every indicator also has a state label, patch
 count, and accessible description. Patch detail pages also show supported
 review trailers (`Reviewed-by`, `Acked-by`, `Tested-by`, `Suggested-by`, and
 `Reported-by`) as mail metadata only; trailers never count as Git evidence.
+Individual patches open on local message pages that show sender metadata,
+series navigation, per-patch upstream progress, and the original mail body with
+diff additions, removals, and headers highlighted. Lore and raw-mail links
+remain available from every message page.
 The latest revision is labeled `In review` when its thread has replies, or
 `Waiting for review` when it does not. Older revisions with a newer version are
 labeled `Updated` in gray. These mail states never turn an upstream indicator
@@ -50,6 +54,8 @@ GitHub Actions performs synchronization every 30 minutes and commits the
 validated result. Git is the persistence layer: there is no database, queue,
 always-running worker, or writable Vercel filesystem. The frontend reads the
 compact `data/patchsets.json` index and per-series files in `data/patchsets/`.
+Message pages are statically generated from the committed internal lore cache,
+so serving a patch does not require a runtime request to lore.
 
 ## Local preview
 

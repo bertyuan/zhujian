@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Language, PatchsetStatus, TreeId, TreeSummary } from "@/lib/data/schema";
 import { TRACKED_TREES } from "@/lib/git/config";
+import { messagePath } from "@/lib/messages/routing";
 import { LanguageBadge } from "./language-badge";
 import { StatusBadge } from "./status-badge";
 import { UpstreamLights } from "./upstream-lights";
@@ -128,7 +129,7 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
                 {displayed.map((message) => (
                   <tr key={message.messageId}>
                     <td>
-                      <a className="subject-link" href={message.loreUrl} target="_blank" rel="noreferrer">{message.subject} ↗</a>
+                      <Link className="subject-link" href={messagePath(message.messageId)}>{message.subject}</Link>
                       <span className="subline message-reference">
                         <span className="message-reference-id" title={message.messageId}>{message.messageId}</span>
                         <span className="message-reference-details">
@@ -152,7 +153,7 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
             {displayed.map((message) => (
               <article className="message-card" key={message.messageId}>
                 <div className="patch-card-head">
-                  <a className="patch-card-title" href={message.loreUrl} target="_blank" rel="noreferrer">{message.subject} ↗</a>
+                  <Link className="patch-card-title" href={messagePath(message.messageId)}>{message.subject}</Link>
                   <LanguageBadge language={message.language} />
                 </div>
                 <div className="message-id" title={message.messageId}>{message.messageId}</div>
