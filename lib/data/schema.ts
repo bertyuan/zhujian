@@ -2,6 +2,7 @@ export type Language = "zh_CN" | "zh_TW" | "mixed";
 export type PatchsetStatus =
   | "on-lore"
   | "in-review"
+  | "updated"
   | "queued-alex"
   | "in-docs-mw"
   | "mainline"

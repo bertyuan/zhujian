@@ -193,7 +193,12 @@ export function reconcilePatchsets(
       tree.id,
       aggregateTree(patches.map((patch) => patch.trees[tree.id])),
     ])) as Record<TreeId, TreeSummary>;
-    return { ...detail, patches, trees, status: deriveStatus(trees, detail.latestRevision, detail.replies) };
+    return {
+      ...detail,
+      patches,
+      trees,
+      status: deriveStatus(trees, detail.latestRevision, detail.replies, detail.revision),
+    };
   });
 
   const retained = removeExpiredMainlineFamilies(details, indexes.linus, options.now ?? new Date());

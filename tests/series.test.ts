@@ -60,6 +60,21 @@ test("uses mail replies for in-review without treating them as Git evidence", ()
   assert.equal(trees.alex.state, "missing");
 });
 
+test("labels a newer unmerged revision as updated without hiding Git evidence", () => {
+  const missingTrees = {
+    alex: { state: "missing", matched: 0, total: 1 } as const,
+    corbet: { state: "missing", matched: 0, total: 1 } as const,
+    linus: { state: "missing", matched: 0, total: 1 } as const,
+  };
+  assert.equal(deriveStatus(missingTrees, true, 1, 2), "updated");
+
+  const mainlineTrees = {
+    ...missingTrees,
+    linus: { state: "confirmed", matched: 1, total: 1 } as const,
+  };
+  assert.equal(deriveStatus(mainlineTrees, true, 1, 2), "mainline");
+});
+
 test("generates a route-safe ASCII id for a Chinese-only subject", () => {
   const message: LoreMessage = {
     messageId: "<chinese-subject@example.com>",

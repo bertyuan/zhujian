@@ -3,6 +3,7 @@ import type { PatchsetStatus } from "@/lib/data/schema";
 const statusLabels: Record<PatchsetStatus, string> = {
   "on-lore": "On lore",
   "in-review": "In review",
+  updated: "Updated",
   "queued-alex": "Queued by Alex",
   "in-docs-mw": "In docs-mw",
   mainline: "Mainline",
@@ -14,6 +15,7 @@ const statusLabels: Record<PatchsetStatus, string> = {
 const statusClasses: Record<PatchsetStatus, string> = {
   "on-lore": "status-lore",
   "in-review": "status-review",
+  updated: "status-updated",
   "queued-alex": "status-alex",
   "in-docs-mw": "status-docs-mw",
   mainline: "status-mainline",

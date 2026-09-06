@@ -21,7 +21,7 @@ export function PatchsetCard({ patchset }: { patchset: PatchsetSummary }) {
           <span className="author-email">{patchset.authorEmail}</span>
         </span>
         <span>{formatDate(patchset.postedAt)}</span>
-        <span>Version {patchset.revision}</span>
+        <span>v{patchset.revision}</span>
       </div>
       <div className="patch-card-foot">
         <StatusBadge status={patchset.status} />

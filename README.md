@@ -22,6 +22,9 @@ review trailers (`Reviewed-by`, `Acked-by`, `Tested-by`, `Suggested-by`, and
 `Reported-by`) as mail metadata only; trailers never count as Git evidence.
 Series with discussion but no Git evidence are labeled `In review`; this is a
 mail activity signal and never turns an upstream indicator green.
+The latest unmerged revision is labeled `Updated` when its version is v2 or
+newer. Confirmed and uncertain Git evidence still takes precedence over this
+mail-version label.
 
 After every relevant patch in the latest revision is confirmed in
 Linus's `master`, that series family remains on the public dashboard for three

@@ -12,12 +12,13 @@ import { UpstreamLights } from "./upstream-lights";
 
 const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
 
-type StatusFilter = "all" | "lore" | "review" | "alex" | "corbet" | "linus" | "partial" | "superseded";
+type StatusFilter = "all" | "lore" | "review" | "updated" | "alex" | "corbet" | "linus" | "partial" | "superseded";
 
 const statusMatches = (status: PatchsetStatus, filter: StatusFilter) => {
   if (filter === "all") return true;
   if (filter === "lore") return status === "on-lore";
   if (filter === "review") return status === "in-review";
+  if (filter === "updated") return status === "updated";
   if (filter === "alex") return status === "queued-alex" || status === "previously-queued";
   if (filter === "corbet") return status === "in-docs-mw";
   if (filter === "linus") return status === "mainline";
@@ -99,6 +100,7 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
           <option value="all">All statuses</option>
           <option value="lore">On lore</option>
           <option value="review">In review</option>
+          <option value="updated">Updated</option>
           {TRACKED_TREES.map((tree) => <option value={tree.id} key={tree.id}>{tree.name}</option>)}
           <option value="partial">Partial</option>
           <option value="superseded">Superseded</option>
@@ -127,7 +129,7 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
               </colgroup>
               <thead>
                 <tr>
-                  <th>Subject</th><th>Author</th><th>Date</th><th>Version</th><th>Lang</th><th>Status</th><th>Upstream</th>
+                  <th>Subject</th><th>Author</th><th>Date</th><th className="version-heading">Version</th><th>Lang</th><th>Status</th><th>Upstream</th>
                 </tr>
               </thead>
               <tbody>
@@ -141,7 +143,7 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
                       <span className="subline author-email">{patchset.authorEmail}</span>
                     </td>
                     <td className="nowrap mono date-cell">{formatDate(patchset.postedAt)}</td>
-                    <td className="mono version-cell">{patchset.revision}</td>
+                    <td className="mono version-cell">v{patchset.revision}</td>
                     <td><LanguageBadge language={patchset.language} /></td>
                     <td className="status-cell"><StatusBadge status={patchset.status} /></td>
                     <td><UpstreamLights trees={patchset.trees} /></td>
