@@ -20,6 +20,8 @@ Color is never the only signal; every indicator also has a state label, patch
 count, and accessible description. Patch detail pages also show supported
 review trailers (`Reviewed-by`, `Acked-by`, `Tested-by`, `Suggested-by`, and
 `Reported-by`) as mail metadata only; trailers never count as Git evidence.
+Series with discussion but no Git evidence are labeled `In review`; this is a
+mail activity signal and never turns an upstream indicator green.
 
 ## Architecture
 
@@ -40,6 +42,9 @@ always-running worker, or writable Vercel filesystem. The frontend reads the
 compact `data/patchsets.json` index and per-series files in `data/patchsets/`.
 
 ## Local preview
+
+Use Node.js 24 or newer and pnpm 11. The repository includes an `.nvmrc` for
+the supported Node baseline.
 
 ```sh
 pnpm install

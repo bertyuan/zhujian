@@ -7,7 +7,7 @@
   "postedAt": "2026-07-22T23:41:08.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "in-review",
   "latestRevision": true,
   "messageIds": [
     "<20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com>",

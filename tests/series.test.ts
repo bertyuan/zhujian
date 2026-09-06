@@ -50,6 +50,16 @@ test("keeps the three stages independent when deriving status", () => {
   assert.equal(trees.alex.state, "missing");
 });
 
+test("uses mail replies for in-review without treating them as Git evidence", () => {
+  const trees = {
+    alex: { state: "missing", matched: 0, total: 1 } as const,
+    corbet: { state: "missing", matched: 0, total: 1 } as const,
+    linus: { state: "missing", matched: 0, total: 1 } as const,
+  };
+  assert.equal(deriveStatus(trees, true, 2), "in-review");
+  assert.equal(trees.alex.state, "missing");
+});
+
 test("generates a route-safe ASCII id for a Chinese-only subject", () => {
   const message: LoreMessage = {
     messageId: "<chinese-subject@example.com>",

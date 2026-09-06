@@ -1,9 +1,10 @@
 import patchsetsData from "@/data/patchsets.json";
 import metadataData from "@/data/metadata.json";
+import syncStateData from "@/data/internal/sync-state.json";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import type { PatchsetDetail, PatchsetSummary, SyncMetadata } from "./schema";
-import { validatePatchsetDetail, validatePatchsetSummaries, validateSyncMetadata } from "./validation";
+import type { PatchsetDetail, PatchsetSummary, SyncMetadata, SyncRunState } from "./schema";
+import { validatePatchsetDetail, validatePatchsetSummaries, validateSyncMetadata, validateSyncRunState } from "./validation";
 
 export function getPatchsets(): PatchsetSummary[] {
   return validatePatchsetSummaries(patchsetsData);
@@ -11,6 +12,10 @@ export function getPatchsets(): PatchsetSummary[] {
 
 export function getMetadata(): SyncMetadata {
   return validateSyncMetadata(metadataData);
+}
+
+export function getSyncRunState(): SyncRunState {
+  return validateSyncRunState(syncStateData);
 }
 
 export async function getPatchset(id: string): Promise<PatchsetDetail | null> {

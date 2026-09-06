@@ -137,7 +137,7 @@ export function reconcilePatchsets(
       tree.id,
       aggregateTree(patches.map((patch) => patch.trees[tree.id])),
     ])) as Record<TreeId, TreeSummary>;
-    return { ...detail, patches, trees, status: deriveStatus(trees, detail.latestRevision) };
+    return { ...detail, patches, trees, status: deriveStatus(trees, detail.latestRevision, detail.replies) };
   });
 
   return { details, ignoredPatches: filtered.count, ...counts };

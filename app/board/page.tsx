@@ -3,12 +3,11 @@ import { LanguageBadge } from "@/components/language-badge";
 import { UpstreamLights } from "@/components/upstream-lights";
 import { getPatchsets } from "@/lib/data/loader";
 import { furthestConfirmedStage, type UpstreamStage } from "@/lib/data/stage";
+import { TRACKED_TREES } from "@/lib/git/config";
 
 const columns: Array<{ id: UpstreamStage; title: string; branch: string }> = [
   { id: "lore", title: "On lore", branch: "Awaiting confirmed Git evidence" },
-  { id: "alex", title: "Alex", branch: "docs-next" },
-  { id: "corbet", title: "Corbet", branch: "docs-mw" },
-  { id: "linus", title: "Linus", branch: "master" },
+  ...TRACKED_TREES.map((tree) => ({ id: tree.id, title: tree.name, branch: tree.branch })),
 ];
 
 export default function BoardPage() {

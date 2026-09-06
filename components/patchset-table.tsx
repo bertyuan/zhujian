@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Language, PatchsetStatus, PatchsetSummary } from "@/lib/data/schema";
+import { TRACKED_TREES } from "@/lib/git/config";
 import { LanguageBadge } from "./language-badge";
 import { PatchsetCard } from "./patchset-card";
 import { StatusBadge } from "./status-badge";
@@ -12,11 +13,12 @@ import { UpstreamLights } from "./upstream-lights";
 const formatDate = (value: string) =>
   new Intl.DateTimeFormat("en", { month: "short", day: "2-digit", year: "2-digit", timeZone: "UTC" }).format(new Date(value));
 
-type StatusFilter = "all" | "lore" | "alex" | "corbet" | "linus" | "partial" | "superseded";
+type StatusFilter = "all" | "lore" | "review" | "alex" | "corbet" | "linus" | "partial" | "superseded";
 
 const statusMatches = (status: PatchsetStatus, filter: StatusFilter) => {
   if (filter === "all") return true;
   if (filter === "lore") return status === "on-lore";
+  if (filter === "review") return status === "in-review";
   if (filter === "alex") return status === "queued-alex" || status === "previously-queued";
   if (filter === "corbet") return status === "in-docs-mw";
   if (filter === "linus") return status === "mainline";
@@ -97,9 +99,8 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
         <select className="filter" aria-label="Filter by status" value={status} onChange={(e) => { setStatus(e.target.value as StatusFilter); setSelectedIndex(-1); }}>
           <option value="all">All statuses</option>
           <option value="lore">On lore</option>
-          <option value="alex">Alex</option>
-          <option value="corbet">Corbet</option>
-          <option value="linus">Linus</option>
+          <option value="review">In review</option>
+          {TRACKED_TREES.map((tree) => <option value={tree.id} key={tree.id}>{tree.name}</option>)}
           <option value="partial">Partial</option>
           <option value="superseded">Superseded</option>
         </select>

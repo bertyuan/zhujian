@@ -1,6 +1,7 @@
 export type Language = "zh_CN" | "zh_TW" | "mixed";
 export type PatchsetStatus =
   | "on-lore"
+  | "in-review"
   | "queued-alex"
   | "in-docs-mw"
   | "mainline"
@@ -64,6 +65,14 @@ export interface SyncMetadata {
   mode: "fixture" | "live";
   generatedAt: string;
   sources: Record<string, { status: "ok" | "error"; head?: string; lastSuccessfulSync?: string }>;
+}
+
+export interface SyncRunState {
+  status: "ok" | "error";
+  attemptedAt: string;
+  lastSuccessfulSync?: string;
+  source?: string;
+  error?: string;
 }
 
 export interface GitCommit {

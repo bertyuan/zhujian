@@ -27,3 +27,11 @@ test("marks replies without turning them into standalone patchsets", () => {
   assert.equal(result.isReply, true);
   assert.equal(result.baseSubject, "docs/zh_CN: update text");
 });
+
+test("degrades malformed revision and part numbering safely", () => {
+  const result = parsePatchSubject("[PATCH v0 7/3] docs/zh_CN: malformed numbering");
+  assert.equal(result.isPatch, true);
+  assert.equal(result.revision, 1);
+  assert.equal(result.index, null);
+  assert.equal(result.total, null);
+});

@@ -1,10 +1,5 @@
 import type { TreeId, TreeSummary } from "@/lib/data/schema";
-
-const treeLabels: Record<TreeId, { short: string; full: string }> = {
-  alex: { short: "Alex", full: "Alex docs-next" },
-  corbet: { short: "Corbet", full: "Corbet docs-mw" },
-  linus: { short: "Linus", full: "Linus master" },
-};
+import { TRACKED_TREES, treeCommitUrl } from "@/lib/git/config";
 
 const stateLabels: Record<TreeSummary["state"], string> = {
   confirmed: "confirmed",
@@ -17,16 +12,23 @@ const stateLabels: Record<TreeSummary["state"], string> = {
 export function UpstreamLights({ trees, compact = false }: { trees: Record<TreeId, TreeSummary>; compact?: boolean }) {
   return (
     <div className="lights" role="group" aria-label="Upstream tree status">
-      {(Object.keys(treeLabels) as TreeId[]).map((id) => {
-        const tree = trees[id];
-        const description = `${treeLabels[id].full}: ${stateLabels[tree.state]}, ${tree.matched} of ${tree.total} patches`;
-        return (
-          <span className="light-item" key={id} title={description} aria-label={description}>
+      {TRACKED_TREES.map((trackedTree) => {
+        const tree = trees[trackedTree.id];
+        const description = `${trackedTree.name} ${trackedTree.branch}: ${stateLabels[tree.state]}, ${tree.matched} of ${tree.total} patches`;
+        const content = (
+          <>
             <span className={`light-dot light-${tree.state}`} aria-hidden="true" />
             <span className="sr-only">{stateLabels[tree.state]}</span>
-            {!compact && <span className="light-label">{treeLabels[id].short}</span>}
+            {!compact && <span className="light-label">{trackedTree.name}</span>}
             {!compact && <span className="light-count">{tree.matched}/{tree.total}</span>}
-          </span>
+          </>
+        );
+        return tree.commit ? (
+          <a className="light-item light-link" href={treeCommitUrl(trackedTree.id, tree.commit)} key={trackedTree.id} title={`${description}; open commit ${tree.commit}`} aria-label={`${description}; open matching commit`} target="_blank" rel="noreferrer">
+            {content}
+          </a>
+        ) : (
+          <span className="light-item" key={trackedTree.id} title={description} aria-label={description}>{content}</span>
         );
       })}
     </div>

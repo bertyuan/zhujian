@@ -1,10 +1,5 @@
 import type { TreeId, TreeSummary } from "@/lib/data/schema";
-
-const stages: Array<{ id: TreeId; name: string; branch: string; repository: string }> = [
-  { id: "alex", name: "Alex", branch: "docs-next", repository: "alexs/linux" },
-  { id: "corbet", name: "Corbet", branch: "docs-mw", repository: "docs/linux" },
-  { id: "linus", name: "Linus", branch: "master", repository: "torvalds/linux" },
-];
+import { TRACKED_TREES, treeCommitUrl } from "@/lib/git/config";
 
 const stateLabels: Record<TreeSummary["state"], string> = {
   confirmed: "Confirmed",
@@ -17,7 +12,7 @@ const stateLabels: Record<TreeSummary["state"], string> = {
 export function Pipeline({ trees }: { trees: Record<TreeId, TreeSummary> }) {
   return (
     <div className="pipeline">
-      {stages.map((stage) => {
+      {TRACKED_TREES.map((stage) => {
         const tree = trees[stage.id];
         const label = `${stage.name} ${stage.branch}: ${tree.state}, ${tree.matched} of ${tree.total} patches`;
         return (
@@ -28,7 +23,7 @@ export function Pipeline({ trees }: { trees: Record<TreeId, TreeSummary> }) {
             <span className="pipeline-count">{tree.matched} of {tree.total} confirmed</span>
             <span className={`pipeline-state pipeline-state-${tree.state}`}>{stateLabels[tree.state]}</span>
             {tree.commit && (
-              <a className="pipeline-sha" href={`https://git.kernel.org/pub/scm/linux/kernel/git/${stage.repository}.git/commit/?id=${tree.commit}`} target="_blank" rel="noreferrer">
+              <a className="pipeline-sha" href={treeCommitUrl(stage.id, tree.commit)} target="_blank" rel="noreferrer">
                 {tree.commit.slice(0, 8)} ↗
               </a>
             )}

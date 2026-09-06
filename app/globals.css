@@ -133,8 +133,17 @@ main { min-height: calc(100vh - 118px); }
 .sync-summary { align-items: baseline; color: var(--text-muted); display: flex; font-size: .85em; gap: 7px; white-space: nowrap; }
 .sync-summary time { color: var(--text); }
 .sync-summary strong { color: var(--status-reviewed); }
-.source-revisions { color: var(--text-muted); display: flex; flex-wrap: wrap; font-size: .8em; gap: 6px 18px; margin: 0 0 9px; }
+.sync-summary .sync-error-text { color: var(--status-failed); }
+.sync-alert { background: color-mix(in srgb, var(--status-failed) 9%, var(--bg)); border: 1px solid var(--status-failed); border-radius: 3px; color: var(--text-muted); display: grid; font-size: .85em; gap: 2px; margin: 0 0 10px; padding: 7px 9px; }
+.sync-alert strong { color: var(--status-failed); }
+.source-revisions { color: var(--text-muted); display: flex; flex-wrap: wrap; font-size: .8em; gap: 6px 18px; margin: 6px 0 9px; }
 .source-revisions code { color: var(--text); font: inherit; }
+.source-revision { align-items: baseline; display: inline-flex; flex-wrap: wrap; gap: 5px; }
+.source-revision strong { color: var(--text); }
+.source-revision time { color: var(--text-dim); }
+.source-state { font-weight: 700; }
+.source-ok { color: var(--status-reviewed); }
+.source-error { color: var(--status-failed); }
 
 .status-guide { align-items: center; color: var(--text-muted); display: flex; flex-wrap: wrap; font-size: .85em; gap: 5px 14px; margin-bottom: 10px; }
 .guide-label { color: var(--text); font-weight: 600; }
@@ -179,7 +188,7 @@ main { min-height: calc(100vh - 118px); }
 .status-badge { align-items: center; background: transparent; border: 0; display: inline-flex; font-size: .85em; font-weight: 700; gap: 5px; white-space: nowrap; }
 .status-badge::before { content: "#"; }
 .status-lore { color: var(--status-pending); }
-.status-alex, .status-docs-mw, .status-partial { color: var(--status-inreview); }
+.status-review, .status-alex, .status-docs-mw, .status-partial { color: var(--status-inreview); }
 .status-mainline { color: var(--status-reviewed); }
 .status-superseded { color: var(--text-muted); }
 .status-previous { color: var(--status-previous); }
@@ -190,6 +199,7 @@ main { min-height: calc(100vh - 118px); }
 
 .lights { align-items: center; display: inline-flex; gap: 9px; }
 .light-item { align-items: center; color: var(--text-muted); display: inline-flex; font-size: .8em; gap: 4px; white-space: nowrap; }
+.light-link:hover { color: var(--link); text-decoration: none; }
 .light-dot { border-radius: 50%; display: inline-block; flex: 0 0 auto; height: 8px; width: 8px; }
 .light-confirmed { background: var(--status-reviewed); }
 .light-partial, .light-candidate { background: var(--status-inreview); }

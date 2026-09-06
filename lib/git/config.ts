@@ -32,3 +32,11 @@ export const TRACKED_TREES: readonly TrackedTree[] = [
     branch: "master",
   },
 ] as const;
+
+export const TRACKED_TREE_BY_ID = Object.fromEntries(
+  TRACKED_TREES.map((tree) => [tree.id, tree]),
+) as Record<TreeId, TrackedTree>;
+
+export function treeCommitUrl(tree: TreeId, commit: string): string {
+  return `${TRACKED_TREE_BY_ID[tree].repository}/commit/?id=${encodeURIComponent(commit)}`;
+}

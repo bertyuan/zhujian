@@ -9,6 +9,7 @@ import type {
   ReviewTrailer,
   ReviewTrailerType,
   SyncMetadata,
+  SyncRunState,
   TreeId,
   TreeSummary,
 } from "./schema";
@@ -16,7 +17,7 @@ import type {
 const LANGUAGES = new Set<Language>(["zh_CN", "zh_TW", "mixed"]);
 const LIGHT_STATES = new Set<LightState>(["confirmed", "partial", "candidate", "previously-present", "missing"]);
 const STATUSES = new Set<PatchsetStatus>([
-  "on-lore", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "superseded", "previously-queued",
+  "on-lore", "in-review", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "superseded", "previously-queued",
 ]);
 const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
 const REVIEW_TRAILER_TYPES = new Set<ReviewTrailerType>(["Reviewed-by", "Acked-by", "Tested-by", "Suggested-by", "Reported-by"]);
@@ -56,6 +57,44 @@ function isoDate(value: unknown, path: string): string {
   return result;
 }
 
+function safeMailbox(value: unknown, path: string): string {
+  const result = string(value, path);
+  if (result.length > 320 || /[\s<>\u0000-\u001f\u007f]/.test(result)) {
+    fail(path, "expected a safe mailbox identifier");
+  }
+  return result;
+}
+
+function httpsUrl(value: unknown, path: string): string {
+  const result = string(value, path);
+  let parsed: URL;
+  try {
+    parsed = new URL(result);
+  } catch {
+    fail(path, "expected an absolute URL");
+  }
+  if (parsed.protocol !== "https:" || parsed.username || parsed.password) {
+    fail(path, "expected an HTTPS URL without credentials");
+  }
+  return result;
+}
+
+function safePath(value: unknown, path: string): string {
+  const result = string(value, path);
+  if (result.startsWith("/") || result.split("/").includes("..") || /[\u0000-\u001f\u007f]/.test(result)) {
+    fail(path, "expected a safe repository-relative path");
+  }
+  return result;
+}
+
+function safeBranch(value: unknown, path: string): string {
+  const result = string(value, path);
+  if (!/^[A-Za-z0-9][A-Za-z0-9._/-]*$/.test(result) || result.includes("..") || result.includes("//") || result.includes("@{") || /[./]$/.test(result)) {
+    fail(path, "expected a safe Git branch name");
+  }
+  return result;
+}
+
 function stringArray(value: unknown, path: string): string[] {
   if (!Array.isArray(value)) fail(path, "expected an array");
   return value.map((item, index) => string(item, `${path}[${index}]`));
@@ -92,11 +131,12 @@ export function validatePatchsetSummary(value: unknown, path = "patchset"): Patc
   if (!messageIds.length || messageIds.some((messageId) => !/^<[^<>\s]+>$/.test(messageId))) {
     fail(`${path}.messageIds`, "expected at least one bracketed Message-ID");
   }
+  if (new Set(messageIds).size !== messageIds.length) fail(`${path}.messageIds`, "must not contain duplicates");
   return {
     id,
     subject: string(item.subject, `${path}.subject`),
     authorName: string(item.authorName, `${path}.authorName`),
-    authorEmail: string(item.authorEmail, `${path}.authorEmail`),
+    authorEmail: safeMailbox(item.authorEmail, `${path}.authorEmail`),
     revision: integer(item.revision, `${path}.revision`, 1),
     postedAt: isoDate(item.postedAt, `${path}.postedAt`),
     language,
@@ -131,8 +171,8 @@ function patchDetail(value: unknown, path: string): PatchDetail {
     total: integer(item.total, `${path}.total`, 1),
     subject: string(item.subject, `${path}.subject`),
     messageId,
-    loreUrl: string(item.loreUrl, `${path}.loreUrl`),
-    changedFiles: stringArray(item.changedFiles, `${path}.changedFiles`),
+    loreUrl: httpsUrl(item.loreUrl, `${path}.loreUrl`),
+    changedFiles: stringArray(item.changedFiles, `${path}.changedFiles`).map((file, index) => safePath(file, `${path}.changedFiles[${index}]`)),
     ...(patchId ? { patchId } : {}),
     ...(trailers ? { trailers } : {}),
     trees: trees(item.trees, `${path}.trees`),
@@ -158,20 +198,31 @@ export function validatePatchsetDetail(value: unknown, path = "patchset"): Patch
   if (!Array.isArray(item.versions)) fail(`${path}.versions`, "expected an array");
   const patches = item.patches.map((patch, index) => patchDetail(patch, `${path}.patches[${index}]`));
   if (patches.length !== summary.patchCount) fail(`${path}.patches`, "length must equal patchCount");
+  if (new Set(patches.map((patch) => patch.messageId)).size !== patches.length) fail(`${path}.patches`, "patch Message-IDs must be unique");
+  if (patches.some((patch) => patch.index > patch.total)) fail(`${path}.patches`, "patch index cannot exceed total");
+  if (patches.some((patch) => !summary.messageIds.includes(patch.messageId))) fail(`${path}.patches`, "every patch Message-ID must appear in messageIds");
+  const versions = item.versions.map((version, index) => {
+    const entry = object(version, `${path}.versions[${index}]`);
+    const id = string(entry.id, `${path}.versions[${index}].id`);
+    if (!/^[a-z0-9-]+$/.test(id)) fail(`${path}.versions[${index}].id`, "use lowercase letters, numbers, and hyphens only");
+    return {
+      revision: integer(entry.revision, `${path}.versions[${index}].revision`, 1),
+      id,
+      current: boolean(entry.current, `${path}.versions[${index}].current`),
+    };
+  });
+  if (new Set(versions.map((version) => version.id)).size !== versions.length) fail(`${path}.versions`, "version IDs must be unique");
+  const current = versions.filter((version) => version.current);
+  if (current.length !== 1 || current[0].id !== summary.id || current[0].revision !== summary.revision) {
+    fail(`${path}.versions`, "must identify this patchset as the single current version");
+  }
   return {
     ...summary,
     rfc: boolean(item.rfc, `${path}.rfc`),
-    loreUrl: string(item.loreUrl, `${path}.loreUrl`),
-    rawUrl: string(item.rawUrl, `${path}.rawUrl`),
+    loreUrl: httpsUrl(item.loreUrl, `${path}.loreUrl`),
+    rawUrl: httpsUrl(item.rawUrl, `${path}.rawUrl`),
     replies: integer(item.replies, `${path}.replies`),
-    versions: item.versions.map((version, index) => {
-      const entry = object(version, `${path}.versions[${index}]`);
-      return {
-        revision: integer(entry.revision, `${path}.versions[${index}].revision`, 1),
-        id: string(entry.id, `${path}.versions[${index}].id`),
-        current: boolean(entry.current, `${path}.versions[${index}].current`),
-      };
-    }),
+    versions,
     patches,
   };
 }
@@ -195,6 +246,22 @@ export function validateSyncMetadata(value: unknown): SyncMetadata {
   return { mode, generatedAt: isoDate(item.generatedAt, "metadata.generatedAt"), sources: validatedSources };
 }
 
+export function validateSyncRunState(value: unknown): SyncRunState {
+  const item = object(value, "sync state");
+  const rawStatus = string(item.status, "sync state.status");
+  if (rawStatus !== "ok" && rawStatus !== "error") fail("sync state.status", "expected ok or error");
+  const source = optionalString(item.source, "sync state.source");
+  const error = optionalString(item.error, "sync state.error");
+  if (rawStatus === "error" && !error) fail("sync state.error", "required when status is error");
+  return {
+    status: rawStatus,
+    attemptedAt: isoDate(item.attemptedAt, "sync state.attemptedAt"),
+    ...(item.lastSuccessfulSync ? { lastSuccessfulSync: isoDate(item.lastSuccessfulSync, "sync state.lastSuccessfulSync") } : {}),
+    ...(source ? { source } : {}),
+    ...(error ? { error } : {}),
+  };
+}
+
 export function validateGitCommit(value: unknown, path = "commit"): GitCommit {
   const item = object(value, path);
   const tree = string(item.tree, `${path}.tree`) as TreeId;
@@ -205,15 +272,15 @@ export function validateGitCommit(value: unknown, path = "commit"): GitCommit {
   if (patchId && !/^[0-9a-f]{40}$/i.test(patchId)) fail(`${path}.patchId`, "expected a stable patch-id");
   return {
     tree,
-    branch: string(item.branch, `${path}.branch`),
+    branch: safeBranch(item.branch, `${path}.branch`),
     commit,
     subject: string(item.subject, `${path}.subject`),
     authorName: string(item.authorName, `${path}.authorName`),
-    authorEmail: string(item.authorEmail, `${path}.authorEmail`),
+    authorEmail: safeMailbox(item.authorEmail, `${path}.authorEmail`),
     authorDate: isoDate(item.authorDate, `${path}.authorDate`),
     committerDate: isoDate(item.committerDate, `${path}.committerDate`),
     ...(patchId ? { patchId } : {}),
-    changedFiles: stringArray(item.changedFiles, `${path}.changedFiles`),
+    changedFiles: stringArray(item.changedFiles, `${path}.changedFiles`).map((file, index) => safePath(file, `${path}.changedFiles[${index}]`)),
     firstSeenAt: isoDate(item.firstSeenAt, `${path}.firstSeenAt`),
     lastSeenAt: isoDate(item.lastSeenAt, `${path}.lastSeenAt`),
     currentlyPresent: boolean(item.currentlyPresent, `${path}.currentlyPresent`),
