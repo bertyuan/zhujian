@@ -1,25 +1,25 @@
 {
   "mode": "live",
-  "generatedAt": "2026-09-06T20:46:41.500Z",
+  "generatedAt": "2026-09-06T22:50:48.611Z",
   "sources": {
     "lore": {
       "status": "ok",
-      "lastSuccessfulSync": "2026-09-06T20:46:39.298Z"
+      "lastSuccessfulSync": "2026-09-06T22:50:46.330Z"
     },
     "alex": {
       "status": "ok",
       "head": "ba839bfe38d0ac2d8cbdc1272e2408dc35dafa6a",
-      "lastSuccessfulSync": "2026-09-06T20:46:41.500Z"
+      "lastSuccessfulSync": "2026-09-06T22:50:48.611Z"
     },
     "corbet": {
       "status": "ok",
       "head": "ab2704c2a884028fd12d455cf27a9585aefe2961",
-      "lastSuccessfulSync": "2026-09-06T20:46:41.500Z"
+      "lastSuccessfulSync": "2026-09-06T22:50:48.611Z"
     },
     "linus": {
       "status": "ok",
-      "head": "88405f0ad1d5c680afe3ea0ce9345fa9e1deaac8",
-      "lastSuccessfulSync": "2026-09-06T20:46:41.500Z"
+      "head": "df2908090cda368b01ff43709f51890076c56157",
+      "lastSuccessfulSync": "2026-09-06T22:50:48.611Z"
     }
   }
 }
