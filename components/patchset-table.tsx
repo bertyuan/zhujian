@@ -137,7 +137,7 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
               </thead>
               <tbody>
                 {visible.map((patchset, index) => (
-                  <tr className={selectedIndex === index ? "selected" : ""} key={patchset.id} onMouseEnter={() => setSelectedIndex(index)}>
+                  <tr className={selectedIndex === index ? "selected" : ""} key={patchset.id}>
                     <td>
                       <Link className="subject-link" href={`/patchsets/${patchset.id}`}>{patchset.subject}</Link>
                     </td>
