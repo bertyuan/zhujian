@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 2,
   "status": "partially-applied",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 12,
   "latestRevision": true,
   "messageIds": [
     "<20250213054222.21776-1-alexs@kernel.org>",

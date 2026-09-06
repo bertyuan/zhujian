@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 7,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 3,
   "latestRevision": true,
   "messageIds": [
     "<20260708073246.1652828-1-doehyunbaek@gmail.com>",

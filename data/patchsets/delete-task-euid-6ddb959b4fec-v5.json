@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 2,
   "latestRevision": true,
   "messageIds": [
     "<20260703-remove-task-euid-v5-0-c90c7e2ddf54@google.com>",

@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "waiting-for-review",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06@qq.com>"

@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 2,
   "status": "waiting-for-review",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<20260706151358.2103703-1-qiujiandong1998@gmail.com>",

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LanguageBadge } from "@/components/language-badge";
+import { CopyButton } from "@/components/copy-button";
 import { Pipeline } from "@/components/pipeline";
 import { StatusBadge } from "@/components/status-badge";
 import { UpstreamLights } from "@/components/upstream-lights";
@@ -33,6 +34,8 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
         <div className="kv-row"><span className="kv-label">Version:</span><span>v{patchset.revision}{patchset.latestRevision ? " · latest" : " · newer revision available"}</span></div>
         <div className="kv-row"><span className="kv-label">RFC:</span><span>{patchset.rfc ? "Yes" : "No"}</span></div>
         <div className="kv-row"><span className="kv-label">Patches:</span><span>{patchset.patchCount} · {patchset.replies} replies</span></div>
+        <div className="kv-row"><span className="kv-label">Review:</span><span>{patchset.reviewState === "waiting" ? "No external replies" : `${patchset.reviewReplies} external ${patchset.reviewReplies === 1 ? "reply" : "replies"}`}</span></div>
+        <div className="kv-row"><span className="kv-label">Lifecycle:</span><span>{patchset.lifecycle}</span></div>
         <div className="kv-row"><span className="kv-label">Message-ID:</span><span className="break-anywhere">{patchset.messageIds[0]}</span></div>
         <div className="kv-row"><span className="kv-label">Links:</span><span><a className="text-link" href={patchset.loreUrl} target="_blank" rel="noreferrer">lore thread ↗</a> · <a className="text-link" href={patchset.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span></div>
       </div>
@@ -40,6 +43,27 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
       <section className="section">
         <h2>Upstream progress</h2>
         <Pipeline trees={patchset.trees} />
+      </section>
+
+      <section className="section lifecycle-section">
+        <h2>Patch status</h2>
+        {patchset.lifecycleEvent ? (
+          <div className="lifecycle-evidence">
+            <span>This series was marked <strong>{patchset.lifecycleEvent.state}</strong> via {patchset.lifecycleEvent.source}.</span>
+            {patchset.lifecycleEvent.actorEmail && <span>By {patchset.lifecycleEvent.actorName} &lt;{patchset.lifecycleEvent.actorEmail}&gt;</span>}
+            {patchset.lifecycleEvent.reason && <span>Reason: {patchset.lifecycleEvent.reason}</span>}
+            {patchset.lifecycleEvent.loreUrl && <a className="text-link" href={patchset.lifecycleEvent.loreUrl} target="_blank" rel="noreferrer">Open status message ↗</a>}
+            {patchset.lifecycleEvent.evidence && <a className="text-link" href={patchset.lifecycleEvent.evidence} target="_blank" rel="noreferrer">Open override evidence ↗</a>}
+          </div>
+        ) : (
+          <p className="section-help">The patch author or an authorized maintainer can reply on the lore thread with one exact, unquoted line. This changes lifecycle only; it never changes upstream Git evidence.</p>
+        )}
+        <div className="status-actions">
+          <code>Patch-status: withdrawn</code><CopyButton value="Patch-status: withdrawn" label="Copy withdrawn" />
+          <code>Patch-status: invalid</code><CopyButton value="Patch-status: invalid" label="Copy invalid" />
+          {patchset.lifecycle !== "active" && <><code>Patch-status: active</code><CopyButton value="Patch-status: active" label="Copy active" /></>}
+          <a className="control-button" href={patchset.loreUrl} target="_blank" rel="noreferrer">Open lore thread ↗</a>
+        </div>
       </section>
 
       <section className="section">

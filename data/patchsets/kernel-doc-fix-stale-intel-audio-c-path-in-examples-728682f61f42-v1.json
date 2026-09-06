@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20260315154124.49834-1-xaum.io@gmail.com>"

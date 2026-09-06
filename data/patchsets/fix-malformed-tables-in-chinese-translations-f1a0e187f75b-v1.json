@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 4,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20251003162626.6737-1-krishnagopi487@gmail.com>",

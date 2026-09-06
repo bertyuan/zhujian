@@ -3,6 +3,8 @@ export type PatchsetStatus =
   | "waiting-for-review"
   | "in-review"
   | "updated"
+  | "withdrawn"
+  | "invalid"
   | "queued-alex"
   | "in-docs-mw"
   | "mainline"
@@ -11,6 +13,20 @@ export type PatchsetStatus =
 export type LightState = "confirmed" | "partial" | "candidate" | "previously-present" | "missing";
 export type TreeId = "alex" | "corbet" | "linus";
 export type ReviewTrailerType = "Reviewed-by" | "Acked-by" | "Tested-by" | "Suggested-by" | "Reported-by";
+export type PatchsetLifecycle = "active" | "withdrawn" | "invalid";
+export type PatchsetReviewState = "waiting" | "discussion";
+
+export interface LifecycleEvent {
+  state: PatchsetLifecycle;
+  source: "mail" | "override";
+  date?: string;
+  messageId?: string;
+  loreUrl?: string;
+  actorName?: string;
+  actorEmail?: string;
+  reason?: string;
+  evidence?: string;
+}
 
 export interface ReviewTrailer {
   type: ReviewTrailerType;
@@ -35,6 +51,9 @@ export interface PatchsetSummary {
   language: Language;
   patchCount: number;
   status: PatchsetStatus;
+  lifecycle: PatchsetLifecycle;
+  reviewState: PatchsetReviewState;
+  reviewReplies: number;
   latestRevision: boolean;
   messageIds: string[];
   trees: Record<TreeId, TreeSummary>;
@@ -57,6 +76,7 @@ export interface PatchsetDetail extends PatchsetSummary {
   loreUrl: string;
   rawUrl: string;
   replies: number;
+  lifecycleEvent?: LifecycleEvent;
   versions: Array<{ revision: number; id: string; current: boolean }>;
   patches: PatchDetail[];
 }

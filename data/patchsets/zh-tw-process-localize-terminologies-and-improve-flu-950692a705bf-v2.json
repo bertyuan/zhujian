@@ -8,6 +8,9 @@
   "language": "zh_TW",
   "patchCount": 1,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 16,
   "latestRevision": true,
   "messageIds": [
     "<20260603082531.263115-1-chenyou910331@gmail.com>"

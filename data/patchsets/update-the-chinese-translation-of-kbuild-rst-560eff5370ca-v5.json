@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 5,
   "latestRevision": true,
   "messageIds": [
     "<20251117093041.458075-1-zhaochenguang@kylinos.cn>"

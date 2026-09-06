@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "updated",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": false,
   "messageIds": [
     "<4da6a180fcbc107a0c15fafed4e1d57a70976876.1760869676.git.mchehab+huawei@kernel.org>"

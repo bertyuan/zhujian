@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 9,
   "latestRevision": true,
   "messageIds": [
     "<20260429070759.309110-3-manuelebner@mailbox.org>",

@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20250708024139.848025-3-doubled@leap-io.com>"

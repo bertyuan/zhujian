@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "waiting-for-review",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713@google.com>",

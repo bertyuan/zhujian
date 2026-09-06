@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 2,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20260514-tcp-dm-netkit-v5-0-408c59b91e66@meta.com>",

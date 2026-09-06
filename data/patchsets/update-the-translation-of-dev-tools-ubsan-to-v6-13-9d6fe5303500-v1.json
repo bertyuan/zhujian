@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "waiting-for-review",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<6F05157E5E157493+20250123043258.149643-1-wangyuli@uniontech.com>"

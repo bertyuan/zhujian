@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "updated",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 25,
   "latestRevision": false,
   "messageIds": [
     "<20250129115411.2077152-1-david@redhat.com>",

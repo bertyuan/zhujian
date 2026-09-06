@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "updated",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": false,
   "messageIds": [
     "<20250924072845.22400-1-zhaoshuo@cqsoftware.com.cn>"

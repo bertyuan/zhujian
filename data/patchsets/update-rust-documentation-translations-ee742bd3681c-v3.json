@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 4,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<cover.1784000217.git.ben.guo@openatom.club>",

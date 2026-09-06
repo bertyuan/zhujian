@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 28,
   "latestRevision": true,
   "messageIds": [
     "<20250913003842.41944-1-safinaskar@gmail.com>",

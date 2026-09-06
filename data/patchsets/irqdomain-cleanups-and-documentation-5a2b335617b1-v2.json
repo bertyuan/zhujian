@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 3,
   "status": "partially-applied",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 6,
   "latestRevision": true,
   "messageIds": [
     "<20250319092951.37667-1-jirislaby@kernel.org>",

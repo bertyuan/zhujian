@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 25,
   "status": "updated",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": false,
   "messageIds": [
     "<20251123074540.34161-1-baikefan@leap-io-kernel.com>",

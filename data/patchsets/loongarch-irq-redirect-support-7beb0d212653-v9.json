@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "updated",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 4,
   "latestRevision": false,
   "messageIds": [
     "<20260130025941.2140582-1-zhangtianyang@loongson.cn>",

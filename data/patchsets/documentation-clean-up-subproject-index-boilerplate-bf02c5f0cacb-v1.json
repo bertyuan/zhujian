@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 2,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 8,
   "latestRevision": true,
   "messageIds": [
     "<cover.1762948491.git.jani.nikula@intel.com>",

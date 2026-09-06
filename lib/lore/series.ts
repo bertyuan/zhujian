@@ -1,9 +1,10 @@
 import { createHash } from "node:crypto";
-import type { Language, PatchsetDetail, PatchsetStatus, TreeId, TreeSummary } from "../data/schema";
+import type { Language, PatchsetDetail, PatchsetLifecycle, PatchsetReviewState, PatchsetStatus, TreeId, TreeSummary } from "../data/schema";
 import { classifyLanguage, extractChangedFiles, extractReviewTrailers } from "./parser.ts";
 import { normalizeSeriesSubject, parsePatchSubject } from "./subject.ts";
 import { reconstructThreads } from "./thread.ts";
 import type { FixtureTreeMatch, LoreDataset, LoreMessage } from "./types";
+import { lifecycleFromMail } from "./status.ts";
 
 const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
 
@@ -47,15 +48,18 @@ export function aggregateTree(trees: TreeSummary[]): TreeSummary {
 export function deriveStatus(
   trees: Record<TreeId, TreeSummary>,
   latestRevision: boolean,
-  replies = 0,
+  reviewState: PatchsetReviewState = "waiting",
+  lifecycle: PatchsetLifecycle = "active",
 ): PatchsetStatus {
   if (!latestRevision) return "updated";
   if (trees.linus.state === "confirmed") return "mainline";
   if (trees.corbet.state === "confirmed") return "in-docs-mw";
   if (trees.alex.state === "confirmed") return "queued-alex";
+  if (lifecycle === "withdrawn") return "withdrawn";
+  if (lifecycle === "invalid") return "invalid";
   if (TREE_IDS.some((id) => trees[id].state === "partial" || trees[id].state === "candidate")) return "partially-applied";
   if (TREE_IDS.some((id) => trees[id].state === "previously-present")) return "previously-queued";
-  if (replies > 0) return "in-review";
+  if (reviewState === "discussion") return "in-review";
   return "waiting-for-review";
 }
 
@@ -113,7 +117,17 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
         trees: Object.fromEntries(TREE_IDS.map((tree) => [tree, patchTree(dataset.matches?.[message.messageId]?.[tree])])) as Record<TreeId, TreeSummary>,
       }));
     const trees = Object.fromEntries(TREE_IDS.map((tree) => [tree, aggregateTree(patchDetails.map((patch) => patch.trees[tree]))])) as Record<TreeId, TreeSummary>;
-    const replies = thread.messages.filter((message) => parsePatchSubject(message.subject).isReply).length;
+    const replyMessages = thread.messages.filter((message) => parsePatchSubject(message.subject).isReply);
+    const replies = replyMessages.length;
+    const reviewReplies = replyMessages.filter((message) => (
+      message.from.email.toLocaleLowerCase() !== anchor.message.from.email.toLocaleLowerCase()
+    )).length;
+    const reviewState: PatchsetReviewState = reviewReplies > 0 ? "discussion" : "waiting";
+    const lifecycle = lifecycleFromMail(
+      thread.messages,
+      anchor.message.from.email,
+      new Set(mailPatches.map(({ message }) => message.messageId)),
+    );
 
     return [{
       id,
@@ -126,6 +140,9 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       language: seriesLanguage(languages),
       patchCount,
       status: "waiting-for-review" as PatchsetStatus,
+      lifecycle: lifecycle.lifecycle,
+      reviewState,
+      reviewReplies,
       latestRevision: true,
       messageIds: mailPatches.map(({ message }) => message.messageId),
       trees,
@@ -133,6 +150,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       loreUrl: anchor.message.loreUrl,
       rawUrl: anchor.message.rawUrl,
       replies,
+      ...(lifecycle.event ? { lifecycleEvent: lifecycle.event } : {}),
       versions: [],
       patches: patchDetails,
     }];
@@ -151,7 +169,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       return {
         ...draft,
         latestRevision: isLatest,
-        status: deriveStatus(draft.trees, isLatest, draft.replies),
+        status: deriveStatus(draft.trees, isLatest, draft.reviewState, draft.lifecycle),
         versions: relatives
           .toSorted((a, b) => a.revision - b.revision || Date.parse(a.postedAt) - Date.parse(b.postedAt))
           .map((relative) => ({ revision: relative.revision, id: relative.id, current: relative.id === draft.id })),

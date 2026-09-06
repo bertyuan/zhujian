@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 5,
   "status": "waiting-for-review",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<20260824043806.46731-1-anka@stu.cdut.edu.cn>",

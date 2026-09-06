@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 10,
   "latestRevision": true,
   "messageIds": [
     "<20260111082105.290734-1-rppt@kernel.org>",

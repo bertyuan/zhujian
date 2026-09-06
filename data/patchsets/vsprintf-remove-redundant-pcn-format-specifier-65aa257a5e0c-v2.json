@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 5,
   "latestRevision": true,
   "messageIds": [
     "<20250311-vsprintf-pcn-v2-0-0af40fc7dee4@bootlin.com>",

@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 1,
   "status": "waiting-for-review",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<20251219132305.959779-1-gxxa03070307@gmail.com>"

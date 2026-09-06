@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 3,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 35,
   "latestRevision": true,
   "messageIds": [
     "<20250802-media-private-data-v1-0-eb140ddd6a9d@ideasonboard.com>",

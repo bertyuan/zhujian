@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 2,
   "status": "partially-applied",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 3,
   "latestRevision": true,
   "messageIds": [
     "<20260220160201.41149-1-srcres258@furdevs.cn>",

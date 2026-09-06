@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 3,
   "latestRevision": true,
   "messageIds": [
     "<20260805105927.41987-1-hongfu.li@linux.dev>"

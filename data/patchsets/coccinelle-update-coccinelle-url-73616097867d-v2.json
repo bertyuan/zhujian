@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20260310121431.362091-1-Julia.Lawall@inria.fr>"

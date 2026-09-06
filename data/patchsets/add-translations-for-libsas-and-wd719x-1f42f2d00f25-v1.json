@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 2,
   "status": "updated",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 2,
   "latestRevision": false,
   "messageIds": [
     "<cover.1763112421.git.yjzhang@leap-io-kernel.com>",

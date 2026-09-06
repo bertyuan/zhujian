@@ -17,6 +17,9 @@ function detail(messageId = "<patch@example.com>"): PatchsetDetail {
     language: "zh_CN",
     patchCount: 1,
     status: "waiting-for-review",
+    lifecycle: "active",
+    reviewState: "waiting",
+    reviewReplies: 0,
     latestRevision: true,
     messageIds: [messageId],
     trees: trees(),
@@ -63,7 +66,7 @@ test("keeps confirmed, historical, and candidate matches distinct per tree", () 
     corbet: [commit("corbet", { currentlyPresent: false })],
     linus: [commit("linus", { patchId: "b".repeat(40) })],
   };
-  const result = reconcilePatchsets([detail()], indexes, { matches: [], ignore: [] });
+  const result = reconcilePatchsets([detail()], indexes, { matches: [], ignore: [], states: [] });
   const patchTrees = result.details[0].patches[0].trees;
 
   assert.equal(patchTrees.alex.state, "confirmed");
@@ -82,6 +85,7 @@ test("manual overrides confirm edited patches and ignore known noise", () => {
   const overridden = reconcilePatchsets([source], indexes, {
     matches: [{ messageId: "<patch@example.com>", tree: "alex", commit: "abcdef1", reason: "edited while applying" }],
     ignore: [],
+    states: [],
   });
   assert.equal(overridden.details[0].patches[0].trees.alex.state, "confirmed");
   assert.equal(overridden.details[0].patches[0].trees.alex.commit, "abcdef1");
@@ -90,12 +94,14 @@ test("manual overrides confirm edited patches and ignore known noise", () => {
   const ignored = reconcilePatchsets([source], indexes, {
     matches: [],
     ignore: [{ messageId: "<patch@example.com>", reason: "not translation work" }],
+    states: [],
   });
   assert.equal(ignored.details.length, 0);
   assert.equal(ignored.ignoredPatches, 1);
   const repeated = reconcilePatchsets(ignored.details, indexes, {
     matches: [],
     ignore: [{ messageId: "<patch@example.com>", reason: "not translation work" }],
+    states: [],
   });
   assert.equal(repeated.details.length, 0);
   assert.equal(repeated.ignoredPatches, 0);
@@ -107,7 +113,7 @@ test("candidate matching requires strong metadata agreement", () => {
     corbet: [],
     linus: [],
   };
-  const result = reconcilePatchsets([detail()], indexes, { matches: [], ignore: [] });
+  const result = reconcilePatchsets([detail()], indexes, { matches: [], ignore: [], states: [] });
   assert.equal(result.details[0].patches[0].trees.alex.state, "missing");
 });
 
@@ -135,7 +141,7 @@ test("removes an entire series family three calendar months after it reaches Lin
   const retained = reconcilePatchsets(
     [v1, v2],
     indexes,
-    { matches: [], ignore: [] },
+    { matches: [], ignore: [], states: [] },
     { now: new Date("2026-04-30T11:59:59Z") },
   );
   assert.equal(retained.details.length, 2);
@@ -144,9 +150,31 @@ test("removes an entire series family three calendar months after it reaches Lin
   const expired = reconcilePatchsets(
     [v1, v2],
     indexes,
-    { matches: [], ignore: [] },
+    { matches: [], ignore: [], states: [] },
     { now: new Date("2026-04-30T12:00:00Z") },
   );
   assert.equal(expired.details.length, 0);
   assert.equal(expired.expiredMainlineFamilies, 1);
+});
+
+test("manual state overrides preserve terminal patchsets", () => {
+  const result = reconcilePatchsets(
+    [detail()],
+    { alex: [], corbet: [], linus: [] },
+    {
+      matches: [],
+      ignore: [],
+      states: [{
+        messageId: "<patch@example.com>",
+        state: "invalid",
+        reason: "not applicable to the current tree",
+        evidence: "https://lore.kernel.org/linux-doc/reply/",
+      }],
+    },
+  );
+  assert.equal(result.details.length, 1);
+  assert.equal(result.details[0].lifecycle, "invalid");
+  assert.equal(result.details[0].status, "invalid");
+  assert.equal(result.details[0].lifecycleEvent?.source, "override");
+  assert.equal(result.stateOverrides, 1);
 });

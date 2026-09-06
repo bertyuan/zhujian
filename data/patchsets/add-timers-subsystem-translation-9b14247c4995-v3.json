@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 7,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 2,
   "latestRevision": true,
   "messageIds": [
     "<cover.1767725479.git.hilbertanjou83@gmail.com>",

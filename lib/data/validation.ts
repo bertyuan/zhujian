@@ -1,9 +1,12 @@
 import type {
   Language,
   GitCommit,
+  LifecycleEvent,
   LightState,
   PatchDetail,
   PatchsetDetail,
+  PatchsetLifecycle,
+  PatchsetReviewState,
   PatchsetStatus,
   PatchsetSummary,
   ReviewTrailer,
@@ -17,8 +20,10 @@ import type {
 const LANGUAGES = new Set<Language>(["zh_CN", "zh_TW", "mixed"]);
 const LIGHT_STATES = new Set<LightState>(["confirmed", "partial", "candidate", "previously-present", "missing"]);
 const STATUSES = new Set<PatchsetStatus>([
-  "waiting-for-review", "in-review", "updated", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "previously-queued",
+  "waiting-for-review", "in-review", "updated", "withdrawn", "invalid", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "previously-queued",
 ]);
+const LIFECYCLES = new Set<PatchsetLifecycle>(["active", "withdrawn", "invalid"]);
+const REVIEW_STATES = new Set<PatchsetReviewState>(["waiting", "discussion"]);
 const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
 const REVIEW_TRAILER_TYPES = new Set<ReviewTrailerType>(["Reviewed-by", "Acked-by", "Tested-by", "Suggested-by", "Reported-by"]);
 
@@ -123,8 +128,12 @@ export function validatePatchsetSummary(value: unknown, path = "patchset"): Patc
   const item = object(value, path);
   const language = string(item.language, `${path}.language`) as Language;
   const status = string(item.status, `${path}.status`) as PatchsetStatus;
+  const lifecycle = string(item.lifecycle, `${path}.lifecycle`) as PatchsetLifecycle;
+  const reviewState = string(item.reviewState, `${path}.reviewState`) as PatchsetReviewState;
   if (!LANGUAGES.has(language)) fail(`${path}.language`, `unknown language ${language}`);
   if (!STATUSES.has(status)) fail(`${path}.status`, `unknown status ${status}`);
+  if (!LIFECYCLES.has(lifecycle)) fail(`${path}.lifecycle`, `unknown lifecycle ${lifecycle}`);
+  if (!REVIEW_STATES.has(reviewState)) fail(`${path}.reviewState`, `unknown review state ${reviewState}`);
   const id = string(item.id, `${path}.id`);
   if (!/^[a-z0-9-]+$/.test(id)) fail(`${path}.id`, "use lowercase letters, numbers, and hyphens only");
   const messageIds = stringArray(item.messageIds, `${path}.messageIds`);
@@ -142,6 +151,9 @@ export function validatePatchsetSummary(value: unknown, path = "patchset"): Patc
     language,
     patchCount: integer(item.patchCount, `${path}.patchCount`, 1),
     status,
+    lifecycle,
+    reviewState,
+    reviewReplies: integer(item.reviewReplies, `${path}.reviewReplies`),
     latestRevision: boolean(item.latestRevision, `${path}.latestRevision`),
     messageIds,
     trees: trees(item.trees, `${path}.trees`),
@@ -216,12 +228,35 @@ export function validatePatchsetDetail(value: unknown, path = "patchset"): Patch
   if (current.length !== 1 || current[0].id !== summary.id || current[0].revision !== summary.revision) {
     fail(`${path}.versions`, "must identify this patchset as the single current version");
   }
+  const lifecycleEvent = item.lifecycleEvent === undefined ? undefined : (() => {
+    const event = object(item.lifecycleEvent, `${path}.lifecycleEvent`);
+    const state = string(event.state, `${path}.lifecycleEvent.state`) as PatchsetLifecycle;
+    if (!LIFECYCLES.has(state)) fail(`${path}.lifecycleEvent.state`, `unknown lifecycle ${state}`);
+    const rawSource = string(event.source, `${path}.lifecycleEvent.source`);
+    if (rawSource !== "mail" && rawSource !== "override") fail(`${path}.lifecycleEvent.source`, "expected mail or override");
+    const source = rawSource as LifecycleEvent["source"];
+    return {
+      state,
+      source,
+      ...(event.date === undefined ? {} : { date: isoDate(event.date, `${path}.lifecycleEvent.date`) }),
+      ...(event.messageId === undefined ? {} : { messageId: string(event.messageId, `${path}.lifecycleEvent.messageId`) }),
+      ...(event.loreUrl === undefined ? {} : { loreUrl: httpsUrl(event.loreUrl, `${path}.lifecycleEvent.loreUrl`) }),
+      ...(event.actorName === undefined ? {} : { actorName: string(event.actorName, `${path}.lifecycleEvent.actorName`) }),
+      ...(event.actorEmail === undefined ? {} : { actorEmail: safeMailbox(event.actorEmail, `${path}.lifecycleEvent.actorEmail`) }),
+      ...(event.reason === undefined ? {} : { reason: string(event.reason, `${path}.lifecycleEvent.reason`) }),
+      ...(event.evidence === undefined ? {} : { evidence: string(event.evidence, `${path}.lifecycleEvent.evidence`) }),
+    };
+  })();
+  if (lifecycleEvent && lifecycleEvent.state !== summary.lifecycle) {
+    fail(`${path}.lifecycleEvent.state`, "must match patchset lifecycle");
+  }
   return {
     ...summary,
     rfc: boolean(item.rfc, `${path}.rfc`),
     loreUrl: httpsUrl(item.loreUrl, `${path}.loreUrl`),
     rawUrl: httpsUrl(item.rawUrl, `${path}.rawUrl`),
     replies: integer(item.replies, `${path}.replies`),
+    ...(lifecycleEvent ? { lifecycleEvent } : {}),
     versions,
     patches,
   };

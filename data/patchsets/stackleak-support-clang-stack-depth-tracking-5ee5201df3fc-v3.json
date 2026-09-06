@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 12,
   "latestRevision": true,
   "messageIds": [
     "<20250717231756.make.423-kees@kernel.org>",

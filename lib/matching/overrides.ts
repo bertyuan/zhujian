@@ -1,4 +1,4 @@
-import type { TreeId } from "../data/schema.ts";
+import type { PatchsetLifecycle, TreeId } from "../data/schema.ts";
 
 const TREE_IDS = new Set<TreeId>(["alex", "corbet", "linus"]);
 
@@ -14,9 +14,17 @@ export interface IgnoreOverride {
   reason: string;
 }
 
+export interface StateOverride {
+  messageId: string;
+  state: PatchsetLifecycle;
+  reason: string;
+  evidence?: string;
+}
+
 export interface ReconciliationOverrides {
   matches: MatchOverride[];
   ignore: IgnoreOverride[];
+  states: StateOverride[];
 }
 
 function scalar(value: string, line: number): string {
@@ -37,17 +45,19 @@ function scalar(value: string, line: number): string {
   return trimmed.replace(/\s+#.*$/, "").trim();
 }
 
-function fields(text: string): Record<"matches" | "ignore", Array<Record<string, string>>> {
-  const result: Record<"matches" | "ignore", Array<Record<string, string>>> = { matches: [], ignore: [] };
-  let section: "matches" | "ignore" | undefined;
+type Section = "matches" | "ignore" | "states";
+
+function fields(text: string): Record<Section, Array<Record<string, string>>> {
+  const result: Record<Section, Array<Record<string, string>>> = { matches: [], ignore: [], states: [] };
+  let section: Section | undefined;
   let entry: Record<string, string> | undefined;
 
   for (const [offset, rawLine] of text.split(/\r?\n/).entries()) {
     const line = offset + 1;
     if (!rawLine.trim() || rawLine.trimStart().startsWith("#")) continue;
-    const header = rawLine.match(/^(matches|ignore):\s*(\[\s*\])?\s*$/);
+    const header = rawLine.match(/^(matches|ignore|states):\s*(\[\s*\])?\s*$/);
     if (header) {
-      section = header[1] as "matches" | "ignore";
+      section = header[1] as Section;
       entry = undefined;
       continue;
     }
@@ -97,6 +107,20 @@ export function parseOverrides(text: string): ReconciliationOverrides {
     if (!entry.reason) throw new Error(`${context} requires a reason`);
     return { messageId: messageId(entry.message_id, context), reason: entry.reason };
   });
+  const states = parsed.states.map((entry, index) => {
+    const context = `states[${index}]`;
+    exactKeys(entry, ["message_id", "state", "reason", "evidence"], context);
+    if (!(["active", "withdrawn", "invalid"] as string[]).includes(entry.state ?? "")) {
+      throw new Error(`${context} has unknown state ${entry.state ?? ""}`);
+    }
+    if (!entry.reason) throw new Error(`${context} requires a reason`);
+    return {
+      messageId: messageId(entry.message_id, context),
+      state: entry.state as PatchsetLifecycle,
+      reason: entry.reason,
+      ...(entry.evidence ? { evidence: entry.evidence } : {}),
+    };
+  });
 
   const matchKeys = new Set<string>();
   for (const match of matches) {
@@ -111,5 +135,11 @@ export function parseOverrides(text: string): ReconciliationOverrides {
   }
   const conflicting = matches.find((match) => ignored.has(match.messageId));
   if (conflicting) throw new Error(`Patch ${conflicting.messageId} cannot be both matched and ignored`);
-  return { matches, ignore };
+  const stateMessages = new Set<string>();
+  for (const state of states) {
+    if (stateMessages.has(state.messageId)) throw new Error(`Duplicate state override for ${state.messageId}`);
+    if (ignored.has(state.messageId)) throw new Error(`Patch ${state.messageId} cannot be both state-overridden and ignored`);
+    stateMessages.add(state.messageId);
+  }
+  return { matches, ignore, states };
 }

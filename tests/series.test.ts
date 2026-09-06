@@ -57,7 +57,7 @@ test("uses mail replies for in-review without treating them as Git evidence", ()
     corbet: { state: "missing", matched: 0, total: 1 } as const,
     linus: { state: "missing", matched: 0, total: 1 } as const,
   };
-  assert.equal(deriveStatus(trees, true, 2), "in-review");
+  assert.equal(deriveStatus(trees, true, "discussion"), "in-review");
   assert.equal(trees.alex.state, "missing");
 });
 
@@ -69,13 +69,13 @@ test("labels old revisions as updated and latest revisions by review activity", 
   };
   assert.equal(deriveStatus(missingTrees, false), "updated");
   assert.equal(deriveStatus(missingTrees, true), "waiting-for-review");
-  assert.equal(deriveStatus(missingTrees, true, 1), "in-review");
+  assert.equal(deriveStatus(missingTrees, true, "discussion"), "in-review");
 
   const mainlineTrees = {
     ...missingTrees,
     linus: { state: "confirmed", matched: 1, total: 1 } as const,
   };
-  assert.equal(deriveStatus(mainlineTrees, true, 1), "mainline");
+  assert.equal(deriveStatus(mainlineTrees, true, "discussion"), "mainline");
 });
 
 test("generates a route-safe ASCII id for a Chinese-only subject", () => {

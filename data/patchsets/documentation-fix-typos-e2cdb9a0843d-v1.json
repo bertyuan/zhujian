@@ -8,6 +8,9 @@
   "language": "zh_TW",
   "patchCount": 1,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20250813200526.290420-1-helgaas@kernel.org>",

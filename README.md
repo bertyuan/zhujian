@@ -24,11 +24,11 @@ Individual patches open on local message pages that show sender metadata,
 series navigation, per-patch upstream progress, and the original mail body with
 diff additions, removals, and headers highlighted. Lore and raw-mail links
 remain available from every message page.
-The latest revision is labeled `In review` when its thread has replies, or
-`Waiting for review` when it does not. Older revisions with a newer version are
-labeled `Updated` in gray. These mail states never turn an upstream indicator
-green, and confirmed or uncertain Git evidence still takes precedence for the
-latest revision.
+The latest revision is labeled `In review` when someone other than its author
+has replied, or `Waiting for review` when no external reply exists. Older
+revisions with a newer version are labeled `Updated` in gray. These mail states
+never turn an upstream indicator green, and confirmed or uncertain Git evidence
+still takes precedence for the latest revision.
 
 After every relevant patch in the latest revision is confirmed in
 Linus's `master`, that series family remains on the public dashboard for three
@@ -56,6 +56,26 @@ always-running worker, or writable Vercel filesystem. The frontend reads the
 compact `data/patchsets.json` index and per-series files in `data/patchsets/`.
 Message pages are statically generated from the committed internal lore cache,
 so serving a patch does not require a runtime request to lore.
+
+The `Needs review` page is the primary work queue. It contains active latest
+revisions that have not been confirmed in Alex's `docs-next`, placing series
+without an external reply first and then sorting oldest first. “Discussion
+started” is only an activity signal, not proof that review is complete. The old
+upstream board remains available at `/board`, but is no longer in the primary
+navigation.
+
+Patch authors and configured maintainers can change a series lifecycle by
+replying in its lore thread with one exact, unquoted line:
+
+```text
+Patch-status: withdrawn
+Patch-status: invalid
+Patch-status: active
+```
+
+Matching uses the sender mailbox, not the display name. The latest authorized
+directive wins and its message is retained as evidence. These directives never
+alter Git matching. There is deliberately no age-based `Stalled` state.
 
 ## Local preview
 
@@ -133,12 +153,19 @@ matches:
 ignore:
   - message_id: "<noise@example.com>"
     reason: "Not actually a Chinese translation patch"
+states:
+  - message_id: "<patch@example.com>"
+    state: invalid
+    reason: "Reviewed classification correction"
+    evidence: "https://lore.kernel.org/linux-doc/reply/"
 ```
 
 Each exception requires a reason. A manual match is rejected if its Message-ID
 does not identify a generated patch, while an ignore remains valid after that
 patch has been removed on the first run. A manual match may use a unique 7–40
 character Git SHA; use the full SHA when possible.
+State overrides preserve the series in generated data; `ignore` remains for
+messages that should not have been classified as translation patches at all.
 
 ## GitHub Action
 

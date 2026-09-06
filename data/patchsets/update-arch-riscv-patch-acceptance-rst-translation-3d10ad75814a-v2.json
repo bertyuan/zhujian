@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 3,
   "latestRevision": true,
   "messageIds": [
     "<20260829022344.192491-1-xiaoyewuz.Ruster@gmail.com>"

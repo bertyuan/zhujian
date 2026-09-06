@@ -3,7 +3,7 @@ import { TRACKED_TREES } from "../git/config.ts";
 import { classifyLanguage } from "../lore/parser.ts";
 import { aggregateTree, deriveStatus } from "../lore/series.ts";
 import { isCandidate } from "./confidence.ts";
-import type { MatchOverride, ReconciliationOverrides } from "./overrides.ts";
+import type { MatchOverride, ReconciliationOverrides, StateOverride } from "./overrides.ts";
 
 export type CommitIndexes = Record<TreeId, GitCommit[]>;
 
@@ -16,6 +16,7 @@ export interface ReconciliationReport {
   previouslyPresent: number;
   missing: number;
   manualOverrides: number;
+  stateOverrides: number;
 }
 
 export interface ReconciliationOptions {
@@ -167,10 +168,15 @@ export function reconcilePatchsets(
   const knownMessages = new Set(sourceDetails.flatMap((detail) => detail.patches.map((patch) => patch.messageId)));
   const unknownOverride = overrides.matches.find((entry) => !knownMessages.has(entry.messageId));
   if (unknownOverride) throw new Error(`Override refers to unknown patch ${unknownOverride.messageId}`);
+  const knownSeriesMessages = new Set(sourceDetails.flatMap((detail) => detail.messageIds));
+  const unknownState = overrides.states.find((entry) => !knownSeriesMessages.has(entry.messageId));
+  if (unknownState) throw new Error(`State override refers to unknown patchset message ${unknownState.messageId}`);
   const overrideMap = new Map(overrides.matches.map((entry) => [`${entry.messageId}\0${entry.tree}`, entry]));
+  const stateMap = new Map(overrides.states.map((entry) => [entry.messageId, entry]));
   const counts = { confirmed: 0, candidates: 0, previouslyPresent: 0, missing: 0, manualOverrides: 0 };
 
   const details = filtered.details.map((detail) => {
+    const stateOverride = detail.messageIds.map((messageId) => stateMap.get(messageId)).find(Boolean) as StateOverride | undefined;
     const patches = detail.patches.map((patch) => {
       const trees = Object.fromEntries(TRACKED_TREES.map((tree) => {
         const override = overrideMap.get(`${patch.messageId}\0${tree.id}`);
@@ -197,7 +203,21 @@ export function reconcilePatchsets(
       ...detail,
       patches,
       trees,
-      status: deriveStatus(trees, detail.latestRevision, detail.replies),
+      lifecycle: stateOverride?.state ?? detail.lifecycle,
+      ...(stateOverride ? {
+        lifecycleEvent: {
+          state: stateOverride.state,
+          source: "override" as const,
+          reason: stateOverride.reason,
+          ...(stateOverride.evidence ? { evidence: stateOverride.evidence } : {}),
+        },
+      } : {}),
+      status: deriveStatus(
+        trees,
+        detail.latestRevision,
+        detail.reviewState,
+        stateOverride?.state ?? detail.lifecycle,
+      ),
     };
   });
 
@@ -206,6 +226,7 @@ export function reconcilePatchsets(
     details: retained.details,
     ignoredPatches: filtered.count,
     expiredMainlineFamilies: retained.count,
+    stateOverrides: overrides.states.length,
     ...counts,
   };
 }

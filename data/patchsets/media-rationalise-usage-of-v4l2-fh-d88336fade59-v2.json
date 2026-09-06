@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 4,
   "status": "partially-applied",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<20250809211654.28887-1-laurent.pinchart@ideasonboard.com>",

@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 6,
   "status": "updated",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": false,
   "messageIds": [
     "<cover.1737344074.git.zhaoshuo@cqsoftware.com.cn>",

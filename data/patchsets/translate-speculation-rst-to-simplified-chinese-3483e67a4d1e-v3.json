@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 2,
   "latestRevision": true,
   "messageIds": [
     "<20250607163814.7800-1-chris.wei.cui@gmail.com>"

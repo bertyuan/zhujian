@@ -30,13 +30,14 @@ export interface MessageSummary {
 
 const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
 
-type StatusFilter = "all" | "waiting" | "review" | "updated" | "alex" | "corbet" | "linus" | "partial";
+type StatusFilter = "all" | "waiting" | "review" | "updated" | "closed" | "alex" | "corbet" | "linus" | "partial";
 
 const statusMatches = (status: PatchsetStatus, filter: StatusFilter) => {
   if (filter === "all") return true;
   if (filter === "waiting") return status === "waiting-for-review";
   if (filter === "review") return status === "in-review";
   if (filter === "updated") return status === "updated";
+  if (filter === "closed") return status === "withdrawn" || status === "invalid";
   if (filter === "alex") return status === "queued-alex" || status === "previously-queued";
   if (filter === "corbet") return status === "in-docs-mw";
   if (filter === "linus") return status === "mainline";
@@ -99,6 +100,7 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
           <option value="waiting">Waiting for review</option>
           <option value="review">In review</option>
           <option value="updated">Updated</option>
+          <option value="closed">Withdrawn / invalid</option>
           {TRACKED_TREES.map((tree) => <option value={tree.id} key={tree.id}>{tree.name}</option>)}
           <option value="partial">Partial</option>
         </select>

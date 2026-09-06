@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "partially-applied",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 2,
   "latestRevision": true,
   "messageIds": [
     "<20250616134003.3981866-1-dzm91@hust.edu.cn>"

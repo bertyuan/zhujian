@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 2,
   "status": "in-review",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20251215210624.7814-1-hilbertanjou83@gmail.com>",

@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "waiting",
+  "reviewReplies": 0,
   "latestRevision": true,
   "messageIds": [
     "<20250503123234.2407184-1-illia@yshyn.com>",

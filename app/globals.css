@@ -184,12 +184,16 @@ main { min-height: calc(100vh - 118px); }
 .table-shell { overflow-x: auto; }
 .patch-table { border-collapse: collapse; width: 100%; }
 .patchset-table, .message-table { min-width: 1000px; table-layout: fixed; }
+.review-table { min-width: 1180px; table-layout: fixed; }
 .patchset-author-column { width: 25ch; }
 .patchset-date-column { width: 12ch; }
 .patchset-version-column { width: 10ch; }
 .patchset-language-column { width: 7ch; }
 .patchset-status-column { width: 14ch; }
 .patchset-upstream-column { width: 32ch; }
+.review-subject-column { width: auto; }
+.review-activity-column { width: 21ch; }
+.review-action-column { width: 11ch; }
 .patch-table th, .patch-table td { border-bottom: 1px solid var(--border-light); padding: 6px 8px; text-align: left; vertical-align: top; }
 .patch-table th { background: var(--th-bg); font-weight: 600; white-space: nowrap; }
 .patch-table tbody tr { cursor: pointer; }
@@ -213,7 +217,14 @@ main { min-height: calc(100vh - 118px); }
 .status-review, .status-alex, .status-docs-mw, .status-partial { color: var(--status-inreview); }
 .status-mainline { color: var(--status-reviewed); }
 .status-updated { color: var(--text-muted); }
+.status-terminal { color: var(--status-failed); }
 .status-previous { color: var(--status-previous); }
+.review-note { color: var(--text-muted); font-size: .85em; margin: -2px 0 10px; }
+.review-activity { display: block; font-size: .85em; font-weight: 700; }
+.review-waiting { color: var(--status-pending); }
+.review-discussion { color: var(--status-inreview); }
+.review-progress { color: var(--text-muted); display: block; font-size: .75em; margin-top: 2px; }
+.review-mobile-foot { align-items: center; color: var(--text-muted); display: flex; font-size: .85em; justify-content: space-between; }
 
 .tag { background: var(--tag-bg); border: 1px solid var(--tag-bg); border-radius: 3px; color: var(--tag-text); display: inline-block; font-size: .75em; padding: 1px 4px; white-space: nowrap; }
 .badge-tw { filter: hue-rotate(35deg); }
@@ -288,6 +299,10 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .version-list { display: flex; flex-wrap: wrap; gap: 6px; }
 .version-chip { font-size: .9em; }
 .version-current { background: var(--selected); font-weight: 700; }
+.section-help { color: var(--text-muted); font-size: .85em; margin: 0 0 8px; max-width: 90ch; }
+.status-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 6px; }
+.status-actions code { background: var(--code-bg); border: 1px solid var(--code-border); border-radius: 3px; padding: 3px 6px; }
+.lifecycle-evidence { border-left: 3px solid var(--status-inreview); display: grid; gap: 3px; margin-bottom: 8px; padding: 4px 8px; }
 
 .message-more { display: flex; justify-content: center; padding: 12px; }
 .message-table tbody tr { cursor: default; }

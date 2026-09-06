@@ -8,6 +8,9 @@
   "language": "mixed",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<2025011005-resistant-uncork-9814@gregkh>"

@@ -8,6 +8,9 @@
   "language": "zh_CN",
   "patchCount": 1,
   "status": "mainline",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 13,
   "latestRevision": true,
   "messageIds": [
     "<20250407094116.1339199-1-arnd@kernel.org>",

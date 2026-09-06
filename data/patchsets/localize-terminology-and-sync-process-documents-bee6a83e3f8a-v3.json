@@ -8,6 +8,9 @@
   "language": "zh_TW",
   "patchCount": 16,
   "status": "queued-alex",
+  "lifecycle": "active",
+  "reviewState": "discussion",
+  "reviewReplies": 5,
   "latestRevision": true,
   "messageIds": [
     "<20260806181949.65648-1-chenyou910331@gmail.com>",
