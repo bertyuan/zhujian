@@ -182,7 +182,7 @@ main { min-height: calc(100vh - 118px); }
 .patchset-date-column { width: 12ch; }
 .patchset-version-column { width: 10ch; }
 .patchset-language-column { width: 7ch; }
-.patchset-status-column { width: 11ch; }
+.patchset-status-column { width: 14ch; }
 .patchset-upstream-column { width: 32ch; }
 .patch-table th, .patch-table td { border-bottom: 1px solid var(--border-light); padding: 6px 8px; text-align: left; vertical-align: top; }
 .patch-table th { background: var(--th-bg); font-weight: 600; white-space: nowrap; }
@@ -195,11 +195,13 @@ main { min-height: calc(100vh - 118px); }
 .author-name { display: block; overflow-wrap: anywhere; }
 .author-email { color: var(--text-muted); display: block; font-size: .85em; overflow-wrap: anywhere; white-space: normal; }
 .date-cell, .version-cell { font-variant-numeric: tabular-nums; }
-.status-cell .status-badge { display: inline-block; line-height: 1.25; max-width: 9ch; white-space: normal; }
-.status-cell .status-badge::before { content: "# "; }
+.status-cell .status-badge { line-height: 1.25; max-width: 12ch; white-space: normal; }
+.status-cell .status-text { min-width: 0; }
+.status-cell :is(.status-lore, .status-review, .status-mainline) .status-text { white-space: nowrap; }
 
-.status-badge { align-items: center; background: transparent; border: 0; display: inline-flex; font-size: .85em; font-weight: 700; gap: 5px; white-space: nowrap; }
-.status-badge::before { content: "#"; }
+.status-badge { align-items: start; background: transparent; border: 0; display: inline-grid; font-size: .85em; font-weight: 700; gap: 0 5px; grid-template-columns: auto minmax(0, 1fr); white-space: nowrap; }
+.status-marker { grid-column: 1; }
+.status-text { grid-column: 2; }
 .status-lore { color: var(--status-pending); }
 .status-review, .status-alex, .status-docs-mw, .status-partial { color: var(--status-inreview); }
 .status-mainline { color: var(--status-reviewed); }
