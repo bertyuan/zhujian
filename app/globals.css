@@ -150,7 +150,7 @@ main { min-height: calc(100vh - 118px); }
 .guide-item { align-items: center; display: inline-flex; gap: 5px; }
 
 .controls { align-items: center; display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
-.search-wrap { display: flex; flex: 1; min-width: 260px; }
+.search-wrap { display: flex; flex: 2; min-width: 320px; }
 .search-input {
   background: var(--input-bg);
   border: 1px solid var(--border);
