@@ -91,7 +91,7 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
             type="search"
             value={query}
             onChange={(event) => { setQuery(event.target.value); setSelectedIndex(-1); }}
-            placeholder="Search (subject, author, email, Message-ID)"
+            placeholder="Search subject, author, email, Message-ID"
           />
         </label>
         <button className="control-button" type="button" disabled={!query} onClick={() => { setQuery(""); setSelectedIndex(-1); }}>Clear</button>

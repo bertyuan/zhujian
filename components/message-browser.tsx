@@ -73,7 +73,7 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search (subject, Message-ID, patch-id, file)"
+            placeholder="Search subject, Message-ID, patch-id, file"
           />
         </label>
         <button className="control-button" type="button" disabled={!query} onClick={() => setQuery("")}>Clear</button>
