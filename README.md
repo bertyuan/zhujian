@@ -20,11 +20,11 @@ Color is never the only signal; every indicator also has a state label, patch
 count, and accessible description. Patch detail pages also show supported
 review trailers (`Reviewed-by`, `Acked-by`, `Tested-by`, `Suggested-by`, and
 `Reported-by`) as mail metadata only; trailers never count as Git evidence.
-Series with discussion but no Git evidence are labeled `In review`; this is a
-mail activity signal and never turns an upstream indicator green.
-The latest unmerged revision is labeled `Updated` when its version is v2 or
-newer. Confirmed and uncertain Git evidence still takes precedence over this
-mail-version label.
+The latest revision is labeled `In review` when its thread has replies, or
+`Waiting for review` when it does not. Older revisions with a newer version are
+labeled `Updated` in gray. These mail states never turn an upstream indicator
+green, and confirmed or uncertain Git evidence still takes precedence for the
+latest revision.
 
 After every relevant patch in the latest revision is confirmed in
 Linus's `master`, that series family remains on the public dashboard for three

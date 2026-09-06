@@ -8,7 +8,7 @@
     "postedAt": "2026-09-05T10:06:24.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org>",
@@ -42,7 +42,7 @@
     "postedAt": "2026-09-02T23:30:46.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713@google.com>",
@@ -141,7 +141,7 @@
     "postedAt": "2026-08-29T02:23:27.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260829022344.192491-1-xiaoyewuz.Ruster@gmail.com>"
@@ -173,7 +173,7 @@
     "postedAt": "2026-08-28T06:18:16.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260828061834.3645176-1-xiaoyewuz.Ruster@gmail.com>"
@@ -205,7 +205,7 @@
     "postedAt": "2026-08-24T04:37:59.000Z",
     "language": "zh_CN",
     "patchCount": 5,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260824043806.46731-1-anka@stu.cdut.edu.cn>",
@@ -274,7 +274,7 @@
     "postedAt": "2026-08-23T07:14:56.000Z",
     "language": "zh_CN",
     "patchCount": 5,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260823-maintainer-pgp-guide-v2-0-bea33b2ece54@wyuan.org>",
@@ -311,7 +311,7 @@
     "postedAt": "2026-08-20T17:13:19.000Z",
     "language": "zh_CN",
     "patchCount": 4,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260821-maintainer-pgp-guide-v1-0-08e5e3602c04@wyuan.org>",
@@ -386,7 +386,7 @@
     "postedAt": "2026-08-19T02:55:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260819025535.2967566-1-ye.liu@linux.dev>"
@@ -418,7 +418,7 @@
     "postedAt": "2026-08-18T07:03:42.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260818070358.455768-1-doehyunbaek@gmail.com>",
@@ -491,7 +491,7 @@
     "postedAt": "2026-08-17T02:13:34.000Z",
     "language": "zh_CN",
     "patchCount": 5,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260817021340.17318-1-anka@stu.cdut.edu.cn>",
@@ -528,7 +528,7 @@
     "postedAt": "2026-08-16T17:47:44.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org>",
@@ -562,7 +562,7 @@
     "postedAt": "2026-08-15T05:59:33.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260815-apply-patches-v2-0-3fdd873d31cc@wyuan.org>",
@@ -596,7 +596,7 @@
     "postedAt": "2026-08-14T21:44:12.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260814214419.49925-1-chenmiao.ku@gmail.com>",
@@ -634,7 +634,7 @@
     "postedAt": "2026-08-12T18:23:17.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260812182327.53694-1-chenmiao.ku@gmail.com>",
@@ -709,7 +709,7 @@
     "postedAt": "2026-08-12T06:59:04.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260812065914.3071433-1-doehyunbaek@gmail.com>",
@@ -748,7 +748,7 @@
     "postedAt": "2026-08-11T07:11:53.000Z",
     "language": "zh_CN",
     "patchCount": 5,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260811071200.54062-1-anka@stu.cdut.edu.cn>",
@@ -785,7 +785,7 @@
     "postedAt": "2026-08-10T14:33:04.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260810143311.57775-1-chenmiao.ku@gmail.com>",
@@ -822,7 +822,7 @@
     "postedAt": "2026-08-09T10:19:19.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260809101923.13176-1-chenmiao.ku@gmail.com>",
@@ -905,7 +905,7 @@
     "postedAt": "2026-08-06T01:30:55.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260806013055.2690464-1-ye.liu@linux.dev>"
@@ -937,7 +937,7 @@
     "postedAt": "2026-08-05T12:22:23.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260805122224.2512983-1-ye.liu@linux.dev>"
@@ -1003,7 +1003,7 @@
     "postedAt": "2026-07-28T09:10:22.000Z",
     "language": "zh_TW",
     "patchCount": 16,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260728091038.171033-1-chenyou910331@gmail.com>",
@@ -1052,7 +1052,7 @@
     "postedAt": "2026-07-27T07:35:31.000Z",
     "language": "zh_CN",
     "patchCount": 5,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260727073538.56951-1-anka@stu.cdut.edu.cn>",
@@ -1089,7 +1089,7 @@
     "postedAt": "2026-07-24T05:13:36.000Z",
     "language": "zh_CN",
     "patchCount": 5,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1784866896.git.businiaoanka@anka1.top>",
@@ -1126,7 +1126,7 @@
     "postedAt": "2026-07-22T23:41:08.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com>",
@@ -1174,7 +1174,7 @@
     "postedAt": "2026-07-22T12:32:40.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260722123240.22979-1-imcusg@gmail.com>"
@@ -1206,7 +1206,7 @@
     "postedAt": "2026-07-22T10:00:53.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260722100053.71691-1-imcusg@gmail.com>"
@@ -1238,7 +1238,7 @@
     "postedAt": "2026-07-21T21:55:26.000Z",
     "language": "zh_TW",
     "patchCount": 16,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260721215542.98435-1-chenyou910331@gmail.com>",
@@ -1287,7 +1287,7 @@
     "postedAt": "2026-07-17T12:06:39.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1784289654.git.wy@wyuan.org>",
@@ -1361,7 +1361,7 @@
     "postedAt": "2026-07-13T01:46:32.000Z",
     "language": "zh_CN",
     "patchCount": 4,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1783905132.git.ben.guo@openatom.club>",
@@ -1464,7 +1464,7 @@
     "postedAt": "2026-07-08T07:32:39.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260708073246.1652828-1-doehyunbaek@gmail.com>",
@@ -1503,7 +1503,7 @@
     "postedAt": "2026-07-08T03:13:21.000Z",
     "language": "zh_CN",
     "patchCount": 4,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1783480076.git.ben.guo@openatom.club>",
@@ -1577,7 +1577,7 @@
     "postedAt": "2026-07-06T15:13:51.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20260706151358.2103703-1-qiujiandong1998@gmail.com>",
@@ -1611,7 +1611,7 @@
     "postedAt": "2026-07-06T15:01:56.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek@kernel.org>"
@@ -1679,7 +1679,7 @@
     "postedAt": "2026-06-21T13:12:10.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260621131215.1303439-1-qiujiandong1998@gmail.com>",
@@ -1713,7 +1713,7 @@
     "postedAt": "2026-06-19T14:02:38.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260619140245.1982921-1-qiujiandong1998@gmail.com>",
@@ -1853,7 +1853,7 @@
     "postedAt": "2026-06-12T16:03:39.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_F5C99221ABE8EEE4A8610C0DE1E1BDD8E505@qq.com>"
@@ -1885,7 +1885,7 @@
     "postedAt": "2026-06-12T15:58:29.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06@qq.com>"
@@ -1949,7 +1949,7 @@
     "postedAt": "2026-06-12T15:58:27.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_9C8FD8C64E11E0DED95D122C95B326EE1209@qq.com>"
@@ -1981,7 +1981,7 @@
     "postedAt": "2026-06-12T15:58:26.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_D565966559E777D84773634D0813EFD52E08@qq.com>"
@@ -2013,7 +2013,7 @@
     "postedAt": "2026-06-12T15:58:25.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_584BF9CEE8686B0C1981EF5DCDE5CAB22005@qq.com>"
@@ -2045,7 +2045,7 @@
     "postedAt": "2026-06-12T15:58:24.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_BABBA8A3BDB14504B377071745CBB3ACB607@qq.com>"
@@ -2077,7 +2077,7 @@
     "postedAt": "2026-06-12T15:58:23.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_03EFCA2E14961D59A37729478C633B085008@qq.com>"
@@ -2109,7 +2109,7 @@
     "postedAt": "2026-06-12T15:58:22.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09@qq.com>"
@@ -2141,7 +2141,7 @@
     "postedAt": "2026-06-12T15:58:21.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09@qq.com>"
@@ -2173,7 +2173,7 @@
     "postedAt": "2026-06-12T15:58:20.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com>"
@@ -2240,7 +2240,7 @@
     "postedAt": "2026-06-10T23:18:29.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260610231836.186610-1-enelsonmoore@gmail.com>"
@@ -2310,7 +2310,7 @@
     "postedAt": "2026-06-03T08:25:31.000Z",
     "language": "zh_TW",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260603082531.263115-1-chenyou910331@gmail.com>"
@@ -2377,7 +2377,7 @@
     "postedAt": "2026-05-29T09:33:00.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260529-remove-task-euid-v4-0-07cbdf3af980@google.com>",
@@ -2413,7 +2413,7 @@
     "postedAt": "2026-05-28T04:13:30.000Z",
     "language": "zh_TW",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260528041330.23247-1-chenyou910331@gmail.com>"
@@ -2716,7 +2716,7 @@
     "postedAt": "2026-05-12T01:17:54.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260511-tcp-dm-netkit-v4-0-841b78b99d74@meta.com>",
@@ -2759,7 +2759,7 @@
     "postedAt": "2026-05-10T13:53:31.000Z",
     "language": "zh_CN",
     "patchCount": 8,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1778415392.git.baikefan@leap-io-kernel.com>",
@@ -2802,7 +2802,7 @@
     "postedAt": "2026-05-10T06:48:28.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<tencent_7ADF2D1EBD8EAD2028BC93BA7858EA655D0A@qq.com>"
@@ -2837,7 +2837,7 @@
     "postedAt": "2026-05-08T02:27:45.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260507-tcp-dm-netkit-v3-0-52821445867c@meta.com>",
@@ -2880,7 +2880,7 @@
     "postedAt": "2026-05-07T09:48:21.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260507-remove-task-euid-v3-0-27f22f335c2c@google.com>",
@@ -2948,7 +2948,7 @@
     "postedAt": "2026-05-05T00:27:47.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260504-tcp-dm-netkit-v2-0-56d52ac72fd4@meta.com>",
@@ -3056,7 +3056,7 @@
     "postedAt": "2026-04-28T22:41:57.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260428-tcp-dm-netkit-v1-0-719280eba4d2@meta.com>",
@@ -3099,7 +3099,7 @@
     "postedAt": "2026-04-24T17:47:44.000Z",
     "language": "mixed",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260424174743.257951-2-manuelebner@mailbox.org>",
@@ -3173,7 +3173,7 @@
     "postedAt": "2026-04-21T17:55:17.000Z",
     "language": "mixed",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260421175516.224960-2-manuelebner@mailbox.org>",
@@ -3279,7 +3279,7 @@
     "postedAt": "2026-04-19T06:58:25.000Z",
     "language": "mixed",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260419065824.165921-4-manuelebner@mailbox.org>"
@@ -3311,7 +3311,7 @@
     "postedAt": "2026-04-18T15:00:45.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<tencent_193EEE328E64C6F610B4DE835DC22CAFB209@qq.com>"
@@ -3381,7 +3381,7 @@
     "postedAt": "2026-04-18T04:45:13.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<tencent_99B2EE128E02C6CC1120DE135D4A2DA5B309@qq.com>"
@@ -3451,7 +3451,7 @@
     "postedAt": "2026-04-13T15:33:18.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805@qq.com>"
@@ -3525,7 +3525,7 @@
     "postedAt": "2026-04-08T05:05:42.000Z",
     "language": "zh_CN",
     "patchCount": 4,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1775619061.git.ben.guo@openatom.club>",
@@ -3599,7 +3599,7 @@
     "postedAt": "2026-04-01T15:40:07.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<tencent_1BF5E860CC01A1E23DC405DD92314BE16E05@qq.com>"
@@ -3634,7 +3634,7 @@
     "postedAt": "2026-03-15T17:05:18.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260315170521.63794-1-xaum.io@gmail.com>",
@@ -3736,7 +3736,7 @@
     "postedAt": "2026-03-10T11:50:40.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20260310-fix-llvm-docs-v2-1-5e52173aabc7@samsung.com>"
@@ -3768,7 +3768,7 @@
     "postedAt": "2026-03-10T11:48:43.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260310-fix-llvm-docs-v1-1-234878874762@samsung.com>"
@@ -3800,7 +3800,7 @@
     "postedAt": "2026-03-10T08:11:12.000Z",
     "language": "mixed",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260310081112.354802-1-Julia.Lawall@inria.fr>"
@@ -3870,7 +3870,7 @@
     "postedAt": "2026-03-05T19:20:40.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260305192048.16405-1-tttturtleruss@gmail.com>"
@@ -3905,7 +3905,7 @@
     "postedAt": "2026-03-03T17:22:29.000Z",
     "language": "mixed",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<87a4wode0a.fsf@trenco.lwn.net>"
@@ -4110,7 +4110,7 @@
     "postedAt": "2026-02-03T12:45:17.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260203124522.2288900-1-zhangtianyang@loongson.cn>",
@@ -4146,7 +4146,7 @@
     "postedAt": "2026-02-02T09:10:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260202091041.2278271-1-zhangtianyang@loongson.cn>",
@@ -4182,7 +4182,7 @@
     "postedAt": "2026-01-30T02:59:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260130025941.2140582-1-zhangtianyang@loongson.cn>",
@@ -4218,7 +4218,7 @@
     "postedAt": "2026-01-30T02:55:39.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260130025545.2140543-1-zhangtianyang@loongson.cn>",
@@ -4394,7 +4394,7 @@
     "postedAt": "2026-01-06T19:47:13.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<cover.1767725479.git.hilbertanjou83@gmail.com>",
@@ -4433,7 +4433,7 @@
     "postedAt": "2026-01-02T06:59:36.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20260102070005.65328-1-rppt@kernel.org>",
@@ -4497,7 +4497,7 @@
     "postedAt": "2025-12-30T19:02:05.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1767118457.git.hilbertanjou83@gmail.com>",
@@ -4536,7 +4536,7 @@
     "postedAt": "2025-12-28T12:39:30.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251228124001.3624742-1-rppt@kernel.org>",
@@ -4599,7 +4599,7 @@
     "postedAt": "2025-12-19T13:23:05.000Z",
     "language": "mixed",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20251219132305.959779-1-gxxa03070307@gmail.com>"
@@ -4631,7 +4631,7 @@
     "postedAt": "2025-12-18T23:16:42.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1766099040.git.hilbertanjou83@gmail.com>",
@@ -4670,7 +4670,7 @@
     "postedAt": "2025-12-17T01:23:15.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251217012322.41701-1-zhangtianyang@loongson.cn>",
@@ -4737,7 +4737,7 @@
     "postedAt": "2025-12-11T09:17:01.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251211091709.5095-1-zhangtianyang@loongson.cn>",
@@ -4771,7 +4771,7 @@
     "postedAt": "2025-12-08T09:25:30.000Z",
     "language": "zh_CN",
     "patchCount": 8,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1765180570.git.baikefan@leap-io-kernel.com>",
@@ -4848,7 +4848,7 @@
     "postedAt": "2025-12-03T04:52:53.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251203045300.33004-1-zhangtianyang@loongson.cn>",
@@ -4882,7 +4882,7 @@
     "postedAt": "2025-12-03T04:00:57.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251203040105.32490-1-zhangtianyang@loongson.cn>",
@@ -4917,7 +4917,7 @@
     "postedAt": "2025-12-02T11:56:33.000Z",
     "language": "zh_CN",
     "patchCount": 8,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1764674650.git.baikefan@leap-io-kernel.com>",
@@ -4960,7 +4960,7 @@
     "postedAt": "2025-11-24T13:34:04.000Z",
     "language": "zh_CN",
     "patchCount": 8,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763984424.git.baikefan@leap-io-kernel.com>",
@@ -5040,7 +5040,7 @@
     "postedAt": "2025-11-23T11:55:58.000Z",
     "language": "zh_CN",
     "patchCount": 25,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763897036.git.baikefan@leap-io-kernel.com>",
@@ -5100,7 +5100,7 @@
     "postedAt": "2025-11-23T08:48:57.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763886358.git.yjzhang@leap-io-kernel.com>",
@@ -5137,7 +5137,7 @@
     "postedAt": "2025-11-23T07:45:15.000Z",
     "language": "zh_CN",
     "patchCount": 25,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251123074540.34161-1-baikefan@leap-io-kernel.com>",
@@ -5232,7 +5232,7 @@
     "postedAt": "2025-11-19T07:09:34.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763535919.git.kezijie@leap-io-kernel.com>",
@@ -5270,7 +5270,7 @@
     "postedAt": "2025-11-19T06:22:42.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20251119062300.596150-1-focksor@gmail.com>"
@@ -5302,7 +5302,7 @@
     "postedAt": "2025-11-19T02:38:05.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763519072.git.kezijie@leap-io-kernel.com>",
@@ -5375,7 +5375,7 @@
     "postedAt": "2025-11-17T08:27:33.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763366835.git.kezijie@leap-io-kernel.com>",
@@ -5413,7 +5413,7 @@
     "postedAt": "2025-11-17T08:22:04.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251117082204.400487-1-zhaochenguang@kylinos.cn>"
@@ -5448,7 +5448,7 @@
     "postedAt": "2025-11-17T03:46:07.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763350407.git.kezijie@leap-io-kernel.com>",
@@ -5553,7 +5553,7 @@
     "postedAt": "2025-11-16T08:51:01.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251116085102.1740613-1-kezijie@leap-io-kernel.com>",
@@ -5589,7 +5589,7 @@
     "postedAt": "2025-11-16T02:40:03.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763112421.git.yjzhang@leap-io-kernel.com>",
@@ -5626,7 +5626,7 @@
     "postedAt": "2025-11-14T07:37:18.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1763105050.git.kezijie@leap-io-kernel.com>",
@@ -5700,7 +5700,7 @@
     "postedAt": "2025-11-10T08:08:08.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251110080808.388549-1-zhaochenguang@kylinos.cn>"
@@ -5770,7 +5770,7 @@
     "postedAt": "2025-11-07T10:40:46.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<2ae06f370724bfd8210892ef3062cb349ed518f2.1762512037.git.mchehab+huawei@kernel.org>"
@@ -5805,7 +5805,7 @@
     "postedAt": "2025-11-06T01:51:48.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20251106015148.54424-1-zhaochenguang@kylinos.cn>"
@@ -5989,7 +5989,7 @@
     "postedAt": "2025-10-23T16:10:08.000Z",
     "language": "mixed",
     "patchCount": 4,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251023161027.697135-1-corbet@lwn.net>",
@@ -6066,7 +6066,7 @@
     "postedAt": "2025-10-20T12:11:28.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<309cb1b309a484e02c1951390fc1d169c2dc50dd.1760962285.git.mchehab+huawei@kernel.org>"
@@ -6136,7 +6136,7 @@
     "postedAt": "2025-10-19T20:40:44.000Z",
     "language": "mixed",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251020-aheev-fix-docs-dev-tools-broken-links-v1-1-5d127efec0b2@gmail.com>"
@@ -6168,7 +6168,7 @@
     "postedAt": "2025-10-19T10:28:04.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<4da6a180fcbc107a0c15fafed4e1d57a70976876.1760869676.git.mchehab+huawei@kernel.org>"
@@ -6273,7 +6273,7 @@
     "postedAt": "2025-10-10T05:49:04.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251010054905.602278-1-zhaoshuo@cqsoftware.com.cn>"
@@ -6308,7 +6308,7 @@
     "postedAt": "2025-10-10T02:28:39.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20251010022845.140234-1-zhangtianyang@loongson.cn>",
@@ -6342,7 +6342,7 @@
     "postedAt": "2025-10-09T06:20:17.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1759990204.git.focksor@gmail.com>",
@@ -6375,7 +6375,7 @@
     "postedAt": "2025-10-09T06:03:17.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1759988849.git.focksor@gmail.com>",
@@ -6483,7 +6483,7 @@
     "postedAt": "2025-09-29T16:35:15.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250929163531.376092-1-benx.guo@gmail.com>",
@@ -6589,7 +6589,7 @@
     "postedAt": "2025-09-24T07:28:44.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250924072845.22400-1-zhaoshuo@cqsoftware.com.cn>"
@@ -6624,7 +6624,7 @@
     "postedAt": "2025-09-18T11:54:34.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<cover.1758196090.git.mchehab+huawei@kernel.org>",
@@ -6750,7 +6750,7 @@
     "postedAt": "2025-09-18T06:43:05.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250918144305326x9mQuLPvqgyLm4WTJvZ9I@zte.com.cn>"
@@ -6820,7 +6820,7 @@
     "postedAt": "2025-09-17T12:14:54.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1758111077.git.mchehab+huawei@kernel.org>",
@@ -6876,7 +6876,7 @@
     "postedAt": "2025-09-17T09:40:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250917094052.593829-2-focksor@gmail.com>"
@@ -7021,7 +7021,7 @@
     "postedAt": "2025-09-16T10:22:36.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1758018030.git.mchehab+huawei@kernel.org>",
@@ -7211,7 +7211,7 @@
     "postedAt": "2025-09-12T11:46:07.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1757677427.git.mchehab+huawei@kernel.org>",
@@ -7261,7 +7261,7 @@
     "postedAt": "2025-09-04T07:33:00.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1756969623.git.mchehab+huawei@kernel.org>",
@@ -7347,7 +7347,7 @@
     "postedAt": "2025-08-30T08:57:11.000Z",
     "language": "zh_CN",
     "patchCount": 4,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<2025083016571123360dlV3pxVqfCY35MOQnma@zte.com.cn>",
@@ -7386,7 +7386,7 @@
     "postedAt": "2025-08-26T10:56:43.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250826185643235jApHbqi4zaPaZWVy6_Pot@zte.com.cn>",
@@ -7428,7 +7428,7 @@
     "postedAt": "2025-08-22T09:12:32.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250822171232584GYKo3tPbZNfE3VsK7dvM0@zte.com.cn>",
@@ -7470,7 +7470,7 @@
     "postedAt": "2025-08-14T12:11:29.000Z",
     "language": "zh_CN",
     "patchCount": 4,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250814201129510XielEwRpr4QXPx_XBtkhv@zte.com.cn>",
@@ -7848,7 +7848,7 @@
     "postedAt": "2025-07-23T20:32:40.000Z",
     "language": "zh_TW",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250723203250.2909894-1-helgaas@kernel.org>",
@@ -7882,7 +7882,7 @@
     "postedAt": "2025-07-22T09:17:15.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250722171715143m_elFTGAEIz05jNa7LFwy@zte.com.cn>"
@@ -8057,7 +8057,7 @@
     "postedAt": "2025-07-18T08:51:46.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250718165146589nw7ReAlsBvkwAr57nH5pr@zte.com.cn>"
@@ -8092,7 +8092,7 @@
     "postedAt": "2025-07-17T23:25:05.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20250717231756.make.423-kees@kernel.org>",
@@ -8137,7 +8137,7 @@
     "postedAt": "2025-07-15T07:26:23.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250715152623658nFz1w7nu2ItabG1i2GkGO@zte.com.cn>"
@@ -8172,7 +8172,7 @@
     "postedAt": "2025-07-15T07:15:19.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<202507151515190926U70E2Wb3ud2PtF5l19ku@zte.com.cn>"
@@ -8207,7 +8207,7 @@
     "postedAt": "2025-07-08T02:41:39.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20250708024139.848025-8-doubled@leap-io.com>"
@@ -8239,7 +8239,7 @@
     "postedAt": "2025-07-08T02:41:38.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20250708024139.848025-7-doubled@leap-io.com>"
@@ -8271,7 +8271,7 @@
     "postedAt": "2025-07-08T02:41:37.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20250708024139.848025-6-doubled@leap-io.com>"
@@ -8303,7 +8303,7 @@
     "postedAt": "2025-07-08T02:41:36.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20250708024139.848025-5-doubled@leap-io.com>"
@@ -8335,7 +8335,7 @@
     "postedAt": "2025-07-08T02:41:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20250708024139.848025-4-doubled@leap-io.com>"
@@ -8466,7 +8466,7 @@
     "postedAt": "2025-06-30T11:30:07.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250630193007665612yAcBZJB420SVhj5nqb@zte.com.cn>"
@@ -8498,7 +8498,7 @@
     "postedAt": "2025-06-30T10:56:30.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20250630185630910BT_3WfN1DPPZ5M1L2duP0@zte.com.cn>"
@@ -8562,7 +8562,7 @@
     "postedAt": "2025-06-27T06:32:12.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250627143212435mZ2WRnqC77Y-XxvFKrGsy@zte.com.cn>"
@@ -8594,7 +8594,7 @@
     "postedAt": "2025-06-27T06:21:08.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<202506271421088365Ld_p-lwt4dLDVQpiuc1t@zte.com.cn>"
@@ -8626,7 +8626,7 @@
     "postedAt": "2025-06-24T08:50:39.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250624165039911FXwVWbH9TM62kBeLnxzXg@zte.com.cn>"
@@ -8726,7 +8726,7 @@
     "postedAt": "2025-06-16T06:51:12.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250616145112048o28iY_4L8DDaySvz_ZR9Z@zte.com.cn>"
@@ -8836,7 +8836,7 @@
     "postedAt": "2025-06-10T11:42:50.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20250610114252.21077-1-zhangtianyang@loongson.cn>",
@@ -8905,7 +8905,7 @@
     "postedAt": "2025-06-06T17:08:59.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250606170904.5596-1-chris.wei.cui@gmail.com>"
@@ -8940,7 +8940,7 @@
     "postedAt": "2025-06-04T09:50:34.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250604095036.3100-1-chris.wei.cui@gmail.com>"
@@ -8975,7 +8975,7 @@
     "postedAt": "2025-06-03T03:03:37.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "updated",
+    "status": "in-review",
     "latestRevision": true,
     "messageIds": [
       "<20250603110337057ZRxTnZrzJ39S_CAoGTJ5D@zte.com.cn>"
@@ -9007,7 +9007,7 @@
     "postedAt": "2025-05-30T03:32:49.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<202505301132492152dM75edlCkVrcPL71Omc5@zte.com.cn>"
@@ -9039,7 +9039,7 @@
     "postedAt": "2025-05-23T10:18:31.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250523101833.17940-1-zhangtianyang@loongson.cn>",
@@ -9073,7 +9073,7 @@
     "postedAt": "2025-05-23T04:39:10.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250523043251.it.550-kees@kernel.org>",
@@ -9369,7 +9369,7 @@
     "postedAt": "2025-03-31T06:41:14.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250331064116.32540-1-zhangtianyang@loongson.cn>",
@@ -9440,7 +9440,7 @@
     "postedAt": "2025-03-25T08:18:53.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1742889962.git.si.yanteng@linux.dev>",
@@ -9557,7 +9557,7 @@
     "postedAt": "2025-03-17T08:22:51.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250317082253.20520-1-zhangtianyang@loongson.cn>",
@@ -9661,7 +9661,7 @@
     "postedAt": "2025-03-12T08:50:32.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250312085033.83716-1-zhaoshuo@cqsoftware.com.cn>"
@@ -9693,7 +9693,7 @@
     "postedAt": "2025-03-12T02:42:25.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250312024226.14804-1-zhaoshuo@cqsoftware.com.cn>"
@@ -9870,7 +9870,7 @@
     "postedAt": "2025-03-03T10:15:31.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250303101533.31462-1-zhangtianyang@loongson.cn>",
@@ -9939,7 +9939,7 @@
     "postedAt": "2025-02-25T12:32:37.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250225-remove-apis-v1-0-e49b4a1941fd@quicinc.com>",
@@ -10105,7 +10105,7 @@
     "postedAt": "2025-02-10T13:32:01.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250210-remove-apis-v1-0-2aaa866315a7@quicinc.com>",
@@ -10212,7 +10212,7 @@
     "postedAt": "2025-02-07T05:21:53.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250207052154.224907-1-maoyuxian@cqsoftware.com.cn>"
@@ -10247,7 +10247,7 @@
     "postedAt": "2025-02-07T03:18:11.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<EE89209B6353C426+20250207031812.15023-1-wangyuli@uniontech.com>"
@@ -10282,7 +10282,7 @@
     "postedAt": "2025-02-07T03:14:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250207031437.182227-1-maoyuxian@cqsoftware.com.cn>"
@@ -10317,7 +10317,7 @@
     "postedAt": "2025-02-07T02:23:24.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1738835231.git.zhangwei@cqsoftware.com.cn>",
@@ -10355,7 +10355,7 @@
     "postedAt": "2025-02-06T09:38:03.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1738833098.git.zhangwei@cqsoftware.com.cn>",
@@ -10393,7 +10393,7 @@
     "postedAt": "2025-02-06T02:26:45.000Z",
     "language": "zh_CN",
     "patchCount": 3,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1738807847.git.zhangwei@cqsoftware.com.cn>",
@@ -10503,7 +10503,7 @@
     "postedAt": "2025-01-29T11:53:58.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250129115411.2077152-1-david@redhat.com>",
@@ -10550,7 +10550,7 @@
     "postedAt": "2025-01-24T10:21:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250124102136.561488-1-maoyuxian@cqsoftware.com.cn>"
@@ -10627,7 +10627,7 @@
     "postedAt": "2025-01-23T04:32:46.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<6F05157E5E157493+20250123043258.149643-1-wangyuli@uniontech.com>"
@@ -10659,7 +10659,7 @@
     "postedAt": "2025-01-21T18:18:56.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "on-lore",
+    "status": "waiting-for-review",
     "latestRevision": true,
     "messageIds": [
       "<20250121181856.743616-1-lucas.demarchi@intel.com>"
@@ -10691,7 +10691,7 @@
     "postedAt": "2025-01-21T09:54:01.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250121095402.305218-1-maoyuxian@cqsoftware.com.cn>"
@@ -10726,7 +10726,7 @@
     "postedAt": "2025-01-21T09:17:10.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250121091712.292002-1-maoyuxian@cqsoftware.com.cn>"
@@ -10761,7 +10761,7 @@
     "postedAt": "2025-01-21T06:20:02.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250121062004.274329-1-maoyuxian@cqsoftware.com.cn>"
@@ -10831,7 +10831,7 @@
     "postedAt": "2025-01-20T10:13:49.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250120101350.198697-1-zhangwei@cqsoftware.com.cn>"
@@ -10866,7 +10866,7 @@
     "postedAt": "2025-01-20T06:50:45.000Z",
     "language": "zh_CN",
     "patchCount": 7,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
@@ -10908,7 +10908,7 @@
     "postedAt": "2025-01-20T03:42:45.000Z",
     "language": "zh_CN",
     "patchCount": 6,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<cover.1737344074.git.zhaoshuo@cqsoftware.com.cn>",
@@ -10949,7 +10949,7 @@
     "postedAt": "2025-01-14T02:28:42.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250114022843.22489-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11194,7 +11194,7 @@
     "postedAt": "2025-01-08T06:21:43.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<60e603fb548d1e173a7e3915ff0186f32580f5ea.1736316790.git.zhangwei@cqsoftware.com.cn>"
@@ -11264,7 +11264,7 @@
     "postedAt": "2025-01-07T09:23:17.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250107092318.21371-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11299,7 +11299,7 @@
     "postedAt": "2025-01-07T08:24:32.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250107082433.20810-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11334,7 +11334,7 @@
     "postedAt": "2025-01-07T05:16:39.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250107051640.23347-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11404,7 +11404,7 @@
     "postedAt": "2025-01-06T05:57:44.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250106055744.20840-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11439,7 +11439,7 @@
     "postedAt": "2025-01-03T06:15:46.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250103061547.20947-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11474,7 +11474,7 @@
     "postedAt": "2025-01-03T02:34:48.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250103023449.23128-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11509,7 +11509,7 @@
     "postedAt": "2025-01-03T01:44:22.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250103014422.2128-1-zhangwei@cqsoftware.com.cn>"
@@ -11544,7 +11544,7 @@
     "postedAt": "2025-01-02T10:44:04.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250102104406.17600-1-maoyuxian@cqsoftware.com.cn>"
@@ -11579,7 +11579,7 @@
     "postedAt": "2025-01-02T07:24:03.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20250102072404.3196-1-zhangwei@cqsoftware.com.cn>"
@@ -11614,7 +11614,7 @@
     "postedAt": "2024-12-31T07:22:35.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20241231072236.18836-1-zhaoshuo@cqsoftware.com.cn>"
@@ -11646,7 +11646,7 @@
     "postedAt": "2024-12-27T09:52:39.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20241227095243.4899-1-maoyuxian@cqsoftware.com.cn>"
@@ -11681,7 +11681,7 @@
     "postedAt": "2024-12-27T09:17:18.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20241227091719.9054-1-zhangwei@cqsoftware.com.cn>"
@@ -11716,7 +11716,7 @@
     "postedAt": "2024-12-27T08:28:18.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "superseded",
+    "status": "updated",
     "latestRevision": false,
     "messageIds": [
       "<20241227082836.16078-1-zhaoshuo@cqsoftware.com.cn>"

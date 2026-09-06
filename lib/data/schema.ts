@@ -1,13 +1,12 @@
 export type Language = "zh_CN" | "zh_TW" | "mixed";
 export type PatchsetStatus =
-  | "on-lore"
+  | "waiting-for-review"
   | "in-review"
   | "updated"
   | "queued-alex"
   | "in-docs-mw"
   | "mainline"
   | "partially-applied"
-  | "superseded"
   | "previously-queued";
 export type LightState = "confirmed" | "partial" | "candidate" | "previously-present" | "missing";
 export type TreeId = "alex" | "corbet" | "linus";

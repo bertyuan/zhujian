@@ -17,7 +17,7 @@ import type {
 const LANGUAGES = new Set<Language>(["zh_CN", "zh_TW", "mixed"]);
 const LIGHT_STATES = new Set<LightState>(["confirmed", "partial", "candidate", "previously-present", "missing"]);
 const STATUSES = new Set<PatchsetStatus>([
-  "on-lore", "in-review", "updated", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "superseded", "previously-queued",
+  "waiting-for-review", "in-review", "updated", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "previously-queued",
 ]);
 const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
 const REVIEW_TRAILER_TYPES = new Set<ReviewTrailerType>(["Reviewed-by", "Acked-by", "Tested-by", "Suggested-by", "Reported-by"]);

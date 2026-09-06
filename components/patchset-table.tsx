@@ -12,18 +12,17 @@ import { UpstreamLights } from "./upstream-lights";
 
 const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
 
-type StatusFilter = "all" | "lore" | "review" | "updated" | "alex" | "corbet" | "linus" | "partial" | "superseded";
+type StatusFilter = "all" | "waiting" | "review" | "updated" | "alex" | "corbet" | "linus" | "partial";
 
 const statusMatches = (status: PatchsetStatus, filter: StatusFilter) => {
   if (filter === "all") return true;
-  if (filter === "lore") return status === "on-lore";
+  if (filter === "waiting") return status === "waiting-for-review";
   if (filter === "review") return status === "in-review";
   if (filter === "updated") return status === "updated";
   if (filter === "alex") return status === "queued-alex" || status === "previously-queued";
   if (filter === "corbet") return status === "in-docs-mw";
   if (filter === "linus") return status === "mainline";
-  if (filter === "partial") return status === "partially-applied";
-  return status === "superseded";
+  return status === "partially-applied";
 };
 
 export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
@@ -96,14 +95,18 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
           />
         </label>
         <button className="control-button" type="button" disabled={!query} onClick={() => { setQuery(""); setSelectedIndex(-1); }}>Clear</button>
-        <select className="filter" aria-label="Filter by status" value={status} onChange={(e) => { setStatus(e.target.value as StatusFilter); setSelectedIndex(-1); }}>
+        <select className="filter" aria-label="Filter by status" value={status} onChange={(event) => {
+          const nextStatus = event.target.value as StatusFilter;
+          setStatus(nextStatus);
+          if (nextStatus === "updated") setVersions("all");
+          setSelectedIndex(-1);
+        }}>
           <option value="all">All statuses</option>
-          <option value="lore">On lore</option>
+          <option value="waiting">Waiting for review</option>
           <option value="review">In review</option>
           <option value="updated">Updated</option>
           {TRACKED_TREES.map((tree) => <option value={tree.id} key={tree.id}>{tree.name}</option>)}
           <option value="partial">Partial</option>
-          <option value="superseded">Superseded</option>
         </select>
         <select className="filter" aria-label="Filter by version" value={versions} onChange={(e) => { setVersions(e.target.value as typeof versions); setSelectedIndex(-1); }}>
           <option value="latest">Latest only</option>

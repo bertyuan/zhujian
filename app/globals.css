@@ -198,15 +198,15 @@ main { min-height: calc(100vh - 118px); }
 .patch-table .version-heading, .patch-table .version-cell { text-align: center; }
 .status-cell .status-badge { line-height: 1.25; max-width: 12ch; white-space: normal; }
 .status-cell .status-text { min-width: 0; }
-.status-cell :is(.status-lore, .status-review, .status-mainline) .status-text { white-space: nowrap; }
+.status-cell :is(.status-review, .status-mainline) .status-text { white-space: nowrap; }
 
 .status-badge { align-items: start; background: transparent; border: 0; display: inline-grid; font-size: .85em; font-weight: 700; gap: 0 5px; grid-template-columns: auto minmax(0, 1fr); white-space: nowrap; }
 .status-marker { grid-column: 1; }
 .status-text { grid-column: 2; }
-.status-lore, .status-updated { color: var(--status-pending); }
+.status-waiting { color: var(--status-pending); }
 .status-review, .status-alex, .status-docs-mw, .status-partial { color: var(--status-inreview); }
 .status-mainline { color: var(--status-reviewed); }
-.status-superseded { color: var(--text-muted); }
+.status-updated { color: var(--text-muted); }
 .status-previous { color: var(--status-previous); }
 
 .tag { background: var(--tag-bg); border: 1px solid var(--tag-bg); border-radius: 3px; color: var(--tag-text); display: inline-block; font-size: .75em; padding: 1px 4px; white-space: nowrap; }

@@ -15,6 +15,7 @@ export default async function MessagesPage() {
     loreUrl: patch.loreUrl,
     seriesId: patchset.id,
     revision: patchset.revision,
+    latestRevision: patchset.latestRevision,
     index: patch.index,
     total: patch.total,
     status: patchset.status,

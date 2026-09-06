@@ -29,7 +29,7 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
         <div className="kv-row"><span className="kv-label">Author:</span><span>{patchset.authorName} &lt;{patchset.authorEmail}&gt;</span></div>
         <div className="kv-row"><span className="kv-label">Date:</span><span>{postedAt}</span></div>
         <div className="kv-row"><span className="kv-label">Language:</span><span><LanguageBadge language={patchset.language} /></span></div>
-        <div className="kv-row"><span className="kv-label">Version:</span><span>v{patchset.revision}{patchset.latestRevision ? " · latest" : " · superseded"}</span></div>
+        <div className="kv-row"><span className="kv-label">Version:</span><span>v{patchset.revision}{patchset.latestRevision ? " · latest" : " · newer revision available"}</span></div>
         <div className="kv-row"><span className="kv-label">RFC:</span><span>{patchset.rfc ? "Yes" : "No"}</span></div>
         <div className="kv-row"><span className="kv-label">Patches:</span><span>{patchset.patchCount} · {patchset.replies} replies</span></div>
         <div className="kv-row"><span className="kv-label">Message-ID:</span><span className="break-anywhere">{patchset.messageIds[0]}</span></div>

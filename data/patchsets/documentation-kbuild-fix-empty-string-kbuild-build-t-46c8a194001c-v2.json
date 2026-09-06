@@ -7,7 +7,7 @@
   "postedAt": "2026-03-10T11:50:40.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "updated",
+  "status": "in-review",
   "latestRevision": true,
   "messageIds": [
     "<20260310-fix-llvm-docs-v2-1-5e52173aabc7@samsung.com>"

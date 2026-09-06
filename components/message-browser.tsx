@@ -19,6 +19,7 @@ export interface MessageSummary {
   loreUrl: string;
   seriesId: string;
   revision: number;
+  latestRevision: boolean;
   index: number;
   total: number;
   status: PatchsetStatus;
@@ -40,7 +41,6 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
 
   const visible = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase();
-    const latestSeries = new Set(messages.filter((message) => message.status !== "superseded").map((message) => message.seriesId));
     return messages.filter((message) => {
       const haystack = [
         message.subject,
@@ -52,7 +52,7 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
       ].join(" ").toLocaleLowerCase();
       return (!needle || haystack.includes(needle))
         && (language === "all" || message.language === language)
-        && (versions === "all" || latestSeries.has(message.seriesId));
+        && (versions === "all" || message.latestRevision);
     });
   }, [language, messages, query, versions]);
   const displayed = visible.slice(0, limit);

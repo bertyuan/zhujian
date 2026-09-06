@@ -197,7 +197,7 @@ export function reconcilePatchsets(
       ...detail,
       patches,
       trees,
-      status: deriveStatus(trees, detail.latestRevision, detail.replies, detail.revision),
+      status: deriveStatus(trees, detail.latestRevision, detail.replies),
     };
   });
 

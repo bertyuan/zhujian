@@ -7,7 +7,7 @@
   "postedAt": "2026-09-02T23:30:46.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "on-lore",
+  "status": "waiting-for-review",
   "latestRevision": true,
   "messageIds": [
     "<20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713@google.com>",

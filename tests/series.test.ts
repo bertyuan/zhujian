@@ -14,9 +14,10 @@ test("groups revisions, single patches, replies, and mixed-language series", asy
   assert.equal(series.length, 4);
   const memory = series.filter((item) => item.subject.includes("memory barriers"));
   assert.equal(memory.length, 2);
-  assert.equal(memory.find((item) => item.revision === 1)?.status, "superseded");
+  assert.equal(memory.find((item) => item.revision === 1)?.status, "updated");
   assert.equal(memory.find((item) => item.revision === 2)?.versions.length, 2);
   assert.equal(memory.find((item) => item.revision === 2)?.replies, 1);
+  assert.equal(memory.find((item) => item.revision === 2)?.status, "queued-alex");
   assert.deepEqual(memory.find((item) => item.revision === 1)?.patches[0].trailers, [{
     type: "Reviewed-by",
     value: "Reviewer <reviewer@example.org>",
@@ -60,19 +61,21 @@ test("uses mail replies for in-review without treating them as Git evidence", ()
   assert.equal(trees.alex.state, "missing");
 });
 
-test("labels a newer unmerged revision as updated without hiding Git evidence", () => {
+test("labels old revisions as updated and latest revisions by review activity", () => {
   const missingTrees = {
     alex: { state: "missing", matched: 0, total: 1 } as const,
     corbet: { state: "missing", matched: 0, total: 1 } as const,
     linus: { state: "missing", matched: 0, total: 1 } as const,
   };
-  assert.equal(deriveStatus(missingTrees, true, 1, 2), "updated");
+  assert.equal(deriveStatus(missingTrees, false), "updated");
+  assert.equal(deriveStatus(missingTrees, true), "waiting-for-review");
+  assert.equal(deriveStatus(missingTrees, true, 1), "in-review");
 
   const mainlineTrees = {
     ...missingTrees,
     linus: { state: "confirmed", matched: 1, total: 1 } as const,
   };
-  assert.equal(deriveStatus(mainlineTrees, true, 1, 2), "mainline");
+  assert.equal(deriveStatus(mainlineTrees, true, 1), "mainline");
 });
 
 test("generates a route-safe ASCII id for a Chinese-only subject", () => {
@@ -114,5 +117,5 @@ test("keeps repeated deliveries of the same revision uniquely addressable", () =
   assert.equal(series.length, 2);
   assert.equal(new Set(series.map((item) => item.id)).size, 2);
   assert.equal(series.filter((item) => item.latestRevision).length, 1);
-  assert.equal(series.find((item) => item.messageIds.includes(original.messageId))?.status, "superseded");
+  assert.equal(series.find((item) => item.messageIds.includes(original.messageId))?.status, "updated");
 });

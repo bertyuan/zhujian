@@ -14,7 +14,7 @@ function validDetail() {
     postedAt: "2026-09-05T00:00:00Z",
     language: "zh_CN",
     patchCount: 1,
-    status: "on-lore",
+    status: "waiting-for-review",
     latestRevision: true,
     messageIds: ["<test@example.com>"],
     trees: { alex: missing, corbet: missing, linus: missing },

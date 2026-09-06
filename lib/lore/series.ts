@@ -48,17 +48,15 @@ export function deriveStatus(
   trees: Record<TreeId, TreeSummary>,
   latestRevision: boolean,
   replies = 0,
-  revision = 1,
 ): PatchsetStatus {
-  if (!latestRevision) return "superseded";
+  if (!latestRevision) return "updated";
   if (trees.linus.state === "confirmed") return "mainline";
   if (trees.corbet.state === "confirmed") return "in-docs-mw";
   if (trees.alex.state === "confirmed") return "queued-alex";
   if (TREE_IDS.some((id) => trees[id].state === "partial" || trees[id].state === "candidate")) return "partially-applied";
   if (TREE_IDS.some((id) => trees[id].state === "previously-present")) return "previously-queued";
-  if (revision > 1) return "updated";
   if (replies > 0) return "in-review";
-  return "on-lore";
+  return "waiting-for-review";
 }
 
 function seriesLanguage(languages: Language[]): Language {
@@ -127,7 +125,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       postedAt: anchor.message.date,
       language: seriesLanguage(languages),
       patchCount,
-      status: "on-lore" as PatchsetStatus,
+      status: "waiting-for-review" as PatchsetStatus,
       latestRevision: true,
       messageIds: mailPatches.map(({ message }) => message.messageId),
       trees,
@@ -153,7 +151,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       return {
         ...draft,
         latestRevision: isLatest,
-        status: deriveStatus(draft.trees, isLatest, draft.replies, draft.revision),
+        status: deriveStatus(draft.trees, isLatest, draft.replies),
         versions: relatives
           .toSorted((a, b) => a.revision - b.revision || Date.parse(a.postedAt) - Date.parse(b.postedAt))
           .map((relative) => ({ revision: relative.revision, id: relative.id, current: relative.id === draft.id })),

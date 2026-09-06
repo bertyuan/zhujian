@@ -16,7 +16,7 @@ function detail(messageId = "<patch@example.com>"): PatchsetDetail {
     postedAt: "2026-08-01T00:00:00Z",
     language: "zh_CN",
     patchCount: 1,
-    status: "on-lore",
+    status: "waiting-for-review",
     latestRevision: true,
     messageIds: [messageId],
     trees: trees(),
