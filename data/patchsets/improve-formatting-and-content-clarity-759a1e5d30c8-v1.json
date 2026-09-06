@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91%40hust.edu.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91%40hust.edu.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91@hust.edu.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91@hust.edu.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_CN: improve formatting and content clarity",
       "messageId": "<20250611043616.264245-1-dzm91@hust.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91%40hust.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250611043616.264245-1-dzm91@hust.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],

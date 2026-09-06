@@ -47,8 +47,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250523043251.it.550-kees%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250523043251.it.550-kees%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250523043251.it.550-kees@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250523043251.it.550-kees@kernel.org/raw",
   "replies": 14,
   "versions": [
     {
@@ -68,7 +68,7 @@
       "total": 14,
       "subject": "stackleak: Rename STACKLEAK to KSTACK_ERASE",
       "messageId": "<20250523043935.2009972-1-kees@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250523043935.2009972-1-kees%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250523043935.2009972-1-kees@kernel.org/",
       "changedFiles": [
         "Documentation/admin-guide/sysctl/kernel.rst",
         "Documentation/arch/x86/x86_64/mm.rst",

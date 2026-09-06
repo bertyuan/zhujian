@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/202509181556503857h2V0skOmjONfEzUrZ-ok%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/202509181556503857h2V0skOmjONfEzUrZ-ok%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/202509181556503857h2V0skOmjONfEzUrZ-ok@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/202509181556503857h2V0skOmjONfEzUrZ-ok@zte.com.cn/raw",
   "replies": 0,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "Docs/zh_CN: fix the format of proofreader",
       "messageId": "<202509181556503857h2V0skOmjONfEzUrZ-ok@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/202509181556503857h2V0skOmjONfEzUrZ-ok%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/202509181556503857h2V0skOmjONfEzUrZ-ok@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/gfs2-uevents.rst",
         "Documentation/translations/zh_CN/filesystems/gfs2.rst",

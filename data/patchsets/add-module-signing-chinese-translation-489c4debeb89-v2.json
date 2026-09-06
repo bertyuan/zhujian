@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805@qq.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -72,7 +72,7 @@
       "total": 1,
       "subject": "docs/zh_CN: add module-signing Chinese translation",
       "messageId": "<tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_0101EEFDDBC5D532222BFE0EF2487DCC0805@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/module-signing.rst"
       ],

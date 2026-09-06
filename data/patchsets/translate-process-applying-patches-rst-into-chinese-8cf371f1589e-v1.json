@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1784289654.git.wy%40wyuan.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1784289654.git.wy%40wyuan.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1784289654.git.wy@wyuan.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1784289654.git.wy@wyuan.org/raw",
   "replies": 5,
   "versions": [
     {
@@ -62,7 +62,7 @@
       "total": 3,
       "subject": "docs/zh_CN: add process/applying-patches Chinese translation",
       "messageId": "<b65902acdaa37438479b3739e907a9e0ff604c55.1784289654.git.wy@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/b65902acdaa37438479b3739e907a9e0ff604c55.1784289654.git.wy%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/b65902acdaa37438479b3739e907a9e0ff604c55.1784289654.git.wy@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/applying-patches.rst"
       ],
@@ -90,7 +90,7 @@
       "total": 3,
       "subject": "docs/zh_CN: add applying-patches to process index",
       "messageId": "<ad6e02c970b2c4ccae43ee41bc367aeb4131da8e.1784289654.git.wy@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/ad6e02c970b2c4ccae43ee41bc367aeb4131da8e.1784289654.git.wy%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/ad6e02c970b2c4ccae43ee41bc367aeb4131da8e.1784289654.git.wy@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/index.rst"
       ],
@@ -118,7 +118,7 @@
       "total": 3,
       "subject": "docs/zh_CN: link to Chinese applying-patches translation",
       "messageId": "<a6a2b03c95371293bc16eda7cfc99470e910e2ea.1784289654.git.wy@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/a6a2b03c95371293bc16eda7cfc99470e910e2ea.1784289654.git.wy%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/a6a2b03c95371293bc16eda7cfc99470e910e2ea.1784289654.git.wy@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/README.rst",
         "Documentation/translations/zh_CN/process/howto.rst"

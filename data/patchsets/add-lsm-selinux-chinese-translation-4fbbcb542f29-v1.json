@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_03EFCA2E14961D59A37729478C633B085008%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_03EFCA2E14961D59A37729478C633B085008%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_03EFCA2E14961D59A37729478C633B085008@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_03EFCA2E14961D59A37729478C633B085008@qq.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 10,
       "subject": "docs/zh_CN: add LSM/SELinux Chinese translation",
       "messageId": "<tencent_03EFCA2E14961D59A37729478C633B085008@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_03EFCA2E14961D59A37729478C633B085008%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_03EFCA2E14961D59A37729478C633B085008@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/SELinux.rst"
       ],

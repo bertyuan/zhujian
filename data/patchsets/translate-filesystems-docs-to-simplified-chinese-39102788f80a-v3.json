@@ -43,8 +43,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250822171232584GYKo3tPbZNfE3VsK7dvM0%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250822171232584GYKo3tPbZNfE3VsK7dvM0%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250822171232584GYKo3tPbZNfE3VsK7dvM0@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250822171232584GYKo3tPbZNfE3VsK7dvM0@zte.com.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -69,7 +69,7 @@
       "total": 7,
       "subject": "Docs/zh_CN: Translate ubifs.rst to Simplified Chinese",
       "messageId": "<202508221720079833cb41BVxm0hglErodn8xX@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/202508221720079833cb41BVxm0hglErodn8xX%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/202508221720079833cb41BVxm0hglErodn8xX@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/ubifs.rst"
@@ -101,7 +101,7 @@
       "total": 7,
       "subject": "Docs/zh_CN: Translate ubifs-authentication.rst to Simplified Chinese",
       "messageId": "<202508221722153413ll-8HkCJFfNKj4yOkzoH@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/202508221722153413ll-8HkCJFfNKj4yOkzoH%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/202508221722153413ll-8HkCJFfNKj4yOkzoH@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/ubifs-authentication.rst"
@@ -133,7 +133,7 @@
       "total": 7,
       "subject": "Docs/zh_CN: Translate gfs2.rst to Simplified Chinese",
       "messageId": "<20250822172322965jtELpnot2mzOxDUs3xtMQ@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172322965jtELpnot2mzOxDUs3xtMQ%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172322965jtELpnot2mzOxDUs3xtMQ@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/gfs2.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
@@ -165,7 +165,7 @@
       "total": 7,
       "subject": "Docs/zh_CN: Translate gfs2-uevents.rst to Simplified Chinese",
       "messageId": "<20250822172441192C6nZlg4i6evhuAZgR_K0F@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172441192C6nZlg4i6evhuAZgR_K0F%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172441192C6nZlg4i6evhuAZgR_K0F@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/gfs2-uevents.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
@@ -197,7 +197,7 @@
       "total": 7,
       "subject": "Docs/zh_CN: Translate gfs2-glocks.rst to Simplified Chinese",
       "messageId": "<20250822172537779wa56EhpTrZCC7ArZZ6kql@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172537779wa56EhpTrZCC7ArZZ6kql%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172537779wa56EhpTrZCC7ArZZ6kql@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/gfs2-glocks.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
@@ -229,7 +229,7 @@
       "total": 7,
       "subject": "Docs/zh_CN: Translate dnotify.rst to Simplified Chinese",
       "messageId": "<20250822172814216UpCi2uCZm_cXohi5cSYB-@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172814216UpCi2uCZm_cXohi5cSYB-%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250822172814216UpCi2uCZm_cXohi5cSYB-@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/dnotify.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"
@@ -258,7 +258,7 @@
       "total": 7,
       "subject": "Docs/zh_CN: Translate inotify.rst to Simplified Chinese",
       "messageId": "<20250822173024327RyliP6dTeevq-Ufgsj-A2@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250822173024327RyliP6dTeevq-Ufgsj-A2%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250822173024327RyliP6dTeevq-Ufgsj-A2@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/inotify.rst"

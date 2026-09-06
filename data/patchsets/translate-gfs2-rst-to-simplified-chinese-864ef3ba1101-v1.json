@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165448516aBqB6ZJ9DWn8e3Msmsjcg%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165448516aBqB6ZJ9DWn8e3Msmsjcg%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165448516aBqB6ZJ9DWn8e3Msmsjcg@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165448516aBqB6ZJ9DWn8e3Msmsjcg@zte.com.cn/raw",
   "replies": 0,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 5,
       "subject": "Docs/zh_CN: Translate gfs2.rst to Simplified Chinese",
       "messageId": "<20250718165448516aBqB6ZJ9DWn8e3Msmsjcg@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165448516aBqB6ZJ9DWn8e3Msmsjcg%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165448516aBqB6ZJ9DWn8e3Msmsjcg@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/gfs2.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"

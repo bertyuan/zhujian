@@ -65,8 +65,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260102070005.65328-1-rppt%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260102070005.65328-1-rppt%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260102070005.65328-1-rppt@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260102070005.65328-1-rppt@kernel.org/raw",
   "replies": 14,
   "versions": [
     {
@@ -91,7 +91,7 @@
       "total": 28,
       "subject": "arch, mm: consolidate initialization of SPARSE memory model",
       "messageId": "<20260102070005.65328-24-rppt@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260102070005.65328-24-rppt%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260102070005.65328-24-rppt@kernel.org/",
       "changedFiles": [
         "Documentation/mm/memory-model.rst",
         "Documentation/translations/zh_CN/mm/memory-model.rst",

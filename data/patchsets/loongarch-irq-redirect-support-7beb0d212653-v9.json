@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260130025941.2140582-1-zhangtianyang%40loongson.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260130025941.2140582-1-zhangtianyang%40loongson.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260130025941.2140582-1-zhangtianyang@loongson.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260130025941.2140582-1-zhangtianyang@loongson.cn/raw",
   "replies": 6,
   "versions": [
     {
@@ -98,7 +98,7 @@
       "total": 4,
       "subject": "Docs/LoongArch: Add Advanced Extended-Redirect IRQ model description",
       "messageId": "<20260130025941.2140582-2-zhangtianyang@loongson.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260130025941.2140582-2-zhangtianyang%40loongson.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260130025941.2140582-2-zhangtianyang@loongson.cn/",
       "changedFiles": [
         "Documentation/arch/loongarch/irq-chip-model.rst",
         "Documentation/translations/zh_CN/arch/loongarch/irq-chip-model.rst"

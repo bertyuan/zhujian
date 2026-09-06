@@ -44,8 +44,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763984424.git.baikefan%40leap-io-kernel.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763984424.git.baikefan%40leap-io-kernel.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763984424.git.baikefan@leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763984424.git.baikefan@leap-io-kernel.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -90,7 +90,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add index.rst translation",
       "messageId": "<89505b29e74210348ac9d111139dce13782ee9bf.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/89505b29e74210348ac9d111139dce13782ee9bf.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/89505b29e74210348ac9d111139dce13782ee9bf.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/subsystem-apis.rst",
         "Documentation/translations/zh_CN/usb/index.rst"
@@ -122,7 +122,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add acm.rst translation",
       "messageId": "<17f3f62c3dc75f0260d2965df3cc39179f601f5c.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/17f3f62c3dc75f0260d2965df3cc39179f601f5c.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/17f3f62c3dc75f0260d2965df3cc39179f601f5c.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/acm.rst"
       ],
@@ -157,7 +157,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add authorization.rst translation",
       "messageId": "<b4328d04b19ca0d16307aeaa3cc8d10ad2c01bdd.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/b4328d04b19ca0d16307aeaa3cc8d10ad2c01bdd.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/b4328d04b19ca0d16307aeaa3cc8d10ad2c01bdd.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/authorization.rst"
       ],
@@ -185,7 +185,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add chipidea.rst translation",
       "messageId": "<feca0c51628961feed10c9fe6aef523477737e03.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/feca0c51628961feed10c9fe6aef523477737e03.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/feca0c51628961feed10c9fe6aef523477737e03.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/chipidea.rst"
       ],
@@ -213,7 +213,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add dwc3.rst translation",
       "messageId": "<5861f056f92d04534f0ac4a30a90a744e7592694.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/5861f056f92d04534f0ac4a30a90a744e7592694.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/5861f056f92d04534f0ac4a30a90a744e7592694.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/dwc3.rst"
       ],
@@ -241,7 +241,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add ehci.rst translation",
       "messageId": "<c8a1a30d13b203336fb1b567cb73f82477980768.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/c8a1a30d13b203336fb1b567cb73f82477980768.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/c8a1a30d13b203336fb1b567cb73f82477980768.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/ehci.rst"
       ],
@@ -269,7 +269,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add usbmon.rst translation",
       "messageId": "<c339eba12da0a57b8dd8389d5f5766dcf9efa200.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/c339eba12da0a57b8dd8389d5f5766dcf9efa200.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/c339eba12da0a57b8dd8389d5f5766dcf9efa200.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/usbmon.rst"
       ],
@@ -297,7 +297,7 @@
       "total": 8,
       "subject": "docs/zh_CN: Add CREDITS translation",
       "messageId": "<5e7464f53152344546b15f29874d06155f375151.1763984424.git.baikefan@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/5e7464f53152344546b15f29874d06155f375151.1763984424.git.baikefan%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/5e7464f53152344546b15f29874d06155f375151.1763984424.git.baikefan@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/usb/CREDITS"
       ],

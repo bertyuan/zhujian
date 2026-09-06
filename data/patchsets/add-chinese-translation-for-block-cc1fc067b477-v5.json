@@ -39,8 +39,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763535919.git.kezijie%40leap-io-kernel.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763535919.git.kezijie%40leap-io-kernel.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763535919.git.kezijie@leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763535919.git.kezijie@leap-io-kernel.com/raw",
   "replies": 2,
   "versions": [
     {
@@ -80,7 +80,7 @@
       "total": 3,
       "subject": "docs/zh_CN: Add block/index.rst translation",
       "messageId": "<3e4c8bab2c3d5f55daea8dca604981d486256d19.1763535919.git.kezijie@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/3e4c8bab2c3d5f55daea8dca604981d486256d19.1763535919.git.kezijie%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/3e4c8bab2c3d5f55daea8dca604981d486256d19.1763535919.git.kezijie@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/block/index.rst",
         "Documentation/translations/zh_CN/subsystem-apis.rst"
@@ -119,7 +119,7 @@
       "total": 3,
       "subject": "docs/zh_CN: Add blk-mq.rst translation",
       "messageId": "<3574ae90ee3ea6fbe00643cf485d4d8b630fb863.1763535919.git.kezijie@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/3574ae90ee3ea6fbe00643cf485d4d8b630fb863.1763535919.git.kezijie%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/3574ae90ee3ea6fbe00643cf485d4d8b630fb863.1763535919.git.kezijie@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/block/blk-mq.rst",
         "Documentation/translations/zh_CN/block/index.rst"
@@ -158,7 +158,7 @@
       "total": 3,
       "subject": "docs/zh_CN: Add data-integrity.rst translation",
       "messageId": "<0a77b351575619cf504c2711753f62893407c605.1763535919.git.kezijie@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/0a77b351575619cf504c2711753f62893407c605.1763535919.git.kezijie%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/0a77b351575619cf504c2711753f62893407c605.1763535919.git.kezijie@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/block/data-integrity.rst",
         "Documentation/translations/zh_CN/block/index.rst"

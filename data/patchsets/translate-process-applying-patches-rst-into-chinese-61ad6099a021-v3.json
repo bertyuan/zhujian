@@ -35,8 +35,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc%40wyuan.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc%40wyuan.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org/raw",
   "replies": 0,
   "versions": [
     {
@@ -61,7 +61,7 @@
       "total": 2,
       "subject": "docs/zh_CN: add process/applying-patches Chinese translation",
       "messageId": "<20260817-apply-patches-v3-1-45e3bd2b1ccc@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-1-45e3bd2b1ccc%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-1-45e3bd2b1ccc@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/applying-patches.rst",
         "Documentation/translations/zh_CN/process/index.rst"
@@ -90,7 +90,7 @@
       "total": 2,
       "subject": "docs/zh_CN: link to Chinese applying-patches translation",
       "messageId": "<20260817-apply-patches-v3-2-45e3bd2b1ccc@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-2-45e3bd2b1ccc%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-2-45e3bd2b1ccc@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/README.rst",
         "Documentation/translations/zh_CN/process/howto.rst"

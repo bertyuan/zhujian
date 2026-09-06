@@ -42,8 +42,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250813200526.290420-1-helgaas%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250813200526.290420-1-helgaas%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250813200526.290420-1-helgaas@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250813200526.290420-1-helgaas@kernel.org/raw",
   "replies": 1,
   "versions": [
     {
@@ -63,7 +63,7 @@
       "total": 9,
       "subject": "Documentation: Fix misc typos",
       "messageId": "<20250813200526.290420-10-helgaas@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250813200526.290420-10-helgaas%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250813200526.290420-10-helgaas@kernel.org/",
       "changedFiles": [
         "Documentation/accel/qaic/aic100.rst",
         "Documentation/accounting/taskstats.rst",

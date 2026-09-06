@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1742889962.git.si.yanteng%40linux.dev/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1742889962.git.si.yanteng%40linux.dev/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1742889962.git.si.yanteng@linux.dev/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1742889962.git.si.yanteng@linux.dev/raw",
   "replies": 3,
   "versions": [
     {
@@ -59,7 +59,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add how-to of Chinese translation",
       "messageId": "<28d37c70b09e3a3c9d004e23e2afdbdbde910999.1742889962.git.si.yanteng@linux.dev>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/28d37c70b09e3a3c9d004e23e2afdbdbde910999.1742889962.git.si.yanteng%40linux.dev/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/28d37c70b09e3a3c9d004e23e2afdbdbde910999.1742889962.git.si.yanteng@linux.dev/",
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst",
         "Documentation/translations/zh_CN/index.rst"

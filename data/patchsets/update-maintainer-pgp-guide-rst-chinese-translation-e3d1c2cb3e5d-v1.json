@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-0-08e5e3602c04%40wyuan.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-0-08e5e3602c04%40wyuan.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-0-08e5e3602c04@wyuan.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-0-08e5e3602c04@wyuan.org/raw",
   "replies": 13,
   "versions": [
     {
@@ -58,7 +58,7 @@
       "total": 4,
       "subject": "docs/zh_CN: update maintainer-pgp-guide translation",
       "messageId": "<20260821-maintainer-pgp-guide-v1-1-08e5e3602c04@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-1-08e5e3602c04%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-1-08e5e3602c04@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
@@ -86,7 +86,7 @@
       "total": 4,
       "subject": "docs/zh_CN: clarify free Nitrokey requirements",
       "messageId": "<20260821-maintainer-pgp-guide-v1-2-08e5e3602c04@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-2-08e5e3602c04%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-2-08e5e3602c04@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
@@ -114,7 +114,7 @@
       "total": 4,
       "subject": "docs/zh_CN: update maintainer-pgp-guide kernel.org link",
       "messageId": "<20260821-maintainer-pgp-guide-v1-3-08e5e3602c04@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-3-08e5e3602c04%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-3-08e5e3602c04@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],
@@ -142,7 +142,7 @@
       "total": 4,
       "subject": "docs/zh_CN: add kernel.org trust repository reference",
       "messageId": "<20260821-maintainer-pgp-guide-v1-4-08e5e3602c04@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-4-08e5e3602c04%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260821-maintainer-pgp-guide-v1-4-08e5e3602c04@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/maintainer-pgp-guide.rst"
       ],

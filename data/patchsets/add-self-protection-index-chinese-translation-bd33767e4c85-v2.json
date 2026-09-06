@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250121051234.79066-1-zhangwei%40cqsoftware.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250121051234.79066-1-zhangwei%40cqsoftware.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250121051234.79066-1-zhangwei@cqsoftware.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250121051234.79066-1-zhangwei@cqsoftware.com.cn/raw",
   "replies": 7,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 1,
       "subject": "docs/zh_CN: Add self-protection index Chinese translation",
       "messageId": "<20250121051234.79066-1-zhangwei@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250121051234.79066-1-zhangwei%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250121051234.79066-1-zhangwei@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/self-protection.rst"

@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko%40linux.intel.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko%40linux.intel.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko@linux.intel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko@linux.intel.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "gpiolib-acpi: Update file references in the Documentation and MAINTAINERS",
       "messageId": "<20250516095306.3417798-1-andriy.shevchenko@linux.intel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko%40linux.intel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250516095306.3417798-1-andriy.shevchenko@linux.intel.com/",
       "changedFiles": [
         "Documentation/driver-api/gpio/index.rst",
         "Documentation/translations/zh_CN/driver-api/gpio/index.rst",

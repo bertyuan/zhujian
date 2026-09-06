@@ -46,8 +46,8 @@
     }
   },
   "rfc": true,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-1-corbet%40lwn.net/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-1-corbet%40lwn.net/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-1-corbet@lwn.net/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-1-corbet@lwn.net/raw",
   "replies": 33,
   "versions": [
     {
@@ -62,7 +62,7 @@
       "total": 13,
       "subject": "docs: move checktransupdate.py to tools/doc",
       "messageId": "<20250813213218.198582-3-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-3-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-3-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/doc-guide/checktransupdate.rst",
         "Documentation/translations/zh_CN/doc-guide/checktransupdate.rst",
@@ -101,7 +101,7 @@
       "total": 13,
       "subject": "docs: move sphinx-pre-install to tools/doc",
       "messageId": "<20250813213218.198582-8-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-8-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-8-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/Makefile",
         "Documentation/doc-guide/sphinx.rst",
@@ -136,7 +136,7 @@
       "total": 13,
       "subject": "docs: move parse-headers.pl to tools/doc",
       "messageId": "<20250813213218.198582-10-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-10-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-10-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/doc-guide/parse-headers.rst",
         "Documentation/translations/it_IT/doc-guide/parse-headers.rst",
@@ -169,7 +169,7 @@
       "total": 13,
       "subject": "docs: move kernel-doc to tools/doc",
       "messageId": "<20250813213218.198582-11-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-11-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-11-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/conf.py",
         "Documentation/doc-guide/kernel-doc.rst",
@@ -219,7 +219,7 @@
       "total": 13,
       "subject": "docs: move split-man.pl to tools/doc",
       "messageId": "<20250813213218.198582-12-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-12-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-12-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/doc-guide/kernel-doc.rst",
         "Documentation/translations/it_IT/doc-guide/kernel-doc.rst",
@@ -257,7 +257,7 @@
       "total": 13,
       "subject": "docs: move find-unused-docs.sh to tools/doc",
       "messageId": "<20250813213218.198582-13-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-13-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250813213218.198582-13-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/doc-guide/contributing.rst",
         "Documentation/translations/zh_CN/doc-guide/contributing.rst",

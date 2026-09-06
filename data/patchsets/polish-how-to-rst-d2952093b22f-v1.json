@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91%40hust.edu.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91%40hust.edu.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91@hust.edu.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91@hust.edu.cn/raw",
   "replies": 1,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_CN: polish how-to.rst",
       "messageId": "<20260418091014.2064780-1-dzm91@hust.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91%40hust.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260418091014.2064780-1-dzm91@hust.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],

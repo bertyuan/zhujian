@@ -34,8 +34,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1759990204.git.focksor%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1759990204.git.focksor%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1759990204.git.focksor@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1759990204.git.focksor@gmail.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -65,7 +65,7 @@
       "total": 1,
       "subject": "docs/zh_CN: Add trace debugging Chinese translation",
       "messageId": "<9ce3ec27f9abd0b4373f53701a16aafebe404f53.1759990204.git.focksor@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/9ce3ec27f9abd0b4373f53701a16aafebe404f53.1759990204.git.focksor%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/9ce3ec27f9abd0b4373f53701a16aafebe404f53.1759990204.git.focksor@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/trace/debugging.rst"
       ],

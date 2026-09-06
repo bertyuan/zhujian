@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251117082204.400487-1-zhaochenguang%40kylinos.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251117082204.400487-1-zhaochenguang%40kylinos.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251117082204.400487-1-zhaochenguang@kylinos.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251117082204.400487-1-zhaochenguang@kylinos.cn/raw",
   "replies": 1,
   "versions": [
     {
@@ -62,7 +62,7 @@
       "total": 1,
       "subject": "docs/zh_CN: Update the Chinese translation of kbuild.rst",
       "messageId": "<20251117082204.400487-1-zhaochenguang@kylinos.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251117082204.400487-1-zhaochenguang%40kylinos.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251117082204.400487-1-zhaochenguang@kylinos.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/kbuild/kbuild.rst"
       ],

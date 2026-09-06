@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo@gmail.com/raw",
   "replies": 5,
   "versions": [
     {
@@ -58,7 +58,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add translation of rust/testing.rst",
       "messageId": "<20250929163531.376092-1-benx.guo@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250929163531.376092-1-benx.guo@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/index.rst",
         "Documentation/translations/zh_CN/rust/testing.rst"
@@ -90,7 +90,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add translation of rust/testing.rst",
       "messageId": "<20251003074939.465517-1-benx.guo@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251003074939.465517-1-benx.guo%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251003074939.465517-1-benx.guo@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/index.rst",
         "Documentation/translations/zh_CN/rust/testing.rst"

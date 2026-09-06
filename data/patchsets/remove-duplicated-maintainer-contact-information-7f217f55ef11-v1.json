@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-1-chenyou910331%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-1-chenyou910331%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-1-chenyou910331@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-1-chenyou910331@gmail.com/raw",
   "replies": 11,
   "versions": [
     {
@@ -56,7 +56,7 @@
       "total": 7,
       "subject": "docs/zh_TW: process: remove maintainer contact information",
       "messageId": "<20260819145808.291567-2-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-2-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-2-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/1.Intro.rst",
         "Documentation/translations/zh_TW/process/2.Process.rst",
@@ -110,7 +110,7 @@
       "total": 7,
       "subject": "docs/zh_TW: admin-guide: remove maintainer contact information",
       "messageId": "<20260819145808.291567-3-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-3-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-3-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/admin-guide/README.rst",
         "Documentation/translations/zh_TW/admin-guide/bootconfig.rst",
@@ -160,7 +160,7 @@
       "total": 7,
       "subject": "docs/zh_TW: arch: remove maintainer contact information",
       "messageId": "<20260819145808.291567-4-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-4-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-4-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/arch/arm/Booting",
         "Documentation/translations/zh_TW/arch/arm/kernel_user_helpers.txt",
@@ -214,7 +214,7 @@
       "total": 7,
       "subject": "docs/zh_TW: dev-tools: remove maintainer contact information",
       "messageId": "<20260819145808.291567-5-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-5-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-5-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/dev-tools/gcov.rst",
         "Documentation/translations/zh_TW/dev-tools/gdb-kernel-debugging.rst",
@@ -247,7 +247,7 @@
       "total": 7,
       "subject": "docs/zh_TW: filesystems: remove maintainer contact information",
       "messageId": "<20260819145808.291567-6-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-6-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-6-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/filesystems/debugfs.rst",
         "Documentation/translations/zh_TW/filesystems/index.rst",
@@ -278,7 +278,7 @@
       "total": 7,
       "subject": "docs/zh_TW: cpu-freq: remove maintainer contact information",
       "messageId": "<20260819145808.291567-7-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-7-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-7-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/cpu-freq/core.rst",
         "Documentation/translations/zh_TW/cpu-freq/cpu-drivers.rst",
@@ -309,7 +309,7 @@
       "total": 7,
       "subject": "docs/zh_TW: remove the last maintainer contact references",
       "messageId": "<20260819145808.291567-8-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-8-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260819145808.291567-8-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/IRQ.txt",
         "Documentation/translations/zh_TW/disclaimer-zh_TW.rst",

@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260305192048.16405-1-tttturtleruss%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260305192048.16405-1-tttturtleruss%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260305192048.16405-1-tttturtleruss@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260305192048.16405-1-tttturtleruss@gmail.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 1,
       "subject": "docs/zh_CN: fix an inconsistent statement in dev-tools/testing-overview",
       "messageId": "<20260305192048.16405-1-tttturtleruss@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260305192048.16405-1-tttturtleruss%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260305192048.16405-1-tttturtleruss@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/dev-tools/testing-overview.rst"
       ],

@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_9C8FD8C64E11E0DED95D122C95B326EE1209%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_9C8FD8C64E11E0DED95D122C95B326EE1209%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_9C8FD8C64E11E0DED95D122C95B326EE1209@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_9C8FD8C64E11E0DED95D122C95B326EE1209@qq.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 10,
       "subject": "docs/zh_CN: add LSM/SafeSetID Chinese translation",
       "messageId": "<tencent_9C8FD8C64E11E0DED95D122C95B326EE1209@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_9C8FD8C64E11E0DED95D122C95B326EE1209%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_9C8FD8C64E11E0DED95D122C95B326EE1209@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/SafeSetID.rst"
       ],

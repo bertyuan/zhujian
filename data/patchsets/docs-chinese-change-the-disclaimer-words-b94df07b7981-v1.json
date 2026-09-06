@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250305025101.27717-1-alexs%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250305025101.27717-1-alexs%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250305025101.27717-1-alexs@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250305025101.27717-1-alexs@kernel.org/raw",
   "replies": 3,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/Chinese: change the disclaimer words",
       "messageId": "<20250305025101.27717-1-alexs@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250305025101.27717-1-alexs%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250305025101.27717-1-alexs@kernel.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/disclaimer-zh_CN.rst"
       ],

@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260611010014.412841-1-enelsonmoore%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260611010014.412841-1-enelsonmoore%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260611010014.412841-1-enelsonmoore@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260611010014.412841-1-enelsonmoore@gmail.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/{it_it,sp_SP,zh_CN,zh_TW}: update references to removed CONFIG_DEBUG_SLAB",
       "messageId": "<20260611010014.412841-1-enelsonmoore@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260611010014.412841-1-enelsonmoore%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260611010014.412841-1-enelsonmoore@gmail.com/",
       "changedFiles": [
         "Documentation/translations/it_IT/process/submit-checklist.rst",
         "Documentation/translations/sp_SP/process/submit-checklist.rst",

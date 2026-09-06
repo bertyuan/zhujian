@@ -35,8 +35,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-1-chenmiao.ku%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-1-chenmiao.ku%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-1-chenmiao.ku@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-1-chenmiao.ku@gmail.com/raw",
   "replies": 10,
   "versions": [
     {
@@ -66,7 +66,7 @@
       "total": 2,
       "subject": "docs: sphinx-pre-install: add macOS Homebrew support",
       "messageId": "<20260809101923.13176-2-chenmiao.ku@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-2-chenmiao.ku%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-2-chenmiao.ku@gmail.com/",
       "changedFiles": [
         "Documentation/doc-guide/sphinx.rst",
         "Documentation/translations/zh_CN/doc-guide/sphinx.rst",
@@ -97,7 +97,7 @@
       "total": 2,
       "subject": "docs: sphinx-pre-install: check GNU Make version",
       "messageId": "<20260809101923.13176-3-chenmiao.ku@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-3-chenmiao.ku%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260809101923.13176-3-chenmiao.ku@gmail.com/",
       "changedFiles": [
         "Documentation/doc-guide/sphinx.rst",
         "Documentation/translations/zh_CN/doc-guide/sphinx.rst",

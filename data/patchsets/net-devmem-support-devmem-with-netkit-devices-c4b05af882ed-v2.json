@@ -39,8 +39,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260504-tcp-dm-netkit-v2-0-56d52ac72fd4%40meta.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260504-tcp-dm-netkit-v2-0-56d52ac72fd4%40meta.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260504-tcp-dm-netkit-v2-0-56d52ac72fd4@meta.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260504-tcp-dm-netkit-v2-0-56d52ac72fd4@meta.com/raw",
   "replies": 4,
   "versions": [
     {
@@ -75,7 +75,7 @@
       "total": 6,
       "subject": "net: add netmem_tx modes that indicate dma capability",
       "messageId": "<20260504-tcp-dm-netkit-v2-1-56d52ac72fd4@meta.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260504-tcp-dm-netkit-v2-1-56d52ac72fd4%40meta.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260504-tcp-dm-netkit-v2-1-56d52ac72fd4@meta.com/",
       "changedFiles": [
         "Documentation/networking/net_cachelines/net_device.rst",
         "Documentation/networking/netmem.rst",

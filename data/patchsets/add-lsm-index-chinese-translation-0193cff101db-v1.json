@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 10,
       "subject": "docs/zh_CN: add LSM/index Chinese translation",
       "messageId": "<tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/index.rst",
         "Documentation/translations/zh_CN/admin-guide/index.rst"

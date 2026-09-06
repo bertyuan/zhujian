@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/87a4wode0a.fsf%40trenco.lwn.net/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/87a4wode0a.fsf%40trenco.lwn.net/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/87a4wode0a.fsf@trenco.lwn.net/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/87a4wode0a.fsf@trenco.lwn.net/raw",
   "replies": 0,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 1,
       "subject": "docs: Remove a useless top-of-file label",
       "messageId": "<87a4wode0a.fsf@trenco.lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/87a4wode0a.fsf%40trenco.lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/87a4wode0a.fsf@trenco.lwn.net/",
       "changedFiles": [
         "Documentation/process/development-process.rst",
         "Documentation/process/maintainer-handbooks.rst",

@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/2B33A00C9F5BECC7%2B20250207084821.251531-1-wangyuli%40uniontech.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/2B33A00C9F5BECC7%2B20250207084821.251531-1-wangyuli%40uniontech.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/2B33A00C9F5BECC7+20250207084821.251531-1-wangyuli@uniontech.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/2B33A00C9F5BECC7+20250207084821.251531-1-wangyuli@uniontech.com/raw",
   "replies": 2,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 1,
       "subject": "docs/zh_CN: Update the translation of dev-tools/ubsan to v6.14-rc1",
       "messageId": "<2B33A00C9F5BECC7+20250207084821.251531-1-wangyuli@uniontech.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/2B33A00C9F5BECC7%2B20250207084821.251531-1-wangyuli%40uniontech.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2B33A00C9F5BECC7+20250207084821.251531-1-wangyuli@uniontech.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/dev-tools/ubsan.rst"
       ],

@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250317100811126QvOaWRPxSgm2ttU5faitl%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250317100811126QvOaWRPxSgm2ttU5faitl%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250317100811126QvOaWRPxSgm2ttU5faitl@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250317100811126QvOaWRPxSgm2ttU5faitl@zte.com.cn/raw",
   "replies": 5,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_CN: fix spelling mistake",
       "messageId": "<20250317100811126QvOaWRPxSgm2ttU5faitl@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250317100811126QvOaWRPxSgm2ttU5faitl%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250317100811126QvOaWRPxSgm2ttU5faitl@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/mm/balance.rst"
       ],

@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1762948491.git.jani.nikula%40intel.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1762948491.git.jani.nikula%40intel.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1762948491.git.jani.nikula@intel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1762948491.git.jani.nikula@intel.com/raw",
   "replies": 12,
   "versions": [
     {
@@ -53,7 +53,7 @@
       "total": 4,
       "subject": "Documentation: remove subproject index links deep in the structure",
       "messageId": "<c7f9fa7545d1048d7f173d819aa1c4f3c8f050c1.1762948491.git.jani.nikula@intel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/c7f9fa7545d1048d7f173d819aa1c4f3c8f050c1.1762948491.git.jani.nikula%40intel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/c7f9fa7545d1048d7f173d819aa1c4f3c8f050c1.1762948491.git.jani.nikula@intel.com/",
       "changedFiles": [
         "Documentation/admin-guide/aoe/index.rst",
         "Documentation/admin-guide/auxdisplay/index.rst",
@@ -145,7 +145,7 @@
       "total": 4,
       "subject": "Documentation: streamline subproject index link in translations",
       "messageId": "<643adf4e5bc0d7638b4f51d2542c7983cf5cff69.1762948491.git.jani.nikula@intel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/643adf4e5bc0d7638b4f51d2542c7983cf5cff69.1762948491.git.jani.nikula%40intel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/643adf4e5bc0d7638b4f51d2542c7983cf5cff69.1762948491.git.jani.nikula@intel.com/",
       "changedFiles": [
         "Documentation/translations/index.rst",
         "Documentation/translations/it_IT/RCU/index.rst",

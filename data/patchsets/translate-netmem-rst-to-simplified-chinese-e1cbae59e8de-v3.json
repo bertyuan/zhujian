@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/202506271421088365Ld_p-lwt4dLDVQpiuc1t%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/202506271421088365Ld_p-lwt4dLDVQpiuc1t%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/202506271421088365Ld_p-lwt4dLDVQpiuc1t@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/202506271421088365Ld_p-lwt4dLDVQpiuc1t@zte.com.cn/raw",
   "replies": 1,
   "versions": [
     {
@@ -59,7 +59,7 @@
       "total": 3,
       "subject": "Docs/zh_CN: Translate netmem.rst to Simplified Chinese",
       "messageId": "<202506271421088365Ld_p-lwt4dLDVQpiuc1t@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/202506271421088365Ld_p-lwt4dLDVQpiuc1t%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/202506271421088365Ld_p-lwt4dLDVQpiuc1t@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/netmem.rst"

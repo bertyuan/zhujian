@@ -35,8 +35,8 @@
     }
   },
   "rfc": true,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251205233217.3344186-1-joshua.hahnjy%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251205233217.3344186-1-joshua.hahnjy%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251205233217.3344186-1-joshua.hahnjy@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251205233217.3344186-1-joshua.hahnjy@gmail.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -51,7 +51,7 @@
       "total": 4,
       "subject": "mm/vmscan/page_alloc: Deprecate min_{slab, unmapped}_ratio",
       "messageId": "<20251205233217.3344186-4-joshua.hahnjy@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251205233217.3344186-4-joshua.hahnjy%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251205233217.3344186-4-joshua.hahnjy@gmail.com/",
       "changedFiles": [
         "Documentation/admin-guide/sysctl/vm.rst",
         "Documentation/mm/physical_memory.rst",

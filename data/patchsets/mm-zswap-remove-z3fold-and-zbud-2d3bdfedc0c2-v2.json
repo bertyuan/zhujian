@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-1-yosry.ahmed%40linux.dev/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-1-yosry.ahmed%40linux.dev/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-1-yosry.ahmed@linux.dev/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-1-yosry.ahmed@linux.dev/raw",
   "replies": 3,
   "versions": [
     {
@@ -54,7 +54,7 @@
       "total": 2,
       "subject": "mm: z3fold: remove z3fold",
       "messageId": "<20250129180633.3501650-2-yosry.ahmed@linux.dev>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-2-yosry.ahmed%40linux.dev/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250129180633.3501650-2-yosry.ahmed@linux.dev/",
       "changedFiles": [
         "CREDITS",
         "Documentation/mm/index.rst",

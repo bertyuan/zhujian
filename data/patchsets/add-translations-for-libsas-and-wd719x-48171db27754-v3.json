@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763964599.git.yjzhang%40leap-io-kernel.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763964599.git.yjzhang%40leap-io-kernel.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1763964599.git.yjzhang@leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1763964599.git.yjzhang@leap-io-kernel.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -64,7 +64,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add libsas.rst translation",
       "messageId": "<3878b29b3778e46143b978c3fa1cb5939e3b9454.1763964599.git.yjzhang@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/3878b29b3778e46143b978c3fa1cb5939e3b9454.1763964599.git.yjzhang%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/3878b29b3778e46143b978c3fa1cb5939e3b9454.1763964599.git.yjzhang@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/libsas.rst"
@@ -96,7 +96,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add wd719x.rst translation",
       "messageId": "<cb22a9695c2cbdfc673b060d6f84455a71318bc8.1763964599.git.yjzhang@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/cb22a9695c2cbdfc673b060d6f84455a71318bc8.1763964599.git.yjzhang%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/cb22a9695c2cbdfc673b060d6f84455a71318bc8.1763964599.git.yjzhang@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/wd719x.rst"

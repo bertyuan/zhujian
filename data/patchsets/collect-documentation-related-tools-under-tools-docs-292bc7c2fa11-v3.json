@@ -44,8 +44,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-1-corbet%40lwn.net/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-1-corbet%40lwn.net/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-1-corbet@lwn.net/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-1-corbet@lwn.net/raw",
   "replies": 12,
   "versions": [
     {
@@ -65,7 +65,7 @@
       "total": 8,
       "subject": "docs: move checktransupdate.py to tools/docs",
       "messageId": "<20251024200834.20644-3-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-3-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-3-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/doc-guide/checktransupdate.rst",
         "Documentation/translations/zh_CN/doc-guide/checktransupdate.rst",
@@ -107,7 +107,7 @@
       "total": 8,
       "subject": "docs: move kernel-doc to tools/docs",
       "messageId": "<20251024200834.20644-7-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-7-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-7-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/conf.py",
         "Documentation/doc-guide/kernel-doc.rst",
@@ -157,7 +157,7 @@
       "total": 8,
       "subject": "docs: move find-unused-docs.sh to tools/docs",
       "messageId": "<20251024200834.20644-8-corbet@lwn.net>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-8-corbet%40lwn.net/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251024200834.20644-8-corbet@lwn.net/",
       "changedFiles": [
         "Documentation/doc-guide/contributing.rst",
         "Documentation/translations/zh_CN/doc-guide/contributing.rst",

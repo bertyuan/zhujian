@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165746013rPfwDG8PRZ2LMvX4a0Z8U%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165746013rPfwDG8PRZ2LMvX4a0Z8U%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165746013rPfwDG8PRZ2LMvX4a0Z8U@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165746013rPfwDG8PRZ2LMvX4a0Z8U@zte.com.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 5,
       "subject": "Docs/zh_CN: Translate gfs2-glocks.rst to Simplified Chinese",
       "messageId": "<20250718165746013rPfwDG8PRZ2LMvX4a0Z8U@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165746013rPfwDG8PRZ2LMvX4a0Z8U%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165746013rPfwDG8PRZ2LMvX4a0Z8U@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/gfs2-glocks.rst",
         "Documentation/translations/zh_CN/filesystems/index.rst"

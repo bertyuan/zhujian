@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260610231836.186610-1-enelsonmoore%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260610231836.186610-1-enelsonmoore%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260610231836.186610-1-enelsonmoore@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260610231836.186610-1-enelsonmoore@gmail.com/raw",
   "replies": 2,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 1,
       "subject": "docs/zh_CN: fix CONFIG_CONPAT typo for CONFIG_COMPAT",
       "messageId": "<20260610231836.186610-1-enelsonmoore@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260610231836.186610-1-enelsonmoore%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260610231836.186610-1-enelsonmoore@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/self-protection.rst"
       ],

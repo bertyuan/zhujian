@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo%40openatom.club/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo%40openatom.club/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo@openatom.club/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo@openatom.club/raw",
   "replies": 2,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_CN: add --no-merges to git log example in how-to.rst",
       "messageId": "<20260416042647.3646595-1-ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260416042647.3646595-1-ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],

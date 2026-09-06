@@ -34,8 +34,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250622004249.9083-1-sef1548%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250622004249.9083-1-sef1548%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250622004249.9083-1-sef1548@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250622004249.9083-1-sef1548@gmail.com/raw",
   "replies": 8,
   "versions": [
     {
@@ -50,7 +50,7 @@
       "total": 1,
       "subject": "mm/balloon_compaction: update Chinese docs for movable_ops",
       "messageId": "<20250622004249.9083-1-sef1548@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250622004249.9083-1-sef1548%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250622004249.9083-1-sef1548@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/mm/page_migration.rst"
       ],

@@ -34,8 +34,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251215210624.7814-1-hilbertanjou83%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251215210624.7814-1-hilbertanjou83%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251215210624.7814-1-hilbertanjou83@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251215210624.7814-1-hilbertanjou83@gmail.com/raw",
   "replies": 2,
   "versions": [
     {
@@ -50,7 +50,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add staging/crc32 Chinese translation",
       "messageId": "<20251215210624.7814-1-hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251215210624.7814-1-hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251215210624.7814-1-hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/staging/crc32.rst",
         "Documentation/translations/zh_CN/staging/index.rst"
@@ -79,7 +79,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add crc32.rst translation",
       "messageId": "<20251231193058.91749-1-hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251231193058.91749-1-hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251231193058.91749-1-hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/staging/crc32.rst",
         "Documentation/translations/zh_CN/staging/index.rst"

@@ -44,8 +44,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-1-doehyunbaek%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-1-doehyunbaek%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-1-doehyunbaek@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-1-doehyunbaek@gmail.com/raw",
   "replies": 5,
   "versions": [
     {
@@ -60,7 +60,7 @@
       "total": 2,
       "subject": "docs/zh_CN: update DAMON usage sysfs documentation",
       "messageId": "<20260523094420.741003-2-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-2-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-2-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst"
       ],
@@ -88,7 +88,7 @@
       "total": 2,
       "subject": "docs/zh_CN: update DAMON usage Chinese translation",
       "messageId": "<20260608060302.1564003-2-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260608060302.1564003-2-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260608060302.1564003-2-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst"
       ],
@@ -116,7 +116,7 @@
       "total": 2,
       "subject": "docs/zh_CN: update DAMON usage Chinese translation",
       "messageId": "<20260608065745.1587885-2-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260608065745.1587885-2-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260608065745.1587885-2-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst"
       ],
@@ -144,7 +144,7 @@
       "total": 2,
       "subject": "docs/zh_TW: update DAMON usage sysfs documentation",
       "messageId": "<20260523094420.741003-3-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-3-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260523094420.741003-3-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/admin-guide/mm/damon/usage.rst"
       ],
@@ -172,7 +172,7 @@
       "total": 2,
       "subject": "docs/zh_TW: update DAMON usage Traditional Chinese translation",
       "messageId": "<20260608060302.1564003-3-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260608060302.1564003-3-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260608060302.1564003-3-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/admin-guide/mm/damon/usage.rst"
       ],
@@ -200,7 +200,7 @@
       "total": 2,
       "subject": "docs/zh_TW: update DAMON usage Traditional Chinese translation",
       "messageId": "<20260608065745.1587885-3-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260608065745.1587885-3-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260608065745.1587885-3-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/admin-guide/mm/damon/usage.rst"
       ],
@@ -228,7 +228,7 @@
       "total": 2,
       "subject": "docs/zh_CN: update DAMON documentation translation",
       "messageId": "<ef9e2347564b2ffebe231b20e4da049cbceb2374.1781015560.git.doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/ef9e2347564b2ffebe231b20e4da049cbceb2374.1781015560.git.doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/ef9e2347564b2ffebe231b20e4da049cbceb2374.1781015560.git.doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/index.rst",
         "Documentation/translations/zh_CN/admin-guide/mm/damon/stat.rst",

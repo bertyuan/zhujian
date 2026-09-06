@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260310-fix-llvm-docs-v1-1-234878874762%40samsung.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260310-fix-llvm-docs-v1-1-234878874762%40samsung.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260310-fix-llvm-docs-v1-1-234878874762@samsung.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260310-fix-llvm-docs-v1-1-234878874762@samsung.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -54,7 +54,7 @@
       "total": 1,
       "subject": "Documentation/kbuild: fix empty string KBUILD_BUILD_TIMESTAMP",
       "messageId": "<20260310-fix-llvm-docs-v1-1-234878874762@samsung.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260310-fix-llvm-docs-v1-1-234878874762%40samsung.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260310-fix-llvm-docs-v1-1-234878874762@samsung.com/",
       "changedFiles": [
         "Documentation/kbuild/llvm.rst",
         "Documentation/translations/zh_CN/kbuild/llvm.rst"

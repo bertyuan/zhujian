@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91%40hust.edu.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91%40hust.edu.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91@hust.edu.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91@hust.edu.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_CN: restructure how-to.rst patch submission workflow",
       "messageId": "<20260420115647.2718959-1-dzm91@hust.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91%40hust.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260420115647.2718959-1-dzm91@hust.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],

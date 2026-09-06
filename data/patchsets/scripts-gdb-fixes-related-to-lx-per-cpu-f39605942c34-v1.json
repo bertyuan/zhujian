@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250503123234.2407184-1-illia%40yshyn.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250503123234.2407184-1-illia%40yshyn.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250503123234.2407184-1-illia@yshyn.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250503123234.2407184-1-illia@yshyn.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -54,7 +54,7 @@
       "total": 2,
       "subject": "scripts/gdb: Update documentation for lx_per_cpu",
       "messageId": "<20250503123234.2407184-3-illia@yshyn.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250503123234.2407184-3-illia%40yshyn.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250503123234.2407184-3-illia@yshyn.com/",
       "changedFiles": [
         "Documentation/process/debugging/gdb-kernel-debugging.rst",
         "Documentation/translations/zh_CN/dev-tools/gdb-kernel-debugging.rst",

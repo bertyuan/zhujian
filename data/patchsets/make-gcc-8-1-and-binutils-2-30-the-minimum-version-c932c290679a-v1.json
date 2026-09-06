@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250407094116.1339199-1-arnd%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250407094116.1339199-1-arnd%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250407094116.1339199-1-arnd@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250407094116.1339199-1-arnd@kernel.org/raw",
   "replies": 13,
   "versions": [
     {
@@ -56,7 +56,7 @@
       "total": 4,
       "subject": "kbuild: require gcc-8 and binutils-2.30",
       "messageId": "<20250407094116.1339199-2-arnd@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250407094116.1339199-2-arnd%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250407094116.1339199-2-arnd@kernel.org/",
       "changedFiles": [
         "Documentation/admin-guide/README.rst",
         "Documentation/kbuild/makefiles.rst",

@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260812120805.1631430-3-manuelebnerli%40mailbox.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260812120805.1631430-3-manuelebnerli%40mailbox.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260812120805.1631430-3-manuelebnerli@mailbox.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260812120805.1631430-3-manuelebnerli@mailbox.org/raw",
   "replies": 10,
   "versions": [
     {
@@ -54,7 +54,7 @@
       "total": 5,
       "subject": "Docs: changes.rst: rename file and references and add links",
       "messageId": "<20260812121603.1633270-2-manuelebnerli@mailbox.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260812121603.1633270-2-manuelebnerli%40mailbox.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260812121603.1633270-2-manuelebnerli@mailbox.org/",
       "changedFiles": [
         "Documentation/Changes",
         "Documentation/admin-guide/README.rst",

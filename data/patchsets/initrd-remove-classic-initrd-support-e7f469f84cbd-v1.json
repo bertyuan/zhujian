@@ -96,8 +96,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250913003842.41944-1-safinaskar%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250913003842.41944-1-safinaskar%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250913003842.41944-1-safinaskar@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250913003842.41944-1-safinaskar@gmail.com/raw",
   "replies": 39,
   "versions": [
     {
@@ -112,7 +112,7 @@
       "total": 62,
       "subject": "doc: remove Documentation/power/swsusp-dmcrypt.rst",
       "messageId": "<20250913003842.41944-21-safinaskar@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250913003842.41944-21-safinaskar%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250913003842.41944-21-safinaskar@gmail.com/",
       "changedFiles": [
         "Documentation/power/index.rst",
         "Documentation/power/swsusp-dmcrypt.rst",

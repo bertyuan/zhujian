@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250522071744.2362563-3-masahiroy%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250522071744.2362563-3-masahiroy%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250522071744.2362563-3-masahiroy@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250522071744.2362563-3-masahiroy@kernel.org/raw",
   "replies": 0,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 3,
       "subject": "docs/core-api/symbol-namespaces: drop table of contents and section numbering",
       "messageId": "<20250522071744.2362563-3-masahiroy@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250522071744.2362563-3-masahiroy%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250522071744.2362563-3-masahiroy@kernel.org/",
       "changedFiles": [
         "Documentation/core-api/symbol-namespaces.rst",
         "Documentation/translations/it_IT/core-api/symbol-namespaces.rst",

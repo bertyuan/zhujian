@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260421021824.1293976-1-kuba%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260421021824.1293976-1-kuba%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260421021824.1293976-1-kuba@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260421021824.1293976-1-kuba@kernel.org/raw",
   "replies": 16,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "net: remove ax25 and amateur radio (hamradio) subsystem",
       "messageId": "<20260421021824.1293976-1-kuba@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260421021824.1293976-1-kuba%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260421021824.1293976-1-kuba@kernel.org/",
       "changedFiles": [
         "Documentation/.renames.txt",
         "Documentation/admin-guide/kernel-parameters.txt",

@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06@qq.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 10,
       "subject": "docs/zh_CN: add LSM/landlock Chinese translation",
       "messageId": "<tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_B27B8B8B80A567D6C21DDDD1C6981982DE06@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/landlock.rst"
       ],

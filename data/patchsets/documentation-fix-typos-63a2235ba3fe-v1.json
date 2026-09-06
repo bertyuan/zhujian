@@ -35,8 +35,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250723203250.2909894-1-helgaas%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250723203250.2909894-1-helgaas%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250723203250.2909894-1-helgaas@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250723203250.2909894-1-helgaas@kernel.org/raw",
   "replies": 5,
   "versions": [
     {
@@ -56,7 +56,7 @@
       "total": 2,
       "subject": "Documentation: Fix typos",
       "messageId": "<20250723203250.2909894-2-helgaas@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250723203250.2909894-2-helgaas%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250723203250.2909894-2-helgaas@kernel.org/",
       "changedFiles": [
         "Documentation/PCI/endpoint/pci-endpoint-cfs.rst",
         "Documentation/PCI/endpoint/pci-endpoint.rst",

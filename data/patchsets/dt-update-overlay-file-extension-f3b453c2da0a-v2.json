@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert%2Brenesas%40glider.be/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert%2Brenesas%40glider.be/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert+renesas@glider.be/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert+renesas@glider.be/raw",
   "replies": 0,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs: dt: Update overlay file extension",
       "messageId": "<ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert+renesas@glider.be>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert%2Brenesas%40glider.be/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/ebce4d9591dd0259a636196dda31d40901dc04b0.1738752288.git.geert+renesas@glider.be/",
       "changedFiles": [
         "Documentation/devicetree/overlay-notes.rst",
         "Documentation/translations/zh_CN/devicetree/overlay-notes.rst"

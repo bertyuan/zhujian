@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/2025011005-resistant-uncork-9814%40gregkh/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/2025011005-resistant-uncork-9814%40gregkh/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/2025011005-resistant-uncork-9814@gregkh/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/2025011005-resistant-uncork-9814@gregkh/raw",
   "replies": 1,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "Documentation: bug-hunting.rst: remove odd contact information",
       "messageId": "<2025011005-resistant-uncork-9814@gregkh>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/2025011005-resistant-uncork-9814%40gregkh/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2025011005-resistant-uncork-9814@gregkh/",
       "changedFiles": [
         "Documentation/admin-guide/bug-hunting.rst",
         "Documentation/translations/zh_CN/admin-guide/bug-hunting.rst",

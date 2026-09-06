@@ -35,8 +35,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-0-2aaa866315a7%40quicinc.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-0-2aaa866315a7%40quicinc.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-0-2aaa866315a7@quicinc.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-0-2aaa866315a7@quicinc.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -61,7 +61,7 @@
       "total": 2,
       "subject": "phy: core: Remove API devm_of_phy_provider_unregister()",
       "messageId": "<20250210-remove-apis-v1-1-2aaa866315a7@quicinc.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-1-2aaa866315a7%40quicinc.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-1-2aaa866315a7@quicinc.com/",
       "changedFiles": [
         "Documentation/driver-api/phy/phy.rst",
         "Documentation/translations/zh_CN/driver-api/phy/phy.rst",
@@ -92,7 +92,7 @@
       "total": 2,
       "subject": "phy: core: Remove API devm_phy_destroy()",
       "messageId": "<20250210-remove-apis-v1-2-2aaa866315a7@quicinc.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-2-2aaa866315a7%40quicinc.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250210-remove-apis-v1-2-2aaa866315a7@quicinc.com/",
       "changedFiles": [
         "Documentation/driver-api/phy/phy.rst",
         "Documentation/translations/zh_CN/driver-api/phy/phy.rst",

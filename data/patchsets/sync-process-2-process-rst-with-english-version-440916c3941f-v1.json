@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260225151013.200635-1-szpcq123%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260225151013.200635-1-szpcq123%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260225151013.200635-1-szpcq123@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260225151013.200635-1-szpcq123@gmail.com/raw",
   "replies": 2,
   "versions": [
     {
@@ -53,7 +53,7 @@
       "total": 2,
       "subject": "docs/zh_CN: sync process/2.Process.rst with English version",
       "messageId": "<20260225151013.200635-1-szpcq123@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260225151013.200635-1-szpcq123%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260225151013.200635-1-szpcq123@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/2.Process.rst"
       ],
@@ -84,7 +84,7 @@
       "total": 2,
       "subject": "docs/zh_CN: sync process/2.Process.rst with English version",
       "messageId": "<20260311123107.329769-1-szpcq123@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260311123107.329769-1-szpcq123%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260311123107.329769-1-szpcq123@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/2.Process.rst"
       ],

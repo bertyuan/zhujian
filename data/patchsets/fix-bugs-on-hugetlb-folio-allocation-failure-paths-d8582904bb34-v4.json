@@ -49,8 +49,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc%40google.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc%40google.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -65,7 +65,7 @@
       "total": 16,
       "subject": "mm: hugetlb: Track used_hpages when getting/putting pages from subpool",
       "messageId": "<20260722-hugetlb-alloc-failure-fixes-v4-1-88e8b81970dc@google.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260722-hugetlb-alloc-failure-fixes-v4-1-88e8b81970dc%40google.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260722-hugetlb-alloc-failure-fixes-v4-1-88e8b81970dc@google.com/",
       "changedFiles": [
         "Documentation/mm/hugetlbfs_reserv.rst",
         "Documentation/translations/zh_CN/mm/hugetlbfs_reserv.rst",

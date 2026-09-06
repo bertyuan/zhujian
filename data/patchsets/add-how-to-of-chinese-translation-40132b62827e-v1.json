@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250314102833.70037-1-siyanteng%40cqsoftware.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250314102833.70037-1-siyanteng%40cqsoftware.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250314102833.70037-1-siyanteng@cqsoftware.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250314102833.70037-1-siyanteng@cqsoftware.com.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_CN: Add how-to of Chinese translation",
       "messageId": "<20250314102833.70037-1-siyanteng@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250314102833.70037-1-siyanteng%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250314102833.70037-1-siyanteng@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst",
         "Documentation/translations/zh_CN/index.rst"

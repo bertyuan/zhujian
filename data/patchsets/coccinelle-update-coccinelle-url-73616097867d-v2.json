@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260310121431.362091-1-Julia.Lawall%40inria.fr/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260310121431.362091-1-Julia.Lawall%40inria.fr/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260310121431.362091-1-Julia.Lawall@inria.fr/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260310121431.362091-1-Julia.Lawall@inria.fr/raw",
   "replies": 1,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 1,
       "subject": "coccinelle: update Coccinelle URL",
       "messageId": "<20260310121431.362091-1-Julia.Lawall@inria.fr>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260310121431.362091-1-Julia.Lawall%40inria.fr/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260310121431.362091-1-Julia.Lawall@inria.fr/",
       "changedFiles": [
         "Documentation/dev-tools/coccinelle.rst",
         "Documentation/translations/it_IT/process/4.Coding.rst",

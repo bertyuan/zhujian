@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-1-chenmiao.ku%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-1-chenmiao.ku%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-1-chenmiao.ku@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-1-chenmiao.ku@gmail.com/raw",
   "replies": 5,
   "versions": [
     {
@@ -69,7 +69,7 @@
       "total": 5,
       "subject": "docs/zh_CN: doc-guide: document macOS Sphinx setup",
       "messageId": "<20260810143311.57775-5-chenmiao.ku@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-5-chenmiao.ku%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-5-chenmiao.ku@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/doc-guide/sphinx.rst"
       ],
@@ -97,7 +97,7 @@
       "total": 5,
       "subject": "docs/zh_CN: how-to: document case-sensitive APFS setup",
       "messageId": "<20260810143311.57775-6-chenmiao.ku@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-6-chenmiao.ku%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260810143311.57775-6-chenmiao.ku@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/how-to.rst"
       ],

@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251006120154.18348-2-swarajgaikwad1925%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251006120154.18348-2-swarajgaikwad1925%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251006120154.18348-2-swarajgaikwad1925@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251006120154.18348-2-swarajgaikwad1925@gmail.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "Documentation/zh_TW: fix malformed table in cpu-drivers.rst",
       "messageId": "<20251006120154.18348-2-swarajgaikwad1925@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251006120154.18348-2-swarajgaikwad1925%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251006120154.18348-2-swarajgaikwad1925@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/cpu-freq/cpu-drivers.rst"
       ],

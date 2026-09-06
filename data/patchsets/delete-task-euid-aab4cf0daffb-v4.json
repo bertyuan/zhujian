@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-0-07cbdf3af980%40google.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-0-07cbdf3af980%40google.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-0-07cbdf3af980@google.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-0-07cbdf3af980@google.com/raw",
   "replies": 7,
   "versions": [
     {
@@ -63,7 +63,7 @@
       "total": 2,
       "subject": "cred: delete task_euid()",
       "messageId": "<20260529-remove-task-euid-v4-2-07cbdf3af980@google.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-2-07cbdf3af980%40google.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260529-remove-task-euid-v4-2-07cbdf3af980@google.com/",
       "changedFiles": [
         "Documentation/security/credentials.rst",
         "Documentation/translations/zh_CN/security/credentials.rst",

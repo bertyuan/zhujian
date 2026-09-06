@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251031043358.23709-1-bagasdotme%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251031043358.23709-1-bagasdotme%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251031043358.23709-1-bagasdotme@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251031043358.23709-1-bagasdotme@gmail.com/raw",
   "replies": 4,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "Documentation: treewide: Replace marc.info links with lore",
       "messageId": "<20251031043358.23709-1-bagasdotme@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251031043358.23709-1-bagasdotme%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251031043358.23709-1-bagasdotme@gmail.com/",
       "changedFiles": [
         "Documentation/driver-api/usb/writing_musb_glue_layer.rst",
         "Documentation/mm/active_mm.rst",

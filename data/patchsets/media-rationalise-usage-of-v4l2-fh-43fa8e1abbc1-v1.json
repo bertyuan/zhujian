@@ -101,8 +101,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-0-eb140ddd6a9d%40ideasonboard.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-0-eb140ddd6a9d%40ideasonboard.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-0-eb140ddd6a9d@ideasonboard.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-0-eb140ddd6a9d@ideasonboard.com/raw",
   "replies": 35,
   "versions": [
     {
@@ -117,7 +117,7 @@
       "total": 65,
       "subject": "media: Wrap file->private_data access with a helper function",
       "messageId": "<20250802-media-private-data-v1-8-eb140ddd6a9d@ideasonboard.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-8-eb140ddd6a9d%40ideasonboard.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-8-eb140ddd6a9d@ideasonboard.com/",
       "changedFiles": [
         "Documentation/driver-api/media/v4l2-fh.rst",
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",
@@ -166,7 +166,7 @@
       "total": 65,
       "subject": "media: Set file->private_data in v4l2_fh_add()",
       "messageId": "<20250802-media-private-data-v1-26-eb140ddd6a9d@ideasonboard.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-26-eb140ddd6a9d%40ideasonboard.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-26-eb140ddd6a9d@ideasonboard.com/",
       "changedFiles": [
         "Documentation/driver-api/media/v4l2-fh.rst",
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",
@@ -257,7 +257,7 @@
       "total": 65,
       "subject": "media: Reset file->private_data to NULL in v4l2_fh_del()",
       "messageId": "<20250802-media-private-data-v1-27-eb140ddd6a9d@ideasonboard.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-27-eb140ddd6a9d%40ideasonboard.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250802-media-private-data-v1-27-eb140ddd6a9d@ideasonboard.com/",
       "changedFiles": [
         "Documentation/driver-api/media/v4l2-fh.rst",
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",

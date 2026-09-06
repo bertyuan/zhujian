@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1783905132.git.ben.guo%40openatom.club/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1783905132.git.ben.guo%40openatom.club/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1783905132.git.ben.guo@openatom.club/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1783905132.git.ben.guo@openatom.club/raw",
   "replies": 5,
   "versions": [
     {
@@ -66,7 +66,7 @@
       "total": 4,
       "subject": "docs/zh_CN: Update rust/quick-start.rst translation",
       "messageId": "<78a525ba7344a334bc70664b34327dbb51024e90.1783905132.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/78a525ba7344a334bc70664b34327dbb51024e90.1783905132.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/78a525ba7344a334bc70664b34327dbb51024e90.1783905132.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/quick-start.rst"
       ],
@@ -109,7 +109,7 @@
       "total": 4,
       "subject": "docs/zh_CN: Update rust/general-information.rst translation",
       "messageId": "<f7c671881801e1b24fa2965b2e730d0fb0931e32.1783905132.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/f7c671881801e1b24fa2965b2e730d0fb0931e32.1783905132.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/f7c671881801e1b24fa2965b2e730d0fb0931e32.1783905132.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/general-information.rst"
       ],
@@ -152,7 +152,7 @@
       "total": 4,
       "subject": "docs/zh_CN: Update rust/arch-support.rst translation",
       "messageId": "<ea65566150d1b7797051ac2e9bb2b8725f041513.1783905132.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/ea65566150d1b7797051ac2e9bb2b8725f041513.1783905132.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/ea65566150d1b7797051ac2e9bb2b8725f041513.1783905132.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/arch-support.rst"
       ],
@@ -195,7 +195,7 @@
       "total": 4,
       "subject": "docs/zh_CN: Update rust/testing.rst translation",
       "messageId": "<a08043009080e3c9bc4717aba9783c3474ec2711.1783905132.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/a08043009080e3c9bc4717aba9783c3474ec2711.1783905132.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/a08043009080e3c9bc4717aba9783c3474ec2711.1783905132.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/testing.rst"
       ],

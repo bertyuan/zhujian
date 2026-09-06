@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-1-laurent.pinchart%2Brenesas%40ideasonboard.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-1-laurent.pinchart%2Brenesas%40ideasonboard.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-1-laurent.pinchart+renesas@ideasonboard.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-1-laurent.pinchart+renesas@ideasonboard.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -56,7 +56,7 @@
       "total": 76,
       "subject": "media: Wrap file->private_data access with a helper function",
       "messageId": "<20250810013100.29776-9-laurent.pinchart+renesas@ideasonboard.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-9-laurent.pinchart%2Brenesas%40ideasonboard.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-9-laurent.pinchart+renesas@ideasonboard.com/",
       "changedFiles": [
         "Documentation/driver-api/media/v4l2-fh.rst",
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",
@@ -105,7 +105,7 @@
       "total": 76,
       "subject": "media: Set file->private_data in v4l2_fh_add()",
       "messageId": "<20250810013100.29776-27-laurent.pinchart+renesas@ideasonboard.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-27-laurent.pinchart%2Brenesas%40ideasonboard.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-27-laurent.pinchart+renesas@ideasonboard.com/",
       "changedFiles": [
         "Documentation/driver-api/media/v4l2-fh.rst",
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",
@@ -196,7 +196,7 @@
       "total": 76,
       "subject": "media: Reset file->private_data to NULL in v4l2_fh_del()",
       "messageId": "<20250810013100.29776-28-laurent.pinchart+renesas@ideasonboard.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-28-laurent.pinchart%2Brenesas%40ideasonboard.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-28-laurent.pinchart+renesas@ideasonboard.com/",
       "changedFiles": [
         "Documentation/driver-api/media/v4l2-fh.rst",
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",
@@ -283,7 +283,7 @@
       "total": 76,
       "subject": "media: Drop V4L2_FL_USES_V4L2_FH checks",
       "messageId": "<20250810013100.29776-33-laurent.pinchart+renesas@ideasonboard.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-33-laurent.pinchart%2Brenesas%40ideasonboard.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250810013100.29776-33-laurent.pinchart+renesas@ideasonboard.com/",
       "changedFiles": [
         "Documentation/driver-api/media/v4l2-fh.rst",
         "Documentation/translations/zh_CN/video4linux/v4l2-framework.txt",

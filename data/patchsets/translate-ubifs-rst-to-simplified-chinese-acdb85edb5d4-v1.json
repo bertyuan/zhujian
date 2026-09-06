@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165146589nw7ReAlsBvkwAr57nH5pr%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165146589nw7ReAlsBvkwAr57nH5pr%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165146589nw7ReAlsBvkwAr57nH5pr@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165146589nw7ReAlsBvkwAr57nH5pr@zte.com.cn/raw",
   "replies": 0,
   "versions": [
     {
@@ -67,7 +67,7 @@
       "total": 5,
       "subject": "Docs/zh_CN: Translate ubifs.rst to Simplified Chinese",
       "messageId": "<20250718165146589nw7ReAlsBvkwAr57nH5pr@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165146589nw7ReAlsBvkwAr57nH5pr%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165146589nw7ReAlsBvkwAr57nH5pr@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/ubifs.rst"

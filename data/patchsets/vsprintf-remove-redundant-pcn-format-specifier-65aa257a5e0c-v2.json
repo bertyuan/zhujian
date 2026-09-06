@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-0-0af40fc7dee4%40bootlin.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-0-0af40fc7dee4%40bootlin.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-0-0af40fc7dee4@bootlin.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-0-0af40fc7dee4@bootlin.com/raw",
   "replies": 6,
   "versions": [
     {
@@ -54,7 +54,7 @@
       "total": 2,
       "subject": "vsprintf: remove redundant and unused %pCn format specifier",
       "messageId": "<20250311-vsprintf-pcn-v2-2-0af40fc7dee4@bootlin.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-2-0af40fc7dee4%40bootlin.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250311-vsprintf-pcn-v2-2-0af40fc7dee4@bootlin.com/",
       "changedFiles": [
         "Documentation/core-api/printk-formats.rst",
         "Documentation/translations/zh_CN/core-api/printk-formats.rst",

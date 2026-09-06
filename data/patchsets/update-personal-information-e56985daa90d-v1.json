@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-1-srcres258%40furdevs.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-1-srcres258%40furdevs.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-1-srcres258@furdevs.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-1-srcres258@furdevs.cn/raw",
   "replies": 5,
   "versions": [
     {
@@ -53,7 +53,7 @@
       "total": 2,
       "subject": "docs/zh_TW: update personal information",
       "messageId": "<20260220160201.41149-1-srcres258@furdevs.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-1-srcres258%40furdevs.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-1-srcres258@furdevs.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/dev-tools/testing-overview.rst",
         "Documentation/translations/zh_TW/IRQ.txt",
@@ -140,7 +140,7 @@
       "total": 2,
       "subject": "docs/zh_TW: remove trailing space",
       "messageId": "<20260220160201.41149-2-srcres258@furdevs.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-2-srcres258%40furdevs.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260220160201.41149-2-srcres258@furdevs.cn/",
       "changedFiles": [
         "Documentation/translations/zh_TW/admin-guide/README.rst"
       ],

@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1767118457.git.hilbertanjou83%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1767118457.git.hilbertanjou83%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1767118457.git.hilbertanjou83@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1767118457.git.hilbertanjou83@gmail.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -66,7 +66,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add timers directory Chinese translation",
       "messageId": "<f5e1f24ac6aed222a95bfeeef7df66b753e3b512.1767118457.git.hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/f5e1f24ac6aed222a95bfeeef7df66b753e3b512.1767118457.git.hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/f5e1f24ac6aed222a95bfeeef7df66b753e3b512.1767118457.git.hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/subsystem-apis.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
@@ -95,7 +95,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Translate timers/timekeeping.rst",
       "messageId": "<6f8a022173941e2478806e5606a0a7ba3124a65b.1767118457.git.hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/6f8a022173941e2478806e5606a0a7ba3124a65b.1767118457.git.hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/6f8a022173941e2478806e5606a0a7ba3124a65b.1767118457.git.hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/timers/index.rst",
         "Documentation/translations/zh_CN/timers/timekeeping.rst"
@@ -124,7 +124,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Translate timers/hpet.rst",
       "messageId": "<c1504ef8f30bf0fa3195246e481d1f4cd009fd8c.1767118457.git.hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/c1504ef8f30bf0fa3195246e481d1f4cd009fd8c.1767118457.git.hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/c1504ef8f30bf0fa3195246e481d1f4cd009fd8c.1767118457.git.hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/timers/hpet.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
@@ -153,7 +153,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Translate timers/hrtimers.rst",
       "messageId": "<13b522614af92e2f9f2dd94455890900d41572c7.1767118457.git.hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/13b522614af92e2f9f2dd94455890900d41572c7.1767118457.git.hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/13b522614af92e2f9f2dd94455890900d41572c7.1767118457.git.hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/timers/hrtimers.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
@@ -182,7 +182,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Translate timers/highres.rst",
       "messageId": "<cddbec3b666c0ba23cdc09d635b907ce04243ae9.1767118457.git.hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/cddbec3b666c0ba23cdc09d635b907ce04243ae9.1767118457.git.hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/cddbec3b666c0ba23cdc09d635b907ce04243ae9.1767118457.git.hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/timers/highres.rst",
         "Documentation/translations/zh_CN/timers/index.rst"
@@ -211,7 +211,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Translate timers/no_hz.rst",
       "messageId": "<b3d77a7eef83314f34d41d6df584a24229dbe52a.1767118457.git.hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/b3d77a7eef83314f34d41d6df584a24229dbe52a.1767118457.git.hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/b3d77a7eef83314f34d41d6df584a24229dbe52a.1767118457.git.hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/timers/index.rst",
         "Documentation/translations/zh_CN/timers/no_hz.rst"
@@ -240,7 +240,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Translate timers delay_sleep_functions",
       "messageId": "<e6e5b25d48ddad02ad9de1679d789b2309e7307c.1767118457.git.hilbertanjou83@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/e6e5b25d48ddad02ad9de1679d789b2309e7307c.1767118457.git.hilbertanjou83%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/e6e5b25d48ddad02ad9de1679d789b2309e7307c.1767118457.git.hilbertanjou83@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/timers/delay_sleep_functions.rst",
         "Documentation/translations/zh_CN/timers/index.rst"

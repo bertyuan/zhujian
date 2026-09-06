@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek@kernel.org/raw",
   "replies": 1,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 1,
       "subject": "Documentation: Update after split of <linux/mod_devicetable.h>",
       "messageId": "<ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/ede7ce64f20e10660ebf6bc1b41836dad750ae3b.1783349758.git.ukleinek@kernel.org/",
       "changedFiles": [
         "Documentation/PCI/pci.rst",
         "Documentation/driver-api/basics.rst",

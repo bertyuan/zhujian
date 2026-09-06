@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang%40chengyaqiang.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang%40chengyaqiang.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang@chengyaqiang.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang@chengyaqiang.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_CN: fix KASAN SW_TAGS mode description",
       "messageId": "<20260522075735.2022734-1-chengyaqiang@chengyaqiang.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang%40chengyaqiang.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260522075735.2022734-1-chengyaqiang@chengyaqiang.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/dev-tools/kasan.rst"
       ],

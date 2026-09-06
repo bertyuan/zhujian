@@ -35,8 +35,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li%40linux.dev/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li%40linux.dev/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li@linux.dev/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li@linux.dev/raw",
   "replies": 3,
   "versions": [
     {
@@ -51,7 +51,7 @@
       "total": 1,
       "subject": "ksm: update comments and docs to reference folio->mapping",
       "messageId": "<20260805105927.41987-1-hongfu.li@linux.dev>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li%40linux.dev/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260805105927.41987-1-hongfu.li@linux.dev/",
       "changedFiles": [
         "Documentation/mm/ksm.rst",
         "Documentation/translations/zh_CN/mm/ksm.rst",

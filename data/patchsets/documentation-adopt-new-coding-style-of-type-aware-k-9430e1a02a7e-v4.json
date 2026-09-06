@@ -39,8 +39,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260429070759.309110-3-manuelebner%40mailbox.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260429070759.309110-3-manuelebner%40mailbox.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260429070759.309110-3-manuelebner@mailbox.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260429070759.309110-3-manuelebner@mailbox.org/raw",
   "replies": 12,
   "versions": [
     {
@@ -70,7 +70,7 @@
       "total": 3,
       "subject": "Documentation: adopt new coding style of type-aware kmalloc-family",
       "messageId": "<20260429071445.309733-2-manuelebner@mailbox.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260429071445.309733-2-manuelebner%40mailbox.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260429071445.309733-2-manuelebner@mailbox.org/",
       "changedFiles": [
         "Documentation/core-api/kref.rst",
         "Documentation/core-api/list.rst",

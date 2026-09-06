@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250630185630910BT_3WfN1DPPZ5M1L2duP0%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250630185630910BT_3WfN1DPPZ5M1L2duP0%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250630185630910BT_3WfN1DPPZ5M1L2duP0@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250630185630910BT_3WfN1DPPZ5M1L2duP0@zte.com.cn/raw",
   "replies": 0,
   "versions": [
     {
@@ -59,7 +59,7 @@
       "total": 1,
       "subject": "Docs/zh_CN: Translate alias.rst to Simplified Chinese",
       "messageId": "<20250630185630910BT_3WfN1DPPZ5M1L2duP0@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250630185630910BT_3WfN1DPPZ5M1L2duP0%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250630185630910BT_3WfN1DPPZ5M1L2duP0@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/alias.rst",
         "Documentation/translations/zh_CN/networking/index.rst"

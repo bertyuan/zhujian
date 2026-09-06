@@ -50,8 +50,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-1-chenyou910331%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-1-chenyou910331%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-1-chenyou910331@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-1-chenyou910331@gmail.com/raw",
   "replies": 8,
   "versions": [
     {
@@ -76,7 +76,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in 7.AdvancedTopics.rst",
       "messageId": "<20260806181949.65648-2-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-2-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-2-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/7.AdvancedTopics.rst"
       ],
@@ -112,7 +112,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in 1.Intro.rst",
       "messageId": "<20260806181949.65648-3-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-3-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-3-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/1.Intro.rst"
       ],
@@ -148,7 +148,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in code-of-conduct-interpretation.rst",
       "messageId": "<20260806181949.65648-4-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-4-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-4-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/code-of-conduct-interpretation.rst"
       ],
@@ -184,7 +184,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in license-rules.rst",
       "messageId": "<20260806181949.65648-5-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-5-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-5-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/license-rules.rst"
       ],
@@ -220,7 +220,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in email-clients.rst",
       "messageId": "<20260806181949.65648-6-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-6-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-6-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/email-clients.rst"
       ],
@@ -256,7 +256,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in programming-language.rst",
       "messageId": "<20260806181949.65648-7-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-7-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-7-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/programming-language.rst"
       ],
@@ -292,7 +292,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in coding-style.rst",
       "messageId": "<20260806181949.65648-8-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-8-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-8-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/coding-style.rst"
       ],
@@ -328,7 +328,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in stable-kernel-rules.rst",
       "messageId": "<20260806181949.65648-9-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-9-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-9-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/stable-kernel-rules.rst"
       ],
@@ -364,7 +364,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in 5.Posting.rst",
       "messageId": "<20260806181949.65648-10-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-10-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-10-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/5.Posting.rst"
       ],
@@ -400,7 +400,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in 2.Process.rst",
       "messageId": "<20260806181949.65648-11-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-11-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-11-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/2.Process.rst"
       ],
@@ -436,7 +436,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in howto.rst",
       "messageId": "<20260806181949.65648-12-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-12-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-12-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/howto.rst"
       ],
@@ -472,7 +472,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in embargoed-hardware-issues.rst",
       "messageId": "<20260806181949.65648-13-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-13-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-13-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/embargoed-hardware-issues.rst"
       ],
@@ -508,7 +508,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in submitting-patches.rst",
       "messageId": "<20260806181949.65648-14-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-14-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-14-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/submitting-patches.rst"
       ],
@@ -544,7 +544,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in 8.Conclusion.rst",
       "messageId": "<20260806181949.65648-15-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-15-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-15-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/8.Conclusion.rst"
       ],
@@ -585,7 +585,7 @@
       "total": 16,
       "subject": "docs/zh_TW: process: localize terminology in index.rst",
       "messageId": "<20260806181949.65648-16-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-16-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260806181949.65648-16-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/index.rst"
       ],
@@ -621,7 +621,7 @@
       "total": 16,
       "subject": "docs/zh_TW: Add a glossary for Traditional Chinese translations",
       "messageId": "<20260807055343.72309-1-chenyou910331@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260807055343.72309-1-chenyou910331%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260807055343.72309-1-chenyou910331@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/glossary.rst",
         "Documentation/translations/zh_TW/index.rst"

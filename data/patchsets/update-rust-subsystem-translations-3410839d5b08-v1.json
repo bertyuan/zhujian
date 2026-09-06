@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1775619061.git.ben.guo%40openatom.club/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1775619061.git.ben.guo%40openatom.club/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1775619061.git.ben.guo@openatom.club/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1775619061.git.ben.guo@openatom.club/raw",
   "replies": 12,
   "versions": [
     {
@@ -61,7 +61,7 @@
       "total": 4,
       "subject": "docs/zh_CN: update rust/arch-support.rst translation",
       "messageId": "<0e367d0dc8d74287dee1605a48ea80159fa464cb.1775619061.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/0e367d0dc8d74287dee1605a48ea80159fa464cb.1775619061.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/0e367d0dc8d74287dee1605a48ea80159fa464cb.1775619061.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/arch-support.rst"
       ],
@@ -104,7 +104,7 @@
       "total": 4,
       "subject": "docs/zh_CN: update rust/coding-guidelines.rst translation",
       "messageId": "<83b72c91f7ba2a9ca2ae73ab42fd94fcc369220a.1775619061.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/83b72c91f7ba2a9ca2ae73ab42fd94fcc369220a.1775619061.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/83b72c91f7ba2a9ca2ae73ab42fd94fcc369220a.1775619061.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/coding-guidelines.rst"
       ],
@@ -147,7 +147,7 @@
       "total": 4,
       "subject": "docs/zh_CN: update rust/quick-start.rst translation",
       "messageId": "<b5e1246269848fc95d118a722fb11eee88961053.1775619061.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/b5e1246269848fc95d118a722fb11eee88961053.1775619061.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/b5e1246269848fc95d118a722fb11eee88961053.1775619061.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/quick-start.rst"
       ],
@@ -190,7 +190,7 @@
       "total": 4,
       "subject": "docs/zh_CN: update rust/index.rst translation",
       "messageId": "<0be03ec18f006837e45cf900eef4c653e2f0151f.1775619061.git.ben.guo@openatom.club>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/0be03ec18f006837e45cf900eef4c653e2f0151f.1775619061.git.ben.guo%40openatom.club/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/0be03ec18f006837e45cf900eef4c653e2f0151f.1775619061.git.ben.guo@openatom.club/",
       "changedFiles": [
         "Documentation/translations/zh_CN/rust/index.rst"
       ],

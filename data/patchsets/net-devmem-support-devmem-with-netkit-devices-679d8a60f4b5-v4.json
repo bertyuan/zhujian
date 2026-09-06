@@ -44,8 +44,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-0-841b78b99d74%40meta.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-0-841b78b99d74%40meta.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-0-841b78b99d74@meta.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-0-841b78b99d74@meta.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -80,7 +80,7 @@
       "total": 8,
       "subject": "net: convert netmem_tx flag to enum",
       "messageId": "<20260511-tcp-dm-netkit-v4-1-841b78b99d74@meta.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-1-841b78b99d74%40meta.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-1-841b78b99d74@meta.com/",
       "changedFiles": [
         "Documentation/networking/netmem.rst",
         "Documentation/translations/zh_CN/networking/netmem.rst",
@@ -131,7 +131,7 @@
       "total": 8,
       "subject": "net: netkit: declare NETMEM_TX_NO_DMA mode",
       "messageId": "<20260511-tcp-dm-netkit-v4-2-841b78b99d74@meta.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-2-841b78b99d74%40meta.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260511-tcp-dm-netkit-v4-2-841b78b99d74@meta.com/",
       "changedFiles": [
         "Documentation/networking/net_cachelines/net_device.rst",
         "Documentation/networking/netmem.rst",

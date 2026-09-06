@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713%40google.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713%40google.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713@google.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713@google.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 3,
       "subject": "mm: hugetlb: Track used_hpages when getting/putting pages from subpool",
       "messageId": "<20260902-hugetlb-subpool-always-track-used-v1-1-de1cd14bd713@google.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260902-hugetlb-subpool-always-track-used-v1-1-de1cd14bd713%40google.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260902-hugetlb-subpool-always-track-used-v1-1-de1cd14bd713@google.com/",
       "changedFiles": [
         "Documentation/mm/hugetlbfs_reserv.rst",
         "Documentation/translations/zh_CN/mm/hugetlbfs_reserv.rst",

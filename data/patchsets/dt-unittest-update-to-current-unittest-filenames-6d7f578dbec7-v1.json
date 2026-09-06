@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260223111207.54640-1-m.heidelberg%40cab.de/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260223111207.54640-1-m.heidelberg%40cab.de/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260223111207.54640-1-m.heidelberg@cab.de/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260223111207.54640-1-m.heidelberg@cab.de/raw",
   "replies": 1,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs: dt: unittest: update to current unittest filenames",
       "messageId": "<20260223111207.54640-1-m.heidelberg@cab.de>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260223111207.54640-1-m.heidelberg%40cab.de/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260223111207.54640-1-m.heidelberg@cab.de/",
       "changedFiles": [
         "Documentation/devicetree/of_unittest.rst",
         "Documentation/translations/zh_CN/devicetree/of_unittest.rst"

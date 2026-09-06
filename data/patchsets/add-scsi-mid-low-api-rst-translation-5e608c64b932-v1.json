@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250708024139.848025-6-doubled%40leap-io.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250708024139.848025-6-doubled%40leap-io.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250708024139.848025-6-doubled@leap-io.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250708024139.848025-6-doubled@leap-io.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 7,
       "subject": "docs/zh_CN: add scsi_mid_low_api.rst translation",
       "messageId": "<20250708024139.848025-6-doubled@leap-io.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250708024139.848025-6-doubled%40leap-io.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250708024139.848025-6-doubled@leap-io.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi_mid_low_api.rst"

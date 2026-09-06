@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250917135406432vKZ2pELx-bRkvOdfP10Zb%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250917135406432vKZ2pELx-bRkvOdfP10Zb%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250917135406432vKZ2pELx-bRkvOdfP10Zb@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250917135406432vKZ2pELx-bRkvOdfP10Zb@zte.com.cn/raw",
   "replies": 1,
   "versions": [
     {
@@ -63,7 +63,7 @@
       "total": 4,
       "subject": "Docs/zh_CN: Translate skbuff.rst to Simplified Chinese",
       "messageId": "<20250917140010636SMB_b6UYttZyOP2L0K93O@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250917140010636SMB_b6UYttZyOP2L0K93O%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250917140010636SMB_b6UYttZyOP2L0K93O@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/skbuff.rst"

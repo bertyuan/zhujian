@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250918143643417OPRH_RjCXkCa3aCtQEX3Y%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250918143643417OPRH_RjCXkCa3aCtQEX3Y%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250918143643417OPRH_RjCXkCa3aCtQEX3Y@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250918143643417OPRH_RjCXkCa3aCtQEX3Y@zte.com.cn/raw",
   "replies": 1,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "Docs/zh_CN: align title underline for ubifs.rst",
       "messageId": "<20250918143643417OPRH_RjCXkCa3aCtQEX3Y@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250918143643417OPRH_RjCXkCa3aCtQEX3Y%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250918143643417OPRH_RjCXkCa3aCtQEX3Y@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/ubifs.rst"
       ],

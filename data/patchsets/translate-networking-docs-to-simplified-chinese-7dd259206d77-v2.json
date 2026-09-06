@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250814201129510XielEwRpr4QXPx_XBtkhv%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250814201129510XielEwRpr4QXPx_XBtkhv%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250814201129510XielEwRpr4QXPx_XBtkhv@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250814201129510XielEwRpr4QXPx_XBtkhv@zte.com.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -66,7 +66,7 @@
       "total": 4,
       "subject": "Docs/zh_CN: Translate mptcp-sysctl.rst to Simplified Chinese",
       "messageId": "<20250814201312381TGvjbLkruWW4KHzCZuHCV@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250814201312381TGvjbLkruWW4KHzCZuHCV%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250814201312381TGvjbLkruWW4KHzCZuHCV@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/mptcp-sysctl.rst"
@@ -102,7 +102,7 @@
       "total": 4,
       "subject": "Docs/zh_CN: Translate skbuff.rst to Simplified Chinese",
       "messageId": "<202508142028407445nvZxgf2l-bOvTMm2v-zs@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/202508142028407445nvZxgf2l-bOvTMm2v-zs%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/202508142028407445nvZxgf2l-bOvTMm2v-zs@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/skbuff.rst"
@@ -141,7 +141,7 @@
       "total": 4,
       "subject": "Docs/zh_CN: Translate generic-hdlc.rst to Simplified Chinese",
       "messageId": "<20250814202950722BAA5h4UtC6XyB2C5YA2pe@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250814202950722BAA5h4UtC6XyB2C5YA2pe%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250814202950722BAA5h4UtC6XyB2C5YA2pe@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/generic-hdlc.rst",
         "Documentation/translations/zh_CN/networking/index.rst"
@@ -177,7 +177,7 @@
       "total": 4,
       "subject": "Docs/zh_CN: Translate timestamping.rst to Simplified Chinese",
       "messageId": "<20250814203052841vWATRXU4pnku526u5TwPn@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250814203052841vWATRXU4pnku526u5TwPn%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250814203052841vWATRXU4pnku526u5TwPn@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/timestamping.rst"

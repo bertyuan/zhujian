@@ -40,8 +40,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek@gmail.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -61,7 +61,7 @@
       "total": 7,
       "subject": "docs/zh_CN: update DAMON design translation",
       "messageId": "<20260818070358.455768-2-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-2-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-2-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/mm/damon/design.rst"
       ],
@@ -89,7 +89,7 @@
       "total": 7,
       "subject": "docs/zh_CN: add DAMON_STAT usage translation",
       "messageId": "<20260818070358.455768-3-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-3-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-3-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/stat.rst"
       ],
@@ -117,7 +117,7 @@
       "total": 7,
       "subject": "docs/zh_CN: update DAMON index translation",
       "messageId": "<20260818070358.455768-4-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-4-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-4-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/index.rst"
       ],
@@ -145,7 +145,7 @@
       "total": 7,
       "subject": "docs/zh_CN: update DAMON start translation",
       "messageId": "<20260818070358.455768-5-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-5-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-5-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/start.rst"
       ],
@@ -173,7 +173,7 @@
       "total": 7,
       "subject": "docs/zh_CN: update DAMON usage translation",
       "messageId": "<20260818070358.455768-6-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-6-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-6-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst"
       ],
@@ -201,7 +201,7 @@
       "total": 7,
       "subject": "docs/zh_CN: update DAMON reclaim translation",
       "messageId": "<20260818070358.455768-7-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-7-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-7-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/reclaim.rst"
       ],
@@ -229,7 +229,7 @@
       "total": 7,
       "subject": "docs/zh_CN: update DAMON LRU sort translation",
       "messageId": "<20260818070358.455768-8-doehyunbaek@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-8-doehyunbaek%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-8-doehyunbaek@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/lru_sort.rst"
       ],

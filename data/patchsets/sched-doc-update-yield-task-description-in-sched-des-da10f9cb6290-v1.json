@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260403055806.358921-1-user%40fqr-pc/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260403055806.358921-1-user%40fqr-pc/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260403055806.358921-1-user@fqr-pc/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260403055806.358921-1-user@fqr-pc/raw",
   "replies": 1,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "sched/doc: Update yield_task description in sched-design-CFS",
       "messageId": "<20260403055806.358921-1-user@fqr-pc>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260403055806.358921-1-user%40fqr-pc/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260403055806.358921-1-user@fqr-pc/",
       "changedFiles": [
         "Documentation/scheduler/sched-design-CFS.rst",
         "Documentation/translations/sp_SP/scheduler/sched-design-CFS.rst",

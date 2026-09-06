@@ -39,8 +39,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-1-sj%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-1-sj%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-1-sj@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-1-sj@kernel.org/raw",
   "replies": 0,
   "versions": [
     {
@@ -55,7 +55,7 @@
       "total": 8,
       "subject": "Docs/translations/*/admin-guide/mm/damon/usage: remove DAMON debugfs interface documentation",
       "messageId": "<20250106191941.107070-2-sj@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-2-sj%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250106191941.107070-2-sj@kernel.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/mm/damon/usage.rst",
         "Documentation/translations/zh_TW/admin-guide/mm/damon/usage.rst"

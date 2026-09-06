@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_DADDE291CA580302EB7BB40B83A552D6F006%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_DADDE291CA580302EB7BB40B83A552D6F006%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_DADDE291CA580302EB7BB40B83A552D6F006@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_DADDE291CA580302EB7BB40B83A552D6F006@qq.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 10,
       "subject": "docs/zh_CN: add LSM/ipe Chinese translation",
       "messageId": "<tencent_DADDE291CA580302EB7BB40B83A552D6F006@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_DADDE291CA580302EB7BB40B83A552D6F006%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_DADDE291CA580302EB7BB40B83A552D6F006@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/ipe.rst"
       ],

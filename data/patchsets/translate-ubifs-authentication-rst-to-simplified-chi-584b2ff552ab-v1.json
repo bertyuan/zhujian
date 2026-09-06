@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165327644wT54xAeByO_X1pWdScPny%40zte.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165327644wT54xAeByO_X1pWdScPny%40zte.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250718165327644wT54xAeByO_X1pWdScPny@zte.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250718165327644wT54xAeByO_X1pWdScPny@zte.com.cn/raw",
   "replies": 0,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 5,
       "subject": "Docs/zh_CN: Translate ubifs-authentication.rst to Simplified Chinese",
       "messageId": "<20250718165327644wT54xAeByO_X1pWdScPny@zte.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165327644wT54xAeByO_X1pWdScPny%40zte.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250718165327644wT54xAeByO_X1pWdScPny@zte.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/filesystems/index.rst",
         "Documentation/translations/zh_CN/filesystems/ubifs-authentication.rst"

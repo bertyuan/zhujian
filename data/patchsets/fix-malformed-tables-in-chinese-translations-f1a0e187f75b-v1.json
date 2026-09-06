@@ -41,8 +41,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-1-krishnagopi487%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-1-krishnagopi487%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-1-krishnagopi487@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-1-krishnagopi487@gmail.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Fix malformed table",
       "messageId": "<20251003162626.6737-2-krishnagopi487@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-2-krishnagopi487%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-2-krishnagopi487@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/cpu-freq/cpu-drivers.rst"
       ],
@@ -88,7 +88,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Fix malformed table",
       "messageId": "<20251003173926.10048-2-krishnagopi487@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251003173926.10048-2-krishnagopi487%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251003173926.10048-2-krishnagopi487@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/cpu-freq/cpu-drivers.rst"
       ],
@@ -119,7 +119,7 @@
       "total": 2,
       "subject": "docs/zh_TW: Fix malformed table",
       "messageId": "<20251003162626.6737-3-krishnagopi487@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-3-krishnagopi487%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251003162626.6737-3-krishnagopi487@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/cpu-freq/cpu-drivers.rst"
       ],
@@ -150,7 +150,7 @@
       "total": 2,
       "subject": "docs/zh_TW: Fix malformed table",
       "messageId": "<20251003173926.10048-3-krishnagopi487@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251003173926.10048-3-krishnagopi487%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251003173926.10048-3-krishnagopi487@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/cpu-freq/cpu-drivers.rst"
       ],

@@ -43,8 +43,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1757686158.git.doubled%40leap-io-kernel.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1757686158.git.doubled%40leap-io-kernel.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1757686158.git.doubled@leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1757686158.git.doubled@leap-io-kernel.com/raw",
   "replies": 2,
   "versions": [
     {
@@ -59,7 +59,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add scsi/index.rst translation",
       "messageId": "<e83c0c993642dbb0a4530c8aa557c1436aac6152.1757686158.git.doubled@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/e83c0c993642dbb0a4530c8aa557c1436aac6152.1757686158.git.doubled%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/e83c0c993642dbb0a4530c8aa557c1436aac6152.1757686158.git.doubled@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/subsystem-apis.rst"
@@ -91,7 +91,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add scsi.rst translation",
       "messageId": "<0032a24782119ea2900fc38dabcb7e58ba627b90.1757686158.git.doubled@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/0032a24782119ea2900fc38dabcb7e58ba627b90.1757686158.git.doubled%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/0032a24782119ea2900fc38dabcb7e58ba627b90.1757686158.git.doubled@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi.rst"
@@ -123,7 +123,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add scsi_mid_low_api.rst translation",
       "messageId": "<3034906a3df52b0b68eed9937e052a40493992fd.1757686158.git.doubled@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/3034906a3df52b0b68eed9937e052a40493992fd.1757686158.git.doubled%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/3034906a3df52b0b68eed9937e052a40493992fd.1757686158.git.doubled@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi_mid_low_api.rst"
@@ -155,7 +155,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add scsi_eh.rst translation",
       "messageId": "<e63267d517955450f40033a8367804ab5b279fae.1757686158.git.doubled@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/e63267d517955450f40033a8367804ab5b279fae.1757686158.git.doubled%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/e63267d517955450f40033a8367804ab5b279fae.1757686158.git.doubled@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi_eh.rst"
@@ -187,7 +187,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add scsi-parameters.rst translation",
       "messageId": "<9820908a686528e7795a7bd2ba8a5ef1d70c76e3.1757686158.git.doubled@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/9820908a686528e7795a7bd2ba8a5ef1d70c76e3.1757686158.git.doubled%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/9820908a686528e7795a7bd2ba8a5ef1d70c76e3.1757686158.git.doubled@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/scsi-parameters.rst"
@@ -219,7 +219,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add link_power_management_policy.rst translation",
       "messageId": "<2d9ceae5cdca7330395f90af563def824aa63457.1757686158.git.doubled@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/2d9ceae5cdca7330395f90af563def824aa63457.1757686158.git.doubled%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2d9ceae5cdca7330395f90af563def824aa63457.1757686158.git.doubled@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/link_power_management_policy.rst"
@@ -251,7 +251,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add sd-parameters.rst translation",
       "messageId": "<616b8c6ed6313647bd02fc4c8cd17b40c2bcfc5a.1757686158.git.doubled@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/616b8c6ed6313647bd02fc4c8cd17b40c2bcfc5a.1757686158.git.doubled%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/616b8c6ed6313647bd02fc4c8cd17b40c2bcfc5a.1757686158.git.doubled@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/index.rst",
         "Documentation/translations/zh_CN/scsi/sd-parameters.rst"

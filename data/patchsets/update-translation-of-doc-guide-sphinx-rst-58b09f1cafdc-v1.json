@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-1-qiujiandong1998%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-1-qiujiandong1998%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-1-qiujiandong1998@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-1-qiujiandong1998@gmail.com/raw",
   "replies": 5,
   "versions": [
     {
@@ -57,7 +57,7 @@
       "total": 3,
       "subject": "docs/zh_CN: add llvm.rst translation anchor",
       "messageId": "<20260619140245.1982921-2-qiujiandong1998@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-2-qiujiandong1998%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-2-qiujiandong1998@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/kbuild/llvm.rst"
       ],
@@ -85,7 +85,7 @@
       "total": 3,
       "subject": "docs/zh_CN: add process/changes.rst translation",
       "messageId": "<20260619140245.1982921-3-qiujiandong1998@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-3-qiujiandong1998%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-3-qiujiandong1998@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/process/changes.rst"
       ],
@@ -113,7 +113,7 @@
       "total": 3,
       "subject": "docs/zh_CN: update sphinx.rst translation",
       "messageId": "<20260619140245.1982921-4-qiujiandong1998@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-4-qiujiandong1998%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260619140245.1982921-4-qiujiandong1998@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/doc-guide/sphinx.rst"
       ],

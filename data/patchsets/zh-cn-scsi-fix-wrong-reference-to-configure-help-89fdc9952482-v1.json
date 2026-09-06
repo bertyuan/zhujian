@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-1-kezijie%40leap-io-kernel.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-1-kezijie%40leap-io-kernel.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-1-kezijie@leap-io-kernel.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-1-kezijie@leap-io-kernel.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -58,7 +58,7 @@
       "total": 2,
       "subject": "docs: zh_CN: scsi: fix wrong reference to Configure.help",
       "messageId": "<20251116085102.1740613-1-kezijie@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-1-kezijie%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-1-kezijie@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/scsi_mid_low_api.rst"
       ],
@@ -93,7 +93,7 @@
       "total": 2,
       "subject": "docs: zh_CN: scsi: fix broken references in scsi-parameters.rst",
       "messageId": "<20251116085102.1740613-2-kezijie@leap-io-kernel.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-2-kezijie%40leap-io-kernel.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20251116085102.1740613-2-kezijie@leap-io-kernel.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/scsi/scsi-parameters.rst"
       ],

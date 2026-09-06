@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250417080236.4021257-3-shorne%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250417080236.4021257-3-shorne%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250417080236.4021257-3-shorne@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250417080236.4021257-3-shorne@gmail.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 2,
       "subject": "Documentation: openrisc: Update toolchain binaries URL",
       "messageId": "<20250417080236.4021257-3-shorne@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250417080236.4021257-3-shorne%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250417080236.4021257-3-shorne@gmail.com/",
       "changedFiles": [
         "Documentation/arch/openrisc/openrisc_port.rst",
         "Documentation/translations/zh_CN/arch/openrisc/openrisc_port.rst",

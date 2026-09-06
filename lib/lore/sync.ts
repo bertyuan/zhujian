@@ -8,6 +8,7 @@ import { deduplicateMessages } from "./parser.ts";
 import { buildLoreQuery, syncStart } from "./query.ts";
 import { buildPatchsets } from "./series.ts";
 import type { LoreMessage, LoreSource } from "./types";
+import { canonicalLoreMessageUrls } from "./url.ts";
 
 interface LoreSyncState {
   lastSuccessfulSync?: string;
@@ -67,7 +68,14 @@ export function validateLoreMessages(value: unknown): LoreMessage[] {
     if (message.patchId !== undefined && (typeof message.patchId !== "string" || !/^[0-9a-f]{40}$/i.test(message.patchId))) {
       throw new Error(`Invalid cached stable patch-id at index ${index}`);
     }
-    return message as LoreMessage;
+    return {
+      ...message,
+      ...canonicalLoreMessageUrls(
+        message.messageId as string,
+        message.loreUrl as string,
+        message.rawUrl as string,
+      ),
+    } as LoreMessage;
   });
 }
 

@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09@qq.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 10,
       "subject": "docs/zh_CN: add LSM/apparmor Chinese translation",
       "messageId": "<tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_F3D55D1A2C8FB266EE628EF8C68C10DEDF09@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/apparmor.rst"
       ],

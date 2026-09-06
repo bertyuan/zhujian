@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260722100053.71691-1-imcusg%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260722100053.71691-1-imcusg%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260722100053.71691-1-imcusg@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260722100053.71691-1-imcusg@gmail.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -54,7 +54,7 @@
       "total": 1,
       "subject": "docs/zh_CN: Add configurable error injection translation",
       "messageId": "<20260722100053.71691-1-imcusg@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260722100053.71691-1-imcusg%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260722100053.71691-1-imcusg@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/block/error-injection.rst",
         "Documentation/translations/zh_CN/block/index.rst"

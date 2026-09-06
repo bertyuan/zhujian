@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260707085335.2942128-1-luoliang%40kylinos.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260707085335.2942128-1-luoliang%40kylinos.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260707085335.2942128-1-luoliang@kylinos.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260707085335.2942128-1-luoliang@kylinos.cn/raw",
   "replies": 5,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "sched/doc: Fix stale em_pd_energy() reference in sched-energy",
       "messageId": "<20260707085335.2942128-1-luoliang@kylinos.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260707085335.2942128-1-luoliang%40kylinos.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260707085335.2942128-1-luoliang@kylinos.cn/",
       "changedFiles": [
         "Documentation/scheduler/sched-energy.rst",
         "Documentation/translations/zh_CN/scheduler/sched-energy.rst"

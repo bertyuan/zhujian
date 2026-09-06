@@ -1,5 +1,6 @@
 import { normalizeMessageId } from "./parser.ts";
 import type { LoreMessage } from "./types";
+import { loreMessageUrls } from "./url.ts";
 
 function decodeQuotedPrintable(value: string): Buffer {
   const unfolded = value.replace(/=\r?\n/g, "");
@@ -93,7 +94,7 @@ export function parseRfc822Message(raw: string, loreBaseUrl = "https://lore.kern
   const rawMessageId = headers.get("message-id");
   if (!rawMessageId) throw new Error("Malformed message: missing Message-ID");
   const messageId = normalizeMessageId(rawMessageId.match(/<[^<>\s]+>/)?.[0] ?? rawMessageId);
-  const encodedId = encodeURIComponent(messageId.slice(1, -1));
+  const urls = loreMessageUrls(messageId, loreBaseUrl);
   const dateValue = headers.get("date") ?? "";
   const parsedDate = new Date(dateValue);
   if (Number.isNaN(parsedDate.getTime())) throw new Error(`Malformed message ${messageId}: invalid Date`);
@@ -107,8 +108,7 @@ export function parseRfc822Message(raw: string, loreBaseUrl = "https://lore.kern
     ...(inReplyToMatch ? { inReplyTo: normalizeMessageId(inReplyToMatch) } : {}),
     references,
     body: decodeBody(headers, raw.slice(separator + lineBreakLength)).trimEnd(),
-    loreUrl: `${loreBaseUrl}${encodedId}/`,
-    rawUrl: `${loreBaseUrl}${encodedId}/raw`,
+    ...urls,
   };
 }
 

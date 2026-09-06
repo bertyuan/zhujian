@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1784866896.git.businiaoanka%40anka1.top/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1784866896.git.businiaoanka%40anka1.top/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1784866896.git.businiaoanka@anka1.top/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1784866896.git.businiaoanka@anka1.top/raw",
   "replies": 2,
   "versions": [
     {
@@ -74,7 +74,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add networking team documentation Chinese translation",
       "messageId": "<2aa998eee1428ef5bcaeb9673ecbe0693e8a790c.1784866896.git.businiaoanka@anka1.top>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/2aa998eee1428ef5bcaeb9673ecbe0693e8a790c.1784866896.git.businiaoanka%40anka1.top/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2aa998eee1428ef5bcaeb9673ecbe0693e8a790c.1784866896.git.businiaoanka@anka1.top/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/team.rst"
       ],
@@ -102,7 +102,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add NIC SR-IOV APIs Chinese translation",
       "messageId": "<e8b43e2bdb7b8000b8cc9869114dab8adaa424e7.1784866896.git.businiaoanka@anka1.top>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/e8b43e2bdb7b8000b8cc9869114dab8adaa424e7.1784866896.git.businiaoanka%40anka1.top/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/e8b43e2bdb7b8000b8cc9869114dab8adaa424e7.1784866896.git.businiaoanka@anka1.top/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/sriov.rst"
       ],
@@ -130,7 +130,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add Softnet Driver Issues Chinese translation",
       "messageId": "<8681cbc121de53ef1afab18f138f02e12fd25de6.1784866896.git.businiaoanka@anka1.top>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/8681cbc121de53ef1afab18f138f02e12fd25de6.1784866896.git.businiaoanka%40anka1.top/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/8681cbc121de53ef1afab18f138f02e12fd25de6.1784866896.git.businiaoanka@anka1.top/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/driver.rst"
       ],
@@ -158,7 +158,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add ipv6 Chinese translation",
       "messageId": "<5c8524623ad3faf1eb9eff13c2ed9813672aa351.1784866896.git.businiaoanka@anka1.top>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/5c8524623ad3faf1eb9eff13c2ed9813672aa351.1784866896.git.businiaoanka%40anka1.top/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/5c8524623ad3faf1eb9eff13c2ed9813672aa351.1784866896.git.businiaoanka@anka1.top/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/ipv6.rst"
       ],
@@ -186,7 +186,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add LSM/SeLinux secid Chinese translation",
       "messageId": "<51e5bef10ab3af01a0dcca9697dd94e386a5f7f1.1784866896.git.businiaoanka@anka1.top>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/51e5bef10ab3af01a0dcca9697dd94e386a5f7f1.1784866896.git.businiaoanka%40anka1.top/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/51e5bef10ab3af01a0dcca9697dd94e386a5f7f1.1784866896.git.businiaoanka@anka1.top/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/secid.rst"
       ],

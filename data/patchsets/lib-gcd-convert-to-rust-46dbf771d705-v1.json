@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/CAC5penpL_yet9HHqC%3DBNV_EP2wDe3zpsjFw77T8356veNV0rsw%40mail.gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/CAC5penpL_yet9HHqC%3DBNV_EP2wDe3zpsjFw77T8356veNV0rsw%40mail.gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/CAC5penpL_yet9HHqC=BNV_EP2wDe3zpsjFw77T8356veNV0rsw@mail.gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/CAC5penpL_yet9HHqC=BNV_EP2wDe3zpsjFw77T8356veNV0rsw@mail.gmail.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 1,
       "subject": "lib/gcd: Convert to Rust",
       "messageId": "<CAC5penpL_yet9HHqC=BNV_EP2wDe3zpsjFw77T8356veNV0rsw@mail.gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/CAC5penpL_yet9HHqC%3DBNV_EP2wDe3zpsjFw77T8356veNV0rsw%40mail.gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/CAC5penpL_yet9HHqC=BNV_EP2wDe3zpsjFw77T8356veNV0rsw@mail.gmail.com/",
       "changedFiles": [
         "Documentation/core-api/kernel-api.rst",
         "Documentation/translations/zh_CN/core-api/kernel-api.rst",

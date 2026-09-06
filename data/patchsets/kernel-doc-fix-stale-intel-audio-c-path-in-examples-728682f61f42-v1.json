@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260315154124.49834-1-xaum.io%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260315154124.49834-1-xaum.io%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260315154124.49834-1-xaum.io@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260315154124.49834-1-xaum.io@gmail.com/raw",
   "replies": 1,
   "versions": [
     {
@@ -49,7 +49,7 @@
       "total": 3,
       "subject": "docs: kernel-doc: fix stale intel_audio.c path in examples",
       "messageId": "<20260315154124.49834-1-xaum.io@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260315154124.49834-1-xaum.io%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260315154124.49834-1-xaum.io@gmail.com/",
       "changedFiles": [
         "Documentation/doc-guide/kernel-doc.rst",
         "Documentation/translations/it_IT/doc-guide/kernel-doc.rst",

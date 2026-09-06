@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260603193408.140445-1-kipp455187%40gmail.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260603193408.140445-1-kipp455187%40gmail.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260603193408.140445-1-kipp455187@gmail.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260603193408.140445-1-kipp455187@gmail.com/raw",
   "replies": 3,
   "versions": [
     {
@@ -52,7 +52,7 @@
       "total": 1,
       "subject": "docs/zh_TW: replace 接口 with 介面 in stable-api-nonsense.rst",
       "messageId": "<20260603193408.140445-1-kipp455187@gmail.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260603193408.140445-1-kipp455187%40gmail.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260603193408.140445-1-kipp455187@gmail.com/",
       "changedFiles": [
         "Documentation/translations/zh_TW/process/stable-api-nonsense.rst"
       ],

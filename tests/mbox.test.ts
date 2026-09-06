@@ -35,7 +35,7 @@ Reviewed-by: Reviewer <reviewer@example.com>
   assert.equal(messages.length, 2);
   assert.equal(messages[0].subject, "[PATCH] docs/zh_CN: fix typo");
   assert.match(messages[0].body, /^\+\+\+ b\/Documentation/m);
-  assert.equal(messages[0].loreUrl, "https://lore.kernel.org/linux-doc/patch%40example.com/");
+  assert.equal(messages[0].loreUrl, "https://lore.kernel.org/linux-doc/patch@example.com/");
   assert.equal(messages[1].inReplyTo, "<patch@example.com>");
   assert.deepEqual(messages[1].references, ["<patch@example.com>"]);
 });

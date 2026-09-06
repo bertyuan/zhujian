@@ -38,8 +38,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-1-anka%40stu.cdut.edu.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-1-anka%40stu.cdut.edu.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-1-anka@stu.cdut.edu.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-1-anka@stu.cdut.edu.cn/raw",
   "replies": 16,
   "versions": [
     {
@@ -74,7 +74,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add networking team documentation Chinese translation",
       "messageId": "<20260817021340.17318-2-anka@stu.cdut.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-2-anka%40stu.cdut.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-2-anka@stu.cdut.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/team.rst"
@@ -115,7 +115,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add NIC SR-IOV APIs Chinese translation",
       "messageId": "<20260817021340.17318-3-anka@stu.cdut.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-3-anka%40stu.cdut.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-3-anka@stu.cdut.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/sriov.rst"
@@ -156,7 +156,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add Softnet Driver Issues Chinese translation",
       "messageId": "<20260817021340.17318-4-anka@stu.cdut.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-4-anka%40stu.cdut.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-4-anka@stu.cdut.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/driver.rst",
         "Documentation/translations/zh_CN/networking/index.rst"
@@ -197,7 +197,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add ipv6 Chinese translation",
       "messageId": "<20260817021340.17318-5-anka@stu.cdut.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-5-anka%40stu.cdut.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-5-anka@stu.cdut.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/ipv6.rst"
@@ -238,7 +238,7 @@
       "total": 5,
       "subject": "docs/zh_CN: Add LSM/SeLinux secid Chinese translation",
       "messageId": "<20260817021340.17318-6-anka@stu.cdut.edu.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-6-anka%40stu.cdut.edu.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260817021340.17318-6-anka@stu.cdut.edu.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/networking/index.rst",
         "Documentation/translations/zh_CN/networking/secid.rst"

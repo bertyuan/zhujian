@@ -33,8 +33,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09%40qq.com/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09%40qq.com/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09@qq.com/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09@qq.com/raw",
   "replies": 0,
   "versions": [
     {
@@ -54,7 +54,7 @@
       "total": 10,
       "subject": "docs/zh_CN: add LSM/LoadPin Chinese translation",
       "messageId": "<tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09@qq.com>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09%40qq.com/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/tencent_4D8EDAC71A10FADF8B5C682C57B266EE1A09@qq.com/",
       "changedFiles": [
         "Documentation/translations/zh_CN/admin-guide/LSM/LoadPin.rst"
       ],

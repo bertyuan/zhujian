@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-1-alexs%40kernel.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-1-alexs%40kernel.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-1-alexs@kernel.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-1-alexs@kernel.org/raw",
   "replies": 12,
   "versions": [
     {
@@ -53,7 +53,7 @@
       "total": 2,
       "subject": "docs/zh_CN: add maintainer tree for Chinese doc pickup",
       "messageId": "<20250213054222.21776-1-alexs@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-1-alexs%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-1-alexs@kernel.org/",
       "changedFiles": [
         "MAINTAINERS"
       ],
@@ -88,7 +88,7 @@
       "total": 2,
       "subject": "docs/zh_CN: add few request for Chinese translation",
       "messageId": "<20250213054222.21776-2-alexs@kernel.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-2-alexs%40kernel.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250213054222.21776-2-alexs@kernel.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/index.rst"
       ],

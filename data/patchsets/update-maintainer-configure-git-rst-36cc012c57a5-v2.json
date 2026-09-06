@@ -35,8 +35,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-0-ab194db8c6b9%40wyuan.org/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-0-ab194db8c6b9%40wyuan.org/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org/raw",
   "replies": 0,
   "versions": [
     {
@@ -51,7 +51,7 @@
       "total": 2,
       "subject": "docs/zh_CN: sync maintainer/configure-git with upstream",
       "messageId": "<20260905-configure-git-v2-1-ab194db8c6b9@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-1-ab194db8c6b9%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-1-ab194db8c6b9@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/maintainer/configure-git.rst"
       ],
@@ -79,7 +79,7 @@
       "total": 2,
       "subject": "docs/zh_CN: improve maintainer/pull-requests translation",
       "messageId": "<20260905-configure-git-v2-2-ab194db8c6b9@wyuan.org>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-2-ab194db8c6b9%40wyuan.org/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20260905-configure-git-v2-2-ab194db8c6b9@wyuan.org/",
       "changedFiles": [
         "Documentation/translations/zh_CN/maintainer/pull-requests.rst"
       ],

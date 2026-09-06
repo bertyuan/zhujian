@@ -39,8 +39,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1738835231.git.zhangwei%40cqsoftware.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1738835231.git.zhangwei%40cqsoftware.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1738835231.git.zhangwei@cqsoftware.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1738835231.git.zhangwei@cqsoftware.com.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -70,7 +70,7 @@
       "total": 3,
       "subject": "docs/zh_CN: Add self-protection index Chinese translation",
       "messageId": "<0cad3c793e58e8e9b12516ee3ce6c0c27011bbc6.1738835231.git.zhangwei@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/0cad3c793e58e8e9b12516ee3ce6c0c27011bbc6.1738835231.git.zhangwei%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/0cad3c793e58e8e9b12516ee3ce6c0c27011bbc6.1738835231.git.zhangwei@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/self-protection.rst"
@@ -114,7 +114,7 @@
       "total": 3,
       "subject": "docs/zh_CN: Add keys index Chinese translation",
       "messageId": "<02843f1e6bcab0fdf5b2433bc3762b51f84a963c.1738835231.git.zhangwei@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/02843f1e6bcab0fdf5b2433bc3762b51f84a963c.1738835231.git.zhangwei%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/02843f1e6bcab0fdf5b2433bc3762b51f84a963c.1738835231.git.zhangwei@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/keys/index.rst"
       ],
@@ -145,7 +145,7 @@
       "total": 3,
       "subject": "docs/zh_CN: Add secrets index Chinese translation",
       "messageId": "<aa63044a75111d87086a6dfbbda7d6e608df4391.1738835231.git.zhangwei@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/aa63044a75111d87086a6dfbbda7d6e608df4391.1738835231.git.zhangwei%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/aa63044a75111d87086a6dfbbda7d6e608df4391.1738835231.git.zhangwei@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/secrets/index.rst"
       ],

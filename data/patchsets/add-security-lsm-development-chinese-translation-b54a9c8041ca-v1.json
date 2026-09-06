@@ -36,8 +36,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/20250312024226.14804-1-zhaoshuo%40cqsoftware.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/20250312024226.14804-1-zhaoshuo%40cqsoftware.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/20250312024226.14804-1-zhaoshuo@cqsoftware.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/20250312024226.14804-1-zhaoshuo@cqsoftware.com.cn/raw",
   "replies": 2,
   "versions": [
     {
@@ -62,7 +62,7 @@
       "total": 1,
       "subject": "docs/zh_CN: Add security lsm-development Chinese translation",
       "messageId": "<20250312024226.14804-1-zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/20250312024226.14804-1-zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/20250312024226.14804-1-zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/lsm-development.rst"

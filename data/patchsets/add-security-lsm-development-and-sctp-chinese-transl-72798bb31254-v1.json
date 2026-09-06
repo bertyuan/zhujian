@@ -37,8 +37,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1742542887.git.zhaoshuo%40cqsoftware.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1742542887.git.zhaoshuo%40cqsoftware.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1742542887.git.zhaoshuo@cqsoftware.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1742542887.git.zhaoshuo@cqsoftware.com.cn/raw",
   "replies": 3,
   "versions": [
     {
@@ -53,7 +53,7 @@
       "total": 2,
       "subject": "docs/zh_CN: Add security SCTP Chinese translation",
       "messageId": "<be59d1786013dcac314949245132ff72e9deb827.1742542887.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/be59d1786013dcac314949245132ff72e9deb827.1742542887.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/be59d1786013dcac314949245132ff72e9deb827.1742542887.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/SCTP.rst",
         "Documentation/translations/zh_CN/security/index.rst"

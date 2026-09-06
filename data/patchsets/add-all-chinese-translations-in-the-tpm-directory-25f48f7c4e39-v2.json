@@ -43,8 +43,8 @@
     }
   },
   "rfc": false,
-  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
-  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1737354981.git.zhaoshuo%40cqsoftware.com.cn/raw",
+  "loreUrl": "https://lore.kernel.org/linux-doc/cover.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
+  "rawUrl": "https://lore.kernel.org/linux-doc/cover.1737354981.git.zhaoshuo@cqsoftware.com.cn/raw",
   "replies": 11,
   "versions": [
     {
@@ -69,7 +69,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add tpm index Chinese translation",
       "messageId": "<ff15a31080a2671da3e114fe95f2a19e294367bc.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/ff15a31080a2671da3e114fe95f2a19e294367bc.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/ff15a31080a2671da3e114fe95f2a19e294367bc.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/index.rst",
         "Documentation/translations/zh_CN/security/tpm/index.rst"
@@ -108,7 +108,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add tpm tpm_event_log Chinese translation",
       "messageId": "<0287c7309ecb1bf0ffd40d363f43f148beea0a18.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/0287c7309ecb1bf0ffd40d363f43f148beea0a18.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/0287c7309ecb1bf0ffd40d363f43f148beea0a18.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_event_log.rst"
@@ -147,7 +147,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add tpm tpm-security Chinese translation",
       "messageId": "<3fd79c75add3f55a7dcd4cc2957b73795753a2ef.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/3fd79c75add3f55a7dcd4cc2957b73795753a2ef.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/3fd79c75add3f55a7dcd4cc2957b73795753a2ef.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm-security.rst"
@@ -179,7 +179,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add tpm tpm_tis Chinese translation",
       "messageId": "<2c161d628a9d6cf2f8cb9a72511838207015faf1.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/2c161d628a9d6cf2f8cb9a72511838207015faf1.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/2c161d628a9d6cf2f8cb9a72511838207015faf1.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_tis.rst"
@@ -218,7 +218,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add tpm tpm_vtpm_proxy Chinese translation",
       "messageId": "<a80636fe9d79f6983e7f09f3de52d0092dd2ebdb.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/a80636fe9d79f6983e7f09f3de52d0092dd2ebdb.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/a80636fe9d79f6983e7f09f3de52d0092dd2ebdb.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_vtpm_proxy.rst"
@@ -250,7 +250,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add tpm xen-tpmfront Chinese translation",
       "messageId": "<e98c3702e7eaba7296bed5a8ab40cdff3183f607.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/e98c3702e7eaba7296bed5a8ab40cdff3183f607.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/e98c3702e7eaba7296bed5a8ab40cdff3183f607.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/xen-tpmfront.rst"
@@ -289,7 +289,7 @@
       "total": 7,
       "subject": "docs/zh_CN: Add tpm tpm_ftpm_tee Chinese translation",
       "messageId": "<b5ab071a6869a52c5ef16fb96d710b80cfef96a4.1737354981.git.zhaoshuo@cqsoftware.com.cn>",
-      "loreUrl": "https://lore.kernel.org/linux-doc/b5ab071a6869a52c5ef16fb96d710b80cfef96a4.1737354981.git.zhaoshuo%40cqsoftware.com.cn/",
+      "loreUrl": "https://lore.kernel.org/linux-doc/b5ab071a6869a52c5ef16fb96d710b80cfef96a4.1737354981.git.zhaoshuo@cqsoftware.com.cn/",
       "changedFiles": [
         "Documentation/translations/zh_CN/security/tpm/index.rst",
         "Documentation/translations/zh_CN/security/tpm/tpm_ftpm_tee.rst"
