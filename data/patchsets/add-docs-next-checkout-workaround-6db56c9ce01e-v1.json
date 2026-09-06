@@ -7,8 +7,8 @@
   "postedAt": "2026-07-09T15:25:29.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "in-review",
-  "lifecycle": "active",
+  "status": "withdrawn",
+  "lifecycle": "withdrawn",
   "reviewState": "discussion",
   "reviewReplies": 5,
   "latestRevision": true,
@@ -35,7 +35,16 @@
   "rfc": false,
   "loreUrl": "https://lore.kernel.org/linux-doc/4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy%40wyuan.org/",
   "rawUrl": "https://lore.kernel.org/linux-doc/4e5e728877c77a89f6c59e89c88ba8ffa8842643.1783609005.git.wy%40wyuan.org/raw",
-  "replies": 10,
+  "replies": 11,
+  "lifecycleEvent": {
+    "state": "withdrawn",
+    "source": "mail",
+    "date": "2026-09-06T12:19:37.000Z",
+    "messageId": "<ap1aWcn8dXLjLgX5@wyuan.org>",
+    "loreUrl": "https://lore.kernel.org/linux-doc/ap1aWcn8dXLjLgX5%40wyuan.org/",
+    "actorName": "Weijie Yuan",
+    "actorEmail": "wy@wyuan.org"
+  },
   "versions": [
     {
       "revision": 1,
