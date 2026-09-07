@@ -69,8 +69,8 @@ export default async function MessagePage({ params }: { params: Promise<{ id: st
             <span><a className="text-link" href={message.loreUrl} target="_blank" rel="noreferrer">lore message ↗</a> · <a className="text-link" href={message.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span>
           </div>
         </div>
-        <aside className="detail-upstream" aria-label="Upstream progress">
-          <h2>Upstream progress</h2>
+        <aside className="detail-upstream" aria-label="Upstream status">
+          <h2>Upstream status</h2>
           <Pipeline trees={patch.trees} compact />
         </aside>
       </div>

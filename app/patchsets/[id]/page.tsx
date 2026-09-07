@@ -40,8 +40,8 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
           <div className="kv-row"><span className="kv-label">Message-ID:</span><span className="break-anywhere">{patchset.messageIds[0]}</span></div>
           <div className="kv-row"><span className="kv-label">Links:</span><span><a className="text-link" href={patchset.loreUrl} target="_blank" rel="noreferrer">lore thread ↗</a> · <a className="text-link" href={patchset.rawUrl} target="_blank" rel="noreferrer">raw mail ↗</a></span></div>
         </div>
-        <aside className="detail-upstream" aria-label="Upstream progress">
-          <h2>Upstream progress</h2>
+        <aside className="detail-upstream" aria-label="Upstream status">
+          <h2>Upstream status</h2>
           <Pipeline trees={patchset.trees} compact />
         </aside>
       </div>
