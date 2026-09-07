@@ -37,9 +37,13 @@ export default async function MessagePage({ params }: { params: Promise<{ id: st
       <nav className="back-nav message-detail-nav" aria-label="Patch navigation">
         <Link href="/messages">← Back to messages</Link>
         <span className="message-detail-nav-links">
-          {previous ? <Link href={messagePath(previous.messageId)}>← Previous</Link> : <span className="disabled-link">← Previous</span>}
+          {patchset.patches.length > 1 && (previous
+            ? <Link href={messagePath(previous.messageId)}>← Previous</Link>
+            : <span className="disabled-link">← Previous</span>)}
           <Link href={`/patchsets/${patchset.id}`}>Series</Link>
-          {next ? <Link href={messagePath(next.messageId)}>Next →</Link> : <span className="disabled-link">Next →</span>}
+          {patchset.patches.length > 1 && (next
+            ? <Link href={messagePath(next.messageId)}>Next →</Link>
+            : <span className="disabled-link">Next →</span>)}
         </span>
       </nav>
 
