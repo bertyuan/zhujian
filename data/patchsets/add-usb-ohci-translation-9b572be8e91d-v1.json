@@ -10,7 +10,7 @@
   "status": "in-review",
   "lifecycle": "active",
   "reviewState": "discussion",
-  "reviewReplies": 3,
+  "reviewReplies": 4,
   "latestRevision": true,
   "messageIds": [
     "<CAMnqnYxPHeXo6CsuKRGH=oixAsAa0z1_++266yzKW7qR6cqykw@mail.gmail.com>"
@@ -35,7 +35,7 @@
   "rfc": false,
   "loreUrl": "https://lore.kernel.org/linux-doc/CAMnqnYxPHeXo6CsuKRGH=oixAsAa0z1_++266yzKW7qR6cqykw@mail.gmail.com/",
   "rawUrl": "https://lore.kernel.org/linux-doc/CAMnqnYxPHeXo6CsuKRGH=oixAsAa0z1_++266yzKW7qR6cqykw@mail.gmail.com/raw",
-  "replies": 5,
+  "replies": 8,
   "versions": [
     {
       "revision": 1,
