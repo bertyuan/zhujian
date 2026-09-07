@@ -58,7 +58,7 @@ export function NeedsReviewTable({ items }: { items: ReviewQueueItem[] }) {
                 <col className="review-upstream-column" />
                 <col className="review-action-column" />
               </colgroup>
-              <thead><tr><th>Subject</th><th>Author</th><th>Date</th><th className="version-heading">Version</th><th>Lang</th><th>Review activity</th><th>Upstream</th><th>Action</th></tr></thead>
+              <thead><tr><th>Subject</th><th>Author</th><th>Date</th><th className="version-heading">Version</th><th>Lang</th><th>Review activity</th><th>Upstream</th><th className="review-action-cell">Action</th></tr></thead>
               <tbody>
                 {visible.map((item) => (
                   <tr key={item.id}>
@@ -72,7 +72,7 @@ export function NeedsReviewTable({ items }: { items: ReviewQueueItem[] }) {
                       <span className="review-progress">Reviewed/Acked {item.reviewedPatches}/{item.patchCount}</span>
                     </td>
                     <td><UpstreamLights trees={item.trees} /></td>
-                    <td><Link className="control-button nowrap" href={messagePath(item.openMessageId)}>Review →</Link></td>
+                    <td className="review-action-cell"><Link className="control-button nowrap" href={messagePath(item.openMessageId)}>Review →</Link></td>
                   </tr>
                 ))}
               </tbody>
