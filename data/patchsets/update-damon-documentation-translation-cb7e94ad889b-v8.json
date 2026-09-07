@@ -7,10 +7,10 @@
   "postedAt": "2026-08-18T07:03:42.000Z",
   "language": "zh_CN",
   "patchCount": 7,
-  "status": "waiting-for-review",
+  "status": "queued-alex",
   "lifecycle": "active",
-  "reviewState": "waiting",
-  "reviewReplies": 0,
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20260818070358.455768-1-doehyunbaek@gmail.com>",
@@ -24,9 +24,10 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 7
+      "state": "confirmed",
+      "matched": 7,
+      "total": 7,
+      "commit": "46ac097616778604211b271d98671fd61c4f6409"
     },
     "corbet": {
       "state": "missing",
@@ -42,7 +43,7 @@
   "rfc": false,
   "loreUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek@gmail.com/",
   "rawUrl": "https://lore.kernel.org/linux-doc/20260818070358.455768-1-doehyunbaek@gmail.com/raw",
-  "replies": 0,
+  "replies": 1,
   "versions": [
     {
       "revision": 7,
@@ -68,9 +69,10 @@
       "patchId": "eea699ee685e6f920855086db2a0a7d0bc1b1646",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "46ac097616778604211b271d98671fd61c4f6409"
         },
         "corbet": {
           "state": "missing",
@@ -96,9 +98,10 @@
       "patchId": "9cc531ceb5a07e7d02049c419c0b1639adee281a",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "aad77d32d1f6498730097bba1650bc7be041c2f5"
         },
         "corbet": {
           "state": "missing",
@@ -124,9 +127,10 @@
       "patchId": "0588a85c9dc43392b93f2c82dee11e557f8cbb87",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "dbe3494cdd805980cd18106b631d7eb774adc5ea"
         },
         "corbet": {
           "state": "missing",
@@ -152,9 +156,10 @@
       "patchId": "ca9eada723271dd61bf4be9e0bd2aa988d1bf8fb",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "86053e840adb2f9426560fc97571e924d3692fe6"
         },
         "corbet": {
           "state": "missing",
@@ -180,9 +185,10 @@
       "patchId": "7bff58491a237ce56099454665a3ed1f7ef20fad",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "54b4bbb0736250dbf7a90e0b97af59421eef27d4"
         },
         "corbet": {
           "state": "missing",
@@ -208,9 +214,10 @@
       "patchId": "30b4026798bd1f3aa26278d2a7daab170b734509",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "407d868e16c67ed5666e52b1f982b4484590dc5e"
         },
         "corbet": {
           "state": "missing",
@@ -236,9 +243,10 @@
       "patchId": "e5d1320c8df9b15b0d478003d6acfb69285ae65b",
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "a7ebb31bf511a7e23db3738f7f6931b30f2659e3"
         },
         "corbet": {
           "state": "missing",

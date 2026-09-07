@@ -7,10 +7,10 @@
   "postedAt": "2026-08-19T02:55:35.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "waiting-for-review",
+  "status": "in-review",
   "lifecycle": "active",
-  "reviewState": "waiting",
-  "reviewReplies": 0,
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20260819025535.2967566-1-ye.liu@linux.dev>"
@@ -35,7 +35,7 @@
   "rfc": false,
   "loreUrl": "https://lore.kernel.org/linux-doc/20260819025535.2967566-1-ye.liu@linux.dev/",
   "rawUrl": "https://lore.kernel.org/linux-doc/20260819025535.2967566-1-ye.liu@linux.dev/raw",
-  "replies": 0,
+  "replies": 1,
   "versions": [
     {
       "revision": 1,
