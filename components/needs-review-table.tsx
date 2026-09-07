@@ -72,7 +72,7 @@ export function NeedsReviewTable({ items }: { items: ReviewQueueItem[] }) {
                       <span className="review-progress">Reviewed/Acked {item.reviewedPatches}/{item.patchCount}</span>
                     </td>
                     <td><UpstreamLights trees={item.trees} /></td>
-                    <td className="review-action-cell"><Link className="control-button nowrap" href={messagePath(item.openMessageId)}>Review →</Link></td>
+                    <td><div className="review-action-wrap"><Link className="control-button nowrap" href={messagePath(item.openMessageId)}>Review →</Link></div></td>
                   </tr>
                 ))}
               </tbody>

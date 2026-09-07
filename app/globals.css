@@ -232,7 +232,7 @@ main { min-height: calc(100vh - 118px); }
 .review-table .light-label, .review-table .light-count { grid-column: 2; min-width: 0; white-space: nowrap; }
 .review-table .light-label { grid-row: 1; }
 .review-table .light-count { grid-row: 2; }
-.review-table .review-action-cell { text-align: center; }
+.review-action-wrap { display: flex; justify-content: center; width: 100%; }
 
 .tag { background: var(--tag-bg); border: 1px solid var(--tag-bg); border-radius: 3px; color: var(--tag-text); display: inline-block; font-size: .75em; padding: 1px 4px; white-space: nowrap; }
 .badge-tw { filter: hue-rotate(35deg); }
