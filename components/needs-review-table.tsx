@@ -55,7 +55,7 @@ export function NeedsReviewTable({ items }: { items: ReviewQueueItem[] }) {
                 <col className="patchset-version-column" />
                 <col className="patchset-language-column" />
                 <col className="review-activity-column" />
-                <col className="patchset-upstream-column" />
+                <col className="review-upstream-column" />
                 <col className="review-action-column" />
               </colgroup>
               <thead><tr><th>Subject</th><th>Author</th><th>Date</th><th className="version-heading">Version</th><th>Lang</th><th>Review activity</th><th>Upstream</th><th>Action</th></tr></thead>

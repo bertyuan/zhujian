@@ -49,8 +49,5 @@ export function buildReviewQueue(patchsets: PatchsetDetail[]): ReviewQueueItem[]
         trees: patchset.trees,
       };
     })
-    .toSorted((left, right) => (
-      (left.reviewState === "waiting" ? 0 : 1) - (right.reviewState === "waiting" ? 0 : 1)
-      || Date.parse(left.postedAt) - Date.parse(right.postedAt)
-    ));
+    .toSorted((left, right) => Date.parse(right.postedAt) - Date.parse(left.postedAt));
 }

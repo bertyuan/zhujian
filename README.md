@@ -59,8 +59,8 @@ so serving a patch does not require a runtime request to lore.
 
 The `Needs review` page is the primary work queue. It contains active latest
 revisions that have not been confirmed in Alex's `docs-next`, placing series
-without an external reply first and then sorting oldest first. “Discussion
-started” is only an activity signal, not proof that review is complete. The old
+in newest-first order, matching the Patchsets page. “Discussion started” is
+only an activity signal, not proof that review is complete. The old
 upstream board remains available at `/board`, but is no longer in the primary
 navigation.
 

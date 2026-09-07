@@ -193,7 +193,8 @@ main { min-height: calc(100vh - 118px); }
 .patchset-upstream-column { width: 32ch; }
 .review-subject-column { width: auto; }
 .review-activity-column { width: 21ch; }
-.review-action-column { width: 11ch; }
+.review-upstream-column { width: 27ch; }
+.review-action-column { width: 13ch; }
 .patch-table th, .patch-table td { border-bottom: 1px solid var(--border-light); padding: 6px 8px; text-align: left; vertical-align: top; }
 .patch-table th { background: var(--th-bg); font-weight: 600; white-space: nowrap; }
 .patch-table tbody tr { cursor: pointer; }

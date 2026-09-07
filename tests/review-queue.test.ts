@@ -41,8 +41,8 @@ function detail(id: string, postedAt: string, reviewState: PatchsetReviewState =
   };
 }
 
-test("keeps only active latest pre-Alex series and prioritizes untouched work", () => {
-  const discussion = detail("discussion-v1", "2026-01-01T00:00:00Z", "discussion");
+test("keeps only active latest pre-Alex series and sorts newest first", () => {
+  const discussion = detail("discussion-v1", "2026-03-01T00:00:00Z", "discussion");
   const waiting = detail("waiting-v1", "2026-02-01T00:00:00Z");
   const withdrawn = detail("withdrawn-v1", "2026-03-01T00:00:00Z");
   withdrawn.lifecycle = "withdrawn";
@@ -52,6 +52,6 @@ test("keeps only active latest pre-Alex series and prioritizes untouched work", 
 
   assert.deepEqual(
     buildReviewQueue([discussion, queued, withdrawn, waiting]).map((item) => item.id),
-    ["waiting-v1", "discussion-v1"],
+    ["discussion-v1", "waiting-v1"],
   );
 });

@@ -11,7 +11,7 @@ export default async function NeedsReviewPage() {
       <div className="page-heading">
         <div>
           <h1>Needs review</h1>
-          <p>Active latest revisions not yet found in Alex&apos;s docs-next. Oldest untouched series appear first.</p>
+          <p>Active latest revisions not yet found in Alex&apos;s docs-next. Newest series appear first.</p>
         </div>
         <span className="heading-count">{untouched} without external replies · {items.length} total</span>
       </div>
