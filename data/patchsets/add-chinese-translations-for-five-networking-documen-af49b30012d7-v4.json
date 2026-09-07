@@ -22,9 +22,10 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
-      "matched": 0,
-      "total": 5
+      "state": "partial",
+      "matched": 3,
+      "total": 5,
+      "commit": "b8b9219ad4a6496bab49c6208ed0645149268461"
     },
     "corbet": {
       "state": "missing",
@@ -94,9 +95,10 @@
       ],
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "b8b9219ad4a6496bab49c6208ed0645149268461"
         },
         "corbet": {
           "state": "missing",
@@ -135,9 +137,10 @@
       ],
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "b0fc69669752b5c36dd35afa64cd9e1256744554"
         },
         "corbet": {
           "state": "missing",
@@ -176,9 +179,10 @@
       ],
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "746593619f130779f8647e7b9ae58a926bce7257"
         },
         "corbet": {
           "state": "missing",
@@ -217,9 +221,10 @@
       ],
       "trees": {
         "alex": {
-          "state": "missing",
-          "matched": 0,
-          "total": 1
+          "state": "confirmed",
+          "matched": 1,
+          "total": 1,
+          "commit": "bda9f43bfbcfc4aa940c82920de030e66f3adfe7"
         },
         "corbet": {
           "state": "missing",
@@ -253,9 +258,10 @@
       ],
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "2e39566857f11dc999409cb24fb9c1814244b34c"
         },
         "corbet": {
           "state": "missing",

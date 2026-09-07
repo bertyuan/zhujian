@@ -223,10 +223,10 @@
     "postedAt": "2026-08-24T04:37:59.000Z",
     "language": "zh_CN",
     "patchCount": 5,
-    "status": "in-review",
+    "status": "queued-alex",
     "lifecycle": "active",
     "reviewState": "discussion",
-    "reviewReplies": 1,
+    "reviewReplies": 7,
     "latestRevision": true,
     "messageIds": [
       "<20260824043806.46731-1-anka@stu.cdut.edu.cn>",
@@ -238,9 +238,10 @@
     ],
     "trees": {
       "alex": {
-        "state": "missing",
-        "matched": 0,
-        "total": 5
+        "state": "confirmed",
+        "matched": 5,
+        "total": 5,
+        "commit": "b8b9219ad4a6496bab49c6208ed0645149268461"
       },
       "corbet": {
         "state": "missing",
@@ -549,9 +550,10 @@
     ],
     "trees": {
       "alex": {
-        "state": "missing",
-        "matched": 0,
-        "total": 5
+        "state": "partial",
+        "matched": 3,
+        "total": 5,
+        "commit": "b8b9219ad4a6496bab49c6208ed0645149268461"
       },
       "corbet": {
         "state": "missing",
@@ -574,10 +576,10 @@
     "postedAt": "2026-08-16T17:47:44.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "waiting-for-review",
+    "status": "in-review",
     "lifecycle": "active",
-    "reviewState": "waiting",
-    "reviewReplies": 0,
+    "reviewState": "discussion",
+    "reviewReplies": 1,
     "latestRevision": true,
     "messageIds": [
       "<20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org>",
@@ -828,9 +830,10 @@
     ],
     "trees": {
       "alex": {
-        "state": "missing",
-        "matched": 0,
-        "total": 5
+        "state": "partial",
+        "matched": 2,
+        "total": 5,
+        "commit": "b8b9219ad4a6496bab49c6208ed0645149268461"
       },
       "corbet": {
         "state": "missing",
@@ -1156,9 +1159,10 @@
     ],
     "trees": {
       "alex": {
-        "state": "missing",
-        "matched": 0,
-        "total": 5
+        "state": "partial",
+        "matched": 2,
+        "total": 5,
+        "commit": "b8b9219ad4a6496bab49c6208ed0645149268461"
       },
       "corbet": {
         "state": "missing",
@@ -1272,10 +1276,10 @@
     "postedAt": "2026-07-22T12:32:40.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "waiting-for-review",
+    "status": "in-review",
     "lifecycle": "active",
-    "reviewState": "waiting",
-    "reviewReplies": 0,
+    "reviewState": "discussion",
+    "reviewReplies": 1,
     "latestRevision": true,
     "messageIds": [
       "<20260722123240.22979-1-imcusg@gmail.com>"

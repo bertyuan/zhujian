@@ -7,10 +7,10 @@
   "postedAt": "2026-08-16T17:47:44.000Z",
   "language": "zh_CN",
   "patchCount": 2,
-  "status": "waiting-for-review",
+  "status": "in-review",
   "lifecycle": "active",
-  "reviewState": "waiting",
-  "reviewReplies": 0,
+  "reviewState": "discussion",
+  "reviewReplies": 1,
   "latestRevision": true,
   "messageIds": [
     "<20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org>",
@@ -37,7 +37,7 @@
   "rfc": false,
   "loreUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org/",
   "rawUrl": "https://lore.kernel.org/linux-doc/20260817-apply-patches-v3-0-45e3bd2b1ccc@wyuan.org/raw",
-  "replies": 0,
+  "replies": 1,
   "versions": [
     {
       "revision": 1,
