@@ -576,7 +576,7 @@
     "postedAt": "2026-08-16T17:47:44.000Z",
     "language": "zh_CN",
     "patchCount": 2,
-    "status": "in-review",
+    "status": "queued-alex",
     "lifecycle": "active",
     "reviewState": "discussion",
     "reviewReplies": 1,
@@ -588,9 +588,10 @@
     ],
     "trees": {
       "alex": {
-        "state": "missing",
-        "matched": 0,
-        "total": 2
+        "state": "confirmed",
+        "matched": 2,
+        "total": 2,
+        "commit": "f8688fe01bff2754f441d0f34329561b7552754e"
       },
       "corbet": {
         "state": "missing",
@@ -625,9 +626,10 @@
     ],
     "trees": {
       "alex": {
-        "state": "missing",
-        "matched": 0,
-        "total": 2
+        "state": "partial",
+        "matched": 1,
+        "total": 2,
+        "commit": "f8688fe01bff2754f441d0f34329561b7552754e"
       },
       "corbet": {
         "state": "missing",
@@ -1411,9 +1413,10 @@
     ],
     "trees": {
       "alex": {
-        "state": "missing",
+        "state": "candidate",
         "matched": 0,
-        "total": 3
+        "total": 3,
+        "commit": "b0b415dcdd84732d24f16fb0758450897e30cd64"
       },
       "corbet": {
         "state": "missing",

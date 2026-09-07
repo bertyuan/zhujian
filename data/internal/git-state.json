@@ -1,17 +1,17 @@
 {
   "alex": {
-    "lastHead": "2e39566857f11dc999409cb24fb9c1814244b34c",
-    "lastSuccessfulSync": "2026-09-07T05:54:51.248Z",
-    "lastMode": "fast-forward"
+    "lastHead": "b0b415dcdd84732d24f16fb0758450897e30cd64",
+    "lastSuccessfulSync": "2026-09-07T07:20:09.623Z",
+    "lastMode": "rewrite"
   },
   "corbet": {
     "lastHead": "ab2704c2a884028fd12d455cf27a9585aefe2961",
-    "lastSuccessfulSync": "2026-09-07T05:54:51.248Z",
+    "lastSuccessfulSync": "2026-09-07T07:20:09.623Z",
     "lastMode": "unchanged"
   },
   "linus": {
     "lastHead": "df2908090cda368b01ff43709f51890076c56157",
-    "lastSuccessfulSync": "2026-09-07T05:54:51.248Z",
+    "lastSuccessfulSync": "2026-09-07T07:20:09.623Z",
     "lastMode": "unchanged"
   }
 }

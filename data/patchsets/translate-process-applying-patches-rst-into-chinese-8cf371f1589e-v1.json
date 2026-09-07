@@ -20,9 +20,10 @@
   ],
   "trees": {
     "alex": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 3
+      "total": 3,
+      "commit": "b0b415dcdd84732d24f16fb0758450897e30cd64"
     },
     "corbet": {
       "state": "missing",
@@ -126,9 +127,10 @@
       "patchId": "3cb0dce1224ac2bf655aa12d821280203d5a9850",
       "trees": {
         "alex": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "b0b415dcdd84732d24f16fb0758450897e30cd64"
         },
         "corbet": {
           "state": "missing",
