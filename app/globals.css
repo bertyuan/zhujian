@@ -226,6 +226,12 @@ main { min-height: calc(100vh - 118px); }
 .review-discussion { color: var(--status-inreview); }
 .review-progress { color: var(--text-muted); display: block; font-size: .75em; margin-top: 2px; }
 .review-mobile-foot { align-items: center; color: var(--text-muted); display: flex; font-size: .85em; justify-content: space-between; }
+.review-table .lights { display: grid; gap: 4px; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+.review-table .light-item { align-items: start; display: grid; gap: 0 4px; grid-template-columns: auto minmax(0, 1fr); min-width: 0; white-space: normal; }
+.review-table .light-dot { align-self: center; grid-column: 1; grid-row: 1 / span 2; }
+.review-table .light-label, .review-table .light-count { grid-column: 2; min-width: 0; white-space: nowrap; }
+.review-table .light-label { grid-row: 1; }
+.review-table .light-count { grid-row: 2; }
 
 .tag { background: var(--tag-bg); border: 1px solid var(--tag-bg); border-radius: 3px; color: var(--tag-text); display: inline-block; font-size: .75em; padding: 1px 4px; white-space: nowrap; }
 .badge-tw { filter: hue-rotate(35deg); }
