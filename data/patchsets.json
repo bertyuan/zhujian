@@ -1,5 +1,44 @@
 [
   {
+    "id": "fix-hugetlb-subpool-used-hpages-tracking-ada9e8b71893-v2",
+    "subject": "[PATCH v2 0/4] Fix HugeTLB subpool used_hpages tracking",
+    "authorName": "Ackerley Tng via B4 Relay",
+    "authorEmail": "devnull+ackerleytng.google.com@kernel.org",
+    "revision": 2,
+    "postedAt": "2026-09-09T21:49:25.000Z",
+    "language": "zh_CN",
+    "patchCount": 1,
+    "status": "waiting-for-review",
+    "lifecycle": "active",
+    "reviewState": "waiting",
+    "reviewReplies": 0,
+    "latestRevision": true,
+    "messageIds": [
+      "<20260909-hugetlb-subpool-always-track-used-v2-0-30c5d83b572a@google.com>",
+      "<20260909-hugetlb-subpool-always-track-used-v2-1-30c5d83b572a@google.com>",
+      "<20260909-hugetlb-subpool-always-track-used-v2-2-30c5d83b572a@google.com>",
+      "<20260909-hugetlb-subpool-always-track-used-v2-3-30c5d83b572a@google.com>",
+      "<20260909-hugetlb-subpool-always-track-used-v2-4-30c5d83b572a@google.com>"
+    ],
+    "trees": {
+      "alex": {
+        "state": "missing",
+        "matched": 0,
+        "total": 1
+      },
+      "corbet": {
+        "state": "missing",
+        "matched": 0,
+        "total": 1
+      },
+      "linus": {
+        "state": "missing",
+        "matched": 0,
+        "total": 1
+      }
+    }
+  },
+  {
     "id": "add-chinese-translation-for-usb-ohci-rst-3909fbce9a68-v1",
     "subject": "[PATCH] docs/zh_CN: add Chinese translation for usb/ohci.rst",
     "authorName": "Jiaming Ouyang",
@@ -115,11 +154,11 @@
     "postedAt": "2026-09-02T23:30:46.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "waiting-for-review",
+    "status": "updated",
     "lifecycle": "active",
     "reviewState": "waiting",
     "reviewReplies": 0,
-    "latestRevision": true,
+    "latestRevision": false,
     "messageIds": [
       "<20260902-hugetlb-subpool-always-track-used-v1-0-de1cd14bd713@google.com>",
       "<20260902-hugetlb-subpool-always-track-used-v1-1-de1cd14bd713@google.com>",
