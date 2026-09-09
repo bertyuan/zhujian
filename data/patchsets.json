@@ -1,5 +1,40 @@
 [
   {
+    "id": "add-chinese-translation-for-usb-ohci-rst-3909fbce9a68-v1",
+    "subject": "[PATCH] docs/zh_CN: add Chinese translation for usb/ohci.rst",
+    "authorName": "Jiaming Ouyang",
+    "authorEmail": "jiamingouyang13@gmail.com",
+    "revision": 1,
+    "postedAt": "2026-09-09T06:54:43.000Z",
+    "language": "zh_CN",
+    "patchCount": 1,
+    "status": "waiting-for-review",
+    "lifecycle": "active",
+    "reviewState": "waiting",
+    "reviewReplies": 0,
+    "latestRevision": true,
+    "messageIds": [
+      "<CAMnqnYwK6HDwV3jRLNWYTfB_w2NmQYn=LRQ41VoWYU53CWd6FA@mail.gmail.com>"
+    ],
+    "trees": {
+      "alex": {
+        "state": "missing",
+        "matched": 0,
+        "total": 1
+      },
+      "corbet": {
+        "state": "missing",
+        "matched": 0,
+        "total": 1
+      },
+      "linus": {
+        "state": "missing",
+        "matched": 0,
+        "total": 1
+      }
+    }
+  },
+  {
     "id": "documentation-update-after-split-of-linux-mod-device-42cb0909dbd0-v3",
     "subject": "[PATCH v3] Documentation: Update after split of <linux/mod_devicetable.h>",
     "authorName": "Karl Mehltretter",
