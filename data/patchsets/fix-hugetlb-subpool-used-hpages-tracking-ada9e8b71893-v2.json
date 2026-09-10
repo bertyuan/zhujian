@@ -7,10 +7,10 @@
   "postedAt": "2026-09-09T21:49:25.000Z",
   "language": "zh_CN",
   "patchCount": 1,
-  "status": "waiting-for-review",
+  "status": "in-review",
   "lifecycle": "active",
-  "reviewState": "waiting",
-  "reviewReplies": 0,
+  "reviewState": "discussion",
+  "reviewReplies": 2,
   "latestRevision": true,
   "messageIds": [
     "<20260909-hugetlb-subpool-always-track-used-v2-0-30c5d83b572a@google.com>",
@@ -39,7 +39,7 @@
   "rfc": false,
   "loreUrl": "https://lore.kernel.org/linux-doc/20260909-hugetlb-subpool-always-track-used-v2-0-30c5d83b572a@google.com/",
   "rawUrl": "https://lore.kernel.org/linux-doc/20260909-hugetlb-subpool-always-track-used-v2-0-30c5d83b572a@google.com/raw",
-  "replies": 0,
+  "replies": 2,
   "versions": [
     {
       "revision": 1,
