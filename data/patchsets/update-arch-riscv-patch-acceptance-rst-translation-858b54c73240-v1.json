@@ -27,9 +27,10 @@
       "total": 1
     },
     "linus": {
-      "state": "missing",
+      "state": "candidate",
       "matched": 0,
-      "total": 1
+      "total": 1,
+      "commit": "74e26c692c40565448b8a1d1398c69e221a299cf"
     }
   },
   "rfc": false,
@@ -71,9 +72,10 @@
           "total": 1
         },
         "linus": {
-          "state": "missing",
+          "state": "candidate",
           "matched": 0,
-          "total": 1
+          "total": 1,
+          "commit": "74e26c692c40565448b8a1d1398c69e221a299cf"
         }
       }
     }

@@ -262,7 +262,7 @@
     "postedAt": "2026-08-29T02:23:27.000Z",
     "language": "zh_CN",
     "patchCount": 1,
-    "status": "in-review",
+    "status": "mainline",
     "lifecycle": "active",
     "reviewState": "discussion",
     "reviewReplies": 3,
@@ -282,9 +282,10 @@
         "total": 1
       },
       "linus": {
-        "state": "missing",
-        "matched": 0,
-        "total": 1
+        "state": "confirmed",
+        "matched": 1,
+        "total": 1,
+        "commit": "74e26c692c40565448b8a1d1398c69e221a299cf"
       }
     }
   },
@@ -317,9 +318,10 @@
         "total": 1
       },
       "linus": {
-        "state": "missing",
+        "state": "candidate",
         "matched": 0,
-        "total": 1
+        "total": 1,
+        "commit": "74e26c692c40565448b8a1d1398c69e221a299cf"
       }
     }
   },
