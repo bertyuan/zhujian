@@ -610,7 +610,7 @@
     "status": "in-review",
     "lifecycle": "active",
     "reviewState": "discussion",
-    "reviewReplies": 2,
+    "reviewReplies": 3,
     "latestRevision": true,
     "messageIds": [
       "<20260817-apply-patches-tw-v1-0-c182c1c425ba@wyuan.org>",
