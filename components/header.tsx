@@ -16,7 +16,7 @@ export function Header() {
     <header className="site-header">
       <div className="shell header-inner">
         <Link className="brand" href="/" aria-label="Buding home">
-          <span className="brand-mark" aria-hidden="true">布</span>
+          <span className="brand-mark" aria-hidden="true">🍮</span>
           <span className="brand-name"><strong>布丁</strong> / Buding</span>
         </Link>
         <nav className="main-nav" aria-label="Primary navigation">

@@ -108,7 +108,12 @@ main { min-height: calc(100vh - 118px); }
 
 .brand { align-items: center; color: var(--text); display: inline-flex; font-size: 2em; font-weight: 700; gap: 11px; }
 .brand:hover { text-decoration: none; }
-.brand-mark { color: var(--brand); font-size: 1.15em; line-height: 1; }
+.brand-mark {
+  display: inline-block;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 1em;
+  line-height: 1;
+}
 .brand-name strong { font-weight: 800; }
 .main-nav { align-items: center; display: flex; gap: 6px; margin-left: auto; }
 .nav-link {
