@@ -1,4 +1,4 @@
-# 布丁 / Buding
+# 布丁 Buding
 
 A static tracker for Chinese Linux documentation patch series. It reconstructs
 `zh_CN` and `zh_TW` series from the public `linux-doc` archive and renders the

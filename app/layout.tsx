@@ -4,7 +4,7 @@ import { GeneratedStatus } from "@/components/generated-status";
 import { getMetadata } from "@/lib/data/loader";
 import "./globals.css";
 
-const title = "布丁 / Buding — Linux Chinese Documentation Patch Tracker";
+const title = "布丁 Buding — Linux Chinese Documentation Patch Tracker";
 const description = "Track Linux Chinese documentation patches from lore through maintainer trees to mainline.";
 const deploymentHost = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
 const deploymentUrl = deploymentHost?.startsWith("http") ? deploymentHost : deploymentHost ? `https://${deploymentHost}` : "http://localhost:3000";
