@@ -41,7 +41,7 @@ test("computes stable patch IDs in one batch and preserves cached values", async
 });
 
 test("email and commit forms of the same diff have the same stable patch ID", async (context) => {
-  const repository = await mkdtemp(path.join(os.tmpdir(), "zhujian-email-patch-id-"));
+  const repository = await mkdtemp(path.join(os.tmpdir(), "buding-email-patch-id-"));
   context.after(() => rm(repository, { recursive: true, force: true }));
   const git = (args: string[], input?: string) => checkedGit(runCommand, args, { cwd: repository, ...(input ? { input } : {}) });
   await git(["init", "--quiet"]);

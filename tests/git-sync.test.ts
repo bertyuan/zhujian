@@ -49,7 +49,7 @@ async function json(file: string): Promise<unknown> {
 }
 
 test("persists indexes and safely handles rewrites and later fast-forwards", async (context) => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-git-sync-"));
+  const root = await mkdtemp(path.join(os.tmpdir(), "buding-git-sync-"));
   context.after(() => rm(root, { recursive: true, force: true }));
 
   const initial = await synchronizeGit({
@@ -86,7 +86,7 @@ test("persists indexes and safely handles rewrites and later fast-forwards", asy
 });
 
 test("does not replace committed indexes when one remote fails", async (context) => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-git-failure-"));
+  const root = await mkdtemp(path.join(os.tmpdir(), "buding-git-failure-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const indexFile = path.join(root, "data", "indexes", "alex.json");
   await mkdir(path.dirname(indexFile), { recursive: true });

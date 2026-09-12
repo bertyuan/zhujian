@@ -1,4 +1,4 @@
-# zhujian
+# 布丁 / Buding
 
 A static tracker for Chinese Linux documentation patch series. It reconstructs
 `zh_CN` and `zh_TW` series from the public `linux-doc` archive and renders the
@@ -6,7 +6,7 @@ generated JSON with Next.js.
 
 Production: <https://zhujian.vercel.app>
 
-Zhujian follows patches that touch
+Buding follows patches that touch
 `Documentation/translations/zh_CN/` or
 `Documentation/translations/zh_TW/`. Its three indicators represent Alex's
 `docs-next`, Corbet's `docs-mw`, and Linus's `master`, in that order:

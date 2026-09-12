@@ -4,7 +4,7 @@ import { GeneratedStatus } from "@/components/generated-status";
 import { getMetadata } from "@/lib/data/loader";
 import "./globals.css";
 
-const title = "竹简 / Zhujian — Linux Chinese Documentation Patch Tracker";
+const title = "布丁 / Buding — Linux Chinese Documentation Patch Tracker";
 const description = "Track Linux Chinese documentation patches from lore through maintainer trees to mainline.";
 const deploymentHost = process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL;
 const deploymentUrl = deploymentHost?.startsWith("http") ? deploymentHost : deploymentHost ? `https://${deploymentHost}` : "http://localhost:3000";
@@ -15,16 +15,14 @@ export const metadata: Metadata = {
   description,
   openGraph: {
     type: "website",
-    siteName: "Zhujian",
+    siteName: "Buding",
     title,
     description,
-    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Zhujian Linux Chinese Documentation Patch Tracker" }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title,
     description,
-    images: ["/og.png"],
   },
 };
 
@@ -38,7 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main>{children}</main>
         <footer className="site-footer">
           <div className="shell footer-inner">
-            <span><strong>Zhujian</strong> · Linux Chinese documentation patch tracker</span>
+            <span><strong>Buding</strong> · Linux Chinese documentation patch tracker</span>
             <GeneratedStatus generatedAt={metadata.generatedAt} label="Updated" />
           </div>
         </footer>

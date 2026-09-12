@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
   const data = await getPatchMessage(id);
-  return { title: data ? `${data.message.subject} · Zhujian` : "Patch not found · Zhujian" };
+  return { title: data ? `${data.message.subject} · Buding` : "Patch not found · Buding" };
 }
 
 function formatDate(value: string): string {

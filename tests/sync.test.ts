@@ -18,7 +18,7 @@ const patch: LoreMessage = {
 };
 
 test("writes validated live data and incremental state", async (context) => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-sync-"));
+  const root = await mkdtemp(path.join(os.tmpdir(), "buding-sync-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const source: LoreSource = { search: async () => [patch, patch] };
 
@@ -39,7 +39,7 @@ test("writes validated live data and incremental state", async (context) => {
 });
 
 test("keeps existing public data when lore retrieval fails", async (context) => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-sync-failure-"));
+  const root = await mkdtemp(path.join(os.tmpdir(), "buding-sync-failure-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const publicFile = path.join(root, "data", "patchsets.json");
   await mkdir(path.dirname(publicFile), { recursive: true });
@@ -53,7 +53,7 @@ test("keeps existing public data when lore retrieval fails", async (context) => 
 });
 
 test("can update the lore cache without replacing public data before the full pipeline succeeds", async (context) => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-sync-staged-"));
+  const root = await mkdtemp(path.join(os.tmpdir(), "buding-sync-staged-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const publicFile = path.join(root, "data", "patchsets.json");
   await mkdir(path.dirname(publicFile), { recursive: true });

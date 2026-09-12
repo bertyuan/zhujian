@@ -11,7 +11,7 @@ async function git(cwd: string, args: string[]): Promise<void> {
 }
 
 test("indexes relevant commits and computes stable patch IDs from a bare cache", async (context) => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-git-repository-"));
+  const root = await mkdtemp(path.join(os.tmpdir(), "buding-git-repository-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const source = path.join(root, "source");
   const cache = path.join(root, "cache", "alex.git");

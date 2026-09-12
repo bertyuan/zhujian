@@ -13,7 +13,7 @@ async function writeJson(file: string, value: unknown): Promise<void> {
 }
 
 test("generates reconciled JSON from the lore cache idempotently", async (context) => {
-  const root = await mkdtemp(path.join(os.tmpdir(), "zhujian-generate-"));
+  const root = await mkdtemp(path.join(os.tmpdir(), "buding-generate-"));
   context.after(() => rm(root, { recursive: true, force: true }));
   const fixture = await new FixtureLoreSource(path.join(process.cwd(), "fixtures", "lore")).loadDataset();
   const observedAt = "2026-09-05T12:00:00Z";
