@@ -25,6 +25,8 @@ const details = await Promise.all(summaries.map(async (summary) => validatePatch
 const messages = validateLoreMessages((await json(path.join(root, "data", "internal", "lore-messages.json")) as { messages?: unknown }).messages);
 const metadata = validateSyncMetadata(await json(path.join(root, "data", "metadata.json")));
 const syncState = validateSyncRunState(await json(path.join(root, "data", "internal", "sync-state.json")));
+const loreState = await json(path.join(root, "data", "internal", "lore-state.json"));
+const gitState = await json(path.join(root, "data", "internal", "git-state.json"));
 const summaryById = new Map(summaries.map((summary) => [summary.id, summary]));
 const previousPatchsetIds = await database.select<StateRow>("buding_state", { key: "eq.patchset-ids" })
   .then((rows) => Array.isArray(rows[0]?.data) ? rows[0].data.filter((id): id is string => typeof id === "string") : []);
@@ -52,6 +54,8 @@ for (const tree of TRACKED_TREES) {
 await Promise.all([
   database.upsertState("metadata", metadata),
   database.upsertState("sync-state", syncState),
+  database.upsertState("lore-state", loreState),
+  database.upsertState("git-state", gitState),
   database.upsertState("patchset-ids", details.map((detail) => detail.id)),
   database.upsertState("published-at", { value: new Date().toISOString() }),
 ]);

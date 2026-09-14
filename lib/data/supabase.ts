@@ -48,9 +48,12 @@ export class SupabaseRest {
       },
       cache: "no-store",
     });
-    if (!response.ok) throw new Error(`Supabase ${init.method ?? "GET"} ${path} failed (${response.status}): ${await response.text()}`);
-    if (response.status === 204) return undefined as T;
-    return response.json() as Promise<T>;
+    const body = await response.text();
+    if (!response.ok) throw new Error(`Supabase ${init.method ?? "GET"} ${path} failed (${response.status}): ${body}`);
+    // PostgREST returns an empty 201/200 body when Prefer: return=minimal is
+    // used; it is not limited to HTTP 204.
+    if (!body) return undefined as T;
+    return JSON.parse(body) as T;
   }
 
   select<T>(table: string, query: Record<string, string> = {}): Promise<T[]> {

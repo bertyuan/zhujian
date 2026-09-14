@@ -192,8 +192,10 @@ the Actions tab. A manual run accepts an optional `since` date for backfills.
 It installs `lei`, restores a daily cache of the three Linux repositories, runs
 the same lore, Git synchronization, and reconciliation code, validates the
 generated data, tests the project, and uploads it with the `SUPABASE_URL` and
-`SUPABASE_SECRET_KEY` Actions secrets. It only needs repository read access and
-does not create generated-data commits.
+`SUPABASE_SECRET_KEY` Actions secrets. Before each synchronization, it restores
+the last published snapshot into the runner's temporary `data/` directory, so
+the existing lore and Git cursors continue to make later runs incremental. It
+only needs repository read access and does not create generated-data commits.
 
 ## Deploy to Vercel
 

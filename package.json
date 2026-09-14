@@ -19,6 +19,7 @@
     "generate": "node --experimental-strip-types scripts/generate.ts",
     "sync": "node --experimental-strip-types scripts/sync.ts",
     "publish:supabase": "node --experimental-strip-types scripts/publish-supabase.ts",
+    "hydrate:supabase": "node --experimental-strip-types scripts/hydrate-supabase.ts",
     "backfill:lore": "node --experimental-strip-types scripts/backfill-lore.ts",
     "backfill": "node --experimental-strip-types scripts/backfill.ts",
     "validate:data": "node --experimental-strip-types scripts/validate-data.ts"
