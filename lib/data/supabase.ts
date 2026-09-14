@@ -31,7 +31,11 @@ export function readSupabasePublisherConfig(): SupabaseConfig {
 }
 
 export class SupabaseRest {
-  constructor(private readonly config: SupabaseConfig) {}
+  private readonly config: SupabaseConfig;
+
+  constructor(config: SupabaseConfig) {
+    this.config = config;
+  }
 
   private async request<T>(path: string, init: RequestInit = {}): Promise<T> {
     const response = await fetch(`${this.config.url}/rest/v1/${path}`, {
