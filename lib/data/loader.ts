@@ -1,13 +1,9 @@
-import patchsetsData from "@/data/patchsets.json";
-import metadataData from "@/data/metadata.json";
-import syncStateData from "@/data/internal/sync-state.json";
-import { readFile } from "node:fs/promises";
-import path from "node:path";
 import type { LoreMessage } from "../lore/types";
 import { validateLoreMessages } from "../lore/sync";
 import { messageRouteId } from "../messages/routing";
 import type { PatchDetail, PatchsetDetail, PatchsetSummary, SyncMetadata, SyncRunState } from "./schema";
 import { validatePatchsetDetail, validatePatchsetSummaries, validateSyncMetadata, validateSyncRunState } from "./validation";
+import { readSupabaseConfig, SupabaseRest } from "./supabase";
 
 export interface PatchMessagePageData {
   message: LoreMessage;
@@ -17,80 +13,87 @@ export interface PatchMessagePageData {
   next?: PatchDetail;
 }
 
-let patchsetDetailsPromise: Promise<PatchsetDetail[]> | undefined;
-let loreMessagesPromise: Promise<LoreMessage[]> | undefined;
-let patchMessageIndexPromise: Promise<Map<string, PatchMessagePageData>> | undefined;
+interface PatchsetRow { id: string; summary: unknown; detail?: unknown }
+interface StateRow { key: string; data: unknown }
+interface LoreRow { message_id: string; data: unknown }
 
-export function getPatchsets(): PatchsetSummary[] {
-  return validatePatchsetSummaries(patchsetsData);
+let database: SupabaseRest | undefined;
+let patchsetsPromise: Promise<PatchsetSummary[]> | undefined;
+
+function store(): SupabaseRest {
+  database ??= new SupabaseRest(readSupabaseConfig());
+  return database;
 }
 
-export function getMetadata(): SyncMetadata {
-  return validateSyncMetadata(metadataData);
+async function state(key: string): Promise<unknown> {
+  const rows = await store().select<StateRow>("buding_state", { key: `eq.${key}` });
+  if (!rows[0]) throw new Error(`Supabase state ${key} is missing. Run the synchronization workflow once after applying the migration.`);
+  return rows[0].data;
 }
 
-export function getSyncRunState(): SyncRunState {
-  return validateSyncRunState(syncStateData);
+export async function getPatchsets(): Promise<PatchsetSummary[]> {
+  patchsetsPromise ??= Promise.all([
+    store().select<PatchsetRow>("buding_patchsets", { order: "id.asc" }),
+    state("patchset-ids"),
+  ]).then(([rows, ids]) => {
+    const activeIds = new Set(Array.isArray(ids) ? ids.filter((id): id is string => typeof id === "string") : []);
+    return validatePatchsetSummaries(rows.filter((row) => activeIds.has(row.id)).map((row) => row.summary));
+  });
+  return patchsetsPromise;
+}
+
+export async function getMetadata(): Promise<SyncMetadata> {
+  return validateSyncMetadata(await state("metadata"));
+}
+
+export async function getSyncRunState(): Promise<SyncRunState> {
+  return validateSyncRunState(await state("sync-state"));
 }
 
 export async function getPatchset(id: string): Promise<PatchsetDetail | null> {
   if (!/^[a-z0-9-]+$/.test(id)) return null;
-  try {
-    const file = await readFile(path.join(process.cwd(), "data", "patchsets", `${id}.json`), "utf8");
-    return validatePatchsetDetail(JSON.parse(file), `data/patchsets/${id}.json`);
-  } catch {
-    return null;
-  }
+  const activeIds = await state("patchset-ids");
+  if (!Array.isArray(activeIds) || !activeIds.includes(id)) return null;
+  const rows = await store().select<PatchsetRow>("buding_patchsets", { id: `eq.${id}` });
+  if (!rows[0]?.detail) return null;
+  return validatePatchsetDetail(rows[0].detail, `buding_patchsets/${id}`);
 }
 
 export async function getPatchsetDetails(): Promise<PatchsetDetail[]> {
-  patchsetDetailsPromise ??= Promise.all(getPatchsets().map(async (summary) => {
-    const detail = await getPatchset(summary.id);
-    if (!detail) throw new Error(`Missing generated detail for ${summary.id}`);
-    return detail;
-  }));
-  return patchsetDetailsPromise;
+  const [rows, ids] = await Promise.all([
+    store().select<PatchsetRow>("buding_patchsets", { order: "id.asc" }),
+    state("patchset-ids"),
+  ]);
+  const activeIds = new Set(Array.isArray(ids) ? ids.filter((id): id is string => typeof id === "string") : []);
+  return rows.filter((row) => activeIds.has(row.id)).map((row) => validatePatchsetDetail(row.detail, `buding_patchsets/${row.id}`));
 }
 
-async function getLoreMessages(): Promise<LoreMessage[]> {
-  loreMessagesPromise ??= readFile(path.join(process.cwd(), "data", "internal", "lore-messages.json"), "utf8")
-    .then((content) => {
-      const cache = JSON.parse(content) as { messages?: unknown };
-      return validateLoreMessages(cache.messages);
-    });
-  return loreMessagesPromise;
-}
-
-async function getPatchMessageIndex(): Promise<Map<string, PatchMessagePageData>> {
-  patchMessageIndexPromise ??= Promise.all([getPatchsetDetails(), getLoreMessages()]).then(([patchsets, messages]) => {
-    const loreById = new Map(messages.map((message) => [message.messageId, message]));
-    const index = new Map<string, PatchMessagePageData>();
-
-    for (const patchset of patchsets) {
-      patchset.patches.forEach((patch, patchIndex) => {
-        const message = loreById.get(patch.messageId);
-        if (!message) throw new Error(`Missing cached lore message ${patch.messageId}`);
-        const routeId = messageRouteId(patch.messageId);
-        if (index.has(routeId)) throw new Error(`Duplicate message route ${routeId}`);
-        index.set(routeId, {
-          message,
-          patch,
-          patchset,
-          ...(patchset.patches[patchIndex - 1] ? { previous: patchset.patches[patchIndex - 1] } : {}),
-          ...(patchset.patches[patchIndex + 1] ? { next: patchset.patches[patchIndex + 1] } : {}),
-        });
-      });
-    }
-
-    return index;
-  });
-  return patchMessageIndexPromise;
+async function getLoreMessage(messageId: string): Promise<LoreMessage | null> {
+  const rows = await store().select<LoreRow>("buding_lore_messages", { message_id: `eq.${messageId}` });
+  if (!rows[0]) return null;
+  return validateLoreMessages([rows[0].data])[0];
 }
 
 export async function getPatchMessageRouteIds(): Promise<string[]> {
-  return [...(await getPatchMessageIndex()).keys()];
+  const patchsets = await getPatchsetDetails();
+  return patchsets.flatMap((patchset) => patchset.patches.map((patch) => messageRouteId(patch.messageId)));
 }
 
 export async function getPatchMessage(routeId: string): Promise<PatchMessagePageData | null> {
-  return (await getPatchMessageIndex()).get(routeId) ?? null;
+  const patchsets = await getPatchsetDetails();
+  for (const patchset of patchsets) {
+    const patchIndex = patchset.patches.findIndex((patch) => messageRouteId(patch.messageId) === routeId);
+    if (patchIndex < 0) continue;
+    const patch = patchset.patches[patchIndex];
+    const message = await getLoreMessage(patch.messageId);
+    if (!message) throw new Error(`Missing lore message ${patch.messageId} in Supabase`);
+    return {
+      message,
+      patch,
+      patchset,
+      ...(patchset.patches[patchIndex - 1] ? { previous: patchset.patches[patchIndex - 1] } : {}),
+      ...(patchset.patches[patchIndex + 1] ? { next: patchset.patches[patchIndex + 1] } : {}),
+    };
+  }
+  return null;
 }

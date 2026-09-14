@@ -6,14 +6,8 @@ import { LanguageBadge } from "@/components/language-badge";
 import { PatchContent } from "@/components/patch-content";
 import { Pipeline } from "@/components/pipeline";
 import { StatusBadge } from "@/components/status-badge";
-import { getPatchMessage, getPatchMessageRouteIds } from "@/lib/data/loader";
+import { getPatchMessage } from "@/lib/data/loader";
 import { messagePath } from "@/lib/messages/routing";
-
-export const dynamicParams = false;
-
-export async function generateStaticParams() {
-  return (await getPatchMessageRouteIds()).map((id) => ({ id }));
-}
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;

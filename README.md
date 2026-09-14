@@ -1,8 +1,8 @@
 # 布丁 Buding
 
-A static tracker for Chinese Linux documentation patch series. It reconstructs
+A tracker for Chinese Linux documentation patch series. It reconstructs
 `zh_CN` and `zh_TW` series from the public `linux-doc` archive and renders the
-generated JSON with Next.js.
+generated data from Supabase with Next.js.
 
 Production: <https://zhujian.vercel.app>
 
@@ -50,12 +50,11 @@ Linus/master    ----> relevant commit index ------------+       v
                                                     Next.js/Vercel
 ```
 
-GitHub Actions performs synchronization every 30 minutes and commits the
-validated result. Git is the persistence layer: there is no database, queue,
-always-running worker, or writable Vercel filesystem. The frontend reads the
-compact `data/patchsets.json` index and per-series files in `data/patchsets/`.
-Message pages are statically generated from the committed internal lore cache,
-so serving a patch does not require a runtime request to lore.
+GitHub Actions performs synchronization every 30 minutes and publishes the
+validated result to Supabase. Supabase is the persistence layer: Vercel reads
+the database at request time and never fetches lore or needs a writable
+filesystem. The checked-in `data/` directory is retained only as a seed and
+test fixture; it is no longer changed by the workflow.
 
 The `Needs review` page is the primary work queue. It contains active latest
 revisions that have not been confirmed in Alex's `docs-next`, placing series
@@ -167,24 +166,41 @@ character Git SHA; use the full SHA when possible.
 State overrides preserve the series in generated data; `ignore` remains for
 messages that should not have been classified as translation patches at all.
 
+## Supabase
+
+Apply `supabase/migrations/20260915000000_buding_data.sql` in the Supabase SQL
+editor (or through the Supabase CLI) once. It creates four JSONB-backed tables
+and public read-only RLS policies. Then add these environment variables:
+
+```text
+# Vercel (read-only)
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
+
+# GitHub Actions (write-only; repository Actions secrets)
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SECRET_KEY=sb_secret_...
+```
+
+Never commit the secret key or expose it as a `NEXT_PUBLIC_*` variable. Run
+`pnpm publish:supabase` once after a local successful sync to seed the database.
+
 ## GitHub Action
 
 `.github/workflows/sync.yml` runs every 30 minutes and can also be started from
 the Actions tab. A manual run accepts an optional `since` date for backfills.
 It installs `lei`, restores a daily cache of the three Linux repositories, runs
 the same lore, Git synchronization, and reconciliation code, validates the
-JSON, tests the project, and commits only files under `data/` when they changed.
-
-The workflow needs GitHub Actions to have write permission for repository
-contents. Branch protection must also allow the workflow to update the default
-branch, or the generated-data push will be rejected.
+generated data, tests the project, and uploads it with the `SUPABASE_URL` and
+`SUPABASE_SECRET_KEY` Actions secrets. It only needs repository read access and
+does not create generated-data commits.
 
 ## Deploy to Vercel
 
 Import the GitHub repository into Vercel and keep the detected Next.js defaults.
-No environment variables, database, `lei`, persistent disk, or scheduled Vercel
-function is required. Vercel only builds the JSON already committed by GitHub
-Actions. Each generated-data commit naturally triggers a fresh static build.
+Set the two read-only `NEXT_PUBLIC_SUPABASE_*` variables above. No `lei`,
+persistent disk, scheduled Vercel function, or deployment per data update is
+required; pages are dynamically rendered from Supabase.
 
 ## Maintaining tracked sources
 

@@ -3,10 +3,8 @@ import { GeneratedStatus } from "@/components/generated-status";
 import { SyncHealth } from "@/components/sync-health";
 import { getMetadata, getPatchsets, getSyncRunState } from "@/lib/data/loader";
 
-export default function HomePage() {
-  const patchsets = getPatchsets();
-  const metadata = getMetadata();
-  const syncRunState = getSyncRunState();
+export default async function HomePage() {
+  const [patchsets, metadata, syncRunState] = await Promise.all([getPatchsets(), getMetadata(), getSyncRunState()]);
 
   return (
     <>
