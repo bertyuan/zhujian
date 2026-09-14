@@ -41,13 +41,17 @@ function activePatchsetIds(value: unknown | undefined): Set<string> | undefined 
   return new Set(Array.isArray(value) ? value.filter((id): id is string => typeof id === "string") : []);
 }
 
+function newestFirst<T extends { postedAt: string; id: string }>(items: T[]): T[] {
+  return items.toSorted((left, right) => Date.parse(right.postedAt) - Date.parse(left.postedAt) || left.id.localeCompare(right.id));
+}
+
 export async function getPatchsets(): Promise<PatchsetSummary[]> {
   patchsetsPromise ??= Promise.all([
-    store().select<PatchsetRow>("buding_patchsets", { order: "id.asc" }),
+    store().select<PatchsetRow>("buding_patchsets"),
     optionalState("patchset-ids"),
   ]).then(([rows, ids]) => {
     const activeIds = activePatchsetIds(ids);
-    return validatePatchsetSummaries(rows.filter((row) => !activeIds || activeIds.has(row.id)).map((row) => row.summary));
+    return newestFirst(validatePatchsetSummaries(rows.filter((row) => !activeIds || activeIds.has(row.id)).map((row) => row.summary)));
   });
   return patchsetsPromise;
 }
@@ -71,11 +75,13 @@ export async function getPatchset(id: string): Promise<PatchsetDetail | null> {
 
 export async function getPatchsetDetails(): Promise<PatchsetDetail[]> {
   const [rows, ids] = await Promise.all([
-    store().select<PatchsetRow>("buding_patchsets", { order: "id.asc" }),
+    store().select<PatchsetRow>("buding_patchsets"),
     optionalState("patchset-ids"),
   ]);
   const activeIds = activePatchsetIds(ids);
-  return rows.filter((row) => !activeIds || activeIds.has(row.id)).map((row) => validatePatchsetDetail(row.detail, `buding_patchsets/${row.id}`));
+  return newestFirst(rows
+    .filter((row) => !activeIds || activeIds.has(row.id))
+    .map((row) => validatePatchsetDetail(row.detail, `buding_patchsets/${row.id}`)));
 }
 
 async function getLoreMessage(messageId: string): Promise<LoreMessage | null> {
