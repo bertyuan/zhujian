@@ -25,19 +25,29 @@ function store(): SupabaseRest {
   return database;
 }
 
-async function state(key: string): Promise<unknown> {
+async function optionalState(key: string): Promise<unknown | undefined> {
   const rows = await store().select<StateRow>("buding_state", { key: `eq.${key}` });
-  if (!rows[0]) throw new Error(`Supabase state ${key} is missing. Run the synchronization workflow once after applying the migration.`);
-  return rows[0].data;
+  return rows[0]?.data;
+}
+
+async function state(key: string): Promise<unknown> {
+  const value = await optionalState(key);
+  if (value === undefined) throw new Error(`Supabase state ${key} is missing. Run the synchronization workflow once after applying the migration.`);
+  return value;
+}
+
+function activePatchsetIds(value: unknown | undefined): Set<string> | undefined {
+  if (value === undefined) return undefined;
+  return new Set(Array.isArray(value) ? value.filter((id): id is string => typeof id === "string") : []);
 }
 
 export async function getPatchsets(): Promise<PatchsetSummary[]> {
   patchsetsPromise ??= Promise.all([
     store().select<PatchsetRow>("buding_patchsets", { order: "id.asc" }),
-    state("patchset-ids"),
+    optionalState("patchset-ids"),
   ]).then(([rows, ids]) => {
-    const activeIds = new Set(Array.isArray(ids) ? ids.filter((id): id is string => typeof id === "string") : []);
-    return validatePatchsetSummaries(rows.filter((row) => activeIds.has(row.id)).map((row) => row.summary));
+    const activeIds = activePatchsetIds(ids);
+    return validatePatchsetSummaries(rows.filter((row) => !activeIds || activeIds.has(row.id)).map((row) => row.summary));
   });
   return patchsetsPromise;
 }
@@ -52,8 +62,8 @@ export async function getSyncRunState(): Promise<SyncRunState> {
 
 export async function getPatchset(id: string): Promise<PatchsetDetail | null> {
   if (!/^[a-z0-9-]+$/.test(id)) return null;
-  const activeIds = await state("patchset-ids");
-  if (!Array.isArray(activeIds) || !activeIds.includes(id)) return null;
+  const activeIds = activePatchsetIds(await optionalState("patchset-ids"));
+  if (activeIds && !activeIds.has(id)) return null;
   const rows = await store().select<PatchsetRow>("buding_patchsets", { id: `eq.${id}` });
   if (!rows[0]?.detail) return null;
   return validatePatchsetDetail(rows[0].detail, `buding_patchsets/${id}`);
@@ -62,10 +72,10 @@ export async function getPatchset(id: string): Promise<PatchsetDetail | null> {
 export async function getPatchsetDetails(): Promise<PatchsetDetail[]> {
   const [rows, ids] = await Promise.all([
     store().select<PatchsetRow>("buding_patchsets", { order: "id.asc" }),
-    state("patchset-ids"),
+    optionalState("patchset-ids"),
   ]);
-  const activeIds = new Set(Array.isArray(ids) ? ids.filter((id): id is string => typeof id === "string") : []);
-  return rows.filter((row) => activeIds.has(row.id)).map((row) => validatePatchsetDetail(row.detail, `buding_patchsets/${row.id}`));
+  const activeIds = activePatchsetIds(ids);
+  return rows.filter((row) => !activeIds || activeIds.has(row.id)).map((row) => validatePatchsetDetail(row.detail, `buding_patchsets/${row.id}`));
 }
 
 async function getLoreMessage(messageId: string): Promise<LoreMessage | null> {

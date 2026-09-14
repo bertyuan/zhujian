@@ -51,12 +51,15 @@ for (const tree of TRACKED_TREES) {
     updated_at: new Date().toISOString(),
   }))));
 }
+// Publish the active-set marker first. Readers use it as the atomic switch to
+// the freshly uploaded patchset set; it also makes a partially failed upload
+// continue serving the prior data rather than returning an empty dashboard.
+await database.upsertState("patchset-ids", details.map((detail) => detail.id));
 await Promise.all([
   database.upsertState("metadata", metadata),
   database.upsertState("sync-state", syncState),
   database.upsertState("lore-state", loreState),
   database.upsertState("git-state", gitState),
-  database.upsertState("patchset-ids", details.map((detail) => detail.id)),
   database.upsertState("published-at", { value: new Date().toISOString() }),
 ]);
 await Promise.all(previousPatchsetIds
