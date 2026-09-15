@@ -11,7 +11,7 @@ on:
         type: string
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: zhujian-data-sync
@@ -60,6 +60,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Restore the last synchronization snapshot from Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: pnpm hydrate:supabase
+
       - name: Synchronize and generate tracking data
         env:
           SYNC_SINCE: ${{ inputs.since }}
@@ -71,29 +77,16 @@ jobs:
       - name: Run tests
         run: pnpm test
 
-      - name: Commit generated data
-        run: |
-          if git diff --quiet -- data; then
-            echo "Generated data is unchanged."
-            exit 0
-          fi
-          git config user.name "zhujian data bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git commit -m "data: update patch tracking status [skip ci]"
-          git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin HEAD:"$GITHUB_REF_NAME"
+      - name: Publish generated data to Supabase
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: pnpm publish:supabase
 
       - name: Publish synchronization failure state
         if: failure()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
         run: |
-          if git diff --quiet -- data/internal/sync-state.json; then
-            echo "No synchronization failure state was generated."
-            exit 0
-          fi
-          git config user.name "zhujian data bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/internal/sync-state.json
-          git commit -m "data: record synchronization failure [skip ci]"
-          git pull --rebase --autostash origin "$GITHUB_REF_NAME"
-          git push origin HEAD:"$GITHUB_REF_NAME"
+          pnpm publish:supabase

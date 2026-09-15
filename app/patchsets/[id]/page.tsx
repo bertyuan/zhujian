@@ -5,12 +5,8 @@ import { CopyButton } from "@/components/copy-button";
 import { Pipeline } from "@/components/pipeline";
 import { StatusBadge } from "@/components/status-badge";
 import { UpstreamLights } from "@/components/upstream-lights";
-import { getPatchset, getPatchsets } from "@/lib/data/loader";
+import { getPatchset } from "@/lib/data/loader";
 import { messagePath } from "@/lib/messages/routing";
-
-export function generateStaticParams() {
-  return getPatchsets().map((patchset) => ({ id: patchset.id }));
-}
 
 export default async function PatchsetPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

@@ -10,8 +10,8 @@ const columns: Array<{ id: UpstreamStage; title: string; branch: string }> = [
   ...TRACKED_TREES.map((tree) => ({ id: tree.id, title: tree.name, branch: tree.branch })),
 ];
 
-export default function BoardPage() {
-  const patchsets = getPatchsets().filter((item) => item.latestRevision);
+export default async function BoardPage() {
+  const patchsets = (await getPatchsets()).filter((item) => item.latestRevision);
   return (
     <>
       <section className="shell content-section">
