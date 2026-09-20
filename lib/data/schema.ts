@@ -59,7 +59,7 @@ export interface PatchsetSummary {
 
 export interface ManualStatusOverride {
   status: PatchsetStatus;
-  reason: string;
+  reason?: string;
   actor: string;
   setAt: string;
 }

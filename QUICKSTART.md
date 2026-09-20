@@ -11,9 +11,10 @@
 
 1. `supabase/migrations/20260915000000_buding_data.sql`
 2. `supabase/migrations/20260920000000_patch_status_auth.sql`
+3. `supabase/migrations/20260921000000_optional_manual_status_reason.sql`
 
 第一份 migration 创建公开只读的补丁数据表；第二份创建 API Key、人工状态
-覆盖及审计表。必须按这个顺序执行。
+覆盖及审计表；第三份允许人工状态不填写原因。必须按这个顺序执行。
 
 在 Supabase 的 **Connect** 页面记录下：
 

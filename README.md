@@ -99,8 +99,9 @@ change the lifetime (default: `30`) and `BUDING_API_SESSION_REFRESH_DAYS` to
 refresh an active browser session when that many days remain (default: `7`).
 The refresh value must be smaller than the lifetime.
 
-Apply `supabase/migrations/20260920000000_patch_status_auth.sql` after the
-base migration, and configure these additional server-only variables in Vercel:
+After the base migration, apply `supabase/migrations/20260920000000_patch_status_auth.sql`
+and then `supabase/migrations/20260921000000_optional_manual_status_reason.sql`.
+Configure these additional server-only variables in Vercel:
 
 ```text
 SUPABASE_URL=https://your-project.supabase.co

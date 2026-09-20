@@ -26,7 +26,8 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
     return NextResponse.json({ error: "Expected JSON." }, { status: 400 });
   }
   if (typeof body.status !== "string" || !STATUSES.has(body.status as PatchsetStatus)) return NextResponse.json({ error: "Unknown patch status." }, { status: 400 });
-  if (typeof body.reason !== "string" || !body.reason.trim() || body.reason.length > 1000) return NextResponse.json({ error: "A reason of at most 1000 characters is required." }, { status: 400 });
+  if (body.reason !== undefined && (typeof body.reason !== "string" || body.reason.length > 1000)) return NextResponse.json({ error: "Reason must be at most 1000 characters." }, { status: 400 });
+  const reason = typeof body.reason === "string" && body.reason.trim() ? body.reason.trim() : null;
   const { id } = await params;
   if (!/^[a-z0-9-]+$/.test(id) || !await getPatchset(id)) return NextResponse.json({ error: "Patchset not found." }, { status: 404 });
   const setAt = new Date().toISOString();
@@ -34,7 +35,7 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
   await database.upsertWithConflict("buding_patchset_status_overrides", "patchset_id", [{
     patchset_id: id,
     status: body.status,
-    reason: body.reason.trim(),
+    reason,
     actor_key_id: activeKey.keyId,
     actor_label: activeKey.label,
     set_at: setAt,
@@ -43,13 +44,13 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
     id: crypto.randomUUID(),
     patchset_id: id,
     status: body.status,
-    reason: body.reason.trim(),
+    reason,
     actor_key_id: activeKey.keyId,
     actor_label: activeKey.label,
     source: "manual",
     created_at: setAt,
   }]);
-  const response = NextResponse.json({ status: body.status, reason: body.reason.trim(), actor: activeKey.label, setAt });
+  const response = NextResponse.json({ status: body.status, reason, actor: activeKey.label, setAt });
   if (shouldRefreshSession(session)) response.cookies.set(API_SESSION_COOKIE, createSession(activeKey), sessionCookie());
   return response;
 }

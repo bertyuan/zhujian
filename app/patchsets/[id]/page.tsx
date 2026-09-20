@@ -44,7 +44,7 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
 
       <section className="section lifecycle-section">
         <h2>Patch status</h2>
-        {patchset.manualStatus && <p className="manual-status-note">Manual override: <strong>{patchset.manualStatus.status}</strong> by {patchset.manualStatus.actor} on {new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeStyle: "short" }).format(new Date(patchset.manualStatus.setAt))}. Reason: {patchset.manualStatus.reason}</p>}
+        {patchset.manualStatus && <p className="manual-status-note">Manual override: <strong>{patchset.manualStatus.status}</strong> by {patchset.manualStatus.actor} on {new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeStyle: "short" }).format(new Date(patchset.manualStatus.setAt))}.{patchset.manualStatus.reason && <> Reason: {patchset.manualStatus.reason}</>}</p>}
         {!patchset.manualStatus && <p className="section-help">This status is automatic until an authenticated maintainer sets a manual override.</p>}
         <ManualStatusControl patchsetId={patchset.id} currentStatus={patchset.status} />
         <h3>Legacy lore lifecycle</h3>

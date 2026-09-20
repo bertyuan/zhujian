@@ -34,7 +34,7 @@ export function ManualStatusControl({ patchsetId, currentStatus }: { patchsetId:
       <h3>Manual override</h3>
       <form onSubmit={save} className="status-form">
         <label>Status<select value={status} onChange={(event) => setStatus(event.target.value as PatchsetStatus)}>{statuses.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label>
-        <label>Reason<input value={reason} maxLength={1000} onChange={(event) => setReason(event.target.value)} required /></label>
+        <label>Reason (optional)<input value={reason} maxLength={1000} onChange={(event) => setReason(event.target.value)} /></label>
         <button className="control-button" disabled={busy}>{busy ? "Saving…" : "Save manual status"}</button>
       </form>
       {message && <p className="section-help" role="status">{message}</p>}
