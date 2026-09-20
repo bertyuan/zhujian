@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LanguageBadge } from "@/components/language-badge";
-import { CopyButton } from "@/components/copy-button";
 import { Pipeline } from "@/components/pipeline";
 import { StatusBadge } from "@/components/status-badge";
 import { UpstreamLights } from "@/components/upstream-lights";
+import { ManualStatusControl } from "@/components/manual-status-control";
 import { getPatchset } from "@/lib/data/loader";
 import { messagePath } from "@/lib/messages/routing";
 
@@ -44,6 +44,10 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
 
       <section className="section lifecycle-section">
         <h2>Patch status</h2>
+        {patchset.manualStatus && <p className="manual-status-note">Manual override: <strong>{patchset.manualStatus.status}</strong> by {patchset.manualStatus.actor} on {new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeStyle: "short" }).format(new Date(patchset.manualStatus.setAt))}. Reason: {patchset.manualStatus.reason}</p>}
+        {!patchset.manualStatus && <p className="section-help">This status is automatic until an authenticated maintainer sets a manual override.</p>}
+        <ManualStatusControl patchsetId={patchset.id} currentStatus={patchset.status} />
+        <h3>Legacy lore lifecycle</h3>
         {patchset.lifecycleEvent ? (
           <div className="lifecycle-evidence">
             <span>This series was marked <strong>{patchset.lifecycleEvent.state}</strong> via {patchset.lifecycleEvent.source}.</span>
@@ -53,14 +57,9 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
             {patchset.lifecycleEvent.evidence && <a className="text-link" href={patchset.lifecycleEvent.evidence} target="_blank" rel="noreferrer">Open override evidence ↗</a>}
           </div>
         ) : (
-          <p className="section-help">The patch author or an authorized maintainer can reply on the lore thread with one exact, unquoted line. This changes lifecycle only; it never changes upstream Git evidence.</p>
+          <p className="section-help">No lifecycle directive is recorded in the lore thread.</p>
         )}
-        <div className="status-actions">
-          <code>Patch-status: withdrawn</code><CopyButton value="Patch-status: withdrawn" label="Copy withdrawn" />
-          <code>Patch-status: invalid</code><CopyButton value="Patch-status: invalid" label="Copy invalid" />
-          {patchset.lifecycle !== "active" && <><code>Patch-status: active</code><CopyButton value="Patch-status: active" label="Copy active" /></>}
-          <a className="control-button" href={patchset.loreUrl} target="_blank" rel="noreferrer">Open lore thread ↗</a>
-        </div>
+        <a className="control-button" href={patchset.loreUrl} target="_blank" rel="noreferrer">Open lore thread ↗</a>
       </section>
 
       <section className="section">

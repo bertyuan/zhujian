@@ -216,7 +216,6 @@ export function reconcilePatchsets(
         trees,
         detail.latestRevision,
         detail.reviewState,
-        stateOverride?.state ?? detail.lifecycle,
       ),
     };
   });

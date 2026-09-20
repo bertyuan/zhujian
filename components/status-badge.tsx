@@ -1,29 +1,21 @@
 import type { PatchsetStatus } from "@/lib/data/schema";
 
 const statusLabels: Record<PatchsetStatus, string> = {
-  "waiting-for-review": "Waiting for review",
-  "in-review": "In review",
-  updated: "Updated",
-  withdrawn: "Withdrawn",
-  invalid: "Invalid",
-  "queued-alex": "Queued by Alex",
-  "in-docs-mw": "In docs-mw",
-  mainline: "Mainline",
-  "partially-applied": "Partially applied",
-  "previously-queued": "Previously queued",
+  proposed: "Proposed",
+  "needs-revision": "Needs revision",
+  superseded: "Superseded",
+  approved: "Approved",
+  rejected: "Rejected",
+  applied: "Applied",
 };
 
 const statusClasses: Record<PatchsetStatus, string> = {
-  "waiting-for-review": "status-waiting",
-  "in-review": "status-review",
-  updated: "status-updated",
-  withdrawn: "status-terminal",
-  invalid: "status-terminal",
-  "queued-alex": "status-alex",
-  "in-docs-mw": "status-docs-mw",
-  mainline: "status-mainline",
-  "partially-applied": "status-partial",
-  "previously-queued": "status-previous",
+  proposed: "status-waiting",
+  "needs-revision": "status-review",
+  superseded: "status-updated",
+  approved: "status-mainline",
+  rejected: "status-terminal",
+  applied: "status-mainline",
 };
 
 export function StatusBadge({ status }: { status: PatchsetStatus }) {

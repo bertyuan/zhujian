@@ -16,7 +16,7 @@ function detail(messageId = "<patch@example.com>"): PatchsetDetail {
     postedAt: "2026-08-01T00:00:00Z",
     language: "zh_CN",
     patchCount: 1,
-    status: "waiting-for-review",
+    status: "proposed",
     lifecycle: "active",
     reviewState: "waiting",
     reviewReplies: 0,
@@ -72,7 +72,7 @@ test("keeps confirmed, historical, and candidate matches distinct per tree", () 
   assert.equal(patchTrees.alex.state, "confirmed");
   assert.equal(patchTrees.corbet.state, "previously-present");
   assert.equal(patchTrees.linus.state, "candidate");
-  assert.equal(result.details[0].status, "queued-alex");
+  assert.equal(result.details[0].status, "applied");
   assert.deepEqual(
     { confirmed: result.confirmed, candidates: result.candidates, previouslyPresent: result.previouslyPresent },
     { confirmed: 1, candidates: 1, previouslyPresent: 1 },
@@ -174,7 +174,7 @@ test("manual state overrides preserve terminal patchsets", () => {
   );
   assert.equal(result.details.length, 1);
   assert.equal(result.details[0].lifecycle, "invalid");
-  assert.equal(result.details[0].status, "invalid");
+  assert.equal(result.details[0].status, "proposed");
   assert.equal(result.details[0].lifecycleEvent?.source, "override");
   assert.equal(result.stateOverrides, 1);
 });

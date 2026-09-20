@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import type { Language, PatchsetDetail, PatchsetLifecycle, PatchsetReviewState, PatchsetStatus, TreeId, TreeSummary } from "../data/schema";
+import type { Language, PatchsetDetail, PatchsetReviewState, PatchsetStatus, TreeId, TreeSummary } from "../data/schema";
 import { classifyLanguage, extractChangedFiles, extractReviewTrailers } from "./parser.ts";
 import { normalizeSeriesSubject, parsePatchSubject } from "./subject.ts";
 import { reconstructThreads } from "./thread.ts";
@@ -49,18 +49,16 @@ export function deriveStatus(
   trees: Record<TreeId, TreeSummary>,
   latestRevision: boolean,
   reviewState: PatchsetReviewState = "waiting",
-  lifecycle: PatchsetLifecycle = "active",
 ): PatchsetStatus {
-  if (!latestRevision) return "updated";
-  if (trees.linus.state === "confirmed") return "mainline";
-  if (trees.corbet.state === "confirmed") return "in-docs-mw";
-  if (trees.alex.state === "confirmed") return "queued-alex";
-  if (lifecycle === "withdrawn") return "withdrawn";
-  if (lifecycle === "invalid") return "invalid";
-  if (TREE_IDS.some((id) => trees[id].state === "partial" || trees[id].state === "candidate")) return "partially-applied";
-  if (TREE_IDS.some((id) => trees[id].state === "previously-present")) return "previously-queued";
-  if (reviewState === "discussion") return "in-review";
-  return "waiting-for-review";
+  // A later revision always supersedes an older one.  The database-backed
+  // manual status overlay is applied at request time and intentionally has
+  // higher priority than every decision here.
+  if (!latestRevision) return "superseded";
+  // A complete exact match in any tracked maintainer tree means the series has
+  // been applied somewhere upstream; lamps retain the precise tree evidence.
+  if (TREE_IDS.some((id) => trees[id].state === "confirmed")) return "applied";
+  if (reviewState === "discussion") return "needs-revision";
+  return "proposed";
 }
 
 function seriesLanguage(languages: Language[]): Language {
@@ -139,7 +137,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       postedAt: anchor.message.date,
       language: seriesLanguage(languages),
       patchCount,
-      status: "waiting-for-review" as PatchsetStatus,
+      status: "proposed" as PatchsetStatus,
       lifecycle: lifecycle.lifecycle,
       reviewState,
       reviewReplies,
@@ -169,7 +167,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       return {
         ...draft,
         latestRevision: isLatest,
-        status: deriveStatus(draft.trees, isLatest, draft.reviewState, draft.lifecycle),
+        status: deriveStatus(draft.trees, isLatest, draft.reviewState),
         versions: relatives
           .toSorted((a, b) => a.revision - b.revision || Date.parse(a.postedAt) - Date.parse(b.postedAt))
           .map((relative) => ({ revision: relative.revision, id: relative.id, current: relative.id === draft.id })),

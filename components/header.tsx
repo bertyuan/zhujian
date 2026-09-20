@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ApiKeyMenu } from "./api-key-menu";
 
 const links = [
   { href: "/", label: "Patchsets" },
@@ -31,6 +32,7 @@ export function Header() {
           <a className="nav-link github-link" href="https://github.com/bertyuan/zhujian" target="_blank" rel="noreferrer">
             Source ↗
           </a>
+          <ApiKeyMenu />
         </nav>
       </div>
     </header>

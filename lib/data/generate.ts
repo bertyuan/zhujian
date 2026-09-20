@@ -15,6 +15,7 @@ function summaryFromDetail(detail: PatchsetDetail): PatchsetSummary {
     language: detail.language,
     patchCount: detail.patchCount,
     status: detail.status,
+    ...(detail.manualStatus ? { manualStatus: detail.manualStatus } : {}),
     lifecycle: detail.lifecycle,
     reviewState: detail.reviewState,
     reviewReplies: detail.reviewReplies,

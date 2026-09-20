@@ -20,6 +20,9 @@ import type {
 const LANGUAGES = new Set<Language>(["zh_CN", "zh_TW", "mixed"]);
 const LIGHT_STATES = new Set<LightState>(["confirmed", "partial", "candidate", "previously-present", "missing"]);
 const STATUSES = new Set<PatchsetStatus>([
+  "proposed", "needs-revision", "superseded", "approved", "rejected", "applied",
+]);
+const LEGACY_STATUSES = new Set([
   "waiting-for-review", "in-review", "updated", "withdrawn", "invalid", "queued-alex", "in-docs-mw", "mainline", "partially-applied", "previously-queued",
 ]);
 const LIFECYCLES = new Set<PatchsetLifecycle>(["active", "withdrawn", "invalid"]);
@@ -124,14 +127,19 @@ function trees(value: unknown, path: string): Record<TreeId, TreeSummary> {
   return Object.fromEntries(TREE_IDS.map((id) => [id, treeSummary(item[id], `${path}.${id}`)])) as Record<TreeId, TreeSummary>;
 }
 
+function automaticStatus(trees: Record<TreeId, TreeSummary>, latestRevision: boolean, reviewState: PatchsetReviewState): PatchsetStatus {
+  if (!latestRevision) return "superseded";
+  if (TREE_IDS.some((id) => trees[id].state === "confirmed")) return "applied";
+  return reviewState === "discussion" ? "needs-revision" : "proposed";
+}
+
 export function validatePatchsetSummary(value: unknown, path = "patchset"): PatchsetSummary {
   const item = object(value, path);
   const language = string(item.language, `${path}.language`) as Language;
-  const status = string(item.status, `${path}.status`) as PatchsetStatus;
+  const rawStatus = string(item.status, `${path}.status`);
   const lifecycle = string(item.lifecycle, `${path}.lifecycle`) as PatchsetLifecycle;
   const reviewState = string(item.reviewState, `${path}.reviewState`) as PatchsetReviewState;
   if (!LANGUAGES.has(language)) fail(`${path}.language`, `unknown language ${language}`);
-  if (!STATUSES.has(status)) fail(`${path}.status`, `unknown status ${status}`);
   if (!LIFECYCLES.has(lifecycle)) fail(`${path}.lifecycle`, `unknown lifecycle ${lifecycle}`);
   if (!REVIEW_STATES.has(reviewState)) fail(`${path}.reviewState`, `unknown review state ${reviewState}`);
   const id = string(item.id, `${path}.id`);
@@ -141,6 +149,13 @@ export function validatePatchsetSummary(value: unknown, path = "patchset"): Patc
     fail(`${path}.messageIds`, "expected at least one bracketed Message-ID");
   }
   if (new Set(messageIds).size !== messageIds.length) fail(`${path}.messageIds`, "must not contain duplicates");
+  const patchsetTrees = trees(item.trees, `${path}.trees`);
+  const latestRevision = boolean(item.latestRevision, `${path}.latestRevision`);
+  const status = STATUSES.has(rawStatus as PatchsetStatus)
+    ? rawStatus as PatchsetStatus
+    : LEGACY_STATUSES.has(rawStatus)
+      ? automaticStatus(patchsetTrees, latestRevision, reviewState)
+      : fail(`${path}.status`, `unknown status ${rawStatus}`);
   return {
     id,
     subject: string(item.subject, `${path}.subject`),
@@ -154,9 +169,9 @@ export function validatePatchsetSummary(value: unknown, path = "patchset"): Patc
     lifecycle,
     reviewState,
     reviewReplies: integer(item.reviewReplies, `${path}.reviewReplies`),
-    latestRevision: boolean(item.latestRevision, `${path}.latestRevision`),
+    latestRevision,
     messageIds,
-    trees: trees(item.trees, `${path}.trees`),
+    trees: patchsetTrees,
   };
 }
 

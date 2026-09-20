@@ -4,6 +4,7 @@ import { messageRouteId } from "../messages/routing";
 import type { PatchDetail, PatchsetDetail, PatchsetSummary, SyncMetadata, SyncRunState } from "./schema";
 import { validatePatchsetDetail, validatePatchsetSummaries, validateSyncMetadata, validateSyncRunState } from "./validation";
 import { readSupabaseConfig, SupabaseRest } from "./supabase";
+import { manualStatusOverrides, withManualStatus } from "../status/overrides";
 
 export interface PatchMessagePageData {
   message: LoreMessage;
@@ -18,7 +19,6 @@ interface StateRow { key: string; data: unknown }
 interface LoreRow { message_id: string; data: unknown }
 
 let database: SupabaseRest | undefined;
-let patchsetsPromise: Promise<PatchsetSummary[]> | undefined;
 
 function store(): SupabaseRest {
   database ??= new SupabaseRest(readSupabaseConfig());
@@ -46,14 +46,14 @@ function newestFirst<T extends { postedAt: string; id: string }>(items: T[]): T[
 }
 
 export async function getPatchsets(): Promise<PatchsetSummary[]> {
-  patchsetsPromise ??= Promise.all([
+  return Promise.all([
     store().select<PatchsetRow>("buding_patchsets"),
     optionalState("patchset-ids"),
-  ]).then(([rows, ids]) => {
+    manualStatusOverrides(),
+  ]).then(([rows, ids, overrides]) => {
     const activeIds = activePatchsetIds(ids);
-    return newestFirst(validatePatchsetSummaries(rows.filter((row) => !activeIds || activeIds.has(row.id)).map((row) => row.summary)));
+    return newestFirst(validatePatchsetSummaries(rows.filter((row) => !activeIds || activeIds.has(row.id)).map((row) => row.summary)).map((patchset) => withManualStatus(patchset, overrides)));
   });
-  return patchsetsPromise;
 }
 
 export async function getMetadata(): Promise<SyncMetadata> {
@@ -70,18 +70,19 @@ export async function getPatchset(id: string): Promise<PatchsetDetail | null> {
   if (activeIds && !activeIds.has(id)) return null;
   const rows = await store().select<PatchsetRow>("buding_patchsets", { id: `eq.${id}` });
   if (!rows[0]?.detail) return null;
-  return validatePatchsetDetail(rows[0].detail, `buding_patchsets/${id}`);
+  return withManualStatus(validatePatchsetDetail(rows[0].detail, `buding_patchsets/${id}`), await manualStatusOverrides());
 }
 
 export async function getPatchsetDetails(): Promise<PatchsetDetail[]> {
-  const [rows, ids] = await Promise.all([
+  const [rows, ids, overrides] = await Promise.all([
     store().select<PatchsetRow>("buding_patchsets"),
     optionalState("patchset-ids"),
+    manualStatusOverrides(),
   ]);
   const activeIds = activePatchsetIds(ids);
   return newestFirst(rows
     .filter((row) => !activeIds || activeIds.has(row.id))
-    .map((row) => validatePatchsetDetail(row.detail, `buding_patchsets/${row.id}`)));
+    .map((row) => withManualStatus(validatePatchsetDetail(row.detail, `buding_patchsets/${row.id}`), overrides)));
 }
 
 async function getLoreMessage(messageId: string): Promise<LoreMessage | null> {
