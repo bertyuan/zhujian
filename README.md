@@ -99,9 +99,10 @@ change the lifetime (default: `30`) and `BUDING_API_SESSION_REFRESH_DAYS` to
 refresh an active browser session when that many days remain (default: `7`).
 The refresh value must be smaller than the lifetime.
 
-After the base migration, apply `supabase/migrations/20260920000000_patch_status_auth.sql`
-and then `supabase/migrations/20260921000000_optional_manual_status_reason.sql`.
-Configure these additional server-only variables in Vercel:
+For a new project, use `supabase/schema.sql`. For an existing project that has
+already applied the base migration, apply the remaining files under
+`supabase/migrations/` in ascending filename order. Configure these additional
+server-only variables in Vercel:
 
 ```text
 SUPABASE_URL=https://your-project.supabase.co
@@ -216,9 +217,11 @@ messages that should not have been classified as translation patches at all.
 
 ## Supabase
 
-Apply `supabase/migrations/20260915000000_buding_data.sql` in the Supabase SQL
-editor (or through the Supabase CLI) once. It creates four JSONB-backed tables
-and public read-only RLS policies. Then add these environment variables:
+For a new project, apply `supabase/schema.sql` in the Supabase SQL editor (or
+through the Supabase CLI) once. It creates all tables and public read-only RLS
+policies. Existing projects should instead apply any pending timestamped
+migrations in `supabase/migrations/`, in ascending filename order. Then add
+these environment variables:
 
 ```text
 # Vercel (read-only)

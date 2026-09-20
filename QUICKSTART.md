@@ -6,15 +6,12 @@
 
 ## 1. 创建 Supabase 项目并建表
 
-在 Supabase 创建一个新项目，打开 **SQL Editor**，依次执行以下文件的完整
-内容：
+在 Supabase 创建一个新项目，打开 **SQL Editor**，执行
+`supabase/schema.sql` 的完整内容。它会一次性创建公开只读的补丁数据表、API
+Key、人工状态覆盖和审计表。
 
-1. `supabase/migrations/20260915000000_buding_data.sql`
-2. `supabase/migrations/20260920000000_patch_status_auth.sql`
-3. `supabase/migrations/20260921000000_optional_manual_status_reason.sql`
-
-第一份 migration 创建公开只读的补丁数据表；第二份创建 API Key、人工状态
-覆盖及审计表；第三份允许人工状态不填写原因。必须按这个顺序执行。
+如果数据库不是全新的，不要执行 `schema.sql`；请改为按文件名升序执行
+`supabase/migrations/` 中尚未执行的 migration。
 
 在 Supabase 的 **Connect** 页面记录下：
 
