@@ -6,6 +6,8 @@ generated data from Supabase with Next.js.
 
 Production: <https://zhujian.vercel.app>
 
+从空 Supabase、GitHub Actions 和 Vercel 开始部署，请见 [快速开始](QUICKSTART.md)。
+
 Buding follows patches that touch
 `Documentation/translations/zh_CN/` or
 `Documentation/translations/zh_TW/`. Its three indicators represent Alex's
@@ -63,7 +65,7 @@ only an activity signal, not proof that review is complete. The old
 upstream board remains available at `/board`, but is no longer in the primary
 navigation.
 
-Patch authors and configured maintainers can change a series lifecycle by
+Patch authors and configured maintainers can record a legacy lifecycle signal by
 replying in its lore thread with one exact, unquoted line:
 
 ```text
@@ -73,8 +75,55 @@ Patch-status: active
 ```
 
 Matching uses the sender mailbox, not the display name. The latest authorized
-directive wins and its message is retained as evidence. These directives never
-alter Git matching. There is deliberately no age-based `Stalled` state.
+directive wins and its message is retained as evidence. These directives are
+shown as historical lifecycle evidence only; they never change the authenticated
+patch status or Git matching. There is deliberately no age-based `Stalled`
+state.
+
+## Patch statuses and authenticated overrides
+
+The public status is derived automatically unless an authenticated maintainer
+sets an override. Automatic precedence is: an older revision is `Superseded`; a
+complete exact match in Alex's `docs-next`, Corbet's `docs-mw`, or Linus's
+`master` is `Applied`; a current series with external discussion is `Needs
+revision`; otherwise it is `Proposed`. `Approved` and `Rejected` are available
+to maintainers as manual decisions. The upstream lamps always remain visible as
+the evidence behind an automatic `Applied` status.
+
+Manual decisions are stored separately from generated patchset JSON, so a
+scheduled sync cannot overwrite them. The global navigation accepts an API key once and
+exchanges it for a 30-day HttpOnly, Secure production cookie; the raw key is
+never persisted in browser storage. Every mutation rechecks that the key is
+still active, so revocation is immediate. Set `BUDING_API_SESSION_DAYS` to
+change the lifetime (default: `30`) and `BUDING_API_SESSION_REFRESH_DAYS` to
+refresh an active browser session when that many days remain (default: `7`).
+The refresh value must be smaller than the lifetime.
+
+For a new project, use `supabase/schema.sql`. For an existing project that has
+already applied the base migration, apply the remaining files under
+`supabase/migrations/` in ascending filename order. Configure these additional
+server-only variables in Vercel:
+
+```text
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SECRET_KEY=sb_secret_...
+BUDING_API_KEY_PEPPER=a-long-random-secret
+BUDING_API_SESSION_SECRET=a-different-long-random-secret
+BUDING_ADMIN_KEY=a-third-long-random-secret
+BUDING_ADMIN_PATH=/manage-keys-a-long-random-suffix
+```
+
+Set a third random secret as `BUDING_ADMIN_KEY`, and choose an unguessable
+single-segment route such as `/manage-keys-<random-suffix>` for
+`BUDING_ADMIN_PATH`. Open that exact path directly; it is intentionally
+not linked from the site navigation. Enter the root key through the global API
+Key button, then use the management page to create or revoke ordinary API keys.
+The root key is never stored in Supabase and must not be used for routine work.
+
+Only an HMAC verifier, label, role, and lifecycle metadata are stored for each
+API key; the key material itself is never put into Supabase. The override table
+is publicly readable only for its final status, reason, actor label, and time;
+key records and audit history remain server-only.
 
 ## Local preview
 
@@ -168,9 +217,11 @@ messages that should not have been classified as translation patches at all.
 
 ## Supabase
 
-Apply `supabase/migrations/20260915000000_buding_data.sql` in the Supabase SQL
-editor (or through the Supabase CLI) once. It creates four JSONB-backed tables
-and public read-only RLS policies. Then add these environment variables:
+For a new project, apply `supabase/schema.sql` in the Supabase SQL editor (or
+through the Supabase CLI) once. It creates all tables and public read-only RLS
+policies. Existing projects should instead apply any pending timestamped
+migrations in `supabase/migrations/`, in ascending filename order. Then add
+these environment variables:
 
 ```text
 # Vercel (read-only)

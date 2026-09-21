@@ -17,7 +17,7 @@ function patchset(trees: Record<TreeId, TreeSummary>): PatchsetSummary {
     postedAt: "2026-09-05T00:00:00Z",
     language: "zh_CN",
     patchCount: 2,
-    status: "partially-applied",
+    status: "proposed",
     lifecycle: "active",
     reviewState: "waiting",
     reviewReplies: 0,

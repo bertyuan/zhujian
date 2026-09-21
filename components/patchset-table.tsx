@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Language, PatchsetStatus, PatchsetSummary } from "@/lib/data/schema";
-import { TRACKED_TREES } from "@/lib/git/config";
 import { LanguageBadge } from "./language-badge";
 import { PatchsetCard } from "./patchset-card";
 import { StatusBadge } from "./status-badge";
@@ -12,18 +11,11 @@ import { UpstreamLights } from "./upstream-lights";
 
 const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
 
-type StatusFilter = "all" | "waiting" | "review" | "updated" | "closed" | "alex" | "corbet" | "linus" | "partial";
+type StatusFilter = "all" | PatchsetStatus;
 
 const statusMatches = (status: PatchsetStatus, filter: StatusFilter) => {
   if (filter === "all") return true;
-  if (filter === "waiting") return status === "waiting-for-review";
-  if (filter === "review") return status === "in-review";
-  if (filter === "updated") return status === "updated";
-  if (filter === "closed") return status === "withdrawn" || status === "invalid";
-  if (filter === "alex") return status === "queued-alex" || status === "previously-queued";
-  if (filter === "corbet") return status === "in-docs-mw";
-  if (filter === "linus") return status === "mainline";
-  return status === "partially-applied";
+  return status === filter;
 };
 
 export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
@@ -99,16 +91,16 @@ export function PatchsetTable({ patchsets }: { patchsets: PatchsetSummary[] }) {
         <select className="filter" aria-label="Filter by status" value={status} onChange={(event) => {
           const nextStatus = event.target.value as StatusFilter;
           setStatus(nextStatus);
-          if (nextStatus === "updated") setVersions("all");
+          if (nextStatus === "superseded") setVersions("all");
           setSelectedIndex(-1);
         }}>
           <option value="all">All statuses</option>
-          <option value="waiting">Waiting for review</option>
-          <option value="review">In review</option>
-          <option value="updated">Updated</option>
-          <option value="closed">Withdrawn / invalid</option>
-          {TRACKED_TREES.map((tree) => <option value={tree.id} key={tree.id}>{tree.name}</option>)}
-          <option value="partial">Partial</option>
+          <option value="proposed">Proposed</option>
+          <option value="needs-revision">Needs revision</option>
+          <option value="superseded">Superseded</option>
+          <option value="approved">Approved</option>
+          <option value="rejected">Rejected</option>
+          <option value="applied">Applied</option>
         </select>
         <select className="filter" aria-label="Filter by version" value={versions} onChange={(e) => { setVersions(e.target.value as typeof versions); setSelectedIndex(-1); }}>
           <option value="latest">Latest only</option>

@@ -17,7 +17,7 @@ function detail(id: string, postedAt: string, reviewState: PatchsetReviewState =
     postedAt,
     language: "zh_CN",
     patchCount: 1,
-    status: reviewState === "waiting" ? "waiting-for-review" : "in-review",
+    status: reviewState === "waiting" ? "proposed" : "needs-revision",
     lifecycle: "active",
     reviewState,
     reviewReplies: reviewState === "waiting" ? 0 : 2,
@@ -46,7 +46,7 @@ test("keeps only active latest pre-Alex series and sorts newest first", () => {
   const waiting = detail("waiting-v1", "2026-02-01T00:00:00Z");
   const withdrawn = detail("withdrawn-v1", "2026-03-01T00:00:00Z");
   withdrawn.lifecycle = "withdrawn";
-  withdrawn.status = "withdrawn";
+  withdrawn.status = "rejected";
   const queued = detail("queued-v1", "2026-04-01T00:00:00Z");
   queued.trees.alex = { state: "confirmed", matched: 1, total: 1 };
 

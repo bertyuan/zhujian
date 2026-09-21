@@ -14,10 +14,10 @@ test("groups revisions, single patches, replies, and mixed-language series", asy
   assert.equal(series.length, 4);
   const memory = series.filter((item) => item.subject.includes("memory barriers"));
   assert.equal(memory.length, 2);
-  assert.equal(memory.find((item) => item.revision === 1)?.status, "updated");
+  assert.equal(memory.find((item) => item.revision === 1)?.status, "superseded");
   assert.equal(memory.find((item) => item.revision === 2)?.versions.length, 2);
   assert.equal(memory.find((item) => item.revision === 2)?.replies, 1);
-  assert.equal(memory.find((item) => item.revision === 2)?.status, "queued-alex");
+  assert.equal(memory.find((item) => item.revision === 2)?.status, "applied");
   assert.deepEqual(memory.find((item) => item.revision === 1)?.patches[0].trailers, [{
     type: "Reviewed-by",
     value: "Reviewer <reviewer@example.org>",
@@ -26,7 +26,7 @@ test("groups revisions, single patches, replies, and mixed-language series", asy
 
   const single = series.find((item) => item.subject.includes("admin-guide typo"));
   assert.equal(single?.patchCount, 1);
-  assert.equal(single?.status, "mainline");
+  assert.equal(single?.status, "applied");
 
   const mixed = series.find((item) => item.subject.includes("align zh_CN"));
   assert.equal(mixed?.language, "mixed");
@@ -47,35 +47,35 @@ test("keeps the three stages independent when deriving status", () => {
     corbet: { state: "missing", matched: 0, total: 1 } as const,
     linus: { state: "confirmed", matched: 1, total: 1 } as const,
   };
-  assert.equal(deriveStatus(trees, true), "mainline");
+  assert.equal(deriveStatus(trees, true), "applied");
   assert.equal(trees.alex.state, "missing");
 });
 
-test("uses mail replies for in-review without treating them as Git evidence", () => {
+test("uses mail replies for needs-revision without treating them as Git evidence", () => {
   const trees = {
     alex: { state: "missing", matched: 0, total: 1 } as const,
     corbet: { state: "missing", matched: 0, total: 1 } as const,
     linus: { state: "missing", matched: 0, total: 1 } as const,
   };
-  assert.equal(deriveStatus(trees, true, "discussion"), "in-review");
+  assert.equal(deriveStatus(trees, true, "discussion"), "needs-revision");
   assert.equal(trees.alex.state, "missing");
 });
 
-test("labels old revisions as updated and latest revisions by review activity", () => {
+test("labels old revisions as superseded and latest revisions by review activity", () => {
   const missingTrees = {
     alex: { state: "missing", matched: 0, total: 1 } as const,
     corbet: { state: "missing", matched: 0, total: 1 } as const,
     linus: { state: "missing", matched: 0, total: 1 } as const,
   };
-  assert.equal(deriveStatus(missingTrees, false), "updated");
-  assert.equal(deriveStatus(missingTrees, true), "waiting-for-review");
-  assert.equal(deriveStatus(missingTrees, true, "discussion"), "in-review");
+  assert.equal(deriveStatus(missingTrees, false), "superseded");
+  assert.equal(deriveStatus(missingTrees, true), "proposed");
+  assert.equal(deriveStatus(missingTrees, true, "discussion"), "needs-revision");
 
   const mainlineTrees = {
     ...missingTrees,
     linus: { state: "confirmed", matched: 1, total: 1 } as const,
   };
-  assert.equal(deriveStatus(mainlineTrees, true, "discussion"), "mainline");
+  assert.equal(deriveStatus(mainlineTrees, true, "discussion"), "applied");
 });
 
 test("generates a route-safe ASCII id for a Chinese-only subject", () => {
@@ -117,5 +117,5 @@ test("keeps repeated deliveries of the same revision uniquely addressable", () =
   assert.equal(series.length, 2);
   assert.equal(new Set(series.map((item) => item.id)).size, 2);
   assert.equal(series.filter((item) => item.latestRevision).length, 1);
-  assert.equal(series.find((item) => item.messageIds.includes(original.messageId))?.status, "updated");
+  assert.equal(series.find((item) => item.messageIds.includes(original.messageId))?.status, "superseded");
 });

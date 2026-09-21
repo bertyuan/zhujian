@@ -1,15 +1,11 @@
 export type Language = "zh_CN" | "zh_TW" | "mixed";
 export type PatchsetStatus =
-  | "waiting-for-review"
-  | "in-review"
-  | "updated"
-  | "withdrawn"
-  | "invalid"
-  | "queued-alex"
-  | "in-docs-mw"
-  | "mainline"
-  | "partially-applied"
-  | "previously-queued";
+  | "proposed"
+  | "needs-revision"
+  | "superseded"
+  | "approved"
+  | "rejected"
+  | "applied";
 export type LightState = "confirmed" | "partial" | "candidate" | "previously-present" | "missing";
 export type TreeId = "alex" | "corbet" | "linus";
 export type ReviewTrailerType = "Reviewed-by" | "Acked-by" | "Tested-by" | "Suggested-by" | "Reported-by";
@@ -51,12 +47,21 @@ export interface PatchsetSummary {
   language: Language;
   patchCount: number;
   status: PatchsetStatus;
+  /** Present only when an authenticated maintainer has overridden automation. */
+  manualStatus?: ManualStatusOverride;
   lifecycle: PatchsetLifecycle;
   reviewState: PatchsetReviewState;
   reviewReplies: number;
   latestRevision: boolean;
   messageIds: string[];
   trees: Record<TreeId, TreeSummary>;
+}
+
+export interface ManualStatusOverride {
+  status: PatchsetStatus;
+  reason?: string;
+  actor: string;
+  setAt: string;
 }
 
 export interface PatchDetail {

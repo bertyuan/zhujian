@@ -11,12 +11,14 @@ function configValue(...names: string[]): string | undefined {
 }
 
 export function readSupabaseConfig(): SupabaseConfig {
-  const url = configValue("SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_URL");
-  const key = configValue(
-    "SUPABASE_SECRET_KEY",
-    "SUPABASE_SERVICE_ROLE_KEY",
-    "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY",
-  );
+  // Public page reads use the browser-safe URL/key pair exclusively. This
+  // prevents an obsolete publishing URL in a server environment from routing
+  // public reads to a different Supabase project.
+  const url = configValue("NEXT_PUBLIC_SUPABASE_URL");
+  // Public reads must never accidentally use the service key merely because a
+  // Vercel Function also has it in its environment. Writes use the separate
+  // publisher configuration below.
+  const key = configValue("NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY");
   if (!url || !key) {
     throw new Error("Supabase is not configured. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY for reads, and SUPABASE_SECRET_KEY for publishing.");
   }
@@ -42,7 +44,10 @@ export class SupabaseRest {
       ...init,
       headers: {
         apikey: this.config.key,
-        Authorization: `Bearer ${this.config.key}`,
+        // Modern sb_publishable_/sb_secret_ API keys are not JWTs. Supplying
+        // one as a Bearer token asks downstream services to parse it as JWT;
+        // apikey is the portable, documented header for both modern and
+        // legacy Supabase API keys.
         ...(init.body ? { "Content-Type": "application/json" } : {}),
         ...init.headers,
       },
@@ -61,11 +66,23 @@ export class SupabaseRest {
   }
 
   async upsert(table: string, rows: unknown[]): Promise<void> {
+    await this.upsertWithConflict(table, table === "buding_git_commits" ? "tree,commit" : table === "buding_lore_messages" ? "message_id" : "id", rows);
+  }
+
+  async upsertWithConflict(table: string, conflict: string, rows: unknown[]): Promise<void> {
     if (!rows.length) return;
-    await this.request<void>(`${table}?on_conflict=${table === "buding_git_commits" ? "tree,commit" : table === "buding_lore_messages" ? "message_id" : "id"}`, {
+    await this.request<void>(`${table}?on_conflict=${encodeURIComponent(conflict)}`, {
       method: "POST",
       headers: { Prefer: "resolution=merge-duplicates,return=minimal" },
       body: JSON.stringify(rows),
+    });
+  }
+
+  async updateWhere(table: string, query: Record<string, string>, value: unknown): Promise<void> {
+    await this.request<void>(`${table}?${new URLSearchParams(query)}`, {
+      method: "PATCH",
+      headers: { Prefer: "return=minimal" },
+      body: JSON.stringify(value),
     });
   }
 

@@ -14,7 +14,7 @@ function validDetail() {
     postedAt: "2026-09-05T00:00:00Z",
     language: "zh_CN",
     patchCount: 1,
-    status: "waiting-for-review",
+    status: "proposed",
     lifecycle: "active",
     reviewState: "waiting",
     reviewReplies: 0,
@@ -41,6 +41,13 @@ function validDetail() {
 
 test("accepts the committed summary index", () => {
   assert.equal(validatePatchsetSummaries(patchsets).length > 0, true);
+});
+
+test("normalizes legacy statuses from an already-published snapshot", () => {
+  const legacy = validDetail();
+  legacy.status = "queued-alex";
+  legacy.trees.alex = { state: "confirmed", matched: 1, total: 1 };
+  assert.equal(validatePatchsetSummaries([legacy])[0].status, "applied");
 });
 
 test("rejects an impossible confirmed count", () => {

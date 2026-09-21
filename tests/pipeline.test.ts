@@ -54,5 +54,5 @@ test("generates reconciled JSON from the lore cache idempotently", async (contex
   assert.equal(secondSummary, firstSummary);
   assert.deepEqual(second, first);
   const single = second.details.find((detail) => detail.subject.includes("admin-guide typo"));
-  assert.equal(single?.status, "mainline");
+  assert.equal(single?.status, "applied");
 });

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Language, PatchsetStatus, TreeId, TreeSummary } from "@/lib/data/schema";
-import { TRACKED_TREES } from "@/lib/git/config";
 import { messagePath } from "@/lib/messages/routing";
 import { LanguageBadge } from "./language-badge";
 import { StatusBadge } from "./status-badge";
@@ -30,18 +29,11 @@ export interface MessageSummary {
 
 const formatDate = (value: string) => new Date(value).toISOString().slice(0, 10);
 
-type StatusFilter = "all" | "waiting" | "review" | "updated" | "closed" | "alex" | "corbet" | "linus" | "partial";
+type StatusFilter = "all" | PatchsetStatus;
 
 const statusMatches = (status: PatchsetStatus, filter: StatusFilter) => {
   if (filter === "all") return true;
-  if (filter === "waiting") return status === "waiting-for-review";
-  if (filter === "review") return status === "in-review";
-  if (filter === "updated") return status === "updated";
-  if (filter === "closed") return status === "withdrawn" || status === "invalid";
-  if (filter === "alex") return status === "queued-alex" || status === "previously-queued";
-  if (filter === "corbet") return status === "in-docs-mw";
-  if (filter === "linus") return status === "mainline";
-  return status === "partially-applied";
+  return status === filter;
 };
 
 export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
@@ -93,16 +85,16 @@ export function MessageBrowser({ messages }: { messages: MessageSummary[] }) {
         <select className="filter" aria-label="Filter messages by status" value={status} onChange={(event) => {
           const nextStatus = event.target.value as StatusFilter;
           setStatus(nextStatus);
-          if (nextStatus === "updated") setVersions("all");
+          if (nextStatus === "superseded") setVersions("all");
           setLimit(100);
         }}>
           <option value="all">All statuses</option>
-          <option value="waiting">Waiting for review</option>
-          <option value="review">In review</option>
-          <option value="updated">Updated</option>
-          <option value="closed">Withdrawn / invalid</option>
-          {TRACKED_TREES.map((tree) => <option value={tree.id} key={tree.id}>{tree.name}</option>)}
-          <option value="partial">Partial</option>
+          <option value="proposed">Proposed</option>
+          <option value="needs-revision">Needs revision</option>
+          <option value="superseded">Superseded</option>
+          <option value="approved">Approved</option>
+          <option value="rejected">Rejected</option>
+          <option value="applied">Applied</option>
         </select>
         <select className="filter" aria-label="Filter messages by series version" value={versions} onChange={(event) => setVersions(event.target.value as typeof versions)}>
           <option value="latest">Latest only</option>
