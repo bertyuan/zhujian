@@ -153,6 +153,7 @@ main { min-height: calc(100vh - 118px); }
 .generated-status time { color: var(--text); }
 .generated-status strong { color: var(--status-reviewed); }
 .generated-status .sync-error-text { color: var(--status-failed); }
+.generated-status .build-commit { color: var(--text); font: inherit; }
 .sync-alert { background: color-mix(in srgb, var(--status-failed) 9%, var(--bg)); border: 1px solid var(--status-failed); border-radius: 3px; color: var(--text-muted); display: grid; font-size: .85em; gap: 2px; margin: 0 0 10px; padding: 7px 9px; }
 .sync-alert strong { color: var(--status-failed); }
 .source-revisions { color: var(--text-muted); display: flex; flex-wrap: wrap; font-size: .8em; gap: 6px 18px; margin: 6px 0 9px; }
