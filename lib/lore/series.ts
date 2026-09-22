@@ -5,6 +5,7 @@ import { normalizeSeriesSubject, parsePatchSubject } from "./subject.ts";
 import { reconstructThreads } from "./thread.ts";
 import type { FixtureTreeMatch, LoreDataset, LoreMessage } from "./types";
 import { lifecycleFromMail } from "./status.ts";
+import { deriveStatus } from "../status/policy.ts";
 
 const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
 
@@ -43,22 +44,6 @@ export function aggregateTree(trees: TreeSummary[]): TreeSummary {
   else if (trees.some((tree) => tree.state === "candidate")) state = "candidate";
   else if (trees.some((tree) => tree.state === "previously-present")) state = "previously-present";
   return { state, matched, total, ...(commit ? { commit } : {}) };
-}
-
-export function deriveStatus(
-  trees: Record<TreeId, TreeSummary>,
-  latestRevision: boolean,
-  reviewState: PatchsetReviewState = "waiting",
-): PatchsetStatus {
-  // A later revision always supersedes an older one.  The database-backed
-  // manual status overlay is applied at request time and intentionally has
-  // higher priority than every decision here.
-  if (!latestRevision) return "superseded";
-  // A complete exact match in any tracked maintainer tree means the series has
-  // been applied somewhere upstream; lamps retain the precise tree evidence.
-  if (TREE_IDS.some((id) => trees[id].state === "confirmed")) return "applied";
-  if (reviewState === "discussion") return "needs-revision";
-  return "proposed";
 }
 
 function seriesLanguage(languages: Language[]): Language {
@@ -167,7 +152,7 @@ export function buildPatchsets(dataset: LoreDataset): PatchsetDetail[] {
       return {
         ...draft,
         latestRevision: isLatest,
-        status: deriveStatus(draft.trees, isLatest, draft.reviewState),
+        status: deriveStatus(draft.trees, isLatest),
         versions: relatives
           .toSorted((a, b) => a.revision - b.revision || Date.parse(a.postedAt) - Date.parse(b.postedAt))
           .map((relative) => ({ revision: relative.revision, id: relative.id, current: relative.id === draft.id })),

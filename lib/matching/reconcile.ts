@@ -1,7 +1,8 @@
 import type { GitCommit, Language, PatchDetail, PatchsetDetail, TreeId, TreeSummary } from "../data/schema.ts";
 import { TRACKED_TREES } from "../git/config.ts";
 import { classifyLanguage } from "../lore/parser.ts";
-import { aggregateTree, deriveStatus } from "../lore/series.ts";
+import { aggregateTree } from "../lore/series.ts";
+import { deriveStatus } from "../status/policy.ts";
 import { isCandidate } from "./confidence.ts";
 import type { MatchOverride, ReconciliationOverrides, StateOverride } from "./overrides.ts";
 
@@ -215,7 +216,6 @@ export function reconcilePatchsets(
       status: deriveStatus(
         trees,
         detail.latestRevision,
-        detail.reviewState,
       ),
     };
   });

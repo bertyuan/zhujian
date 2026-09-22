@@ -1,9 +1,10 @@
-import type { ManualStatusOverride, PatchsetDetail, PatchsetStatus, PatchsetSummary } from "../data/schema";
+import type { ManualStatusOverride, PatchsetDetail, PatchsetSummary } from "../data/schema";
 import { readSupabaseConfig, SupabaseRest } from "../data/supabase.ts";
+import { deriveStatus, isManualPatchsetStatus } from "./policy.ts";
 
 interface OverrideRow {
   patchset_id: string;
-  status: PatchsetStatus;
+  status: string;
   reason: string | null;
   actor_label: string;
   set_at: string;
@@ -17,18 +18,26 @@ function store(): SupabaseRest {
 }
 
 export async function manualStatusOverrides(): Promise<Map<string, ManualStatusOverride>> {
-  return store().select<OverrideRow>("buding_patchset_status_overrides").then((rows) => new Map(rows.map((row) => [row.patchset_id, {
-    status: row.status,
-    ...(row.reason ? { reason: row.reason } : {}),
-    actor: row.actor_label,
-    setAt: row.set_at,
-  }])))
+  return store().select<OverrideRow>("buding_patchset_status_overrides").then((rows) => new Map(rows.flatMap((row) => (
+    isManualPatchsetStatus(row.status) ? [[row.patchset_id, {
+      status: row.status,
+      ...(row.reason ? { reason: row.reason } : {}),
+      actor: row.actor_label,
+      setAt: row.set_at,
+    } satisfies ManualStatusOverride] as const] : []
+  ))))
     // Deploying application code before the migration should not make public
     // read pages unavailable. Writes remain blocked until it is applied.
     .catch(() => new Map());
 }
 
 export function withManualStatus<T extends PatchsetSummary | PatchsetDetail>(patchset: T, overrides: Map<string, ManualStatusOverride>): T {
+  const automaticStatus = deriveStatus(patchset.trees, patchset.latestRevision);
   const manualStatus = overrides.get(patchset.id);
-  return manualStatus ? { ...patchset, status: manualStatus.status, manualStatus } : patchset;
+  // Superseded and Applied are objective automatic states and always win.
+  // Authenticated decisions are considered only while a current series is
+  // still Proposed.
+  return manualStatus && automaticStatus === "proposed"
+    ? { ...patchset, status: manualStatus.status, manualStatus }
+    : { ...patchset, status: automaticStatus };
 }

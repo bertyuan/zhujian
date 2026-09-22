@@ -4,6 +4,7 @@ import { withManualStatus } from "../lib/status/overrides.ts";
 import type { PatchsetSummary } from "../lib/data/schema.ts";
 import { createSession, readSession, shouldRefreshSession } from "../lib/auth/session.ts";
 import { verifyApiKey } from "../lib/auth/api-key.ts";
+import { isManualPatchsetStatus } from "../lib/status/policy.ts";
 
 const patchset: PatchsetSummary = {
   id: "translation-fix-123456789abc-v1", subject: "[PATCH] docs/zh_CN: fix typo", authorName: "Author", authorEmail: "author@example.com",
@@ -16,10 +17,38 @@ const patchset: PatchsetSummary = {
 
 test("manual status overrides the automatically derived status", () => {
   const result = withManualStatus(patchset, new Map([[patchset.id, {
-    status: "applied", reason: "Maintainer applied it manually.", actor: "Linus", setAt: "2026-09-20T01:00:00Z",
+    status: "needs-revision", reason: "Please address the review.", actor: "Maintainer", setAt: "2026-09-20T01:00:00Z",
+  }]]));
+  assert.equal(result.status, "needs-revision");
+  assert.equal(result.manualStatus?.actor, "Maintainer");
+});
+
+test("a new revision supersedes every manual status on the old revision", () => {
+  const oldRevision = { ...patchset, latestRevision: false };
+  const result = withManualStatus(oldRevision, new Map([[patchset.id, {
+    status: "approved", actor: "Maintainer", setAt: "2026-09-20T01:00:00Z",
+  }]]));
+  assert.equal(result.status, "superseded");
+  assert.equal(result.manualStatus, undefined);
+});
+
+test("a confirmed match in any tracked tree overrides a manual status", () => {
+  const applied = {
+    ...patchset,
+    trees: { ...patchset.trees, alex: { state: "confirmed" as const, matched: 1, total: 1 } },
+  };
+  const result = withManualStatus(applied, new Map([[patchset.id, {
+    status: "rejected", actor: "Maintainer", setAt: "2026-09-20T01:00:00Z",
   }]]));
   assert.equal(result.status, "applied");
-  assert.equal(result.manualStatus?.actor, "Linus");
+  assert.equal(result.manualStatus, undefined);
+});
+
+test("only review decisions are accepted as manual statuses", () => {
+  assert.deepEqual(
+    ["proposed", "needs-revision", "superseded", "approved", "rejected", "applied"].filter(isManualPatchsetStatus),
+    ["needs-revision", "approved", "rejected"],
+  );
 });
 
 test("status session is signed and rejects a modified cookie", () => {

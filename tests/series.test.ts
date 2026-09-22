@@ -2,7 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import path from "node:path";
 import { FixtureLoreSource } from "../lib/lore/fixture-source.ts";
-import { aggregateTree, buildFixturePatchsets, buildPatchsets, deriveStatus } from "../lib/lore/series.ts";
+import { aggregateTree, buildFixturePatchsets, buildPatchsets } from "../lib/lore/series.ts";
+import { deriveStatus } from "../lib/status/policy.ts";
 import type { LoreMessage } from "../lib/lore/types.ts";
 
 test("groups revisions, single patches, replies, and mixed-language series", async () => {
@@ -51,17 +52,17 @@ test("keeps the three stages independent when deriving status", () => {
   assert.equal(trees.alex.state, "missing");
 });
 
-test("uses mail replies for needs-revision without treating them as Git evidence", () => {
+test("keeps a discussed series proposed until a maintainer changes it", () => {
   const trees = {
     alex: { state: "missing", matched: 0, total: 1 } as const,
     corbet: { state: "missing", matched: 0, total: 1 } as const,
     linus: { state: "missing", matched: 0, total: 1 } as const,
   };
-  assert.equal(deriveStatus(trees, true, "discussion"), "needs-revision");
+  assert.equal(deriveStatus(trees, true), "proposed");
   assert.equal(trees.alex.state, "missing");
 });
 
-test("labels old revisions as superseded and latest revisions by review activity", () => {
+test("labels old revisions as superseded and new revisions as proposed", () => {
   const missingTrees = {
     alex: { state: "missing", matched: 0, total: 1 } as const,
     corbet: { state: "missing", matched: 0, total: 1 } as const,
@@ -69,13 +70,13 @@ test("labels old revisions as superseded and latest revisions by review activity
   };
   assert.equal(deriveStatus(missingTrees, false), "superseded");
   assert.equal(deriveStatus(missingTrees, true), "proposed");
-  assert.equal(deriveStatus(missingTrees, true, "discussion"), "needs-revision");
+  assert.equal(deriveStatus(missingTrees, true), "proposed");
 
   const mainlineTrees = {
     ...missingTrees,
     linus: { state: "confirmed", matched: 1, total: 1 } as const,
   };
-  assert.equal(deriveStatus(mainlineTrees, true, "discussion"), "applied");
+  assert.equal(deriveStatus(mainlineTrees, true), "applied");
 });
 
 test("generates a route-safe ASCII id for a Chinese-only subject", () => {

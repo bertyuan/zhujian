@@ -2,11 +2,9 @@ import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { activeApiKey } from "@/lib/auth/api-key";
 import { API_SESSION_COOKIE, createSession, readSession, sessionCookie, shouldRefreshSession } from "@/lib/auth/session";
-import type { PatchsetStatus } from "@/lib/data/schema";
 import { getPatchset } from "@/lib/data/loader";
 import { readSupabasePublisherConfig, SupabaseRest } from "@/lib/data/supabase";
-
-const STATUSES = new Set<PatchsetStatus>(["proposed", "needs-revision", "superseded", "approved", "rejected", "applied"]);
+import { isManualPatchsetStatus } from "@/lib/status/policy";
 
 export const runtime = "nodejs";
 
@@ -25,11 +23,15 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
   } catch {
     return NextResponse.json({ error: "Expected JSON." }, { status: 400 });
   }
-  if (typeof body.status !== "string" || !STATUSES.has(body.status as PatchsetStatus)) return NextResponse.json({ error: "Unknown patch status." }, { status: 400 });
+  if (!isManualPatchsetStatus(body.status)) return NextResponse.json({ error: "Status must be Needs revision, Approved, or Rejected." }, { status: 400 });
   if (body.reason !== undefined && (typeof body.reason !== "string" || body.reason.length > 1000)) return NextResponse.json({ error: "Reason must be at most 1000 characters." }, { status: 400 });
   const reason = typeof body.reason === "string" && body.reason.trim() ? body.reason.trim() : null;
   const { id } = await params;
-  if (!/^[a-z0-9-]+$/.test(id) || !await getPatchset(id)) return NextResponse.json({ error: "Patchset not found." }, { status: 404 });
+  const patchset = /^[a-z0-9-]+$/.test(id) ? await getPatchset(id) : null;
+  if (!patchset) return NextResponse.json({ error: "Patchset not found." }, { status: 404 });
+  if (patchset.status === "superseded" || patchset.status === "applied") {
+    return NextResponse.json({ error: `${patchset.status === "superseded" ? "Superseded" : "Applied"} is determined automatically and cannot be overridden.` }, { status: 409 });
+  }
   const setAt = new Date().toISOString();
   const database = new SupabaseRest(readSupabasePublisherConfig());
   await database.upsertWithConflict("buding_patchset_status_overrides", "patchset_id", [{

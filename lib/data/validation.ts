@@ -16,6 +16,7 @@ import type {
   TreeId,
   TreeSummary,
 } from "./schema";
+import { deriveStatus } from "../status/policy.ts";
 
 const LANGUAGES = new Set<Language>(["zh_CN", "zh_TW", "mixed"]);
 const LIGHT_STATES = new Set<LightState>(["confirmed", "partial", "candidate", "previously-present", "missing"]);
@@ -127,12 +128,6 @@ function trees(value: unknown, path: string): Record<TreeId, TreeSummary> {
   return Object.fromEntries(TREE_IDS.map((id) => [id, treeSummary(item[id], `${path}.${id}`)])) as Record<TreeId, TreeSummary>;
 }
 
-function automaticStatus(trees: Record<TreeId, TreeSummary>, latestRevision: boolean, reviewState: PatchsetReviewState): PatchsetStatus {
-  if (!latestRevision) return "superseded";
-  if (TREE_IDS.some((id) => trees[id].state === "confirmed")) return "applied";
-  return reviewState === "discussion" ? "needs-revision" : "proposed";
-}
-
 export function validatePatchsetSummary(value: unknown, path = "patchset"): PatchsetSummary {
   const item = object(value, path);
   const language = string(item.language, `${path}.language`) as Language;
@@ -151,11 +146,13 @@ export function validatePatchsetSummary(value: unknown, path = "patchset"): Patc
   if (new Set(messageIds).size !== messageIds.length) fail(`${path}.messageIds`, "must not contain duplicates");
   const patchsetTrees = trees(item.trees, `${path}.trees`);
   const latestRevision = boolean(item.latestRevision, `${path}.latestRevision`);
-  const status = STATUSES.has(rawStatus as PatchsetStatus)
-    ? rawStatus as PatchsetStatus
-    : LEGACY_STATUSES.has(rawStatus)
-      ? automaticStatus(patchsetTrees, latestRevision, reviewState)
-      : fail(`${path}.status`, `unknown status ${rawStatus}`);
+  if (!STATUSES.has(rawStatus as PatchsetStatus) && !LEGACY_STATUSES.has(rawStatus)) {
+    fail(`${path}.status`, `unknown status ${rawStatus}`);
+  }
+  // Generated snapshots contain only automatic state. Manual decisions are
+  // loaded separately after validation, so stale or legacy snapshots cannot
+  // turn review activity into a manual-only status.
+  const status = deriveStatus(patchsetTrees, latestRevision);
   return {
     id,
     subject: string(item.subject, `${path}.subject`),

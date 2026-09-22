@@ -6,6 +6,7 @@ export type PatchsetStatus =
   | "approved"
   | "rejected"
   | "applied";
+export type ManualPatchsetStatus = Extract<PatchsetStatus, "needs-revision" | "approved" | "rejected">;
 export type LightState = "confirmed" | "partial" | "candidate" | "previously-present" | "missing";
 export type TreeId = "alex" | "corbet" | "linus";
 export type ReviewTrailerType = "Reviewed-by" | "Acked-by" | "Tested-by" | "Suggested-by" | "Reported-by";
@@ -58,7 +59,7 @@ export interface PatchsetSummary {
 }
 
 export interface ManualStatusOverride {
-  status: PatchsetStatus;
+  status: ManualPatchsetStatus;
   reason?: string;
   actor: string;
   setAt: string;

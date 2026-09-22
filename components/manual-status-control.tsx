@@ -1,19 +1,16 @@
 "use client";
 
 import { useState } from "react";
-import type { PatchsetStatus } from "@/lib/data/schema";
+import type { ManualPatchsetStatus } from "@/lib/data/schema";
 
-const statuses: Array<{ value: PatchsetStatus; label: string }> = [
-  { value: "proposed", label: "Proposed" },
+const statuses: Array<{ value: ManualPatchsetStatus; label: string }> = [
   { value: "needs-revision", label: "Needs revision" },
-  { value: "superseded", label: "Superseded" },
   { value: "approved", label: "Approved" },
   { value: "rejected", label: "Rejected" },
-  { value: "applied", label: "Applied" },
 ];
 
-export function ManualStatusControl({ patchsetId, currentStatus }: { patchsetId: string; currentStatus: PatchsetStatus }) {
-  const [status, setStatus] = useState<PatchsetStatus>(currentStatus);
+export function ManualStatusControl({ patchsetId, currentStatus }: { patchsetId: string; currentStatus?: ManualPatchsetStatus }) {
+  const [status, setStatus] = useState<ManualPatchsetStatus>(currentStatus ?? "needs-revision");
   const [reason, setReason] = useState("");
   const [message, setMessage] = useState<string>();
   const [busy, setBusy] = useState(false);
@@ -33,7 +30,7 @@ export function ManualStatusControl({ patchsetId, currentStatus }: { patchsetId:
     <section className="manual-status-control" aria-label="Authenticated manual patch status">
       <h3>Manual override</h3>
       <form onSubmit={save} className="status-form">
-        <label>Status<select value={status} onChange={(event) => setStatus(event.target.value as PatchsetStatus)}>{statuses.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label>
+        <label>Status<select value={status} onChange={(event) => setStatus(event.target.value as ManualPatchsetStatus)}>{statuses.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label>
         <label>Reason (optional)<input value={reason} maxLength={1000} onChange={(event) => setReason(event.target.value)} /></label>
         <button className="control-button" disabled={busy}>{busy ? "Saving…" : "Save manual status"}</button>
       </form>

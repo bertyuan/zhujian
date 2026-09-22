@@ -82,13 +82,13 @@ state.
 
 ## Patch statuses and authenticated overrides
 
-The public status is derived automatically unless an authenticated maintainer
-sets an override. Automatic precedence is: an older revision is `Superseded`; a
-complete exact match in Alex's `docs-next`, Corbet's `docs-mw`, or Linus's
-`master` is `Applied`; a current series with external discussion is `Needs
-revision`; otherwise it is `Proposed`. `Approved` and `Rejected` are available
-to maintainers as manual decisions. The upstream lamps always remain visible as
-the evidence behind an automatic `Applied` status.
+Every newly discovered current series starts as `Proposed`, regardless of mail
+replies. An older revision becomes `Superseded` as soon as a newer revision is
+discovered. A complete exact match in Alex's `docs-next`, Corbet's `docs-mw`, or
+Linus's `master` becomes `Applied`. These automatic states take precedence over
+stored decisions. Only authenticated maintainers can set `Needs revision`,
+`Approved`, or `Rejected`; mail discussion never sets them automatically. The
+upstream lamps always remain visible as the evidence behind `Applied`.
 
 Manual decisions are stored separately from generated patchset JSON, so a
 scheduled sync cannot overwrite them. The global navigation accepts an API key once and
