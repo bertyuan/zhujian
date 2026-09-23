@@ -1,4 +1,4 @@
-# 布丁快速开始
+# 快速开始
 
 本指南用于把布丁部署到一个全新的 Supabase、GitHub Actions 和 Vercel
 组合中。完成后，GitHub Actions 每 30 分钟同步数据，Vercel 只负责提供

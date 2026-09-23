@@ -29,7 +29,7 @@ export function Header() {
               </Link>
             );
           })}
-          <a className="nav-link github-link" href="https://github.com/bertyuan/zhujian" target="_blank" rel="noreferrer">
+          <a className="nav-link github-link" href="https://github.com/kernel-zh/buding" target="_blank" rel="noreferrer">
             Source ↗
           </a>
           <ApiKeyMenu />

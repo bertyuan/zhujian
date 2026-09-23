@@ -1,282 +1,68 @@
-# 布丁 Buding
+# Buding
 
-A tracker for Chinese Linux documentation patch series. It reconstructs
-`zh_CN` and `zh_TW` series from the public `linux-doc` archive and renders the
-generated data from Supabase with Next.js.
+English | [中文](./README.zh-CN.md)
 
-Production: <https://zhujian.vercel.app>
+Buding is a tracker for Linux documentation patch series that modify:
 
-从空 Supabase、GitHub Actions 和 Vercel 开始部署，请见 [快速开始](QUICKSTART.md)。
+- `Documentation/translations/zh_CN/`
+- `Documentation/translations/zh_TW/`
 
-Buding follows patches that touch
-`Documentation/translations/zh_CN/` or
-`Documentation/translations/zh_TW/`. Its three indicators represent Alex's
-`docs-next`, Corbet's `docs-mw`, and Linus's `master`, in that order:
+It reconstructs series from the public [`linux-doc` archive](https://lore.kernel.org/linux-doc/),
+follows their progress through the maintainer trees, and gives maintainers
+a dashboard for managing patch series statuses.
 
-- Green: every relevant patch has exact Git evidence in that tree.
-- Amber: a partial series, conservative candidate, or commit seen before a
-  branch rewrite.
-- Gray: the patch was not found. This is normal and does not mean rejection.
+Website:
 
-Color is never the only signal; every indicator also has a state label, patch
-count, and accessible description. Patch detail pages also show supported
-review trailers (`Reviewed-by`, `Acked-by`, `Tested-by`, `Suggested-by`, and
-`Reported-by`) as mail metadata only; trailers never count as Git evidence.
-Individual patches open on local message pages that show sender metadata,
-series navigation, per-patch upstream progress, and the original mail body with
-diff additions, removals, and headers highlighted. Lore and raw-mail links
-remain available from every message page.
-The latest revision is labeled `In review` when someone other than its author
-has replied, or `Waiting for review` when no external reply exists. Older
-revisions with a newer version are labeled `Updated` in gray. These mail states
-never turn an upstream indicator green, and confirmed or uncertain Git evidence
-still takes precedence for the latest revision.
+- https://buding.wyuan.org (Cloudflare)
+- https://buding.anka2.top (Tencent Cloud EdgeOne)
 
-After every relevant patch in the latest revision is confirmed in
-Linus's `master`, that series family remains on the public dashboard for three
-calendar months. The retention clock starts at the latest matched Linus
-commit's `firstSeenAt` timestamp. Expired families and all of their revisions
-are removed from public patchset JSON, while the internal lore cache and Git
-commit indexes remain available as historical evidence.
+## Features
+
+- Reconstruct patch series, revisions, replies, and review trailers from lore.
+- Compare patches with Alex's `docs-next`, Corbet's `docs-mw`, and Linus's
+  `master` using stable patch IDs.
+- Provide a focused review queue for current series.
+- Let maintainers use an API key to select any of the six patch statuses. Keys
+  can be revoked immediately, and raw keys are not stored in Supabase.
+
+## Patch statuses
+
+| Status | Meaning |
+| --- | --- |
+| **Proposed** | The current series is awaiting a maintainer decision. This is the automatic default for a newly discovered series. |
+| **Needs revision** | A maintainer has requested changes and expects a new revision. |
+| **Superseded** | A newer revision of the series exists. Older revisions receive this status automatically. |
+| **Approved** | A maintainer has accepted the series, but it may not have appeared in a tracked Git tree yet. |
+| **Rejected** | A maintainer has decided that the series should not be accepted. |
+| **Applied** | Every patch has exact Git evidence in at least one tracked tree. This status is assigned automatically when such evidence is found. |
+
+Automatic status rules remain the default when no manual override exists. An
+authenticated maintainer may select any status manually; upstream evidence is
+still displayed independently of that selection.
 
 ## Architecture
 
-```text
-linux-doc lore --lei--> cached messages --stable patch-id--+
-                                                        |
-Alex/docs-next  ----> relevant commit index ------------+---> reconcile
-Corbet/docs-mw  ----> relevant commit index ------------+       |
-Linus/master    ----> relevant commit index ------------+       v
-                                                   generated JSON
-                                                         |
-                                                    Next.js/Vercel
-```
+1. A scheduled GitHub Action reads `linux-doc` mail with `lei` and indexes the
+   three tracked Git trees.
+2. The reconciliation pipeline groups revisions, matches patches, validates
+   the result, and publishes it to Supabase.
+3. The Next.js application reads Supabase at request time. Authenticated API
+   requests store maintainer-selected status overrides and their audit events.
 
-GitHub Actions performs synchronization every 30 minutes and publishes the
-validated result to Supabase. Supabase is the persistence layer: Vercel reads
-the database at request time and never fetches lore or needs a writable
-filesystem. The checked-in `data/` directory is retained only as a seed and
-test fixture; it is no longer changed by the workflow.
+The checked-in `data/` directory is used only for seeds and tests. Deployment
+and environment setup are documented in
+[Documentation/QuickStart.md](./Documentation/QuickStart.md).
 
-The `Needs review` page is the primary work queue. It contains active latest
-revisions that have not been confirmed in Alex's `docs-next`, placing series
-in newest-first order, matching the Patchsets page. “Discussion started” is
-only an activity signal, not proof that review is complete. The old
-upstream board remains available at `/board`, but is no longer in the primary
-navigation.
+## Contributing
 
-Patch authors and configured maintainers can record a legacy lifecycle signal by
-replying in its lore thread with one exact, unquoted line:
+Contributions of any form are welcome. You can send relevant issues or patches
+to linux-doc@vger.kernel.org, and Cc Weijie Yuan <wy@wyuan.org> & Siwei Chen <me@birdanka.com>;
+or open issues and pull requests on GitHub.
 
-```text
-Patch-status: withdrawn
-Patch-status: invalid
-Patch-status: active
-```
+## Acknowledgements
 
-Matching uses the sender mailbox, not the display name. The latest authorized
-directive wins and its message is retained as evidence. These directives are
-shown as historical lifecycle evidence only; they never change the authenticated
-patch status or Git matching. There is deliberately no age-based `Stalled`
-state.
+[Sashiko](https://github.com/sashiko-dev/sashiko)
 
-## Patch statuses and authenticated overrides
+## License
 
-Every newly discovered current series starts as `Proposed`, regardless of mail
-replies. An older revision becomes `Superseded` as soon as a newer revision is
-discovered. A complete exact match in Alex's `docs-next`, Corbet's `docs-mw`, or
-Linus's `master` becomes `Applied`. These automatic states remain the default
-when no manual decision exists. Authenticated maintainers can override the
-result with any of the six patch statuses; mail discussion never sets them
-automatically. The upstream lamps always remain visible as evidence regardless
-of the selected status.
-
-Manual decisions are stored separately from generated patchset JSON, so a
-scheduled sync cannot overwrite them. The global navigation accepts an API key once and
-exchanges it for a 30-day HttpOnly, Secure production cookie; the raw key is
-never persisted in browser storage. Every mutation rechecks that the key is
-still active, so revocation is immediate. Set `BUDING_API_SESSION_DAYS` to
-change the lifetime (default: `30`) and `BUDING_API_SESSION_REFRESH_DAYS` to
-refresh an active browser session when that many days remain (default: `7`).
-The refresh value must be smaller than the lifetime.
-
-For a new project, use `supabase/schema.sql`. For an existing project that has
-already applied the base migration, apply the remaining files under
-`supabase/migrations/` in ascending filename order. Configure these additional
-server-only variables in Vercel:
-
-```text
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_SECRET_KEY=sb_secret_...
-BUDING_API_KEY_PEPPER=a-long-random-secret
-BUDING_API_SESSION_SECRET=a-different-long-random-secret
-BUDING_ADMIN_KEY=a-third-long-random-secret
-BUDING_ADMIN_PATH=/manage-keys-a-long-random-suffix
-```
-
-Set a third random secret as `BUDING_ADMIN_KEY`, and choose an unguessable
-single-segment route such as `/manage-keys-<random-suffix>` for
-`BUDING_ADMIN_PATH`. Open that exact path directly; it is intentionally
-not linked from the site navigation. Enter the root key through the global API
-Key button, then use the management page to create or revoke ordinary API keys.
-The root key is never stored in Supabase and must not be used for routine work.
-
-Only an HMAC verifier, label, role, and lifecycle metadata are stored for each
-API key; the key material itself is never put into Supabase. The override table
-is publicly readable only for its final status, reason, actor label, and time;
-key records and audit history remain server-only.
-
-## Local preview
-
-Use Node.js 24 or newer and pnpm 11. The repository includes an `.nvmrc` for
-the supported Node baseline.
-
-```sh
-pnpm install
-pnpm ingest:fixtures
-pnpm dev
-```
-
-Open <http://localhost:3000>. Fixture mode does not require network access or
-`lei`.
-
-## Real lore data
-
-Install `lei` (from the public-inbox project), verify that `lei q --help` works,
-then run:
-
-```sh
-pnpm sync:lore
-pnpm dev
-```
-
-The first synchronization starts at `2025-01-01`. Override only that first
-starting point with `INITIAL_SYNC_SINCE`. To deliberately fetch an older range:
-
-```sh
-SYNC_SINCE=2024-01-01 pnpm backfill
-```
-
-`pnpm backfill` runs the complete lore, Git, reconciliation, generation, and
-validation pipeline from that date. Use `pnpm backfill:lore` only when you
-deliberately want to update the mail cache without rescanning Git.
-
-Queries are restricted to `https://lore.kernel.org/linux-doc/`. Later runs use
-the committed last-success state with a one-hour overlap and deduplicate by
-Message-ID.
-
-To build the Git commit indexes locally as well:
-
-```sh
-pnpm sync:git
-pnpm reconcile
-```
-
-Or run the complete, idempotent pipeline in one command:
-
-```sh
-pnpm sync
-```
-
-That command synchronizes lore, updates all three Git indexes, regenerates and
-reconciles the JSON, then validates the result. `pnpm generate` repeats only the
-deterministic generation and reconciliation step from the committed lore cache
-and Git indexes.
-
-This maintains blobless bare repositories under `.cache/git`, follows Alex's
-`docs-next`, Corbet's `docs-mw`, and Linus's `master`, and indexes only commits
-touching the `zh_CN` or `zh_TW` translation directories. Set `GIT_SYNC_SINCE`
-to change the initial scan date. Lore synchronization computes and caches
-`git patch-id --stable` values for relevant email patches. Reconciliation uses
-exact patch IDs for confirmed matches; a strict subject, author, file, and date
-comparison can only produce an amber candidate, never a confirmation.
-
-Reviewed exceptions belong in `data/overrides.yml`:
-
-```yaml
-matches:
-  - message_id: "<patch@example.com>"
-    tree: alex
-    commit: abcdef1234567890
-    reason: "Patch edited while applying"
-ignore:
-  - message_id: "<noise@example.com>"
-    reason: "Not actually a Chinese translation patch"
-states:
-  - message_id: "<patch@example.com>"
-    state: invalid
-    reason: "Reviewed classification correction"
-    evidence: "https://lore.kernel.org/linux-doc/reply/"
-```
-
-Each exception requires a reason. A manual match is rejected if its Message-ID
-does not identify a generated patch, while an ignore remains valid after that
-patch has been removed on the first run. A manual match may use a unique 7–40
-character Git SHA; use the full SHA when possible.
-State overrides preserve the series in generated data; `ignore` remains for
-messages that should not have been classified as translation patches at all.
-
-## Supabase
-
-For a new project, apply `supabase/schema.sql` in the Supabase SQL editor (or
-through the Supabase CLI) once. It creates all tables and public read-only RLS
-policies. Existing projects should instead apply any pending timestamped
-migrations in `supabase/migrations/`, in ascending filename order. Then add
-these environment variables:
-
-```text
-# Vercel (read-only)
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
-
-# GitHub Actions (write-only; repository Actions secrets)
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_SECRET_KEY=sb_secret_...
-```
-
-Never commit the secret key or expose it as a `NEXT_PUBLIC_*` variable. Run
-`pnpm publish:supabase` once after a local successful sync to seed the database.
-
-## GitHub Action
-
-`.github/workflows/sync.yml` runs every 30 minutes and can also be started from
-the Actions tab. A manual run accepts an optional `since` date for backfills.
-It installs `lei`, restores a daily cache of the three Linux repositories, runs
-the same lore, Git synchronization, and reconciliation code, validates the
-generated data, tests the project, and uploads it with the `SUPABASE_URL` and
-`SUPABASE_SECRET_KEY` Actions secrets. Before each synchronization, it restores
-the last published snapshot into the runner's temporary `data/` directory, so
-the existing lore and Git cursors continue to make later runs incremental. It
-only needs repository read access and does not create generated-data commits.
-
-## Deploy to Vercel
-
-Import the GitHub repository into Vercel and keep the detected Next.js defaults.
-Set the two read-only `NEXT_PUBLIC_SUPABASE_*` variables above. No `lei`,
-persistent disk, scheduled Vercel function, or deployment per data update is
-required; pages are dynamically rendered from Supabase.
-
-## Maintaining tracked sources
-
-Tracked repositories, branches, and display names are centralized in
-`lib/git/config.ts`. Change that file when adding or replacing a tree, then
-update the `TreeId` schema and UI labels if the set of three stages changes.
-
-The Git synchronizer checks whether the old branch head is an ancestor of the
-new one. Fast-forwards scan only the new range. A reset or rebase triggers a
-bounded rescan while retaining disappeared commits with
-`currentlyPresent: false`; these appear as amber “previously present” evidence
-instead of being erased.
-
-## Checks
-
-```sh
-pnpm test
-pnpm lint
-pnpm validate:data
-pnpm build
-```
-
-The real-data pipeline covers lore ingestion, Git commit indexing, and
-patch-level reconciliation. The Alex, Corbet, and Linus lamps are aggregated
-independently from exact, candidate, historical, and manual matches.
+[GNU Affero General Public License, version 3](./COPYING)
