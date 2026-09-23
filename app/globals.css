@@ -234,9 +234,10 @@ main { min-height: calc(100vh - 118px); }
 .status-updated { color: var(--text-muted); }
 .status-terminal { color: var(--status-failed); }
 .status-previous { color: var(--status-previous); }
-.manual-status-note { background: color-mix(in srgb, var(--status-inreview) 10%, var(--bg)); border: 1px solid var(--status-inreview); border-radius: 3px; margin: 0 0 10px; padding: 7px 9px; }
-.manual-status-control { border-top: 1px solid var(--border-light); margin-top: 14px; padding-top: 12px; }
-.manual-status-control h3 { font-size: 1em; margin: 0 0 8px; }
+.manual-status-form { align-items: center; display: flex; flex-wrap: wrap; gap: 8px; }
+.manual-status-form input, .manual-status-form select { background: var(--input-bg); border: 1px solid var(--border); border-radius: 3px; color: var(--text); min-width: 180px; padding: 4px 7px; }
+.manual-status-form input { flex: 0 1 280px; }
+.manual-status-control .section-help { margin-top: 8px; }
 .status-form { align-items: end; display: flex; flex-wrap: wrap; gap: 8px; }
 .status-form label { display: grid; gap: 3px; font-size: .85em; }
 .status-form input, .status-form select { background: var(--input-bg); border: 1px solid var(--border); border-radius: 3px; color: var(--text); min-width: 180px; padding: 4px 7px; }
@@ -350,8 +351,6 @@ kbd { background: color-mix(in srgb, var(--text) 12%, transparent); border-radiu
 .section-help { color: var(--text-muted); font-size: .85em; margin: 0 0 8px; max-width: 90ch; }
 .status-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 6px; }
 .status-actions code { background: var(--code-bg); border: 1px solid var(--code-border); border-radius: 3px; padding: 3px 6px; }
-.lifecycle-evidence { border-left: 3px solid var(--status-inreview); display: grid; gap: 3px; margin-bottom: 8px; padding: 4px 8px; }
-
 .message-more { display: flex; justify-content: center; padding: 12px; }
 .message-table tbody tr { cursor: default; }
 .message-reference { align-items: baseline; display: flex; gap: 6px; max-width: none; }

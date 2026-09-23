@@ -42,25 +42,10 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
         </aside>
       </div>
 
-      <section className="section lifecycle-section">
+      <section className="section">
         <h2>Patch status</h2>
-        {patchset.manualStatus && <p className="manual-status-note">Manual override: <strong>{patchset.manualStatus.status}</strong> by {patchset.manualStatus.actor} on {new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeStyle: "short" }).format(new Date(patchset.manualStatus.setAt))}.{patchset.manualStatus.reason && <> Reason: {patchset.manualStatus.reason}</>}</p>}
-        {!patchset.manualStatus && patchset.status === "proposed" && <p className="section-help">New current series remain Proposed until an authenticated maintainer sets Needs revision, Approved, or Rejected.</p>}
         {(patchset.status === "superseded" || patchset.status === "applied") && <p className="section-help">This status is determined automatically and cannot be overridden.</p>}
-        {patchset.status !== "superseded" && patchset.status !== "applied" && <ManualStatusControl patchsetId={patchset.id} currentStatus={patchset.manualStatus?.status} />}
-        <h3>Legacy lore lifecycle</h3>
-        {patchset.lifecycleEvent ? (
-          <div className="lifecycle-evidence">
-            <span>This series was marked <strong>{patchset.lifecycleEvent.state}</strong> via {patchset.lifecycleEvent.source}.</span>
-            {patchset.lifecycleEvent.actorEmail && <span>By {patchset.lifecycleEvent.actorName} &lt;{patchset.lifecycleEvent.actorEmail}&gt;</span>}
-            {patchset.lifecycleEvent.reason && <span>Reason: {patchset.lifecycleEvent.reason}</span>}
-            {patchset.lifecycleEvent.loreUrl && <a className="text-link" href={patchset.lifecycleEvent.loreUrl} target="_blank" rel="noreferrer">Open status message ↗</a>}
-            {patchset.lifecycleEvent.evidence && <a className="text-link" href={patchset.lifecycleEvent.evidence} target="_blank" rel="noreferrer">Open override evidence ↗</a>}
-          </div>
-        ) : (
-          <p className="section-help">No lifecycle directive is recorded in the lore thread.</p>
-        )}
-        <a className="control-button" href={patchset.loreUrl} target="_blank" rel="noreferrer">Open lore thread ↗</a>
+        {patchset.status !== "superseded" && patchset.status !== "applied" && <ManualStatusControl patchsetId={patchset.id} currentStatus={patchset.manualStatus?.status} currentReason={patchset.manualStatus?.reason} />}
       </section>
 
       <section className="section">
