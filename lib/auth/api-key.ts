@@ -3,6 +3,8 @@ import { readSupabasePublisherConfig, SupabaseRest } from "../data/supabase.ts";
 
 export type ApiKeyRole = "admin" | "operator";
 
+const API_KEY_PATTERN = /^bdg_live_([A-Za-z0-9_-]{12})_[A-Za-z0-9_-]{43}$/;
+
 interface ApiKeyRow {
   key_id: string;
   verifier: string;
@@ -53,9 +55,13 @@ export async function verifyApiKey(apiKey: string): Promise<{ keyId: string; lab
   if (configuredRootKey && configuredRootKeyId && matches(apiKey, configuredRootKey)) {
     return { keyId: configuredRootKeyId, label: "Root administrator", role: "admin" };
   }
-  const parts = apiKey.split("_");
-  if (parts.length !== 4 || parts[0] !== "bdg" || parts[1] !== "live" || !parts[2] || !parts[3]) return null;
-  const [row] = await keys().select<ApiKeyRow>("buding_api_keys", { key_id: `eq.${parts[2]}` });
+  // Base64URL itself may contain underscores, so splitting on every
+  // underscore rejects otherwise valid keys. Both encoded fields have fixed
+  // lengths (9 bytes -> 12 characters, 32 bytes -> 43 characters), which lets
+  // us parse existing keys without changing their format or stored verifier.
+  const keyId = API_KEY_PATTERN.exec(apiKey)?.[1];
+  if (!keyId) return null;
+  const [row] = await keys().select<ApiKeyRow>("buding_api_keys", { key_id: `eq.${keyId}` });
   if (!row || row.revoked_at || (row.expires_at && Date.parse(row.expires_at) <= Date.now())) return null;
   const expected = Buffer.from(row.verifier, "hex");
   const actual = Buffer.from(verifier(apiKey), "hex");
