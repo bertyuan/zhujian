@@ -3,9 +3,12 @@ import type { ManualPatchsetStatus, PatchsetStatus, TreeId, TreeSummary } from "
 const TREE_IDS: TreeId[] = ["alex", "corbet", "linus"];
 
 export const MANUAL_PATCHSET_STATUSES: readonly ManualPatchsetStatus[] = [
+  "proposed",
   "needs-revision",
+  "superseded",
   "approved",
   "rejected",
+  "applied",
 ];
 
 const MANUAL_STATUS_SET = new Set<string>(MANUAL_PATCHSET_STATUSES);

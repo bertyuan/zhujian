@@ -85,10 +85,11 @@ state.
 Every newly discovered current series starts as `Proposed`, regardless of mail
 replies. An older revision becomes `Superseded` as soon as a newer revision is
 discovered. A complete exact match in Alex's `docs-next`, Corbet's `docs-mw`, or
-Linus's `master` becomes `Applied`. These automatic states take precedence over
-stored decisions. Only authenticated maintainers can set `Needs revision`,
-`Approved`, or `Rejected`; mail discussion never sets them automatically. The
-upstream lamps always remain visible as the evidence behind `Applied`.
+Linus's `master` becomes `Applied`. These automatic states remain the default
+when no manual decision exists. Authenticated maintainers can override the
+result with any of the six patch statuses; mail discussion never sets them
+automatically. The upstream lamps always remain visible as evidence regardless
+of the selected status.
 
 Manual decisions are stored separately from generated patchset JSON, so a
 scheduled sync cannot overwrite them. The global navigation accepts an API key once and

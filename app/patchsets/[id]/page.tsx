@@ -44,8 +44,7 @@ export default async function PatchsetPage({ params }: { params: Promise<{ id: s
 
       <section className="section">
         <h2>Patch status</h2>
-        {(patchset.status === "superseded" || patchset.status === "applied") && <p className="section-help">This status is determined automatically and cannot be overridden.</p>}
-        {patchset.status !== "superseded" && patchset.status !== "applied" && <ManualStatusControl patchsetId={patchset.id} currentStatus={patchset.manualStatus?.status} currentReason={patchset.manualStatus?.reason} />}
+        <ManualStatusControl patchsetId={patchset.id} currentStatus={patchset.status} currentReason={patchset.manualStatus?.reason} />
       </section>
 
       <section className="section">

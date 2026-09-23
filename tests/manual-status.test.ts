@@ -24,16 +24,16 @@ test("manual status overrides the automatically derived status", () => {
   assert.equal(result.manualStatus?.actor, "Maintainer");
 });
 
-test("a new revision supersedes every manual status on the old revision", () => {
+test("a manual status overrides the automatic status on an old revision", () => {
   const oldRevision = { ...patchset, latestRevision: false };
   const result = withManualStatus(oldRevision, new Map([[patchset.id, {
     status: "approved", actor: "Maintainer", setAt: "2026-09-20T01:00:00Z",
   }]]));
-  assert.equal(result.status, "superseded");
-  assert.equal(result.manualStatus, undefined);
+  assert.equal(result.status, "approved");
+  assert.equal(result.manualStatus?.status, "approved");
 });
 
-test("a confirmed match in any tracked tree overrides a manual status", () => {
+test("a manual status overrides an automatically applied status", () => {
   const applied = {
     ...patchset,
     trees: { ...patchset.trees, alex: { state: "confirmed" as const, matched: 1, total: 1 } },
@@ -41,15 +41,33 @@ test("a confirmed match in any tracked tree overrides a manual status", () => {
   const result = withManualStatus(applied, new Map([[patchset.id, {
     status: "rejected", actor: "Maintainer", setAt: "2026-09-20T01:00:00Z",
   }]]));
-  assert.equal(result.status, "applied");
-  assert.equal(result.manualStatus, undefined);
+  assert.equal(result.status, "rejected");
+  assert.equal(result.manualStatus?.status, "rejected");
 });
 
-test("only review decisions are accepted as manual statuses", () => {
+test("automatic status derivation remains the default without an override", () => {
+  const oldRevision = withManualStatus({ ...patchset, latestRevision: false }, new Map());
+  const applied = withManualStatus({
+    ...patchset,
+    trees: { ...patchset.trees, alex: { state: "confirmed" as const, matched: 1, total: 1 } },
+  }, new Map());
+  assert.equal(oldRevision.status, "superseded");
+  assert.equal(applied.status, "applied");
+});
+
+test("all patch statuses are accepted as manual statuses", () => {
+  const statuses = ["proposed", "needs-revision", "superseded", "approved", "rejected", "applied"] as const;
   assert.deepEqual(
-    ["proposed", "needs-revision", "superseded", "approved", "rejected", "applied"].filter(isManualPatchsetStatus),
-    ["needs-revision", "approved", "rejected"],
+    statuses.filter(isManualPatchsetStatus),
+    statuses,
   );
+
+  for (const status of statuses) {
+    const result = withManualStatus(patchset, new Map([[patchset.id, {
+      status, actor: "Maintainer", setAt: "2026-09-20T01:00:00Z",
+    }]]));
+    assert.equal(result.status, status);
+  }
 });
 
 test("status session is signed and rejects a modified cookie", () => {

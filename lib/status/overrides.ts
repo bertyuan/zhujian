@@ -34,10 +34,9 @@ export async function manualStatusOverrides(): Promise<Map<string, ManualStatusO
 export function withManualStatus<T extends PatchsetSummary | PatchsetDetail>(patchset: T, overrides: Map<string, ManualStatusOverride>): T {
   const automaticStatus = deriveStatus(patchset.trees, patchset.latestRevision);
   const manualStatus = overrides.get(patchset.id);
-  // Superseded and Applied are objective automatic states and always win.
-  // Authenticated decisions are considered only while a current series is
-  // still Proposed.
-  return manualStatus && automaticStatus === "proposed"
+  // Keep automatic derivation as the default, while allowing an authenticated
+  // maintainer to override it with any supported status.
+  return manualStatus
     ? { ...patchset, status: manualStatus.status, manualStatus }
     : { ...patchset, status: automaticStatus };
 }

@@ -43,7 +43,7 @@ create table if not exists public.buding_api_keys (
 
 create table if not exists public.buding_patchset_status_overrides (
   patchset_id text primary key,
-  status text not null check (status in ('needs-revision', 'approved', 'rejected')),
+  status text not null check (status in ('proposed', 'needs-revision', 'superseded', 'approved', 'rejected', 'applied')),
   reason text check (char_length(reason) <= 1000),
   actor_key_id text not null,
   actor_label text not null,
@@ -53,7 +53,7 @@ create table if not exists public.buding_patchset_status_overrides (
 create table if not exists public.buding_patchset_status_events (
   id uuid primary key,
   patchset_id text not null,
-  status text not null check (status in ('needs-revision', 'approved', 'rejected')),
+  status text not null check (status in ('proposed', 'needs-revision', 'superseded', 'approved', 'rejected', 'applied')),
   reason text,
   actor_key_id text not null,
   actor_label text not null,

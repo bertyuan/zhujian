@@ -4,13 +4,16 @@ import { useState } from "react";
 import type { ManualPatchsetStatus } from "@/lib/data/schema";
 
 const statuses: Array<{ value: ManualPatchsetStatus; label: string }> = [
+  { value: "proposed", label: "Proposed" },
   { value: "needs-revision", label: "Needs revision" },
+  { value: "superseded", label: "Superseded" },
   { value: "approved", label: "Approved" },
   { value: "rejected", label: "Rejected" },
+  { value: "applied", label: "Applied" },
 ];
 
-export function ManualStatusControl({ patchsetId, currentStatus, currentReason }: { patchsetId: string; currentStatus?: ManualPatchsetStatus; currentReason?: string }) {
-  const [status, setStatus] = useState<ManualPatchsetStatus>(currentStatus ?? "needs-revision");
+export function ManualStatusControl({ patchsetId, currentStatus, currentReason }: { patchsetId: string; currentStatus: ManualPatchsetStatus; currentReason?: string }) {
+  const [status, setStatus] = useState<ManualPatchsetStatus>(currentStatus);
   const [reason, setReason] = useState(currentReason ?? "");
   const [message, setMessage] = useState<string>();
   const [busy, setBusy] = useState(false);
